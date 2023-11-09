@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -85,9 +87,7 @@ function Nav() {
 
   return (
     <header className={styles.container}>
-      <div className={styles.preNav}>
-        {message} <span className={styles.span}>Contact us</span>
-      </div>
+      {/*  */}
       <nav className={styles.content}>Nav Here</nav>
     </header>
   );
