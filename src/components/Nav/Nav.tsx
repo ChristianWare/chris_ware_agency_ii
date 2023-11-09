@@ -37,32 +37,32 @@ function Nav() {
 
   const pathname = usePathname();
 
-  // const navItems = [
-  //   {
-  //     text: "Home",
-  //     href: "/",
-  //   },
-  //   {
-  //     text: "services",
-  //     href: "/services",
-  //   },
-  //   {
-  //     text: "Portfolio",
-  //     href: "/portfolio",
-  //   },
-  //   {
-  //     text: "Pricing",
-  //     href: "/pricing",
-  //   },
-  //   {
-  //     text: "About",
-  //     href: "/about",
-  //   },
-  //   {
-  //     text: "Contact",
-  //     href: "/contact",
-  //   },
-  // ];
+  const navItems = [
+    {
+      text: "Home",
+      href: "/",
+    },
+    {
+      text: "Services",
+      href: "/services",
+    },
+    {
+      text: "Portfolio",
+      href: "/portfolio",
+    },
+    {
+      text: "Pricing",
+      href: "/pricing",
+    },
+    {
+      text: "About",
+      href: "/about",
+    },
+    {
+      text: "Contact",
+      href: "/contact",
+    },
+  ];
 
   const currentDate = new Date();
 
@@ -86,9 +86,44 @@ function Nav() {
   const message = `Now accepting new clients for the month of ${currentMonth}!`;
 
   return (
-    <header className={styles.container}>
-      {/*  */}
-      <nav className={styles.content}>Nav Here</nav>
+    <header className={styles.header}>
+      <nav className={styles.navbar}>
+        <div className={styles.logo}>
+          <Link href='/'>Chris Ware Agency</Link>
+        </div>
+        <div className={styles.menuItemsGroup}>
+          <ul
+            className={
+              isOpen === false
+                ? styles.navMenu
+                : styles.navMenu + " " + styles.active
+            }
+          >
+            {navItems.map((navItem, index) => (
+              <li key={index} className={styles.navItem} onClick={openMenu}>
+                <Link
+                  href={navItem.href}
+                  className={pathname === "/" ? styles.activeLink : ""}
+                >
+                  {navItem.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <span
+            className={
+              isOpen === false
+                ? styles.hamburger
+                : styles.hamburger + " " + styles.active
+            }
+            onClick={openMenu}
+          >
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+            <span className={styles.whiteBar}></span>
+          </span>
+        </div>
+      </nav>
     </header>
   );
 }
