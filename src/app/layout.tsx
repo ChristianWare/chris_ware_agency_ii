@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import PreNav from "@/components/Nav/PreNav";
+import styles from './layout.module.css'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <PreNav />
-        <Nav />
+          <Nav />
         {children}
       </body>
     </html>
