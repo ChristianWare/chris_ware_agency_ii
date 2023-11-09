@@ -11,7 +11,10 @@ const Hero = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <h1>Modern rental luxury complex</h1>
+              <h1>
+                We tranform vacation rental dreams into seamless online booking
+                experiences.
+              </h1>
               <p>Main paragraph here</p>
               <div className={styles.btnCointainer}>2 btns here</div>
             </div>
