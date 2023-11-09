@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  border-radius: 5px;
+  user-select: none;
+  transition: all 0.1s ease-in;
+  display: inline-block;
+  padding: 10px 35px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.primary {
+  color: var(--cream);
+  background-color: var(--red);
+  border: 2.7px solid var(--primary);
+}
+
+.secondary {
+  color: var(--darkBlue);
+  background-color: var(--cream);
+}
+
+.tertiary {
+  color: var(--cream);
+  background-color: var(--darkBlue);
+}
+
+.navBtn {
+  padding: 5px 25px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--black);
+  font-size: 1.4rem;
+}
+
+.navBtnii {
+  padding: 5px 25px;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 2rem;
+    padding: 15px 35px;
+  }
+}

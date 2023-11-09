@@ -6,9 +6,9 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 
 const Hero = () => {
   return (
-    <LayoutWrapper>
-      <ContentPadding>
-        <div className={styles.container}>
+    <div className={styles.container}>
+      <LayoutWrapper>
+        <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
               <h1>Modern rental luxury complex</h1>
@@ -23,9 +23,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
-      </ContentPadding>
-    </LayoutWrapper>
+        </ContentPadding>
+      </LayoutWrapper>
+    </div>
   );
 };
 export default Hero;

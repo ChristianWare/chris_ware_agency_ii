@@ -5,6 +5,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import LayoutWrapper from "../Layout/LayoutWrapper";
+import ContentPadding from "../Layout/ContentPadding/ContentPadding";
+import Button from "../Button/Button";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,43 +69,60 @@ function Nav() {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Link href='/'>CWA</Link>
-        </div>
-        <div className={styles.menuItemsGroup}>
-          <ul
-            className={
-              isOpen === false
-                ? styles.navMenu
-                : styles.navMenu + " " + styles.active
-            }
-          >
-            {navItems.map((navItem, index) => (
-              <li key={index} className={styles.navItem} onClick={openMenu}>
-                <Link
-                  href={navItem.href}
-                  className={pathname === "/" ? styles.activeLink : ""}
+      <LayoutWrapper>
+        <ContentPadding>
+          <nav className={styles.navbar}>
+            <div className={styles.navBarLeft}>
+              <div className={styles.logo}>
+                <Link href='/'>CWA</Link>
+              </div>
+              <div className={styles.menuItemsGroup}>
+                <ul
+                  className={
+                    isOpen === false
+                      ? styles.navMenu
+                      : styles.navMenu + " " + styles.active
+                  }
                 >
-                  {navItem.text}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <span
-            className={
-              isOpen === false
-                ? styles.hamburger
-                : styles.hamburger + " " + styles.active
-            }
-            onClick={openMenu}
-          >
-            <span className={styles.whiteBar}></span>
-            <span className={styles.whiteBar}></span>
-            <span className={styles.whiteBar}></span>
-          </span>
-        </div>
-      </nav>
+                  {navItems.map((navItem, index) => (
+                    <li
+                      key={index}
+                      className={styles.navItem}
+                      onClick={openMenu}
+                    >
+                      <Link
+                        href={navItem.href}
+                        className={pathname === "/" ? styles.activeLink : ""}
+                      >
+                        {navItem.text}
+                      </Link>
+                      <span className={styles.arrow}>↗</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className={styles.naBarRight}>
+                <div className={styles.btnContainer}>
+                  <Button href='/' text='Log in' btnType='navBtnii' />
+                  <Button href='/' text='Sign up' btnType='navBtn' />
+                </div>
+                <span
+                  className={
+                    isOpen === false
+                      ? styles.hamburger
+                      : styles.hamburger + " " + styles.active
+                  }
+                  onClick={openMenu}
+                >
+                  <span className={styles.whiteBar}></span>
+                  <span className={styles.whiteBar}></span>
+                  <span className={styles.whiteBar}></span>
+                </span>
+              </div>
+            </div>
+          </nav>
+        </ContentPadding>
+      </LayoutWrapper>
     </header>
   );
 }
