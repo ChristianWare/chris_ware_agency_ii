@@ -64,32 +64,11 @@ function Nav() {
     },
   ];
 
-  const currentDate = new Date();
-
-  const monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-
-  const currentMonth = monthNames[currentDate.getMonth()];
-
-  const message = `Now accepting new clients for the month of ${currentMonth}!`;
-
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
-          <Link href='/'>Chris Ware Agency</Link>
+          <Link href='/'>CWA</Link>
         </div>
         <div className={styles.menuItemsGroup}>
           <ul

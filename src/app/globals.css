@@ -1,7 +1,7 @@
 :root {
-  --green: #AEFF12;
+  --green: #aeff12;
   --gray: #f4f4f6;
-  --black: #19191a;
+  --black: #121824;
   --white: #ffffff;
 }
 
@@ -11,6 +11,7 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 150%;
+  font-family: var(--inter);
   overscroll-behavior: none;
   scroll-behavior: smooth;
   scroll-margin-top: 20px;
@@ -35,6 +36,7 @@ a {
 h1 {
   font-size: 6rem;
   line-height: 120%;
+  font-weight: 600;
 }
 
 h1,
@@ -43,9 +45,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--chakraPetch);
-  color: var(--navy);
-  letter-spacing: 0.1rem;
+  font-family: var(--inter);
+  color: var(--black);
+  letter-spacing: 0.02rem;
 }
 
 h2 {
@@ -56,7 +58,6 @@ h2 {
 
 h3 {
   font-size: 4rem;
-  color: var(--text);
   line-height: 120%;
 }
 
@@ -85,13 +86,14 @@ textarea {
   hyphens: auto;
   font-size: 1.6rem;
   line-height: 150%;
+  color: var(--black);
 }
 
 input:focus {
   outline: none;
 }
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: var(--secondary);
 }
@@ -105,7 +107,7 @@ input:focus {
 }
 ::-moz-selection {
   background: var(--secondary);
-}
+} */
 
 @media screen and (max-width: 768px) {
   html {
@@ -133,9 +135,9 @@ input:focus {
 }
 
 /* Only use in production */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   h1,
   h2 {
     letter-spacing: -0.1rem;
   }
-}
+} */

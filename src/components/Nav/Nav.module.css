@@ -1,6 +1,6 @@
 .header {
-  padding: 1rem 3rem;
-  /* font-family: var(--azeretMono); */
+  padding: 2rem 3rem;
+  font-family: var(--inter);
   color: var(--black);
   background-color: var(--gray);
   z-index: 999;
@@ -12,12 +12,12 @@
   margin-right: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 5rem;
 }
 
 .logo {
   letter-spacing: 0.5px;
-  /* transition: all 0.2s ease-in; */
 }
 
 .officialLogoMobile {
@@ -39,6 +39,8 @@
 
 .navItem {
   font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--black);
   position: relative;
   user-select: none;
   transition: all 0.3s ease-in;
@@ -61,19 +63,19 @@
   position: relative;
 }
 
-.activeLink::after {
+/* .activeLink::after {
   position: absolute;
   content: "";
   left: 40%;
   bottom: -15px;
   width: 7px;
   height: 7px;
-  background-color: var(--secondary);
+  background-color: var(--black);
   border-radius: 50%;
-  border: 1px solid var(--navy);
-}
+  border: 1px solid var(--black);
+} */
 
-.navItem:hover.navItem::after {
+/* .navItem:hover.navItem::after {
   position: absolute;
   content: "";
   left: 40%;
@@ -83,7 +85,7 @@
   background-color: var(--secondary);
   border-radius: 50%;
   border: 1px solid var(--navy);
-}
+} */
 
 .icon {
   position: relative;
@@ -98,19 +100,6 @@
   display: none;
 }
 
-.openClose {
-  font-size: 1.8rem;
-  font-family: var(--azeretMono) !important;
-  text-transform: uppercase;
-  color: var(--navy) !important;
-  opacity: 0.7;
-  border-radius: 10px;
-  border: 1px solid var(--navy);
-  padding: 0.5rem 0.8rem;
-  font-weight: 500;
-  display: inline-block;
-  user-select: none;
-}
 
 .whiteBar {
   display: block;
@@ -118,7 +107,7 @@
   height: 3px;
   margin: 5px auto;
   border-radius: 15px;
-  background-color: var(--text);
+  background-color: var(--black);
   transition: all 0.3s ease-in-out;
 }
 
