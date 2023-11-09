@@ -1,5 +1,5 @@
 :root {
-  --green: #16ff00;
+  --green: #C5FF67;
   --gray: #f4f4f6;
   --black: #19191a;
   --white: #ffffff;
@@ -82,10 +82,8 @@ p,
 input,
 textarea {
   font-weight: 400;
-  font-family: var(--chakraPetch);
   hyphens: auto;
   font-size: 1.6rem;
-  color: var(--text);
   line-height: 150%;
 }
 
