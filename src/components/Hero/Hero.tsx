@@ -16,16 +16,16 @@ const Hero = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <h1 lang='en'>
+              <h1 lang='en' className={styles.heading}>
                 We transform vacation rental dreams into seamless online booking
                 experiences.
               </h1>
-              <p>
+              <p className={styles.copy}>
                 Opt for your own direct booking website to take control of your
                 vacation rental business, reduce fees, and build a unique brand
                 identity, while enjoying better communication with guests.
               </p>
-              <div className={styles.btnCointainer}>
+              <div className={styles.btnContainer}>
                 <Button text='Get Consultation' href='/' btnType='primary' />
                 <Button text='Details' href='/' btnType='secondary' />
               </div>

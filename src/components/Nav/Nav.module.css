@@ -33,7 +33,15 @@
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--black);
+  display: flex;
+  gap: .5rem;
 }
+
+.icon {
+  position: relative;
+  top: 5px;
+}
+
 
 .officialLogoMobile {
   display: none;
@@ -68,11 +76,6 @@
 
 .activeLink {
   position: relative;
-}
-
-.icon {
-  position: relative;
-  top: 3px;
 }
 
 .bottom {

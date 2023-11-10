@@ -3,11 +3,11 @@
 import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import Button from "../Button/Button";
+import House from "../../../public/icons/house.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,6 +75,7 @@ function Nav() {
             <div className={styles.navBarLeft}>
               <div className={styles.logo}>
                 <Link href='/'>CWA</Link>
+                {/* <House width={15} height={15} className={styles.icon} /> */}
               </div>
               <div className={styles.menuItemsGroup}>
                 <ul
