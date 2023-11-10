@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero/Hero";
-import Challenge from "@/components/PageSections/Challenge/Challenge";
+import Benefits from "@/components/PageSections/Benefits/Benefits";
 
 const HomePage = () => {
   return (
     <div>
       <Hero />
-      <Challenge />
+      <Benefits />
     </div>
   );
 };

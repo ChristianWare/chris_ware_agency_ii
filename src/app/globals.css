@@ -53,12 +53,13 @@ h6 {
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
+  font-weight: 500;
   line-height: 130%;
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 3.4rem;
   line-height: 120%;
 }
 
