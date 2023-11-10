@@ -2,14 +2,18 @@
   font-family: var(--inter);
   color: var(--black);
   background-color: var(--gray);
-  z-index: 999;
+  z-index: 1000;
 }
 
 .navbar {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 2rem 3rem;
 }
 
 .navBarLeft {
@@ -118,6 +122,7 @@
 @media screen and (max-width: 870px) {
   .navbar {
     justify-content: space-between;
+    padding: 2rem 3rem;
   }
 
   .navMenu {
@@ -233,6 +238,17 @@
 @media screen and (max-width: 768px) {
   .logo {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .header {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .navbar {
+    padding: 3rem 2rem;
   }
 }
 

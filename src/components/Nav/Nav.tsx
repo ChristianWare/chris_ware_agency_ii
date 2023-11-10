@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import Button from "../Button/Button";
-import House from "../../../public/icons/house.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,61 +68,56 @@ function Nav() {
 
   return (
     <header className={styles.header}>
-      <LayoutWrapper>
-        <ContentPadding>
-          <nav className={styles.navbar}>
-            <div className={styles.navBarLeft}>
-              <div className={styles.logo}>
-                <Link href='/'>CWA</Link>
-                {/* <House width={15} height={15} className={styles.icon} /> */}
-              </div>
-              <div className={styles.menuItemsGroup}>
-                <ul
-                  className={
-                    isOpen === false
-                      ? styles.navMenu
-                      : styles.navMenu + " " + styles.active
-                  }
-                >
-                  {navItems.map((navItem, index) => (
-                    <li
-                      key={index}
-                      className={styles.navItem}
-                      onClick={openMenu}
-                    >
-                      <Link
-                        href={navItem.href}
-                        className={pathname === "/" ? styles.activeLink : ""}
-                      >
-                        {navItem.text}
-                      </Link>
-                      <span className={styles.arrow}>↗</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className={styles.naBarRight}>
-                <div className={styles.btnContainer}>
-                  <Button href='/' text='Log in' btnType='navBtnii' />
-                  <Button href='/' text='Sign up' btnType='navBtn' />
-                </div>
-                <span
-                  className={
-                    isOpen === false
-                      ? styles.hamburger
-                      : styles.hamburger + " " + styles.active
-                  }
-                  onClick={openMenu}
-                >
-                  <span className={styles.whiteBar}></span>
-                  <span className={styles.whiteBar}></span>
-                  <span className={styles.whiteBar}></span>
-                </span>
-              </div>
+      {/* <LayoutWrapper> */}
+      {/* <ContentPadding> */}
+      <nav className={styles.navbar}>
+        <div className={styles.navBarLeft}>
+          <div className={styles.logo}>
+            <Link href='/'>CWA</Link>
+          </div>
+          <div className={styles.menuItemsGroup}>
+            <ul
+              className={
+                isOpen === false
+                  ? styles.navMenu
+                  : styles.navMenu + " " + styles.active
+              }
+            >
+              {navItems.map((navItem, index) => (
+                <li key={index} className={styles.navItem} onClick={openMenu}>
+                  <Link
+                    href={navItem.href}
+                    className={pathname === "/" ? styles.activeLink : ""}
+                  >
+                    {navItem.text}
+                  </Link>
+                  <span className={styles.arrow}>↗</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={styles.naBarRight}>
+            <div className={styles.btnContainer}>
+              <Button href='/' text='Log in' btnType='navBtnii' />
+              <Button href='/' text='Sign up' btnType='navBtn' />
             </div>
-          </nav>
-        </ContentPadding>
-      </LayoutWrapper>
+            <span
+              className={
+                isOpen === false
+                  ? styles.hamburger
+                  : styles.hamburger + " " + styles.active
+              }
+              onClick={openMenu}
+            >
+              <span className={styles.whiteBar}></span>
+              <span className={styles.whiteBar}></span>
+              <span className={styles.whiteBar}></span>
+            </span>
+          </div>
+        </div>
+      </nav>
+      {/* </ContentPadding> */}
+      {/* </LayoutWrapper> */}
     </header>
   );
 }
