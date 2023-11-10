@@ -5,13 +5,13 @@
 
 .btn {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   white-space: nowrap;
   border-radius: 5px;
   user-select: none;
   transition: all 0.1s ease-in;
   display: inline-block;
-  padding: 10px 35px;
+  padding: 10px 30px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -22,14 +22,14 @@
 }
 
 .primary {
-  color: var(--cream);
-  background-color: var(--red);
-  border: 2.7px solid var(--primary);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .secondary {
-  color: var(--darkBlue);
-  background-color: var(--cream);
+  color: var(--black);
+  background-color: var(--gray);
+  /* border: 2px solid var(--border); */
 }
 
 .tertiary {

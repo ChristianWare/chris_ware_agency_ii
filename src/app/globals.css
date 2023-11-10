@@ -3,6 +3,7 @@
   --gray: #f4f4f6;
   --black: #121824;
   --white: #ffffff;
+  --border: #d4d4d4;
 }
 
 * {
@@ -35,8 +36,9 @@ a {
 
 h1 {
   font-size: 5.5rem;
-  line-height: 120%;
+  line-height: 115%;
   font-weight: 600;
+  hyphens: auto;
 }
 
 h1,
