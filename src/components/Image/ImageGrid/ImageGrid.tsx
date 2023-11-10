@@ -1,6 +1,7 @@
 import styles from "./ImageGrid.module.css";
 import Image from "next/image";
 import Img1 from "../../../../public/images/img1.png";
+import Img2 from "../../../../public/images/img2.png";
 
 const ImageGrid = () => {
   return (
@@ -10,12 +11,9 @@ const ImageGrid = () => {
           <Image
             src={Img1}
             alt='image'
-            // fill
-            width={400}
-            height={400}
             quality={100}
             priority={true}
-            className={styles.img}
+            className={styles.img400}
           />
         </div>
         <div className={styles.topRight}>
@@ -23,44 +21,36 @@ const ImageGrid = () => {
             <Image
               src={Img1}
               alt='image'
-              width={100}
-              height={100}
               quality={100}
               priority={true}
-              className={styles.img}
+              className={styles.img100}
             />
+          <div className={styles.square1}></div>
           </div>
           <Image
             src={Img1}
             alt='image'
-            width={200}
-            height={200}
             quality={100}
             priority={true}
-            className={styles.img}
+            className={styles.img200}
           />
         </div>
       </div>
       <div className={styles.bottom}>
-        <div className={styles.square}></div>
+        <div className={styles.square2}></div>
         <Image
           src={Img1}
           alt='image'
-          width={100}
-          height={100}
           quality={100}
           priority={true}
-          className={styles.img}
+          className={styles.img100}
         />
         <Image
-          src={Img1}
+          src={Img2}
           alt='image'
-          // fill
-          width={275}
-          height={275}
           quality={100}
           priority={true}
-          className={styles.img}
+          className={styles.img275}
         />
       </div>
     </div>

@@ -10,7 +10,10 @@
   font-size: 0;
 }
 
-.img {
+.img400 {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -20,19 +23,17 @@
 }
 
 .imgContainer {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.imgContainer::after {
-  position: absolute;
-  content: "";
-  right: 0px;
-  top: 0px;
+.square1 {
   width: 90px;
   height: 100px;
   background-color: var(--green);
-  opacity: 0.5;
-  /* border: 1px solid var(--black); */
   border-radius: 10px;
   border-top-right-radius: 100px;
 }
@@ -44,12 +45,141 @@
   gap: 1rem;
 }
 
-.square {
+.square2 {
   width: 100px;
   height: 100px;
   background-color: var(--green);
-  /* opacity: 0.5; */
-  /* border: 1px solid var(--black); */
   border-radius: 10px;
   border-bottom-left-radius: 100px;
+}
+
+.img100 {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.img200 {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.img275 {
+  width: 275px;
+  height: 275px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .img400 {
+    width: 350px;
+    height: 350px;
+  }
+
+  
+}
+
+@media screen and (max-width: 1030px) {
+  .img400 {
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  .img400 {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img400 {
+    width: 350px;
+    height: 350px;
+  }
+
+}
+
+@media screen and (max-width: 668px) {
+  .img400 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .img100 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .img200 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .img275 {
+    width: 175px;
+    height: 175px;
+  }
+
+  .square1,
+  .square2 {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .img400 {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img400 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .img100 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .img200 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .img275 {
+    width: 175px;
+    height: 175px;
+  }
+
+  .square1,
+  .square2 {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .img400 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .img100,
+  .img200,
+  .square1,
+  .square2, 
+  .img275 {
+    display: none;
+  }
 }

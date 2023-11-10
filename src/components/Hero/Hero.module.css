@@ -4,15 +4,14 @@
 
 .content {
   padding: 5rem 0rem;
-  /* padding-top: 0rem; */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 5rem;
 }
 
 .left {
-  flex: 1.5;
+  flex: 1;
 }
 
 .left p {
@@ -55,23 +54,16 @@
 }
 
 .right {
-  flex: 2;
-}
-
-.r1 {
+  flex: 1;
   display: flex;
-  
+  align-items: center;
+  justify-content: flex-end;
 }
 
-
-
-.imgContainer {
-  position: relative;
-  /* height: 350px; */
-  /* width: 350px; */
-}
-
-.img {
-  object-fit: cover;
-  border-radius: 10px;
+@media screen and (max-width: 950px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0rem;
+  }
 }
