@@ -56,7 +56,4 @@ export const indvService = [
   {
     service: "Service 8",
   },
-  {
-    service: "Service 9",
-  },
 ] as const;

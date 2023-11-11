@@ -5,6 +5,7 @@ import ContentPadding from "@/components/Layout/ContentPadding/ContentPadding";
 import { benefits } from "@/lib/data";
 import Check from "../../../../public/icons/check.svg";
 import Img1 from "../../../../public/images/img2.png";
+import SectionHeading from "@/components/SectionHeading/SectionHeading";
 
 const Benefits = () => {
   return (
@@ -23,16 +24,13 @@ const Benefits = () => {
                 />
               </div>
             </div>
-            <h2 className={styles.heading}>
-              Benefits of a direct booking website
-            </h2>
-
-            <p className={styles.headingCopy}>
-              Having a direct booking website for your vacation rental property
+            <SectionHeading
+              headingText='What are the benefits of a direct booking website?'
+              copyText='Having a direct booking website for your vacation rental property
               instead of relying solely on Airbnb and VRBO can offer several
               benefits. Here are some of the advantages of having your own
-              booking website:
-            </p>
+              booking website:'
+            />
           </div>
           <div className={styles.bottom}>
             {benefits.map((benefit, index) => (
