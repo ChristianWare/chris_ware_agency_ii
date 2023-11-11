@@ -19,4 +19,14 @@ export const benefits = [
     description:
       "Relying solely on Airbnb and VRBO can be risky, as their policies and algorithms can change at any time. Having your own website provides a level of diversification and independence.",
   },
+  {
+    heading: "Long-Term Cost Savings",
+    description:
+      "While building and maintaining a website may involve an initial investment, it can save you money in the long run compared to paying ongoing fees to third-party platforms.",
+  },
+  {
+    heading: "Data Ownership",
+    description:
+      "When you use Airbnb and VRBO, they own and control the guest data. With your own website, you own and control this valuable information, allowing you to build a list of past guests for marketing purposes.",
+  },
 ] as const;
