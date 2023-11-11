@@ -29,7 +29,7 @@
 
 .secondary {
   color: var(--black);
-  background-color: var(--gray);
+  background-color: var(--green);
   border: 2px solid var(--border);
 }
 
@@ -57,10 +57,5 @@
 @media screen and (max-width: 768px) {
   .btn {
     font-size: 2rem;
-    padding: 15px 35px;
   }
-}
-@media screen and (max-width: 480px) {
-  /* .secondary {
-  } */
 }

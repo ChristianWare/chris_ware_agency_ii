@@ -30,3 +30,33 @@ export const benefits = [
       "When you use Airbnb and VRBO, they own and control the guest data. With your own website, you own and control this valuable information, allowing you to build a list of past guests for marketing purposes.",
   },
 ] as const;
+
+export const indvService = [
+  {
+    service: "Service 1",
+  },
+  {
+    service: "Service 2",
+  },
+  {
+    service: "Service 3",
+  },
+  {
+    service: "Service 4",
+  },
+  {
+    service: "Service 5",
+  },
+  {
+    service: "Service 6",
+  },
+  {
+    service: "Service 7",
+  },
+  {
+    service: "Service 8",
+  },
+  {
+    service: "Service 9",
+  },
+] as const;

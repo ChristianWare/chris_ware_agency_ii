@@ -1,8 +1,9 @@
 .header {
   font-family: var(--inter);
   color: var(--black);
-  background-color: var(--gray);
+  /* background-color: var(--gray); */
   z-index: 1000;
+  border-bottom: 4px solid var(--gray);
 }
 
 .navbar {

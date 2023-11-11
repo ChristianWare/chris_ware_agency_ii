@@ -8,9 +8,9 @@ import Img1 from "../../../../public/images/img2.png";
 
 const Benefits = () => {
   return (
-    <LayoutWrapper>
-      <ContentPadding>
-        <div className={styles.content}>
+    <section className={styles.content}>
+      <LayoutWrapper>
+        <ContentPadding>
           <div className={styles.top}>
             <div className={styles.b2}>
               <div className={styles.imgContainer}>
@@ -35,19 +35,19 @@ const Benefits = () => {
             </p>
           </div>
           <div className={styles.bottom}>
-              {benefits.map((benefit, index) => (
-                <div key={index} className={styles.benefitContainer}>
-                  <span className={styles.span}>
-                    <Check width={20} height={20} className={styles.icon} />
-                    <h3 className={styles.benefitHeading}>{benefit.heading}</h3>
-                  </span>
-                  <p className={styles.benefitDesc}>{benefit.description}</p>
-                </div>
-              ))}
+            {benefits.map((benefit, index) => (
+              <div key={index} className={styles.benefitContainer}>
+                <span className={styles.span}>
+                  <Check width={20} height={20} className={styles.icon} />
+                  <h3 className={styles.benefitHeading}>{benefit.heading}</h3>
+                </span>
+                <p className={styles.benefitDesc}>{benefit.description}</p>
+              </div>
+            ))}
           </div>
-        </div>
-      </ContentPadding>
-    </LayoutWrapper>
+        </ContentPadding>
+      </LayoutWrapper>
+    </section>
   );
 };
 

@@ -12,9 +12,8 @@
 }
 
 .headingCopy {
-  font-size: 1.8rem;
   text-align: center;
-  width: 80%;
+  width: 60%;
   color: var(--text);
 }
 
@@ -33,7 +32,7 @@
 .benefitContainer {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   border: 1px solid var(--border);
   background-color: var(--black);
   border-radius: 10px;
@@ -53,7 +52,7 @@
 }
 
 .benefitHeading {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--green);
 }
@@ -130,7 +129,6 @@
 
 @media screen and (max-width: 668px) {
   .headingCopy {
-    font-weight: 600;
     width: 100%;
   }
 

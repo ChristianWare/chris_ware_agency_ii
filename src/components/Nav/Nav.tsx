@@ -4,8 +4,6 @@ import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import LayoutWrapper from "../Layout/LayoutWrapper";
-import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import Button from "../Button/Button";
 
 function Nav() {
