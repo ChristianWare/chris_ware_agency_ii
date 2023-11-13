@@ -1,39 +1,80 @@
-import Image from "next/image";
+"use client";
+
 import LayoutWrapper from "@/components/Layout/LayoutWrapper";
 import styles from "./Benefits.module.css";
 import ContentPadding from "@/components/Layout/ContentPadding/ContentPadding";
 import { benefits } from "@/lib/data";
-import Check from "../../../../public/icons/check.svg";
-import Img1 from "../../../../public/images/img2.png";
-import SectionHeading from "@/components/SectionHeading/SectionHeading";
 import CircleImage from "@/components/Image/CircleImage/CircleImage";
+import { useState } from "react";
+import Arrow from "../../../../public/icons/downArrow.svg";
 
 const Benefits = () => {
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i: any) => {
+    setSelected(selected === i ? null : i);
+  };
+
   return (
     <section className={styles.content}>
       <LayoutWrapper>
         <ContentPadding>
-          <div className={styles.top}>
-            <CircleImage />
-            {/* <SectionHeading
-              headingText='What are the benefits of a direct booking website?'
-              copyText='Having a direct booking website for your vacation rental property
-              instead of relying solely on Airbnb and VRBO can offer several
-              benefits. Here are some of the advantages of having your own
-              booking website:'
-            /> */}
+          <div className={styles.content}>
+            <div className={styles.left}>
+              <CircleImage />
+            </div>
+            <div className={styles.right}>
+              <h2 className={styles.heading}>
+                What are the benefits of a direct booking website?
+              </h2>
+              <p className={styles.copy}>
+                Having a direct booking website for your vacation rental
+                property instead of relying solely on Airbnb and VRBO can offer
+                several benefits. Here are some of the advantages of having your
+                own booking website:
+              </p>
+              {benefits.map((benefit, i) => (
+                <div
+                  key={i}
+                  className={
+                    selected === i
+                      ? styles.benefitContainer + " " + styles.showBorder
+                      : styles.benefitContainer
+                  }
+                  onClick={() => toggle(i)}
+                >
+                  <div className={styles.bcLeft}>
+                      <h3 className={styles.benefitHeading}>
+                        <span className={styles.index}>0{i + 1}</span>{" "}
+                        {benefit.heading}
+                      </h3>
+                    <div
+                      className={
+                        selected === i
+                          ? styles.answerContainer + " " + styles.show
+                          : styles.answerContainer
+                      }
+                    >
+                      <p className={styles.benefitDesc}>
+                        {benefit.description}
+                      </p>
+                    </div>
+                  </div>
+                  <div className={styles.bcRight}>
+                    {selected === i ? (
+                      <Arrow
+                        className={styles.iconFlip}
+                        width={20}
+                        height={20}
+                      />
+                    ) : (
+                      <Arrow className={styles.icon} width={20} height={20} />
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          {/* <div className={styles.bottom}>
-            {benefits.map((benefit, index) => (
-              <div key={index} className={styles.benefitContainer}>
-                <span className={styles.span}>
-                  <Check width={20} height={20} className={styles.icon} />
-                  <h3 className={styles.benefitHeading}>{benefit.heading}</h3>
-                </span>
-                <p className={styles.benefitDesc}>{benefit.description}</p>
-              </div>
-            ))}
-          </div> */}
         </ContentPadding>
       </LayoutWrapper>
     </section>
