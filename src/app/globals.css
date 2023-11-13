@@ -1,12 +1,14 @@
 :root {
   --green: #aeff12;
-  /* --green: #DAFC53; */
+  --green2: #DAFC53;
   --gray: #f4f4f6;
   --black: #2a2a2a;
   --white: #ffffff;
+  --white2: #b7b5b5;
   --border: #d4d4d4;
   --text: #737373;
   --text2: #424242;
+  --text3: #434343;
   --border2: #c3c3c3;
   --tan: #f1f1e9;
   --tan2: #ACAC96;
@@ -43,8 +45,8 @@ a {
 
 h1 {
   font-size: 4rem;
-  line-height: 115%;
-  font-weight: 600;
+  line-height: 130%;
+  font-weight: 700;
   hyphens: auto;
 }
 
@@ -53,10 +55,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: var(--inter);
+h6, span {
+  font-family: var(--chakraPetch);
   color: var(--black);
   letter-spacing: 0.02rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -66,7 +69,7 @@ h2 {
 
 h3 {
   font-size: 2.6rem;
-  line-height: 120%;
+  line-height: 130%;
   font-weight: 600;
 }
 

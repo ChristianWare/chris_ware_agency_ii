@@ -19,31 +19,24 @@
   flex-direction: column;
   gap: 3rem;
   border: 1px solid var(--border2);
-}
-
-.container:nth-child(1) {
   background-color: var(--black);
 }
 
 .iconContainer {
   width: fit-content;
   padding: 4rem;
-  border: 1px solid var(--border2);
+  border: 1px solid var(--text);
   border-radius: 10px;
 }
 
 .h3 {
   font-size: 1.8rem;
-  color: var(--black);
+  color: var(--white);
   font-weight: 700;
 }
 
-.container:nth-child(1) h3 {
-  color: var(--white);
-}
-
 .copy {
-  color: var(--text);
+  color: var(--white2);
 }
 
 .imgContainer {

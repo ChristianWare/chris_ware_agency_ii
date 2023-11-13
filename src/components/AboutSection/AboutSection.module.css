@@ -21,8 +21,8 @@
 .left::after {
   position: absolute;
   content: "";
-  bottom: 0;
-  right: 10%;
+  top: -150px;
+  right: -15%;
   width: 200px;
   height: 200px;
   background-color: var(--green);
@@ -30,6 +30,10 @@
   border-top-right-radius: 200px;
   z-index: -1;
   filter: blur(10rem);
+}
+
+.heading {
+  position: relative;
 }
 
 .highlight {
@@ -54,7 +58,6 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: var(--text);
-  width: 70%;
 }
 
 .imgContainer {
@@ -68,6 +71,26 @@
 .img {
   object-fit: cover;
   border-radius: 10px;
+}
+
+.iconTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.strong {
+  font-family: var(--roboto);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 968px) {
@@ -90,10 +113,24 @@
     width: 150px;
     height: 150px;
   }
+
+  .btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .copy {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
 }

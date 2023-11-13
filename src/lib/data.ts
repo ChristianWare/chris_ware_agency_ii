@@ -70,13 +70,42 @@ export const caseStudies = [
   {
     company: "ABC Company",
     companyDesc: "ABC Company is a company that does business",
-    projectDetails: "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
+    projectDetails:
+      "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
     href: "/",
   },
   {
     company: "ABC Company",
     companyDesc: "ABC Company is a company that does business",
-    projectDetails: "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
+    projectDetails:
+      "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
     href: "/",
+  },
+] as const;
+
+export const process = [
+  {
+    id: 59,
+    processName: "Free analysis & offer",
+    processDescription:
+      "In a non-binding initial consultation, we analyze the current situation and discuss your expectations and goals. About a day after our initial consultation, you will receive a non-binding offer with a scope of services that is tailored precisely to your needs and goals.",
+  },
+  {
+    id: 60,
+    processName: "Strategy & concept",
+    processDescription:
+      "We analyze your target audience and develop a strategy to ideally position your website. Based on the concept, I create a prototype that gives you an impression of the later structure.",
+  },
+  {
+    id: 61,
+    processName: "Design & Development",
+    processDescription:
+      "You will receive a design draft that we will coordinate together until everything is in place. I will develop your website using WordPress or Webflow based on this template. The site will look perfect on all devices and details and small animations give it that certain something.",
+  },
+  {
+    id: 62,
+    processName: "Go live",
+    processDescription:
+      "In a personal workshop, I'll show you how to manage your content and add new ones. You don't need any technical know-how for this. Ready? Then we'll put your website live together and have a party.",
   },
 ] as const;

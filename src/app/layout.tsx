@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import PreNav from "@/components/Nav/PreNav";
@@ -17,6 +17,14 @@ const inter = Inter({
   variable: "--inter",
 });
 
+const chakraPetch = Chakra_Petch({
+  weight: ["400", "500", "600", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--chakraPetch",
+});
+
+
 export default function RootLayout({
   children,
 }: {
@@ -24,9 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.variable}>
+      <body className={`${inter.variable} ${chakraPetch.variable}`}>
         {/* <PreNav /> */}
-          <Nav />
+        <Nav />
         {children}
       </body>
     </html>
