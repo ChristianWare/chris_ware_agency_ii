@@ -1,6 +1,5 @@
 import Check from "../../public/icons/calendar.png";
 
-
 export const benefits = [
   {
     heading: "Lower Fees",
@@ -64,5 +63,20 @@ export const features = [
     description:
       "Admin panel will allow you to create, update, and delete listings on your persoanlized booking websites. You can aslo view the number of bookings, and make any updates as needed.",
     icon: Check,
+  },
+] as const;
+
+export const caseStudies = [
+  {
+    company: "ABC Company",
+    companyDesc: "ABC Company is a company that does business",
+    projectDetails: "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
+    href: "/",
+  },
+  {
+    company: "ABC Company",
+    companyDesc: "ABC Company is a company that does business",
+    projectDetails: "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
+    href: "/",
   },
 ] as const;
