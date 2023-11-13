@@ -19,6 +19,7 @@
   justify-content: center;
   gap: 1rem;
   align-items: flex-end;
+  padding: 0rem 15rem;
 }
 
 .one,
@@ -55,8 +56,8 @@
   left: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
   );
   z-index: 1;
   border-radius: 10px;
@@ -65,7 +66,6 @@
 .img {
   object-fit: cover;
   border-radius: 10px;
-  /* z-index: -1; */
 }
 
 .shOne,
@@ -81,11 +81,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 2rem;
 }
 

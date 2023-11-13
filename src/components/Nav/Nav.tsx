@@ -66,10 +66,8 @@ function Nav() {
 
   return (
     <header className={styles.header}>
-      {/* <LayoutWrapper> */}
-      {/* <ContentPadding> */}
       <nav className={styles.navbar}>
-        <div className={styles.navBarLeft}>
+        {/* <div999 className={styles.navBarLeft}> */}
           <div className={styles.logo}>
             <Link href='/'>CWA</Link>
           </div>
@@ -85,7 +83,7 @@ function Nav() {
                 <li key={index} className={styles.navItem} onClick={openMenu}>
                   <Link
                     href={navItem.href}
-                    className={pathname === "/" ? styles.activeLink : ""}
+                    className={pathname === navItem.text ? styles.activeLink : ""}
                   >
                     {navItem.text}
                   </Link>
@@ -93,7 +91,6 @@ function Nav() {
                 </li>
               ))}
             </ul>
-          </div>
           <div className={styles.naBarRight}>
             <div className={styles.btnContainer}>
               <Button href='/' text='Log in' btnType='navBtnii' />
@@ -112,10 +109,9 @@ function Nav() {
               <span className={styles.whiteBar}></span>
             </span>
           </div>
-        </div>
+          </div>
+        {/* </div999> */}
       </nav>
-      {/* </ContentPadding> */}
-      {/* </LayoutWrapper> */}
     </header>
   );
 }

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./Hero.module.css";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
@@ -16,8 +15,9 @@ const Hero = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <h1 lang='en' className={styles.heading}>
-                We transform vacation rental dreams into seamless online booking
+              <h1 className={styles.heading}>
+                We transform vacation rental dreams into seamless{" "}
+                <span className={styles.highlight}>online booking</span>{" "}
                 experiences.
               </h1>
               <p className={styles.copy}>

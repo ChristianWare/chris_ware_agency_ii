@@ -1,6 +1,5 @@
 .container {
-  padding: 5rem 0rem;
-  margin-bottom: 10rem;
+  padding: 5rem;
 }
 
 @media screen and (max-width: 870px) {

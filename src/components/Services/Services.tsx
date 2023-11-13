@@ -16,7 +16,6 @@ const Services = () => {
             headingText='Our Developers specialize in the following fields'
             copyText='Having a direct booking website for your vacation rental property instead of relying solely on Airbnb and VRBO can offer several benefits. Here are some of the advantages of having your own booking website:'
           />
-
           <div className={styles.bottom}>
             <div className={styles.one}>
               <Image src={Img1} alt='image' fill className={styles.img} />

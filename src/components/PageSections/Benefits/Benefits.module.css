@@ -36,7 +36,7 @@
   border-radius: 10px;
   background-color: var(--white);
   padding: 3rem;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); */
 }
 
 .span {
