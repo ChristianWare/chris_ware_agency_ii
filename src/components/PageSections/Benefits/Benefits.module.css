@@ -24,7 +24,6 @@
   z-index: 1;
   white-space: nowrap;
   line-height: 130%;
-  
 }
 
 .highlight::after {
@@ -37,7 +36,6 @@
   background-color: var(--green);
   z-index: -1;
 }
-
 
 .copy {
   margin-top: 2rem;
@@ -69,6 +67,7 @@
 .showBorder {
   border-radius: 10px;
   background-color: var(--green);
+  box-shadow: var(--shadow);
 }
 
 .icon {
