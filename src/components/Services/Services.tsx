@@ -25,13 +25,18 @@ const Services = () => {
                     alt='icon'
                     width={50}
                     height={50}
-                    className={styles.img}
+                    className={styles.icon}
                   />
                 </div>
                 <h3 className={styles.h3}>{x.service}</h3>
                 <p className={styles.copy}>{x.description}</p>
               </div>
             ))}
+            <div className={styles.container}>
+              <div className={styles.imgContainer}>
+                <Image src={Img1} alt='alt' fill className={styles.img} />
+              </div>
+            </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>
