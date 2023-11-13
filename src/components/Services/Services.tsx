@@ -1,4 +1,3 @@
-import { indvService } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Services.module.css";
@@ -6,6 +5,7 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 import Image from "next/image";
 import Img1 from "../../../public/images/img1.png";
 import Img2 from "../../../public/images/img2.png";
+import { features } from "@/lib/data";
 
 const Services = () => {
   return (
@@ -13,30 +13,25 @@ const Services = () => {
       <LayoutWrapper>
         <ContentPadding>
           <SectionHeading
-            headingText='Our Developers specialize in the following fields'
-            copyText='Having a direct booking website for your vacation rental property instead of relying solely on Airbnb and VRBO can offer several benefits. Here are some of the advantages of having your own booking website:'
+            headingText='Your personalized direct booking website includes the following features:'
+            copyText='Building an effective direct booking website for your vacation rental home is crucial for attracting and converting potential guests. Here are some key features and elements we will build for you:'
           />
           <div className={styles.bottom}>
-            <div className={styles.one}>
-              <Image src={Img1} alt='image' fill className={styles.img} />
-              <h3 className={styles.shOne}>Service One</h3>
-            </div>
-            <div className={styles.two}>
-              <Image src={Img2} alt='image' fill className={styles.img} />
-              <h3 className={styles.shTwo}>Service Two</h3>
-            </div>
-            <div className={styles.three}>
-              <Image src={Img1} alt='image' fill className={styles.img} />
-              <h3 className={styles.shThree}>Service Three</h3>
-            </div>
-            <div className={styles.four}>
-              <Image src={Img2} alt='image' fill className={styles.img} />
-              <h3 className={styles.shFour}>Service Four</h3>
-            </div>
-            <div className={styles.five}>
-              <Image src={Img1} alt='image' fill className={styles.img} />
-              <h3 className={styles.shFive}>Service Five</h3>
-            </div>
+            {features.map((x, index) => (
+              <div key={index} className={styles.container}>
+                <div className={styles.iconContainer}>
+                  <Image
+                    src={x.icon}
+                    alt='icon'
+                    width={50}
+                    height={50}
+                    className={styles.img}
+                  />
+                </div>
+                <h3 className={styles.h3}>{x.service}</h3>
+                <p className={styles.copy}>{x.description}</p>
+              </div>
+            ))}
           </div>
         </ContentPadding>
       </LayoutWrapper>

@@ -1,3 +1,6 @@
+import Check from "../../public/icons/calendar.png";
+
+
 export const benefits = [
   {
     heading: "Lower Fees",
@@ -31,29 +34,35 @@ export const benefits = [
   },
 ] as const;
 
-export const indvService = [
+export const features = [
   {
-    service: "Service 1",
+    service: "Availability Calendar",
+    description:
+      "Display an up-to-date availability calendar to help visitors see when the property is open for booking.",
+    icon: Check,
   },
   {
-    service: "Service 2",
+    service: "Booking and Reservation System",
+    description:
+      "Implement a user-friendly booking system that allows guests to check availability, select dates, and make reservations directly on your site.",
+    icon: Check,
   },
   {
-    service: "Service 3",
+    service: "Guest Reviews and Testimonials",
+    description:
+      "Showcase positive reviews and testimonials from previous guests to build trust and credibility.",
+    icon: Check,
   },
   {
-    service: "Service 4",
+    service: "FAQ Section",
+    description:
+      "Address common questions and concerns in a frequently asked questions (FAQ) section to assist potential guests.",
+    icon: Check,
   },
   {
-    service: "Service 5",
-  },
-  {
-    service: "Service 6",
-  },
-  {
-    service: "Service 7",
-  },
-  {
-    service: "Service 8",
+    service: "Admin Panel",
+    description:
+      "Admin panel will allow you to create, update, and delete listings on your persoanlized booking websites. You can aslo view the number of bookings, and make any updates as needed.",
+    icon: Check,
   },
 ] as const;
