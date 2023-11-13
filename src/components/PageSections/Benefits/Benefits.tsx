@@ -25,7 +25,8 @@ const Benefits = () => {
             </div>
             <div className={styles.right}>
               <h2 className={styles.heading}>
-                What are the benefits of a direct booking website?
+                What are the <span className={styles.highlight}> benefits</span>{" "}
+                of a direct booking website?
               </h2>
               <p className={styles.copy}>
                 Having a direct booking website for your vacation rental
@@ -44,10 +45,10 @@ const Benefits = () => {
                   onClick={() => toggle(i)}
                 >
                   <div className={styles.bcLeft}>
-                      <h3 className={styles.benefitHeading}>
-                        <span className={styles.index}>0{i + 1}</span>{" "}
-                        {benefit.heading}
-                      </h3>
+                    <h3 className={styles.benefitHeading}>
+                      <span className={styles.index}>0{i + 1}</span>{" "}
+                      {benefit.heading}
+                    </h3>
                     <div
                       className={
                         selected === i
