@@ -3,7 +3,7 @@ import { Inter, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import PreNav from "@/components/Nav/PreNav";
-
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +24,6 @@ const chakraPetch = Chakra_Petch({
   variable: "--chakraPetch",
 });
 
-
 export default function RootLayout({
   children,
 }: {
@@ -33,9 +32,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.variable} ${chakraPetch.variable}`}>
-        {/* <PreNav /> */}
+        <PreNav />
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

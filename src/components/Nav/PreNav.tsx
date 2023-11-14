@@ -24,7 +24,7 @@ const message = `Now accepting new clients for the month of ${currentMonth}!`;
 const PreNav = () => {
   return (
     <div className={styles.preNav}>
-      {message} <span className={styles.span}>Contact us</span>
+      {message}
     </div>
   );
 };
