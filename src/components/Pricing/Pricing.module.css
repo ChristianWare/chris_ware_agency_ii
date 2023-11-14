@@ -44,7 +44,7 @@
   border: 1px solid var(--border2);
   background-color: var(--tan);
   border-radius: 8px;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .planName {
@@ -114,6 +114,18 @@
   margin-top: 3rem;
 }
 
+
+@media screen and (max-width: 1268px) {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading,
+  .copy {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 1068px) {
   .top {
     margin-bottom: 0rem;
@@ -133,6 +145,13 @@
   .description,
   .includes {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .heading,
+  .copy {
+    width: 100%;
   }
 }
 
@@ -199,17 +218,4 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: var(--text);
-}
-
-@media screen and (max-width: 1268px) {
-  .heading,
-  .copy {
-    width: 60%;
-  }
-}
-@media screen and (max-width: 868px) {
-  .heading,
-  .copy {
-    width: 100%;
-  }
 }

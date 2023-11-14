@@ -12,7 +12,7 @@ const Services = () => {
         <ContentPadding>
           <div className={styles.top}>
             <SectionHeading
-              headingText='Your personalized direct booking website includes the following features:'
+              headingText='Three important fetaures every direct booking website should have:'
               copyText='Building an effective direct booking website for your vacation rental home is crucial for attracting and converting potential guests. Here are some key features and elements we will build for you:'
             />
           </div>

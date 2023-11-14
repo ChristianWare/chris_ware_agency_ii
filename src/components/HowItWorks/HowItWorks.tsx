@@ -10,8 +10,8 @@ const HowItWorks = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h2 className={styles.heading}>
-              Our process for creating Your personalized booking website <br /> in{" "}
-              <span className={styles.highlight}>4 easy steps</span> :
+              Our process for creating Your personalized booking website <br />{" "}
+              in <span className={styles.highlight}>4 easy steps</span> :
             </h2>
             <p className={styles.topText}>
               Our process is structured so that you get the most added value for
@@ -21,7 +21,9 @@ const HowItWorks = () => {
           <div className={styles.right}>
             {process.map((x, index) => (
               <div key={x.id} className={styles.card}>
-                <span className={styles.number}>0{`${index + 1}`}</span>
+                <div className={styles.indexContainer}>
+                  <span className={styles.number}>0{`${index + 1}`}</span>
+                </div>
                 <h3 className={styles.processName}>{x.processName}</h3>
                 <p className={styles.processDescription}>
                   {x.processDescription}

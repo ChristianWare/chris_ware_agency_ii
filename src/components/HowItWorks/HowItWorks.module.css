@@ -87,12 +87,26 @@
   padding: 4rem;
 }
 
+.indexContainer {
+  border-radius: 10px;
+  background-color: var(--green);
+  border: 1px solid var(--border);
+  width: fit-content;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
 .number {
+  padding: 1rem;
   font-size: 4.9rem;
   font-family: var(--chakraPetch);
   font-weight: 500;
   color: var(--tan2);
   display: block;
+  border-radius: 10px;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  line-height: 100%;
 }
 
 .processName {

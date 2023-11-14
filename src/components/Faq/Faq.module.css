@@ -97,8 +97,9 @@
 }
 
 .question {
-  font-size: 2rem;
-  text-transform: none;
+  font-size: 1.6rem;
+  /* text-transform: none; */
+  font-weight: 700;
   line-height: 120%;
   hyphens: auto;
 }
