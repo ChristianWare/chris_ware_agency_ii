@@ -17,13 +17,10 @@ const AboutSection = () => {
             </h2>
             <div className={styles.right}>
               <p className={styles.copy}>
-                At Nier Transportation, we&#39;re more than a car service;
-                we&#39;re your trusted partner in high end transportation. With
-                a passion for providing the best car service in the Phoenix
-                Metro area, we&#39;ve been serving the Arizona community for 25
-                years. Our mission is clear: to provide an unparalleled, high
-                end, late model car service near you while ensuring your
-                comfort, safety, and peace of mind.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                itaque corporis ullam accusantium voluptatum tempora commodi
+                doloribus aut, dolorum maiores repellendus iusto nobis placeat.
+                Dignissimos laborum atque fugiat soluta vel.
               </p>
               <div className={styles.iconTextContainer}>
                 <div className={styles.itextLeft}>
@@ -31,9 +28,7 @@ const AboutSection = () => {
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
-                    Our experienced and courteous drivers are the epitome of
-                    professionalism, providing you with a seamless journey from
-                    start to finish.
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aliquam voluptas! Dignissimos harum expedita a pariatur eum labore eaque odio est placeat error, nam eveniet, quas, ab quam atque quis.
                   </p>
                 </div>
               </div>
@@ -43,9 +38,7 @@ const AboutSection = () => {
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
-                    Whether you require airport transfers, city tours, or
-                    executive transportation, we have tailored services to suit
-                    every need.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis deserunt sed magni libero reiciendis beatae ipsam iste assumenda corrupti eius impedit nam voluptatum quo perspiciatis enim, a, nihil cumque ut!
                   </p>
                 </div>
               </div>
