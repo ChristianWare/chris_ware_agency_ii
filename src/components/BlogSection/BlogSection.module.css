@@ -77,6 +77,12 @@
   }
 }
 
+@media screen and (max-width: 968px) {
+  .btnContainer {
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 568px) {
   .mainContent {
     padding-top: 5rem;
@@ -89,6 +95,9 @@
   }
 
   .btnContainer {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin-top: 0rem;
   }
 }

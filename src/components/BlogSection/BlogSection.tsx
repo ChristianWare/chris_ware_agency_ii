@@ -1,4 +1,5 @@
 import BlogPreview from "../BlogPreview/BlogPreview";
+import Button from "../Button/Button";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./BlogSection.module.css";
@@ -30,6 +31,9 @@ const BlogSection = () => {
               <Button href='/blog' text='See all Articles' btnType='tertiary' />
             )}
           </div> */}
+        </div>
+        <div className={styles.btnContainer}>
+          <Button href='/about' text='All blogs' btnType='primary' />
         </div>
       </ContentPadding>
     </LayoutWrapper>

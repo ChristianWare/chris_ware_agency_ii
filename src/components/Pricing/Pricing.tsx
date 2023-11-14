@@ -4,6 +4,7 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Pricing.module.css";
 import { pricing } from "@/lib/data";
 import Check from "../../../public/icons/check.svg";
+import Button from "../Button/Button";
 
 const Pricing = () => {
   return (
@@ -44,6 +45,9 @@ const Pricing = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.btnContainer}>
+          <Button href='/about' text='More details' btnType='primary' />
         </div>
       </ContentPadding>
     </LayoutWrapper>
