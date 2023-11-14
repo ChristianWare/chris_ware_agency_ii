@@ -105,22 +105,15 @@
 .labelInputBox input,
 .labelInputBox textarea {
   border-radius: 5px;
-  border: 1px solid var(--border2);
+  border: 1px solid var(--border);
   height: 40px;
   width: 100%;
-  background-color: var(--tan);
+  background-color: var(--tan3);
   color: var(--text);
   padding: 1rem;
   width: 100%;
   font-weight: 400;
   inset: none;
-}
-
-.inputBox {
-  border-radius: 5px;
-  border: 1px solid var(--border2);
-  background-color: var(--green);
-  padding: 1rem;
 }
 
 .labelInputBox span {

@@ -7,7 +7,7 @@ const BlogSection = () => {
     <LayoutWrapper>
       <ContentPadding>
         <div>
-          <h2>Our Blog</h2>
+          <h2>Our Insight</h2>
         </div>
       </ContentPadding>
     </LayoutWrapper>
