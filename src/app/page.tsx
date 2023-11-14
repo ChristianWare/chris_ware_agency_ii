@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection/AboutSection";
+import BlogSection from "@/components/BlogSection/BlogSection";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
 import Hero from "@/components/Hero/Hero";
@@ -20,6 +21,7 @@ const HomePage = () => {
       <Pricing />
       <Faq />
       <ContactForm />
+      <BlogSection />
     </div>
   );
 };
