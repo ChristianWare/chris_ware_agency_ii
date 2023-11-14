@@ -7,3 +7,7 @@ export interface Button {
   btnType: string;
   target?: string;
 }
+
+export interface ImageGridProps {
+  reverse?: string;
+}

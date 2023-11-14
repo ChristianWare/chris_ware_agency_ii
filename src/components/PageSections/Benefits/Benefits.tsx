@@ -7,6 +7,7 @@ import { benefits } from "@/lib/data";
 import CircleImage from "@/components/Image/CircleImage/CircleImage";
 import { useState } from "react";
 import Arrow from "../../../../public/icons/downArrow.svg";
+import ImageGrid from "@/components/Image/ImageGrid/ImageGrid";
 
 const Benefits = () => {
   const [selected, setSelected] = useState(null);
@@ -21,7 +22,8 @@ const Benefits = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <CircleImage />
+              {/* <CircleImage /> */}
+              <ImageGrid reverse='reverse' />
             </div>
             <div className={styles.right}>
               <h2 className={styles.heading}>

@@ -1,13 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reverse {
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
 .top {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   gap: 1rem;
-  margin-bottom: 1rem;
 }
 
-.topLeft {
+.topLeft,
+.topRight,
+.bottom {
   font-size: 0;
+}
+
+.imgBox400,
+.imgBox100,
+.imgBox200,
+.imgBox275 {
+  padding: 0.6rem;
+  background-color: var(--green);
+  border-radius: 10px;
+  border: 1px solid var(--black);
 }
 
 .img400 {
@@ -15,6 +37,7 @@
   height: 275px;
   object-fit: contain;
   border-radius: 10px;
+  font-size: 0;
 }
 
 .topRight {
@@ -31,38 +54,27 @@
   margin-bottom: 1rem;
 }
 
-/* .square1 {
-  width: 90px;
-  height: 100px;
-  background-color: transparent;
-  border-radius: 10px;
-  border-top-right-radius: 100px;
-  box-shadow: var(--shadow);
-} */
-
 .bottom {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
 }
 
-/* .square2 {
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  border-radius: 10px;
-  border-bottom-left-radius: 100px;
-  box-shadow: var(--shadow);
-  
-} */
+.imgBox100 {
+  padding: 0.3rem;
+}
 
 .img100 {
   width: 100px;
   height: 100px;
   object-fit: contain;
   border-radius: 10px;
-  box-shadow: var(--shadow);
+  border: 3px solid var(--green);
+}
+
+.imgBox200 {
+  padding: 0.4rem;
 }
 
 .img200 {
@@ -70,8 +82,12 @@
   height: 200px;
   object-fit: contain;
   border-radius: 10px;
+  border: 3px solid var(--green);
+  /* box-shadow: var(--shadow); */
+}
 
-  box-shadow: var(--shadow);
+.imgBox275 {
+  padding: 0.3rem;
 }
 
 .img275 {
@@ -79,7 +95,8 @@
   height: 200px;
   object-fit: contain;
   border-radius: 10px;
-  box-shadow: var(--shadow);
+  border: 3px solid var(--green);
+  /* box-shadow: var(--shadow); */
 }
 
 @media screen and (max-width: 1000px) {
