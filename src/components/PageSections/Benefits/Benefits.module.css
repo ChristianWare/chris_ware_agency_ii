@@ -113,8 +113,9 @@
   transition: all 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1068px) {
   .content {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 10rem;
   }
 }

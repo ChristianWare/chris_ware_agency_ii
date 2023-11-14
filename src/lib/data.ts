@@ -1,4 +1,6 @@
-import Check from "../../public/icons/calendar.png";
+import Calendar from "../../public/icons/calendar.png";
+import Reviews from "../../public/icons/reviews.png";
+import Admin from "../../public/icons/admin.png";
 
 export const benefits = [
   {
@@ -38,20 +40,20 @@ export const features = [
     service: "Booking and Reservation System",
     description:
       "Implement a user-friendly booking system that allows guests to check availability, select dates, and make reservations directly on your site.",
-    icon: Check,
+    icon: Calendar,
   },
   {
     service: "Guest Reviews and Testimonials",
     description:
-      "Showcase positive reviews and testimonials from previous guests to build trust and credibility.",
-    icon: Check,
+      "Showcase positive reviews and testimonials from previous guests to build trust and credibility. Visitors will only be able to review once they've booked a stay on your property.",
+    icon: Reviews,
   },
 
   {
     service: "Admin Panel",
     description:
       "Admin panel will allow you to create, update, and delete listings on your persoanlized booking websites. You can aslo view the number of bookings, and make any updates as needed.",
-    icon: Check,
+    icon: Admin,
   },
 ] as const;
 

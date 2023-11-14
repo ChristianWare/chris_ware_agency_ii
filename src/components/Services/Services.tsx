@@ -3,7 +3,6 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Services.module.css";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import Image from "next/image";
-import Img1 from "../../../public/images/img1.png";
 import { features } from "@/lib/data";
 
 const Services = () => {
@@ -20,24 +19,21 @@ const Services = () => {
           <div className={styles.bottom}>
             {features.map((x, index) => (
               <div key={index} className={styles.container}>
-                <div className={styles.iconContainer}>
-                  <Image
-                    src={x.icon}
-                    alt='icon'
-                    width={30}
-                    height={30}
-                    className={styles.icon}
-                  />
+                <div className={styles.box}>
+                  <div className={styles.iconContainer}>
+                    <Image
+                      src={x.icon}
+                      alt='icon'
+                      width={40}
+                      height={40}
+                      className={styles.icon}
+                    />
+                  </div>
+                  <h3 className={styles.h3}>{x.service}</h3>
+                  <p className={styles.copy}>{x.description}</p>
                 </div>
-                <h3 className={styles.h3}>{x.service}</h3>
-                <p className={styles.copy}>{x.description}</p>
               </div>
             ))}
-            {/* <div className={styles.container}>
-              <div className={styles.imgContainer}>
-                <Image src={Img1} alt='alt' fill className={styles.img} />
-              </div>
-            </div> */}
           </div>
         </ContentPadding>
       </LayoutWrapper>
