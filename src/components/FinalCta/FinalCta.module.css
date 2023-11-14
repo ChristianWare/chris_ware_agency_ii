@@ -1,0 +1,18 @@
+.container {
+  background-color: var(--tan);
+  padding-top: 5rem;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media screen and (Max-width: 568px) {
+    .btnContainer {
+        flex-direction: column;
+    }
+}

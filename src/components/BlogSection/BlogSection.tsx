@@ -9,7 +9,9 @@ const BlogSection = () => {
       <ContentPadding>
         <div className={styles.mainContent}>
           <div className={styles.top}>
-            <h2 className={styles.heading}>our insights</h2>
+            <h2 className={styles.heading}>
+              our <span className={styles.highlight}>insights</span>
+            </h2>
             <p className={styles.copy}>
               Explore our blog for the latest updates, travel tips, and industry
               insights to enhance your black car service experience.

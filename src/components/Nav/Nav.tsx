@@ -67,7 +67,6 @@ function Nav() {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        {/* <div999 className={styles.navBarLeft}> */}
           <div className={styles.logo}>
             <Link href='/'>CWA</Link>
           </div>
@@ -110,7 +109,6 @@ function Nav() {
             </span>
           </div>
           </div>
-        {/* </div999> */}
       </nav>
     </header>
   );

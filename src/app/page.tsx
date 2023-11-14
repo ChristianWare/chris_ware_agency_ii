@@ -2,6 +2,7 @@ import AboutSection from "@/components/AboutSection/AboutSection";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
+import FinalCta from "@/components/FinalCta/FinalCta";
 import Hero from "@/components/Hero/Hero";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Benefits from "@/components/PageSections/Benefits/Benefits";
@@ -22,6 +23,7 @@ const HomePage = () => {
       <Faq />
       <ContactForm />
       <BlogSection />
+      <FinalCta />
     </div>
   );
 };
