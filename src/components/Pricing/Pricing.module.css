@@ -34,9 +34,17 @@
 
 .card {
   background-color: var(--tan);
+  border: 1px solid var(--black);
+  background-color: var(--green);
   border-radius: 8px;
-  border: 1px solid var(--border);
-  padding: 3rem;
+  padding: 1rem;
+}
+
+.box {
+  border: 1px solid var(--border2);
+  background-color: var(--tan);
+  border-radius: 8px;
+  padding: 1rem;
 }
 
 .planName {
