@@ -3,6 +3,12 @@
   position: relative;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .top {
   margin-bottom: 5rem;
   display: flex;
@@ -12,12 +18,7 @@
 }
 
 .topText {
-  font-family: var(--azeretMono);
-  font-size: 1.9rem;
-  text-align: center;
   opacity: 0.7;
-  font-weight: 400;
-  width: 70%;
   margin-top: 1rem;
 }
 
@@ -25,43 +26,21 @@
   margin-bottom: 2rem;
 }
 
-.heading {
-  text-align: center;
-}
-
 .highlight {
-  background-color: var(--navy);
-  color: var(--secondary);
-  padding: 0.05rem 1rem;
-  border-radius: 10px;
-  user-select: none;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  line-height: 130%;
 }
 
-.container::after {
+.highlight::after {
+  position: absolute;
   content: "";
-  top: -13%;
+  bottom: 7px;
   left: 0;
-  position: absolute;
-  filter: blur(8rem);
-  transform: translateZ(0);
-  border-radius: 50%;
-  width: 150px;
-  height: 100px;
-  background-color: var(--accent1);
-  z-index: -1;
-}
-
-.container::before {
-  content: "";
-  bottom: -20%;
-  right: 10%;
-  position: absolute;
-  filter: blur(8rem);
-  transform: translateZ(0);
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  background-color: var(--accent2);
+  width: 100%;
+  height: 20%;
+  background-color: var(--green);
   z-index: -1;
 }
 
@@ -76,7 +55,6 @@
 
 .qaContainer {
   padding: 3rem;
-  background-color: var(--border2);
   border: 1px solid var(--border);
   border-radius: 8px;
   width: 100%;
@@ -102,39 +80,38 @@
 }
 
 .icon {
-  color: var(--navy);
+  color: var(--black);
+  opacity: 0.7;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 
 .iconFlip {
-  transform: rotate(135deg);
-  color: var(--navy);
+  transform: rotate(180deg);
+  color: var(--black);
+  opacity: 0.7;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .question {
-  color: var(--navy);
-  opacity: 0.7;
+  /* opacity: 0.7; */
   font-size: 2rem;
-  text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
   line-height: 120%;
   hyphens: auto;
 }
 
+.index {
+  color: var(--tan2);
+  margin-right: 1rem;
+}
+
 .answer {
-  color: var(--navy);
-  font-family: var(--outfit);
   opacity: 0.7;
   margin-top: 1.5rem;
   hyphens: auto;
-  width: 90%;
-
-  font-family: var(--outfit);
-  opacity: 0.7;
-  background-color: var(--gray);
+  width: 100%;
   border: 1px solid var(--border);
   padding: 2rem;
   border-radius: 10px;

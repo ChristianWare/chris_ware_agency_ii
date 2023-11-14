@@ -23,7 +23,8 @@ const Faq = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <h2 className={styles.heading}>
-              You may have <span className={styles.highlight}>wondered</span> 🧐
+              frequently asked{" "}
+              <span className={styles.highlight}>questions </span>
             </h2>
             <p className={styles.topText}>
               Here are some commonly asked questions and their answers below. If
@@ -39,12 +40,13 @@ const Faq = () => {
               >
                 <div className={styles.headingArrowContainer}>
                   <h3 className={styles.question} lang='en'>
+                    <span className={styles.index}>0{i + 1} </span>
                     {x.question}
                   </h3>
                   {selected === i ? (
-                    <Arrow className={styles.iconFlip} width={30} height={30} />
+                    <Arrow className={styles.iconFlip} width={25} height={25} />
                   ) : (
-                    <Arrow className={styles.icon} width={30} height={30} />
+                    <Arrow className={styles.icon} width={25} height={25} />
                   )}
                 </div>
                 <div

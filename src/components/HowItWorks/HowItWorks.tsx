@@ -10,8 +10,8 @@ const HowItWorks = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h2 className={styles.heading}>
-              Your website <br /> in{" "}
-              <span className={styles.highlight}>4 steps</span>
+              Our process for creating Your personalized booking website <br /> in{" "}
+              <span className={styles.highlight}>4 easy steps</span> :
             </h2>
             <p className={styles.topText}>
               Our process is structured so that you get the most added value for
