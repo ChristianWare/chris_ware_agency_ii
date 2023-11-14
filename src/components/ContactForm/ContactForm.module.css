@@ -97,7 +97,6 @@
 }
 
 .labelInputBox label {
-  font-family: var(--outfit);
   font-weight: 400;
   color: var(--text);
   padding-left: 0.3rem;
@@ -106,7 +105,7 @@
 .labelInputBox input,
 .labelInputBox textarea {
   border-radius: 5px;
-  border: 1px solid var(--border3);
+  border: 1px solid var(--border2);
   height: 40px;
   width: 100%;
   background-color: var(--tan);
@@ -117,8 +116,14 @@
   inset: none;
 }
 
+.inputBox {
+  border-radius: 5px;
+  border: 1px solid var(--border2);
+  background-color: var(--green);
+  padding: 1rem;
+}
+
 .labelInputBox span {
-  font-family: var(--outfit);
   font-size: 1.4rem;
   color: rgb(140, 139, 139);
 }
