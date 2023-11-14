@@ -92,7 +92,7 @@
   background-color: var(--green);
   border: 1px solid var(--border);
   width: fit-content;
-  padding: .5rem;
+  padding: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -115,7 +115,6 @@
 }
 
 .processDescription {
-  color: var(--3);
   opacity: 0.7;
   margin-top: 3rem;
   font-family: var(--outfit);
@@ -142,11 +141,16 @@
     justify-content: center;
   }
 
+  .left::after {
+    top: -250px;
+    left: 40%;
+    width: 200px;
+    height: 200px;
+  }
+
   .rtContainer {
     margin-top: 3rem;
     margin-bottom: -8rem;
-    /* position: relative; */
-    /* top: 75px; */
   }
 }
 
