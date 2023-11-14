@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <div>
       <Hero />
-      <AboutSection />
+      {/* <AboutSection />
       <Benefits />
       <Services />
       <Portfolio />
@@ -23,7 +23,7 @@ const HomePage = () => {
       <Faq />
       <ContactForm />
       <BlogSection />
-      <FinalCta />
+      <FinalCta /> */}
     </div>
   );
 };
