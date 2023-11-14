@@ -4,6 +4,7 @@ import styles from "./Services.module.css";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import Image from "next/image";
 import { features } from "@/lib/data";
+import CircleImage from "../Image/CircleImage/CircleImage";
 
 const Services = () => {
   return (
@@ -11,10 +12,8 @@ const Services = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <SectionHeading
-              headingText='Three important fetaures every direct booking website should have:'
-              copyText='Building an effective direct booking website for your vacation rental home is crucial for attracting and converting potential guests. Here are some key features and elements we will build for you:'
-            />
+            <CircleImage />
+            <SectionHeading headingText='Our direct booking sites include:' />
           </div>
           <div className={styles.bottom}>
             {features.map((x, index) => (

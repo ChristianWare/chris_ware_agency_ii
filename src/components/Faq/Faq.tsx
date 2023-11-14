@@ -44,9 +44,9 @@ const Faq = () => {
                     {x.question}
                   </h3>
                   {selected === i ? (
-                    <Arrow className={styles.iconFlip} width={25} height={25} />
+                    <Arrow className={styles.iconFlip} width={20} height={20} />
                   ) : (
-                    <Arrow className={styles.icon} width={25} height={25} />
+                    <Arrow className={styles.icon} width={20} height={20} />
                   )}
                 </div>
                 <div

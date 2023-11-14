@@ -1,6 +1,8 @@
 .content {
   background-color: var(--tan);
+  padding-top: 5rem;
 }
+
 
 .bottom {
   display: grid;

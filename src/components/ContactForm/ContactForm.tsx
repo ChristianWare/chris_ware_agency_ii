@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./ContactForm.module.css";
 import { useState } from "react";
-import Img from "../../../public/images/img1.png";
+import CircleImage from "../Image/CircleImage/CircleImage";
+import Check from "../../../public/icons/check.svg";
 
 const ContactForm = () => {
   const [inputs, setInputs] = useState({
@@ -26,22 +26,41 @@ const ContactForm = () => {
     }));
   };
   return (
-    <LayoutWrapper>
-      <ContentPadding>
-        <div className={styles.content}>
-          <div className={styles.top}>
-            <h2>
-              <span className={styles.highlight}>Contact</span> us today
-            </h2>
-            <p className={styles.topText}>
-              Feel free to contact us any time. We will glady answer any
-              questions you have. We can&#39;t wait to hear from you!
-            </p>
-          </div>
+    <div className={styles.content}>
+      <LayoutWrapper>
+        <ContentPadding>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              <div className={styles.imgContainer}>
-                <Image src={Img} alt='image' fill className={styles.img} />
+              <div className={styles.circleContainer}>
+                <CircleImage />
+              </div>
+              <h2 className={styles.heading}>
+                Request a <span className={styles.highlight}>Demo</span>
+              </h2>
+              <p className={styles.copy}>
+                Feel free to contact us any time. We will glady answer any
+                questions you have. We can&#39;t wait to hear from you!
+              </p>
+              <div className={styles.checkContainerBox}>
+                <div className={styles.checkContainer}>
+                  <Check width={30} height={30} className={styles.icon} />
+                  <p className={styles.featureText}>
+                    See a live demonsration of how the platform works.
+                  </p>
+                </div>
+                <div className={styles.checkContainer}>
+                  <Check width={30} height={30} className={styles.icon} />
+                  <p className={styles.featureText}>
+                    Have an overview of our flexible payment options.
+                  </p>
+                </div>
+                <div className={styles.checkContainer}>
+                  <Check width={30} height={30} className={styles.icon} />
+                  <p className={styles.featureText}>
+                    Get tailored offer based on your needs and number of
+                    employees.
+                  </p>
+                </div>
               </div>
             </div>
             <div className={styles.right}>
@@ -151,10 +170,9 @@ const ContactForm = () => {
               </form>
             </div>
           </div>
-        </div>
-      </ContentPadding>
-      <div>ContactForm</div>
-    </LayoutWrapper>
+        </ContentPadding>
+      </LayoutWrapper>
+    </div>
   );
 };
 export default ContactForm;

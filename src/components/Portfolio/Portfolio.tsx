@@ -14,7 +14,6 @@ const Portfolio = () => {
         <div className={styles.top}>
           <SectionHeading
             headingText='Case Studies'
-            copyText='Some examples of our previous work'
           />
         </div>
         {caseStudies.map((x, index) => (

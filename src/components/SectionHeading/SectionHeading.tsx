@@ -3,7 +3,7 @@ import styles from "./SectionHeading.module.css";
 
 interface Props {
   headingText: string;
-  copyText: string;
+  copyText?: string;
 }
 
 const SectionHeading: FC<Props> = ({ headingText, copyText }) => {
