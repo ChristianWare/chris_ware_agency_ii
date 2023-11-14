@@ -54,11 +54,17 @@
   z-index: -1;
 }
 
-.copy {
+.copy,
+.copyii {
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: var(--text);
   width: 90%;
+  
+}
+
+.copyii {
+  font-weight: 400;
 }
 
 .imgContainer {

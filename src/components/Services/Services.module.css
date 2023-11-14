@@ -13,16 +13,9 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   border: 1px solid var(--border2);
   background-color: var(--black);
-}
-
-.iconContainer {
-  width: fit-content;
-  padding: 4rem;
-  border: 1px solid var(--text);
-  border-radius: 10px;
 }
 
 .h3 {
@@ -44,7 +37,7 @@
 .img {
   position: absolute;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 1068px) {

@@ -4,7 +4,6 @@ import styles from "./Services.module.css";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import Image from "next/image";
 import Img1 from "../../../public/images/img1.png";
-import Img2 from "../../../public/images/img2.png";
 import { features } from "@/lib/data";
 
 const Services = () => {
@@ -12,10 +11,12 @@ const Services = () => {
     <div className={styles.content}>
       <LayoutWrapper>
         <ContentPadding>
-          <SectionHeading
-            headingText='Your personalized direct booking website includes the following features:'
-            copyText='Building an effective direct booking website for your vacation rental home is crucial for attracting and converting potential guests. Here are some key features and elements we will build for you:'
-          />
+          <div className={styles.top}>
+            <SectionHeading
+              headingText='Your personalized direct booking website includes the following features:'
+              copyText='Building an effective direct booking website for your vacation rental home is crucial for attracting and converting potential guests. Here are some key features and elements we will build for you:'
+            />
+          </div>
           <div className={styles.bottom}>
             {features.map((x, index) => (
               <div key={index} className={styles.container}>
@@ -23,8 +24,8 @@ const Services = () => {
                   <Image
                     src={x.icon}
                     alt='icon'
-                    width={50}
-                    height={50}
+                    width={30}
+                    height={30}
                     className={styles.icon}
                   />
                 </div>
@@ -32,11 +33,11 @@ const Services = () => {
                 <p className={styles.copy}>{x.description}</p>
               </div>
             ))}
-            <div className={styles.container}>
+            {/* <div className={styles.container}>
               <div className={styles.imgContainer}>
                 <Image src={Img1} alt='alt' fill className={styles.img} />
               </div>
-            </div>
+            </div> */}
           </div>
         </ContentPadding>
       </LayoutWrapper>

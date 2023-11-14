@@ -58,15 +58,12 @@
 }
 .benefitContainer:hover,
 .show {
-  background-color: var(--green);
-  border-radius: 10px;
   color: var(--black);
   transition: 0.2s all ease-in;
 }
 
 .showBorder {
   border-radius: 10px;
-  background-color: var(--green);
   box-shadow: var(--shadow);
 }
 
@@ -97,8 +94,10 @@
 }
 
 .benefitDesc {
-  color: var(--text2);
+  color: var(--text);
   margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .icon {

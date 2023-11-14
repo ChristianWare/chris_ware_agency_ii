@@ -35,12 +35,6 @@ export const benefits = [
 
 export const features = [
   {
-    service: "Availability Calendar",
-    description:
-      "Display an up-to-date availability calendar to help visitors see when the property is open for booking.",
-    icon: Check,
-  },
-  {
     service: "Booking and Reservation System",
     description:
       "Implement a user-friendly booking system that allows guests to check availability, select dates, and make reservations directly on your site.",
@@ -52,12 +46,7 @@ export const features = [
       "Showcase positive reviews and testimonials from previous guests to build trust and credibility.",
     icon: Check,
   },
-  {
-    service: "FAQ Section",
-    description:
-      "Address common questions and concerns in a frequently asked questions (FAQ) section to assist potential guests.",
-    icon: Check,
-  },
+
   {
     service: "Admin Panel",
     description:
@@ -109,7 +98,6 @@ export const process = [
       "In a personal workshop, I'll show you how to manage your content and add new ones. You don't need any technical know-how for this. Ready? Then we'll put your website live together and have a party.",
   },
 ] as const;
-
 
 export const pricing = [
   {

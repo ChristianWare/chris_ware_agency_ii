@@ -30,7 +30,7 @@ const AboutSection = () => {
                   <Insta width={25} height={25} />
                 </div>
                 <div className={styles.itexRight}>
-                  <p className={styles.copy}>
+                  <p className={styles.copyii}>
                     Our experienced and courteous drivers are the epitome of
                     professionalism, providing you with a seamless journey from
                     start to finish.
@@ -42,7 +42,7 @@ const AboutSection = () => {
                   <Insta width={25} height={25} />
                 </div>
                 <div className={styles.itexRight}>
-                  <p className={styles.copy}>
+                  <p className={styles.copyii}>
                     Whether you require airport transfers, city tours, or
                     executive transportation, we have tailored services to suit
                     every need.
@@ -54,7 +54,7 @@ const AboutSection = () => {
                   <Insta width={25} height={25} />
                 </div>
                 <div className={styles.itexRight}>
-                  <p className={styles.copy}>
+                  <p className={styles.copyii}>
                     Our fleet of meticulously maintained black cars exudes class
                     and style, ensuring that you arrive at your destination not
                     just comfortably, but with an air of distinction.

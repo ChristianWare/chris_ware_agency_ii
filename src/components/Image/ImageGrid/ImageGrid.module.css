@@ -31,14 +31,14 @@
   margin-bottom: 1rem;
 }
 
-.square1 {
+/* .square1 {
   width: 90px;
   height: 100px;
   background-color: transparent;
   border-radius: 10px;
   border-top-right-radius: 100px;
   box-shadow: var(--shadow);
-}
+} */
 
 .bottom {
   display: flex;
@@ -47,7 +47,7 @@
   gap: 1rem;
 }
 
-.square2 {
+/* .square2 {
   width: 100px;
   height: 100px;
   background-color: transparent;
@@ -55,7 +55,7 @@
   border-bottom-left-radius: 100px;
   box-shadow: var(--shadow);
   
-}
+} */
 
 .img100 {
   width: 100px;
