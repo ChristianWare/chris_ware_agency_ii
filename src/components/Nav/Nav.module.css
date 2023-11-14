@@ -25,12 +25,9 @@
 }
 
 .logo {
-  font-family: var(--chakraPetch);
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--black);
-  display: flex;
-  gap: 0.5rem;
 }
 
 .icon {

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
-import PreNav from "@/components/Nav/PreNav";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
@@ -32,7 +31,6 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.variable} ${chakraPetch.variable}`}>
-        <PreNav />
         <Nav />
         {children}
         <Footer />
