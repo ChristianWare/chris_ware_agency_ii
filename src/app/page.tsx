@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection/AboutSection";
+import Faq from "@/components/Faq/Faq";
 import Hero from "@/components/Hero/Hero";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Benefits from "@/components/PageSections/Benefits/Benefits";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Portfolio />
       <HowItWorks />
       <Pricing />
+      <Faq />
     </div>
   );
 };
