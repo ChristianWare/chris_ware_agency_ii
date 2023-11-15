@@ -86,6 +86,7 @@
   background-color: var(--tan);
   border-radius: 8px;
   padding: 2rem;
+  height: 100%;
 }
 
 .planName {

@@ -112,10 +112,9 @@ export const process = [
 export const pricing = [
   {
     id: 26,
-    plan: "Marketing",
-    description:
-      "Attract potential customers to generate leads and drive sales",
-    price: 150,
+    plan: "Starter",
+    description: "1 to 10 properties",
+    price: 250,
     includes: [
       {
         id: 26.1,
@@ -123,24 +122,24 @@ export const pricing = [
       },
       {
         id: 26.2,
-        feature: "Unlimited edits",
+        feature: "Admin Dashboard",
       },
       {
         id: 26.3,
-        feature: "Includes hosting",
+        feature: "Payment Processing",
       },
       {
         id: 27.3,
-        feature: "6 blog articles",
+        feature: "Blog Articles",
       },
     ],
     btnType: "primary",
   },
   {
     id: 27,
-    plan: "Booking",
-    description: "Your own customized online store to sell products & services",
-    price: 250,
+    plan: "Advanced",
+    description: "10 to 20 properties",
+    price: 350,
     includes: [
       {
         id: 26.1,
@@ -163,10 +162,9 @@ export const pricing = [
   },
   {
     id: 28,
-    plan: "Custom Plan",
-    description:
-      "A website tailored to your specific wants & needs to suit your business",
-    price: "Price",
+    plan: "Custom",
+    description: "20 or more properties",
+    price: "Custom",
     includes: [
       {
         id: 28.1,
