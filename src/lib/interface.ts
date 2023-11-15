@@ -11,3 +11,10 @@ export interface Button {
 export interface ImageGridProps {
   reverse?: string;
 }
+
+export interface PageIntroProps {
+  heading: string;
+  highlight: string;
+  copy: string;
+  src: StaticImageData;
+}
