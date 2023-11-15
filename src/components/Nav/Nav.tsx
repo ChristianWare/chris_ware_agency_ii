@@ -15,7 +15,7 @@ function Nav() {
   useEffect(() => {
     const body = document.querySelector("body");
     if (body) {
-      if (window.innerWidth <= 768 && isOpen) {
+      if (window.innerWidth <= 870 && isOpen) {
         body.style.overflow = "hidden";
       } else {
         body.style.overflow = "auto";
