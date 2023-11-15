@@ -1,6 +1,8 @@
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./CompHist.module.css";
+import Image from "next/image";
+import Img from "../../../public/images/img2.png";
 
 const CompHist = () => {
   return (
@@ -13,11 +15,10 @@ const CompHist = () => {
               <span className={styles.highlight}>unparalleled</span> web
               development service
             </h2>
-          </div>
-          <div className={styles.right}>
+            <br />
             <p className={styles.copy}>
               Our journey began with a simple mission - to make document
-              legalization accessible and effortless for all. A group of legal
+              legalization accessibl e and effortless for all. A group of legal
               enthusiasts saw the difficulties people faced with the notary
               process and decided to do something about it. They envisioned a
               service that would bring the notary to the client, irrespective of
@@ -37,6 +38,11 @@ const CompHist = () => {
               clients, eliminating the hurdles of traditional notary services
               with our innovative solutions.
             </p>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.imgContainer}>
+              <Image src={Img} alt='img' fill className={styles.img} />
+            </div>
           </div>
         </div>
       </ContentPadding>

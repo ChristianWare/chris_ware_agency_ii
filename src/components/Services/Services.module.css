@@ -3,7 +3,6 @@
   padding-top: 5rem;
 }
 
-
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -12,10 +11,10 @@
 
 .container {
   border-radius: 10px;
-  padding: 1rem;
-  border: 1px solid var(--border2);
+  padding: .8rem;
   border-radius: 10px;
-  background-color: #BBBBB5;
+  background-color: #bbbbb5;
+  border: 1px solid var(--text);
 }
 
 .box {
