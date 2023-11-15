@@ -43,6 +43,15 @@ const CompHist = () => {
             <div className={styles.imgContainer}>
               <Image src={Img} alt='img' fill className={styles.img} />
             </div>
+            <div className={styles.imgContainer}>
+              <Image src={Img} alt='img' fill className={styles.img} />
+            </div>
+            <div className={styles.imgContainer}>
+              <Image src={Img} alt='img' fill className={styles.img} />
+            </div>
+            <div className={styles.imgContainer}>
+              <Image src={Img} alt='img' fill className={styles.img} />
+            </div>
           </div>
         </div>
       </ContentPadding>
