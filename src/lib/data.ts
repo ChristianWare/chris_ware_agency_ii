@@ -1,7 +1,14 @@
 import Calendar from "../../public/icons/calendar.png";
 import Reviews from "../../public/icons/reviews.png";
 import Admin from "../../public/icons/admin.png";
-import Values from "../../public/icons/calendar.png";
+import Next from "../../public/icons/nextjs.png";
+import Mongo from "../../public/icons/mongodb.png";
+import Cloudinary from "../../public/icons/cloudinary.png";
+import NextAuth from "../../public/icons/nextAuth.png";
+import Node from "../../public/icons/nodejs.png";
+import Stripe from "../../public/icons/stripe.png";
+import Vercel from "../../public/icons/vercel.png";
+import Google from "../../public/icons/google.png";
 
 export const benefits = [
   {
@@ -351,18 +358,58 @@ export const footer = [
 
 export const values = [
   {
-    icon: Values,
     value: "Client Focus",
     desc: "Our clients are at the heart of everything we do. We strive to exceed their expectations with each service.",
   },
   {
-    icon: Values,
     value: "Integrity",
     desc: "Honesty and transparency guide our actions, helping us build lasting relationships with our clients.",
   },
   {
-    icon: Values,
     value: "Innovation",
     desc: "We embrace change and innovation, constantly exploring better ways to serve our clients.",
+  },
+] as const;
+
+export const techStack = [
+  {
+    icon: Next,
+    name: "Next.js",
+    desc: "A React-based open-source framework that enables the development of server-rendered, statically generated, or single-page web applications with a focus on simplicity and performance.",
+  },
+  {
+    icon: Mongo,
+    name: "Mongo DB",
+    desc: "MongoDB is a cross-platform, document-oriented NoSQL database that provides high performance, scalability, and flexibility for handling and organizing data in a JSON-like BSON format.",
+  },
+  {
+    icon: Cloudinary,
+    name: "Cloudinary",
+    desc: "Cloudinary is a cloud-based image and video management platform that offers a comprehensive suite of tools for uploading, storing, optimizing, and delivering media assets, with features such as dynamic image and video transformations.",
+  },
+  {
+    icon: NextAuth,
+    name: "Next Auth",
+    desc: "An authentication library for Next.js applications that simplifies the implementation of various authentication providers, including OAuth, JWT, and others, offering a seamless and customizable solution for user authentication.",
+  },
+  {
+    icon: Node,
+    name: "Node",
+    desc: "Node.js is an open-source, server-side JavaScript runtime environment that allows developers to execute JavaScript code on the server, enabling the development of scalable and high-performance web applications.",
+  },
+  {
+    icon: Stripe,
+    name: "Stripe",
+    desc: "Stripe is a popular online payment processing platform that provides APIs and tools for businesses to securely accept and manage payments over the internet, supporting various payment methods and currencies.",
+  },
+  {
+    icon: Vercel,
+    name: "Vercel",
+    desc: "Vercel is a cloud platform for serverless deployment that specializes in hosting Jamstack websites and serverless functions, providing a seamless and efficient way to deploy and scale web applications with ease.",
+  },
+  {
+    icon: Google,
+    name: "Google Analytics",
+    desc: "A web analytics service that tracks and reports website traffic, providing insights into user behavior, demographics, and other metrics to help better understand and optimize online presence.",
   },
 ] as const;

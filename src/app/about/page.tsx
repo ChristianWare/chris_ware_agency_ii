@@ -7,6 +7,7 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
 import Owner from "@/components/Owner/Owner";
 import Values from "@/components/Values/Values";
+import TechStack from "@/components/TechStack/TechStack";
 
 const AboutPage = () => {
   return (
@@ -20,6 +21,7 @@ const AboutPage = () => {
       <CompHist />
       <Owner />
       <Values />
+      <TechStack />
       <Faq />
       <ContactForm />
       <BlogSection />
