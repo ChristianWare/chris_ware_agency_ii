@@ -1,3 +1,5 @@
+'use client'
+
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Services.module.css";

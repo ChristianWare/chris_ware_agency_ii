@@ -54,14 +54,14 @@ export const features = [
     service: "Guest Reviews and Testimonials",
     description:
       "Showcase positive reviews and testimonials from previous guests to build trust and credibility. Visitors will only be able to review once they've booked a stay on your property.",
-    icon: Reviews,
+    icon: Calendar,
   },
 
   {
     service: "Admin Panel",
     description:
       "Admin panel will allow you to create, update, and delete listings on your persoanlized booking websites. You can aslo view the number of bookings, and make any updates as needed.",
-    icon: Admin,
+    icon: Calendar,
   },
 ] as const;
 
