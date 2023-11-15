@@ -1,6 +1,6 @@
 .content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   height: 100%;
 }
@@ -35,7 +35,6 @@
   background-color: var(--green);
   z-index: -1;
 }
-
 
 .copy {
   width: 60%;

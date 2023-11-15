@@ -99,17 +99,18 @@
 
 .labelInputBox label {
   font-weight: 400;
-  color: var(--text);
+  color: var(--black);
+  opacity: 0.8;
   padding-left: 0.3rem;
 }
 
 .labelInputBox input,
 .labelInputBox textarea {
   border-radius: 5px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border3);
   height: 40px;
   width: 100%;
-  background-color: var(--tan3);
+  background-color: var(--tan);
   color: var(--text);
   padding: 1rem;
   width: 100%;

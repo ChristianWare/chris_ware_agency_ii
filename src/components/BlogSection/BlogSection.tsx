@@ -23,7 +23,6 @@ const BlogSection = () => {
             <BlogPreview />
             <BlogPreview />
             <BlogPreview />
-            <BlogPreview />
             {/* ))} */}
           </div>
           {/* <div className={styles.btnContainer}>

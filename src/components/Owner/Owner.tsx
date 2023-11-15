@@ -27,6 +27,12 @@ const Owner = () => {
                 envisioned a service that would bring the notary to the client,
                 irrespective of location, ensuring comfort and convenience.
               </p>
+              <br />
+              <p className={styles.copy}>
+                Our journey began with a simple mission - to make document
+                legalization accessibl e and effortless for all. A group of
+                legal enthusiasts.
+              </p>
             </div>
           </div>
         </div>
