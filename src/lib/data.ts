@@ -375,7 +375,7 @@ export const techStack = [
   {
     icon: Next,
     name: "Next.js",
-    desc: "A React-based open-source framework that enables the development of server-rendered, statically generated, or single-page web applications with a focus on simplicity and performance.",
+    desc: "A React-based open-source framework that enables the development of server-rendered, or statically generated web applications with a focus on simplicity and performance.",
   },
   {
     icon: Mongo,
@@ -385,17 +385,17 @@ export const techStack = [
   {
     icon: Cloudinary,
     name: "Cloudinary",
-    desc: "Cloudinary is a cloud-based image and video management platform that offers a comprehensive suite of tools for uploading, storing, optimizing, and delivering media assets, with features such as dynamic image and video transformations.",
+    desc: "Cloudinary is a cloud-based image and video management platform that offers a comprehensive suite of tools for uploading, storing, optimizing, and delivering media assets.",
   },
   {
     icon: NextAuth,
     name: "Next Auth",
-    desc: "An authentication library for Next.js applications that simplifies the implementation of various authentication providers, including OAuth, JWT, and others, offering a seamless and customizable solution for user authentication.",
+    desc: "An authentication library for Next.js applications that simplifies the implementation of various authentication providers, offering a seamless and customizable solution for user authentication.",
   },
   {
     icon: Node,
     name: "Node",
-    desc: "Node.js is an open-source, server-side JavaScript runtime environment that allows developers to execute JavaScript code on the server, enabling the development of scalable and high-performance web applications.",
+    desc: "Node.js is a server-side JavaScript runtime environment that allows developers to execute JavaScript code on the server, enabling the development of scalable and high-performance web applications.",
   },
   {
     icon: Stripe,
