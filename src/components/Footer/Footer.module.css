@@ -97,7 +97,7 @@
   grid-template-columns: repeat(1, 1fr);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 .heading {
@@ -246,7 +246,7 @@
   }
 
   .arrow {
-    color: var(--cream);
+    color: var(--black);
     font-size: 2rem;
     transition: all 0.3s ease-in-out;
   }
