@@ -5,6 +5,7 @@ import FinalCta from "@/components/FinalCta/FinalCta";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
+import Owner from "@/components/Owner/Owner";
 
 const AboutPage = () => {
   return (
@@ -16,6 +17,7 @@ const AboutPage = () => {
         src={Img}
       />
       <CompHist />
+      <Owner />
       <Faq />
       <ContactForm />
       <BlogSection />
