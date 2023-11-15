@@ -1,6 +1,7 @@
 import Calendar from "../../public/icons/calendar.png";
 import Reviews from "../../public/icons/reviews.png";
 import Admin from "../../public/icons/admin.png";
+import Values from "../../public/icons/calendar.png";
 
 export const benefits = [
   {
@@ -345,5 +346,23 @@ export const footer = [
         href: "/contact",
       },
     ],
+  },
+] as const;
+
+export const values = [
+  {
+    icon: Values,
+    value: "Client Focus",
+    desc: "Our clients are at the heart of everything we do. We strive to exceed their expectations with each service.",
+  },
+  {
+    icon: Values,
+    value: "Integrity",
+    desc: "Honesty and transparency guide our actions, helping us build lasting relationships with our clients.",
+  },
+  {
+    icon: Values,
+    value: "Innovation",
+    desc: "We embrace change and innovation, constantly exploring better ways to serve our clients.",
   },
 ] as const;

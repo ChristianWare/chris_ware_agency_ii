@@ -1,0 +1,174 @@
+.top {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heading {
+  text-align: center;
+  width: 60%;
+}
+
+.copy {
+  text-align: center;
+  width: 50%;
+  color: var(--text);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight {
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  line-height: 130%;
+}
+
+.highlight::after {
+  position: absolute;
+  content: "";
+  bottom: 7px;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: var(--green);
+  z-index: -1;
+}
+
+.copy {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.top {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.topText {
+  font-family: var(--azeretMono);
+  font-size: 1.9rem;
+  text-align: center;
+  font-weight: 400;
+  width: 70%;
+  margin-top: 1rem;
+}
+
+.lableContainer {
+  margin-bottom: 2rem;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--tan);
+  border: 1px solid var(--border2);
+  background-color: var(--gray);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border2);
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+}
+
+.value {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.icon {
+  color: var(--black);
+  margin-bottom: 2rem;
+  line-height: 0;
+}
+
+.description {
+  color: var(--text);
+  margin: 2rem 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1268px) {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading,
+  .copy {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .top {
+    /* margin-bottom: 0rem; */
+  }
+
+  .topText {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .value,
+  .price,
+  .description,
+  .includes {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .btnContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .heading,
+  .copy {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

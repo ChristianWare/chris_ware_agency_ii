@@ -6,6 +6,7 @@ import BlogSection from "@/components/BlogSection/BlogSection";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
 import Owner from "@/components/Owner/Owner";
+import Values from "@/components/Values/Values";
 
 const AboutPage = () => {
   return (
@@ -18,6 +19,7 @@ const AboutPage = () => {
       />
       <CompHist />
       <Owner />
+      <Values />
       <Faq />
       <ContactForm />
       <BlogSection />
