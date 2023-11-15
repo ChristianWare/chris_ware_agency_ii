@@ -48,13 +48,70 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className={styles.right}>
-                <div className={styles.middleDesktop}>
-                  {footer.map((f, index) => (
-                    <div key={index} className={styles.sectionContainer}>
-                      <div className={styles.headingContainer}>
-                        <p className={styles.heading}>{f.heading}</p>
+              <div className={styles.leftBorder2}>
+                <div className={styles.right}>
+                  <div className={styles.middleDesktop}>
+                    {footer.map((f, index) => (
+                      <div key={index} className={styles.sectionContainer}>
+                        <div className={styles.headingContainer}>
+                          <p className={styles.heading}>{f.heading}</p>
+                        </div>
+                        <div className={styles.footerItemContainer}>
+                          {f.section.map((s, index) => (
+                            <Link
+                              href={s.href}
+                              key={index}
+                              className={styles.footerItem}
+                            >
+                              {s.name}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
+                    ))}
+                  </div>
+                  <div className={styles.bottomDesktop}>
+                    <div className={styles.bottomLeft}>
+                      <p className={styles.copy}>
+                        &copy; 2023 Chris Ware Agency - All Rights Reserved
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.leftBorder3}>
+              <div className={styles.middleMobile}>
+                {footer.map((f, i) => (
+                  <div key={f.id} className={styles.sectionContainer}>
+                    <div
+                      className={styles.headingContainer}
+                      onClick={() => toggle(i)}
+                    >
+                      <p className={styles.heading}>{f.heading}</p>
+                      <span className={styles.arrow}>
+                        {selected === i ? (
+                          <ArrowRight
+                            className={styles.arrowFlip}
+                            height={20}
+                            width={20}
+                          />
+                        ) : (
+                          <ArrowRight
+                            className={styles.arrow}
+                            height={20}
+                            width={20}
+                          />
+                        )}
+                      </span>
+                    </div>
+                    <div
+                      className={
+                        selected === i
+                          ? styles.answer + " " + styles.show
+                          : styles.answer
+                      }
+                    >
                       <div className={styles.footerItemContainer}>
                         {f.section.map((s, index) => (
                           <Link
@@ -67,62 +124,9 @@ const Footer = () => {
                         ))}
                       </div>
                     </div>
-                  ))}
-                </div>
-                <div className={styles.bottomDesktop}>
-                  <div className={styles.bottomLeft}>
-                    <p className={styles.copy}>
-                      &copy; 2023 Chris Ware Agency - All Rights Reserved
-                    </p>
                   </div>
-                </div>
+                ))}
               </div>
-            </div>
-            <div className={styles.middleMobile}>
-              {footer.map((f, i) => (
-                <div key={f.id} className={styles.sectionContainer}>
-                  <div
-                    className={styles.headingContainer}
-                    onClick={() => toggle(i)}
-                  >
-                    <p className={styles.heading}>{f.heading}</p>
-                    <span className={styles.arrow}>
-                      {selected === i ? (
-                        <ArrowRight
-                          className={styles.arrowFlip}
-                          height={20}
-                          width={20}
-                        />
-                      ) : (
-                        <ArrowRight
-                          className={styles.arrow}
-                          height={20}
-                          width={20}
-                        />
-                      )}
-                    </span>
-                  </div>
-                  <div
-                    className={
-                      selected === i
-                        ? styles.answer + " " + styles.show
-                        : styles.answer
-                    }
-                  >
-                    <div className={styles.footerItemContainer}>
-                      {f.section.map((s, index) => (
-                        <Link
-                          href={s.href}
-                          key={index}
-                          className={styles.footerItem}
-                        >
-                          {s.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
             </div>
             <div className={styles.bottom}>
               <div className={styles.bottomLeft}>
