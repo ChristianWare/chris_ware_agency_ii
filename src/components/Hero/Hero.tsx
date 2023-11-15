@@ -16,9 +16,9 @@ const Hero = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <h1 className={styles.heading}>
-                We transform vacation rental dreams into seamless{" "}
+                We transform your vacation rental dreams into seamless{" "}
                 <span className={styles.highlight}>online booking</span>{" "}
-                experiences.
+                realities.
               </h1>
               <p className={styles.copy}>
                 Opt for your own direct booking website to take control of your
