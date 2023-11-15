@@ -1,8 +1,6 @@
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./PageIntro.module.css";
-import Image from "next/image";
-import Img1 from "../../../public/images/img2.png";
 import { PageIntroProps } from "@/lib/interface";
 import { FC } from "react";
 import CircleImage from "../Image/CircleImage/CircleImage";

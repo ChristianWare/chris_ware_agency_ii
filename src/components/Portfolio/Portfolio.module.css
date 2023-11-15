@@ -42,7 +42,7 @@
   position: relative;
   background-color: var(--green);
   border-radius: 10px;
-  border: 1px solid var(--black);
+  border: 1px solid var(--border3);
 }
 
 .img {

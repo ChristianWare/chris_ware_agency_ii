@@ -14,7 +14,7 @@
   overflow: hidden;
   position: relative;
   background-color: var(--green);
-  border: 1px solid var(--text);
+  border: 1px solid var(--border3);
 }
 
 .img {
@@ -29,32 +29,14 @@
   left: 15px;
 }
 
-.icon {
-  font-size: 1.6rem;
-  color: #9ca3af;
-  position: relative;
-  top: 4px;
-  margin-right: 0.5rem;
-  margin-left: 1rem;
-}
-
 .textContainer {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   margin-top: 1rem;
   padding: 1rem;
-
   color: var(--cream);
   height: 100%;
-}
-
-.dateTimeContainer {
-  margin-top: 1rem;
-  font-size: 1.4rem;
-  color: var(--darkBlue);
-  font-family: var(--roboto);
-  opacity: 0.7;
 }
 
 .title {
@@ -71,9 +53,8 @@
 }
 
 .copy {
-  font-family: var(--roboto);
   font-size: 1.4rem;
-  color: var(--darkBlue);
+  color: var(--text);
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
