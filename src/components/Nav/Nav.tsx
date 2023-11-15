@@ -50,14 +50,14 @@ function Nav() {
       text: "Services",
       href: "/services",
     },
-    {
-      text: "Portfolio",
-      href: "/portfolio",
-    },
-    {
-      text: "Pricing",
-      href: "/pricing",
-    },
+    // {
+    //   text: "Portfolio",
+    //   href: "/portfolio",
+    // },
+    // {
+    //   text: "Pricing",
+    //   href: "/pricing",
+    // },
     {
       text: "Contact",
       href: "/contact",
