@@ -22,7 +22,6 @@ const Benefits = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              {/* <CircleImage /> */}
               <ImageGrid reverse='reverse' />
             </div>
             <div className={styles.right}>

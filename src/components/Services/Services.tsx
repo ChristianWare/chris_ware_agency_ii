@@ -1,9 +1,8 @@
-'use client'
+"use client";
 
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Services.module.css";
-import SectionHeading from "../SectionHeading/SectionHeading";
 import Image from "next/image";
 import { features } from "@/lib/data";
 import CircleImage from "../Image/CircleImage/CircleImage";
@@ -15,8 +14,8 @@ const Services = () => {
         <ContentPadding>
           <div className={styles.top}>
             <CircleImage />
-            <SectionHeading headingText='Our direct booking sites include:' />
           </div>
+          <h2 className={styles.heading}>Our direct booking sites include:</h2>
           <div className={styles.bottom}>
             {features.map((x, index) => (
               <div key={index} className={styles.container}>

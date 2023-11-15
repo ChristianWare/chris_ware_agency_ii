@@ -118,4 +118,8 @@
     flex-direction: column-reverse;
     gap: 10rem;
   }
+
+  .heading {
+    text-align: center;
+  }
 }

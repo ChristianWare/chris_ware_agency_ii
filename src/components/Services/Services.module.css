@@ -3,6 +3,12 @@
   padding-top: 5rem;
 }
 
+.heading {
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -13,7 +19,6 @@
   border-radius: 10px;
   padding: 0.8rem;
   border-radius: 10px;
-  /* background-color: var(--border); */
   border: 1px solid var(--border2);
 }
 

@@ -43,6 +43,10 @@ function Nav() {
       href: "/",
     },
     {
+      text: "About",
+      href: "/about",
+    },
+    {
       text: "Services",
       href: "/services",
     },
@@ -55,10 +59,6 @@ function Nav() {
       href: "/pricing",
     },
     {
-      text: "About",
-      href: "/about",
-    },
-    {
       text: "Contact",
       href: "/contact",
     },
@@ -67,29 +67,29 @@ function Nav() {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-          <div className={styles.logo}>
-            <Link href='/'>CWA</Link>
-          </div>
-          <div className={styles.menuItemsGroup}>
-            <ul
-              className={
-                isOpen === false
-                  ? styles.navMenu
-                  : styles.navMenu + " " + styles.active
-              }
-            >
-              {navItems.map((navItem, index) => (
-                <li key={index} className={styles.navItem} onClick={openMenu}>
-                  <Link
-                    href={navItem.href}
-                    className={pathname === navItem.text ? styles.activeLink : ""}
-                  >
-                    {navItem.text}
-                  </Link>
-                  <span className={styles.arrow}>↗</span>
-                </li>
-              ))}
-            </ul>
+        <div className={styles.logo}>
+          <Link href='/'>CWA</Link>
+        </div>
+        <div className={styles.menuItemsGroup}>
+          <ul
+            className={
+              isOpen === false
+                ? styles.navMenu
+                : styles.navMenu + " " + styles.active
+            }
+          >
+            {navItems.map((navItem, index) => (
+              <li key={index} className={styles.navItem} onClick={openMenu}>
+                <Link
+                  href={navItem.href}
+                  className={pathname === navItem.text ? styles.activeLink : ""}
+                >
+                  {navItem.text}
+                </Link>
+                <span className={styles.arrow}>↗</span>
+              </li>
+            ))}
+          </ul>
           <div className={styles.naBarRight}>
             <div className={styles.btnContainer}>
               <Button href='/' text='Log in' btnType='navBtnii' />
@@ -108,7 +108,7 @@ function Nav() {
               <span className={styles.whiteBar}></span>
             </span>
           </div>
-          </div>
+        </div>
       </nav>
     </header>
   );
