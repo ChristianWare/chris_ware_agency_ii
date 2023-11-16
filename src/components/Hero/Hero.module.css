@@ -64,14 +64,14 @@
   display: flex;
   align-items: center;
   margin-top: 5rem;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 2px solid var(--border2);
   width: fit-content;
 }
 
 .lb1 {
   padding: 2rem;
   padding-left: 0rem;
-  border-right: 2px solid var(--border);
+  border-right: 2px solid var(--border2);
   font-size: 1.4rem;
   font-weight: 600;
 }
@@ -164,7 +164,7 @@
   .left {
     align-items: flex-start;
   }
-  
+
   .heading,
   .copy {
     text-align: left;

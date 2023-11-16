@@ -13,8 +13,13 @@ export interface ImageGridProps {
 }
 
 export interface PageIntroProps {
+  labelText: string;
   heading: string;
   highlight: string;
   copy: string;
   src: StaticImageData;
+  labelText2: string;
+  heading2: string;
+  copy2: string;
+  src2: StaticImageData;
 }

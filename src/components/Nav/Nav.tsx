@@ -85,7 +85,7 @@ function Nav() {
           <div className={styles.naBarRight}>
             <div className={styles.btnContainer}>
               <Button href='/' text='Log in' btnType='navBtnii' />
-              <Button href='/' text='Sign up' btnType='navBtn' />
+              <Button href='/' text='get in touch' btnType='navBtn' />
             </div>
             <span
               className={

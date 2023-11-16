@@ -1,4 +1,6 @@
 .span {
   font-weight: 700;
   color: var(--text);
+  margin-bottom: 1rem;
+  display: block;
 }

@@ -25,12 +25,12 @@
 .primary {
   color: var(--white);
   background-color: var(--black);
+  border: 1px solid var(--black);
 }
 
 .secondary {
   color: var(--black);
-  /* background-color: var(--green); */
-  /* border: 2px solid var(--border); */
+  border: 1px solid var(--border2);
 }
 
 .tertiary {
@@ -43,6 +43,7 @@
   font-weight: 600;
   color: var(--white);
   background-color: var(--black);
+  border: 1px solid var(--black);
   font-size: 1.4rem;
 }
 
@@ -51,7 +52,7 @@
   font-weight: 600;
   color: var(--black);
   font-size: 1.4rem;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border2);
 }
 
 @media screen and (max-width: 768px) {
