@@ -7,6 +7,7 @@ import LinkedIn from "../../../public/icons/linkedin.svg";
 import Twitter from "../../../public/icons/twitter.svg";
 import Facebook from "../../../public/icons/facebook.svg";
 import ImageGrid from "../Image/ImageGrid/ImageGrid";
+import Label from "../Label/Label";
 
 const Hero = () => {
   return (
@@ -15,6 +16,7 @@ const Hero = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
+              <Label text='Chris Ware Agency' />
               <h1 className={styles.heading}>
                 We transform your vacation rental dreams into seamless{" "}
                 <span className={styles.highlight}>online booking</span>{" "}

@@ -1,9 +1,9 @@
+import Label from "../Label/Label";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./PageIntro.module.css";
 import { PageIntroProps } from "@/lib/interface";
 import { FC } from "react";
-import CircleImage from "../Image/CircleImage/CircleImage";
 
 const PageIntro: FC<PageIntroProps> = ({ heading, highlight, copy, src }) => {
   return (
@@ -11,7 +11,7 @@ const PageIntro: FC<PageIntroProps> = ({ heading, highlight, copy, src }) => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <CircleImage />
+            <Label text='About US' />
             <h1 className={styles.heading}>
               {heading} <span className={styles.highlight}>{highlight}</span>{" "}
             </h1>

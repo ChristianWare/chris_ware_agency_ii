@@ -49,7 +49,7 @@
 .copy {
   margin-top: 3rem;
   font-size: 1.6rem;
-  color: var(--text);
+  color: var(--text2);
   width: 90%;
 }
 
@@ -111,6 +111,13 @@
     padding-top: 0rem;
   }
 
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .heading {
     text-align: center;
   }
@@ -154,6 +161,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .left {
+    align-items: flex-start;
+  }
+  
   .heading,
   .copy {
     text-align: left;

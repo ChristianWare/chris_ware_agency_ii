@@ -9,6 +9,10 @@
   width: 80%;
 }
 
+.copy {
+  color: var(--text);
+}
+
 .highlight {
   position: relative;
   z-index: 1;
