@@ -3,7 +3,7 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./AboutSection.module.css";
 import Image from "next/image";
 import Img1 from "../../../public/images/img1.png";
-import Insta from "../../../public/icons/instagram.svg";
+import Check from "../../../public/icons/check.svg";
 import Button from "../Button/Button";
 
 const AboutSection = () => {
@@ -24,27 +24,33 @@ const AboutSection = () => {
               </p>
               <div className={styles.iconTextContainer}>
                 <div className={styles.itextLeft}>
-                  <Insta width={25} height={25} />
+                  <Check width={25} height={25} className={styles.icon} />
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, aliquam voluptas! Dignissimos harum expedita a pariatur eum labore eaque odio est placeat error, nam eveniet, quas, ab quam atque quis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatibus, aliquam voluptas! Dignissimos harum expedita a
+                    pariatur eum labore eaque odio est placeat error, nam
+                    eveniet, quas, ab quam atque quis.
                   </p>
                 </div>
               </div>
               <div className={styles.iconTextContainer}>
                 <div className={styles.itextLeft}>
-                  <Insta width={25} height={25} />
+                  <Check width={25} height={25} className={styles.icon} />
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis deserunt sed magni libero reiciendis beatae ipsam iste assumenda corrupti eius impedit nam voluptatum quo perspiciatis enim, a, nihil cumque ut!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Facilis deserunt sed magni libero reiciendis beatae ipsam
+                    iste assumenda corrupti eius impedit nam voluptatum quo
+                    perspiciatis enim, a, nihil cumque ut!
                   </p>
                 </div>
               </div>
               <div className={styles.iconTextContainer}>
                 <div className={styles.itextLeft}>
-                  <Insta width={25} height={25} />
+                  <Check width={25} height={25} className={styles.icon} />
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>

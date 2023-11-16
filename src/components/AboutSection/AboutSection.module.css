@@ -60,7 +60,10 @@
   margin-bottom: 2rem;
   color: var(--text);
   width: 90%;
-  
+}
+
+.copy {
+  font-weight: 600;
 }
 
 .copyii {
@@ -80,7 +83,7 @@
 .img {
   object-fit: cover;
   border-radius: 17px;
-  padding: .8rem;
+  padding: 0.8rem;
 }
 
 .iconTextContainer {
@@ -101,6 +104,10 @@
   align-items: center;
   justify-content: flex-end;
   margin-top: 3rem;
+}
+
+.icon {
+  color: var(--text);
 }
 
 @media screen and (max-width: 968px) {
