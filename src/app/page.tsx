@@ -15,14 +15,14 @@ const HomePage = () => {
     <div>
       <Hero />
       <AboutSection />
-      <Benefits />
       <Services />
-      <Portfolio />
+      <Benefits />
       <HowItWorks />
       <Pricing />
+      {/* <Portfolio /> */}
       <Faq />
-      <ContactForm />
       <BlogSection />
+      <ContactForm />
       <FinalCta />
     </div>
   );

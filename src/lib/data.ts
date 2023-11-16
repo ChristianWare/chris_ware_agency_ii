@@ -113,7 +113,8 @@ export const pricing = [
   {
     id: 26,
     plan: "Starter",
-    description: "1 to 10 properties",
+    description:
+      "Ideal for individuals looking to get started, with 1 to 10 properties as you scale your business.",
     price: 250,
     includes: [
       {
@@ -138,7 +139,8 @@ export const pricing = [
   {
     id: 27,
     plan: "Advanced",
-    description: "10 to 20 properties",
+    description:
+      "Perfect for growing businesses with 10 to 20 properties  that need additional features and advanced support.",
     price: 350,
     includes: [
       {
@@ -163,7 +165,8 @@ export const pricing = [
   {
     id: 28,
     plan: "Custom",
-    description: "20 or more properties",
+    description:
+      "Tailored solutions for large-scale organizations with 20 or more properties with unique requirements.",
     price: "Custom",
     includes: [
       {

@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import FinalCta from "@/components/FinalCta/FinalCta";
 
-const ServicesPage = () => {
+const FeaturesPage = () => {
   return (
     <>
       <PageIntro
@@ -22,4 +22,4 @@ const ServicesPage = () => {
     </>
   );
 };
-export default ServicesPage;
+export default FeaturesPage;

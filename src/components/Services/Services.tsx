@@ -15,7 +15,7 @@ const Services = () => {
           <div className={styles.top}>
             <CircleImage />
           </div>
-          <h2 className={styles.heading}>Our direct booking sites include:</h2>
+          <h2 className={styles.heading}>We build direct booking sites that include the following fetures:</h2>
           <div className={styles.bottom}>
             {features.map((x, index) => (
               <div key={index} className={styles.container}>

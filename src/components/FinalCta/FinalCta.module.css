@@ -1,19 +1,25 @@
+.container {
+  background-color: var(--tan);
+  padding-top: 5rem;
+}
+
 .layoutWrapper {
   z-index: 1000;
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
-  padding: 7rem 3rem
+  padding: 7rem 3rem;
 }
 
 .contentPadding {
   padding: 5rem;
 }
 
-
-.container {
-  background-color: var(--tan);
-  padding-top: 5rem;
+.content {
+  /* border: 1px solid var(--border); */
+  border-radius: 10px;
+  padding: 1rem;
+  /* background-color: var(--green); */
 }
 
 .btnContainer {
@@ -24,7 +30,7 @@
   margin-top: 3rem;
 }
 
-@media screen and (Max-width: 568px) {
+@media screen and (max-width: 568px) {
   .layoutWrapper {
     padding-right: 5px;
     padding-left: 5px;
@@ -33,9 +39,8 @@
   .contentPadding {
     padding: 3rem 2rem;
   }
-  
-  
+
   .btnContainer {
-        flex-direction: column;
-    }
+    flex-direction: column;
+  }
 }

@@ -47,17 +47,9 @@ function Nav() {
       href: "/about",
     },
     {
-      text: "Services",
-      href: "/services",
+      text: "Features",
+      href: "/features",
     },
-    // {
-    //   text: "Portfolio",
-    //   href: "/portfolio",
-    // },
-    // {
-    //   text: "Pricing",
-    //   href: "/pricing",
-    // },
     {
       text: "Contact",
       href: "/contact",
