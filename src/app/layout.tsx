@@ -14,6 +14,8 @@ const inter = Inter({
   style: ["normal"],
   subsets: ["latin"],
   variable: "--inter",
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 const chakraPetch = Chakra_Petch({
@@ -21,6 +23,7 @@ const chakraPetch = Chakra_Petch({
   style: ["normal"],
   subsets: ["latin"],
   variable: "--chakraPetch",
+  adjustFontFallback: false,
 });
 
 export default function RootLayout({

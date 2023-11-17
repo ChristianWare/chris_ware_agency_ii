@@ -1,5 +1,4 @@
 .content {
-  background-color: var(--tan);
   padding-top: 5rem;
 }
 
@@ -32,7 +31,6 @@
   justify-content: center;
   width: 100%;
   gap: 2rem;
-  background-color: var(--tan);
   border: 1px solid var(--border2);
   border-radius: 8px;
   padding: 2rem;

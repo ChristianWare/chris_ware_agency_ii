@@ -13,6 +13,7 @@
   display: inline-block;
   padding: 10px 30px;
   font-weight: 700;
+  font-family: var(--inter700);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,11 +32,6 @@
 .secondary {
   color: var(--black);
   border: 1px solid var(--border2);
-}
-
-.tertiary {
-  color: var(--cream);
-  background-color: var(--darkBlue);
 }
 
 .navBtn {

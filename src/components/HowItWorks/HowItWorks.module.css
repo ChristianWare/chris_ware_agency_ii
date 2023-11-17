@@ -1,5 +1,6 @@
 .container {
   margin-bottom: 10rem;
+  background-color: var(--tan);
 }
 
 .content {

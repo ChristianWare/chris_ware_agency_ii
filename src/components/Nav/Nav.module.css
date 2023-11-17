@@ -26,7 +26,8 @@
 
 .logo {
   font-size: 1.8rem;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-family: var(--inter700);
   color: var(--black);
 }
 
@@ -55,11 +56,11 @@
 .navItem {
   font-size: 1.4rem;
   font-weight: 600;
+  font-family: var(--inter600) !important; 
   color: var(--black);
   position: relative;
   user-select: none;
   transition: all 0.3s ease-in;
-  scroll-behavior: smooth;
 }
 
 .activeLink {

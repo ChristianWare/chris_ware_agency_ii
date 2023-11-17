@@ -108,7 +108,7 @@
 .price {
   font-size: 5rem;
   display: block;
-  font-family: var(--chakraPetch);
+  font-family: var(--chakra700);
   color: var(--black);
 }
 
