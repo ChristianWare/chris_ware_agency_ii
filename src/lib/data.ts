@@ -56,11 +56,16 @@ export const features = [
       "Showcase positive reviews and testimonials from previous guests to build trust and credibility. Visitors will only be able to review once they've booked a stay on your property.",
     icon: Calendar,
   },
-
   {
     service: "Admin Panel",
     description:
       "Admin panel will allow you to create, update, and delete listings on your persoanlized booking websites. You can aslo view the number of bookings, and make any updates as needed.",
+    icon: Calendar,
+  },
+  {
+    service: "Payment Processing",
+    description:
+      "With the use of stripe, you will be able to accept all major credit card on your own personal booking website. you can even issue refunds if someone cancels a stay at your property.",
     icon: Calendar,
   },
 ] as const;
