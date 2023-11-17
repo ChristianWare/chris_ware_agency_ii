@@ -3,6 +3,7 @@ import ImageGrid from "../Image/ImageGrid/ImageGrid";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Owner.module.css";
+import Chris from "../../../public/images/chris.jpeg";
 
 const Owner = () => {
   return (
@@ -10,8 +11,7 @@ const Owner = () => {
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.left}>
-            {/* <ImageGrid /> */}
-            <CircleImage />
+            <CircleImage src={Chris} />
           </div>
           <div className={styles.right}>
             <h2 className={styles.heading}>

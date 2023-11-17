@@ -8,6 +8,7 @@ import { features } from "@/lib/data";
 import CircleImage from "../Image/CircleImage/CircleImage";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
+import Img from "../../../public/images/img3.png";
 
 const Services = () => {
   const pathname = usePathname();
@@ -18,7 +19,7 @@ const Services = () => {
           <div className={styles.contentBox}>
             {pathname === "/" && (
               <div className={styles.top}>
-                <CircleImage />
+                <CircleImage src={Img} />
               </div>
             )}
             <div className={styles.bottom}>

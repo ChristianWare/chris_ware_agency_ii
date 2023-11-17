@@ -1,20 +1,23 @@
-import Image from 'next/image';
-import styles from './CircleImage.module.css'
-import Img1 from "../../../../public/images/img2.png";
+import Image, { StaticImageData } from "next/image";
+import styles from "./CircleImage.module.css";
+import { FC } from "react";
 
-const CircleImage = () => {
+interface Props {
+  src: StaticImageData;
+}
+
+const CircleImage: FC<Props> = ({ src }) => {
   return (
     <div className={styles.b2}>
       <div className={styles.imgContainer}>
         <Image
-          src={Img1}
+          src={src}
           alt='image'
           fill
-          objectFit='cover'
           className={styles.img}
         />
       </div>
     </div>
   );
-}
-export default CircleImage
+};
+export default CircleImage;

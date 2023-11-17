@@ -1,7 +1,5 @@
 import styles from "./ImageGrid.module.css";
 import Image from "next/image";
-import Img1 from "../../../../public/images/img1.png";
-import Img2 from "../../../../public/images/img2.png";
 import { ImageGridProps } from "@/lib/interface";
 import { FC } from "react";
 

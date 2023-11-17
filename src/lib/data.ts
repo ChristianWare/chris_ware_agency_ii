@@ -461,7 +461,11 @@ export const adminData = [
   {
     icon: Pie,
     category: "Guest Reviews",
-    tasks: [{ task: "View all comments" }, { task: "Delete comments" }],
+    tasks: [
+      {
+        task: "Effortlessly view all comments and efficiently manage your content by deleting comments as necessary.",
+      },
+    ],
   },
 ] as const;
 

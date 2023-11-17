@@ -2,8 +2,12 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./CompHist.module.css";
 import Image from "next/image";
-import Img from "../../../public/images/img2.png";
 import ImageGrid from "../Image/ImageGrid/ImageGrid";
+import Img1 from "../../../public/images/img1.png";
+import Img2 from "../../../public/images/img2.png";
+import Img3 from "../../../public/images/img3.png";
+import Img4 from "../../../public/images/img6.png";
+import Img5 from "../../../public/images/img5.png";
 
 const CompHist = () => {
   return (
@@ -41,19 +45,13 @@ const CompHist = () => {
             </p>
           </div>
           <div className={styles.right}>
-            {/* <div className={styles.imgContainer}>
-              <Image src={Img} alt='img' fill className={styles.img} />
-            </div>
-            <div className={styles.imgContainer}>
-              <Image src={Img} alt='img' fill className={styles.img} />
-            </div>
-            <div className={styles.imgContainer}>
-              <Image src={Img} alt='img' fill className={styles.img} />
-            </div>
-            <div className={styles.imgContainer}>
-              <Image src={Img} alt='img' fill className={styles.img} />
-            </div> */}
-            <ImageGrid />
+            <ImageGrid
+              src1={Img2}
+              src2={Img1}
+              src3={Img5}
+              src4={Img4}
+              src5={Img3}
+            />
           </div>
         </div>
       </ContentPadding>

@@ -4,9 +4,8 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./ContactForm.module.css";
 import { useState } from "react";
-import Check from "../../../public/icons/check.svg";
 import Image from "next/image";
-import Img1 from "../../../public/images/img1.png";
+import Img7 from "../../../public/images/img7.png";
 
 const ContactForm = () => {
   const [inputs, setInputs] = useState({
@@ -43,9 +42,10 @@ const ContactForm = () => {
                 questions you have. We can&#39;t wait to hear from you!
               </p>
               <div className={styles.imgContainer}>
-                  <Image src={Img1} alt='img' fill className={styles.img} />
-                </div>
-              <div className={styles.checkContainerBox}>
+                <Image src={Img7} alt='img' fill className={styles.img} />
+              </div>
+
+              {/* <div className={styles.checkContainerBox}>
                 <div className={styles.checkContainer}>
                   <Check width={30} height={30} className={styles.icon} />
                   <p className={styles.featureText}>
@@ -66,7 +66,7 @@ const ContactForm = () => {
                   </p>
                 </div>
                 
-              </div>
+              </div> */}
             </div>
             <div className={styles.right}>
               <form
