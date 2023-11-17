@@ -1,6 +1,6 @@
 .container {
   background-color: var(--tan);
-  border-top: 2px solid var(--border);
+  /* border-top: 2px solid var(--border); */
 }
 
 .layoutWrapper {

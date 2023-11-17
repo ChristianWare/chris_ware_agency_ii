@@ -6,6 +6,8 @@ import styles from "./ContactForm.module.css";
 import { useState } from "react";
 import CircleImage from "../Image/CircleImage/CircleImage";
 import Check from "../../../public/icons/check.svg";
+import Image from "next/image";
+import Img1 from "../../../public/images/img1.png";
 
 const ContactForm = () => {
   const [inputs, setInputs] = useState({
@@ -32,7 +34,7 @@ const ContactForm = () => {
           <div className={styles.bottom}>
             <div className={styles.left}>
               <div className={styles.circleContainer}>
-                <CircleImage />
+                {/* <CircleImage /> */}
               </div>
               <h2 className={styles.heading}>
                 Request a <span className={styles.highlight}>Demo</span>
@@ -41,6 +43,9 @@ const ContactForm = () => {
                 Feel free to contact us any time. We will glady answer any
                 questions you have. We can&#39;t wait to hear from you!
               </p>
+              <div className={styles.imgContainer}>
+                  <Image src={Img1} alt='img' fill className={styles.img} />
+                </div>
               <div className={styles.checkContainerBox}>
                 <div className={styles.checkContainer}>
                   <Check width={30} height={30} className={styles.icon} />
@@ -61,6 +66,7 @@ const ContactForm = () => {
                     employees.
                   </p>
                 </div>
+                
               </div>
             </div>
             <div className={styles.right}>

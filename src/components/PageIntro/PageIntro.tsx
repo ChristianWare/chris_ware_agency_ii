@@ -6,7 +6,6 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./PageIntro.module.css";
 import { PageIntroProps } from "@/lib/interface";
 import { FC } from "react";
-import House from "../../../public/icons/house.png";
 
 const PageIntro: FC<PageIntroProps> = ({
   labelText,

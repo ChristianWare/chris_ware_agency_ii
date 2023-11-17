@@ -8,7 +8,8 @@
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
-  padding: 7rem 3rem;
+  padding: 3rem;
+  padding-bottom: 0rem;
 }
 
 .contentPadding {
@@ -16,10 +17,8 @@
 }
 
 .content {
-  /* border: 1px solid var(--border); */
   border-radius: 10px;
   padding: 1rem;
-  /* background-color: var(--green); */
 }
 
 .btnContainer {

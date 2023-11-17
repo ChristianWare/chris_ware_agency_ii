@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import ArrowRight from "../../../public/icons/arrowRight.svg";
 import { footer } from "@/lib/data";
+import FinalCta from "../FinalCta/FinalCta";
 
 const Footer = () => {
   const [selected, setSelected] = useState(null);
@@ -19,6 +20,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.container}>
+      <FinalCta />
       <div className={styles.layoutWrapper}>
         <div className={styles.contentPadding}>
           <div className={styles.content}>

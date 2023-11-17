@@ -1,8 +1,11 @@
+import Image from "next/image";
 import BlogPreview from "../BlogPreview/BlogPreview";
 import Button from "../Button/Button";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./BlogSection.module.css";
+import Megaphone from "../../../public/icons/megaphone.png";
+
 
 const BlogSection = () => {
   return (
@@ -10,6 +13,9 @@ const BlogSection = () => {
       <ContentPadding>
         <div className={styles.mainContent}>
           <div className={styles.top}>
+            <div className={styles.logoImageContainer}>
+              <Image src={Megaphone} alt='logo' fill className={styles.logo} />
+            </div>
             <h2 className={styles.heading}>
               our <span className={styles.highlight}>insights</span>
             </h2>

@@ -3,6 +3,7 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./CompHist.module.css";
 import Image from "next/image";
 import Img from "../../../public/images/img2.png";
+import ImageGrid from "../Image/ImageGrid/ImageGrid";
 
 const CompHist = () => {
   return (
@@ -40,7 +41,7 @@ const CompHist = () => {
             </p>
           </div>
           <div className={styles.right}>
-            <div className={styles.imgContainer}>
+            {/* <div className={styles.imgContainer}>
               <Image src={Img} alt='img' fill className={styles.img} />
             </div>
             <div className={styles.imgContainer}>
@@ -51,7 +52,8 @@ const CompHist = () => {
             </div>
             <div className={styles.imgContainer}>
               <Image src={Img} alt='img' fill className={styles.img} />
-            </div>
+            </div> */}
+            <ImageGrid />
           </div>
         </div>
       </ContentPadding>
