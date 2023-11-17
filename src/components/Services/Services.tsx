@@ -17,12 +17,12 @@ const Services = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.contentBox}>
-            {pathname === "/" && (
-              <div className={styles.top}>
-                <CircleImage src={Img} />
-              </div>
-            )}
             <div className={styles.bottom}>
+              {pathname === "/" && (
+                <div className={styles.top}>
+                  <CircleImage src={Img} />
+                </div>
+              )}
               <h2 className={styles.heading}>
                 We build direct booking sites that include the following
                 fetures:
@@ -41,7 +41,9 @@ const Services = () => {
                         />
                       </div>
                       <h3 className={styles.h3}>{x.service}</h3>
-                      <p className={styles.copy}>{x.description}</p>
+                      {pathname !== "/" && (
+                        <p className={styles.copy}>{x.description}</p>
+                      )}
                     </div>
                   </div>
                 ))}

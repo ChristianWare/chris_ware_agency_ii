@@ -4,6 +4,10 @@
 
 .heading {
   margin-bottom: 3rem;
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contentBox {
@@ -24,7 +28,7 @@
 
 .bottomMap {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
 }
 
@@ -92,12 +96,17 @@
   .btnContainer {
     justify-content: center;
   }
-
 }
 
 @media screen and (max-width: 1068px) {
   .heading {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .bottomMap {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -126,4 +135,3 @@
     width: 100%;
   }
 }
-
