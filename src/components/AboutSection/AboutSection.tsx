@@ -2,7 +2,7 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./AboutSection.module.css";
 import Image from "next/image";
-import Img1 from "../../../public/images/img1.png";
+import Img1 from "../../../public/images/img4.png";
 import Check from "../../../public/icons/check.svg";
 import Button from "../Button/Button";
 

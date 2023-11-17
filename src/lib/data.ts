@@ -9,6 +9,7 @@ import Node from "../../public/icons/nodejs.png";
 import Stripe from "../../public/icons/stripe.png";
 import Vercel from "../../public/icons/vercel.png";
 import Google from "../../public/icons/google.png";
+import Pie from "../../public/icons/pie.png";
 
 export const benefits = [
   {
@@ -422,41 +423,43 @@ export const techStack = [
 
 export const adminData = [
   {
+    icon: Pie,
     category: "Admin Dashboard",
     tasks: [
       {
-        task: "Total sales for the current day, or any extended period of time",
+        task: "Retrieve the total sales for either the current day or an extended period, check the number of bookings, and view a graph chart illustrating the sales history.",
       },
-      { task: "See number of bookings" },
-      { task: "Graph chart showing sales history" },
     ],
   },
   {
+    icon: Pie,
     category: "Property Listings",
     tasks: [
-      { task: "Create new property listings for your guest" },
-      { task: "Update existing listings if need be" },
-      { task: "Unlimited image upload for each property" },
-      { task: "Delete listing" },
+      {
+        task: "Create new property listings for your guests, update existing listings as needed, enjoy unlimited image uploads for each property, and easily delete listings when necessary.",
+      },
     ],
   },
   {
+    icon: Pie,
     category: "Guest Reservations",
     tasks: [
-      { task: "See date booked + check-in/checkout dates" },
-      { task: "View guest receipts" },
-      { task: "Delete reservations" },
+      {
+        task: "Review booked dates, check-in/check-out details, and access guest receipts easily. Additionally, manage your reservations efficiently by deleting them as needed.",
+      },
     ],
   },
   {
+    icon: Pie,
     category: "User Info",
     tasks: [
-      { task: "See all guests' reservation info" },
-      { task: "Assign user roles" },
-      { task: "Delete users" },
+      {
+        task: "View comprehensive reservation information for all guests, assign user roles like admin or regular user, and effortlessly delete users when required.",
+      },
     ],
   },
   {
+    icon: Pie,
     category: "Guest Reviews",
     tasks: [{ task: "View all comments" }, { task: "Delete comments" }],
   },
@@ -466,18 +469,17 @@ export const guestData = [
   {
     category: "My Bookings",
     tasks: [
-      { task: "See date booked + check-in/checkout dates + total amount paid" },
-      { task: "View reservation details" },
-      { task: "Print reservation receipt" },
+      {
+        task: "Check booked dates, view check-in/check-out details, and review the total amount paid for reservations. Additionally, access detailed reservation information and conveniently print reservation receipts in PDF format.",
+      },
     ],
   },
   {
     category: "My Profile",
     tasks: [
-      { task: "Update profile user name" },
-      { task: "Update email address" },
-      { task: "Upload user image" },
-      { task: "Update password" },
+      {
+        task: "Easily update your profile by changing your username, updating your email address, uploading a new user image, and modifying your password as needed.",
+      },
     ],
   },
 ] as const;

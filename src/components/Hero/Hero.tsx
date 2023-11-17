@@ -8,6 +8,11 @@ import Twitter from "../../../public/icons/twitter.svg";
 import Facebook from "../../../public/icons/facebook.svg";
 import ImageGrid from "../Image/ImageGrid/ImageGrid";
 import Label from "../Label/Label";
+import Img1 from "../../../public/images/img1.png";
+import Img2 from "../../../public/images/img2.png";
+import Img3 from "../../../public/images/img3.png";
+import Img4 from "../../../public/images/img6.png";
+import Img5 from "../../../public/images/img5.png";
 
 const Hero = () => {
   return (
@@ -42,7 +47,13 @@ const Hero = () => {
               </div>
             </div>
             <div className={styles.right}>
-              <ImageGrid />
+              <ImageGrid
+                src1={Img1}
+                src2={Img2}
+                src3={Img3}
+                src4={Img4}
+                src5={Img5}
+              />
             </div>
           </div>
         </ContentPadding>

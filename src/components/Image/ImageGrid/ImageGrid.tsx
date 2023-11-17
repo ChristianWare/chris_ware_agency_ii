@@ -5,14 +5,14 @@ import Img2 from "../../../../public/images/img2.png";
 import { ImageGridProps } from "@/lib/interface";
 import { FC } from "react";
 
-const ImageGrid: FC<ImageGridProps> = ({ reverse = "" }) => {
+const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.topLeft}>
           <div className={styles.imgBox400}>
             <Image
-              src={Img1}
+              src={src1}
               alt='image'
               quality={100}
               priority={true}
@@ -24,7 +24,7 @@ const ImageGrid: FC<ImageGridProps> = ({ reverse = "" }) => {
           <div className={styles.imgContainer}>
             <div className={styles.imgBox100}>
               <Image
-                src={Img1}
+                src={src4}
                 alt='image'
                 quality={100}
                 priority={true}
@@ -34,7 +34,7 @@ const ImageGrid: FC<ImageGridProps> = ({ reverse = "" }) => {
           </div>
           <div className={styles.imgBox200}>
             <Image
-              src={Img1}
+              src={src2}
               alt='image'
               quality={100}
               priority={true}
@@ -46,7 +46,7 @@ const ImageGrid: FC<ImageGridProps> = ({ reverse = "" }) => {
       <div className={styles.bottom}>
         <div className={styles.imgBox100}>
           <Image
-            src={Img1}
+            src={src5}
             alt='image'
             quality={100}
             priority={true}
@@ -55,7 +55,7 @@ const ImageGrid: FC<ImageGridProps> = ({ reverse = "" }) => {
         </div>
         <div className={styles.imgBox275}>
           <Image
-            src={Img2}
+            src={src3}
             alt='image'
             quality={100}
             priority={true}

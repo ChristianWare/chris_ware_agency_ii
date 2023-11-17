@@ -2,8 +2,6 @@ import { process } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./HowItWorks.module.css";
-import Image from "next/image";
-import Settings from "../../../public/icons/settings.png";
 
 const HowItWorks = () => {
   return (
@@ -21,9 +19,6 @@ const HowItWorks = () => {
                 Our process is structured so that you get the most added value
                 for the least amount of time.
               </p>
-              {/* <div className={styles.logoImageContainer}>
-                <Image src={Settings} alt='logo' fill className={styles.logo} />
-              </div> */}
             </div>
             <div className={styles.right}>
               {process.map((x, index) => (

@@ -10,6 +10,11 @@ export interface Button {
 
 export interface ImageGridProps {
   reverse?: string;
+  src1: StaticImageData;
+  src2: StaticImageData;
+  src3: StaticImageData;
+  src4: StaticImageData;
+  src5: StaticImageData;
 }
 
 export interface PageIntroProps {

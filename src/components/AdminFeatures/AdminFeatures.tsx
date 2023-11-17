@@ -22,7 +22,7 @@ const AdminFeatures = () => {
                     <h3 className={styles.category}>{x.category}</h3>
                     {x.tasks.map((y, i) => (
                       <p key={i} className={styles.task}>
-                        • {y.task}
+                        {y.task}
                       </p>
                     ))}
                   </div>
