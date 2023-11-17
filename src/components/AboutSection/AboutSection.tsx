@@ -29,9 +29,7 @@ const AboutSection = () => {
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus, aliquam voluptas! Dignissimos harum expedita a
-                    pariatur eum labore eaque odio est placeat error, nam
-                    eveniet, quas, ab quam atque quis.
+                    Voluptatibus, aliquam voluptas.
                   </p>
                 </div>
               </div>
@@ -42,9 +40,7 @@ const AboutSection = () => {
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Facilis deserunt sed magni libero reiciendis beatae ipsam
-                    iste assumenda corrupti eius impedit nam voluptatum quo
-                    perspiciatis enim, a, nihil cumque ut!
+                    Facilis deserunt sed magni libero.
                   </p>
                 </div>
               </div>
@@ -54,9 +50,8 @@ const AboutSection = () => {
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
-                    Our fleet of meticulously maintained black cars exudes class
-                    and style, ensuring that you arrive at your destination not
-                    just comfortably, but with an air of distinction.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Facilis deserunt sed magni libero.
                   </p>
                 </div>
               </div>

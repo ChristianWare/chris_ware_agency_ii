@@ -3,7 +3,6 @@ import Img from "../../../public/images/img1.png";
 import Faq from "@/components/Faq/Faq";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import BlogSection from "@/components/BlogSection/BlogSection";
-import FinalCta from "@/components/FinalCta/FinalCta";
 import Browser from "../../../public/icons/browser.png";
 import AdminFeatures from "@/components/AdminFeatures/AdminFeatures";
 import UserFeatures from "@/components/UserFeatures/UserFeatures";

@@ -4,7 +4,6 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./ContactForm.module.css";
 import { useState } from "react";
-import CircleImage from "../Image/CircleImage/CircleImage";
 import Check from "../../../public/icons/check.svg";
 import Image from "next/image";
 import Img1 from "../../../public/images/img1.png";
