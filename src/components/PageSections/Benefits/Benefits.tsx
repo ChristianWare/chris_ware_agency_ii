@@ -4,7 +4,6 @@ import LayoutWrapper from "@/components/Layout/LayoutWrapper";
 import styles from "./Benefits.module.css";
 import ContentPadding from "@/components/Layout/ContentPadding/ContentPadding";
 import { benefits } from "@/lib/data";
-import CircleImage from "@/components/Image/CircleImage/CircleImage";
 import { useState } from "react";
 import Arrow from "../../../../public/icons/downArrow.svg";
 import ImageGrid from "@/components/Image/ImageGrid/ImageGrid";

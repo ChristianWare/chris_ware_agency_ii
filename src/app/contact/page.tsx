@@ -3,6 +3,7 @@ import BlogSection from "@/components/BlogSection/BlogSection";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import styles from './ContactPage.module.css'
 import ContactHero from "@/components/ContactHero/ContactHero";
+import Faq from "@/components/Faq/Faq";
 
 
 const ContactPage = () => {
@@ -11,7 +12,6 @@ const ContactPage = () => {
       <ContactHero />
       <ContactForm />
       <BlogSection />
-      <FinalCta />
     </div>
   );
 };

@@ -54,6 +54,10 @@ function Nav() {
       text: "Contact",
       href: "/contact",
     },
+    {
+      text: "Blog",
+      href: "/blog",
+    },
   ];
 
   return (
@@ -84,8 +88,8 @@ function Nav() {
           </ul>
           <div className={styles.naBarRight}>
             <div className={styles.btnContainer}>
-              <Button href='/' text='Log in' btnType='navBtnii' />
-              <Button href='/' text='get in touch' btnType='navBtn' />
+              <Button href='/' text='Call us' btnType='navBtnii' />
+              <Button href='/' text='Get in touch' btnType='navBtn' />
             </div>
             <span
               className={

@@ -1,7 +1,6 @@
 import CompHist from "@/components/CompHist/CompHist";
 import Img from "../../../public/images/img2.png";
 import PageIntro from "@/components/PageIntro/PageIntro";
-import FinalCta from "@/components/FinalCta/FinalCta";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
@@ -31,7 +30,6 @@ const AboutPage = () => {
       <Faq />
       <ContactForm />
       <BlogSection />
-      <FinalCta />
     </>
   );
 };

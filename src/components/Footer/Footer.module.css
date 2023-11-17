@@ -1,6 +1,5 @@
 .container {
   background-color: var(--tan);
-  /* border-top: 2px solid var(--border); */
 }
 
 .layoutWrapper {
@@ -173,7 +172,7 @@
 
   .topTop {
     grid-template-columns: 1fr;
-    grid-gap: 5rem;
+    /* grid-gap: 5rem; */
   }
 
   .desc {
