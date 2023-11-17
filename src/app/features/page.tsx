@@ -5,6 +5,9 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import Browser from "../../../public/icons/browser.png";
+import AdminFeatures from "@/components/AdminFeatures/AdminFeatures";
+import UserFeatures from "@/components/UserFeatures/UserFeatures";
+import Services from "@/components/Services/Services";
 
 const FeaturesPage = () => {
   return (
@@ -20,11 +23,12 @@ const FeaturesPage = () => {
         copy2='Diversify your digital services to cross-sell and upsell valuable ‘sticky services’ like top-ups, data bundles and bill payments – to  increase both customer volume and frequency.'
         src2={Browser}
       />
-
+      <Services />
+      <AdminFeatures />
+      <UserFeatures />
       <Faq />
       <ContactForm />
       <BlogSection />
-      <FinalCta />
     </>
   );
 };

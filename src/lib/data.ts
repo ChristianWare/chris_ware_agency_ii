@@ -419,3 +419,84 @@ export const techStack = [
     desc: "A web analytics service that tracks and reports website traffic, providing insights into user behavior, demographics, and other metrics to help better understand and optimize online presence.",
   },
 ] as const;
+
+export const adminData = [
+  {
+    category: "Admin Dashboard",
+    tasks: [
+      {
+        task: "Total sales for the current day, or any extended period of time",
+      },
+      { task: "See number of bookings" },
+      { task: "Graph chart showing sales history" },
+    ],
+  },
+  {
+    category: "Property Listings",
+    tasks: [
+      { task: "Create new property listings for your guest" },
+      { task: "Update existing listings if need be" },
+      { task: "Unlimited image upload for each property" },
+      { task: "Delete listing" },
+    ],
+  },
+  {
+    category: "Guest Reservations",
+    tasks: [
+      { task: "See date booked + check-in/checkout dates" },
+      { task: "View guest receipts" },
+      { task: "Delete reservations" },
+    ],
+  },
+  {
+    category: "User Info",
+    tasks: [
+      { task: "See all guests' reservation info" },
+      { task: "Assign user roles" },
+      { task: "Delete users" },
+    ],
+  },
+  {
+    category: "Guest Reviews",
+    tasks: [{ task: "View all comments" }, { task: "Delete comments" }],
+  },
+] as const;
+
+export const guestData = [
+  {
+    category: "My Bookings",
+    tasks: [
+      { task: "See date booked + check-in/checkout dates + total amount paid" },
+      { task: "View reservation details" },
+      { task: "Print reservation receipt" },
+    ],
+  },
+  {
+    category: "My Profile",
+    tasks: [
+      { task: "Update profile user name" },
+      { task: "Update email address" },
+      { task: "Upload user image" },
+      { task: "Update password" },
+    ],
+  },
+] as const;
+
+export const webFeatures = [
+  {
+    feature: "Resposive",
+    desc: "Designed to adapt and display optimally on various devices and screen sizes, providing an optimal user experience by adjusting its layout and content dynamically.",
+  },
+  {
+    feature: "Accessible",
+    desc: "Ensures that people with disabilities can perceive, understand, navigate, and interact with its content, features, and functionalities effectively, providing an inclusive and equal user experience for all.",
+  },
+  {
+    feature: "SEO",
+    desc: "A search engine optimized website is configured to enhance its visibility and ranking on search engine results pages, employing strategies to improve its relevance, accessibility, and overall performance for better search engine discoverability.",
+  },
+  {
+    feature: "Page Speed Optimzed",
+    desc: "Webite pages load quickly and efficiently, ensuring fast loading times for its pages and content, which contributes to a better user experience and may positively impact search engine rankings.",
+  },
+];

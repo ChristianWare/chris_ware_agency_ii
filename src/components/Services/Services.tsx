@@ -7,16 +7,20 @@ import Image from "next/image";
 import { features } from "@/lib/data";
 import CircleImage from "../Image/CircleImage/CircleImage";
 import Button from "../Button/Button";
+import { usePathname } from "next/navigation";
 
 const Services = () => {
+  const pathname = usePathname();
   return (
     <div className={styles.content}>
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.contentBox}>
-            <div className={styles.top}>
-              <CircleImage />
-            </div>
+            {pathname === "/" && (
+              <div className={styles.top}>
+                <CircleImage />
+              </div>
+            )}
             <div className={styles.bottom}>
               <h2 className={styles.heading}>
                 We build direct booking sites that include the following
@@ -41,13 +45,15 @@ const Services = () => {
                   </div>
                 ))}
               </div>
-              <div className={styles.btnContainer}>
-                <Button
-                  href='/features'
-                  text='See all features'
-                  btnType='primary'
-                />
-              </div>
+              {pathname === "/" && (
+                <div className={styles.btnContainer}>
+                  <Button
+                    href='/features'
+                    text='See all features'
+                    btnType='primary'
+                  />
+                </div>
+              )}
             </div>
           </div>
         </ContentPadding>
