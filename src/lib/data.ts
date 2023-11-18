@@ -10,6 +10,9 @@ import Stripe from "../../public/icons/stripe.png";
 import Vercel from "../../public/icons/vercel.png";
 import Google from "../../public/icons/google.png";
 import Pie from "../../public/icons/pie.png";
+import Property from "../../public/icons/property.png";
+import Reservation from "../../public/icons/reservation.png";
+import User from "../../public/icons/user.png";
 
 export const benefits = [
   {
@@ -432,7 +435,7 @@ export const adminData = [
     ],
   },
   {
-    icon: Pie,
+    icon: Property,
     category: "Property Listings",
     tasks: [
       {
@@ -441,7 +444,7 @@ export const adminData = [
     ],
   },
   {
-    icon: Pie,
+    icon: Reservation,
     category: "Guest Reservations",
     tasks: [
       {
@@ -450,7 +453,7 @@ export const adminData = [
     ],
   },
   {
-    icon: Pie,
+    icon: User,
     category: "User Info",
     tasks: [
       {
@@ -459,7 +462,7 @@ export const adminData = [
     ],
   },
   {
-    icon: Pie,
+    icon: Reviews,
     category: "Guest Reviews",
     tasks: [
       {

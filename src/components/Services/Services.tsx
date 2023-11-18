@@ -25,7 +25,7 @@ const Services = () => {
               )}
               <h2 className={styles.heading}>
                 We build direct booking sites that include the following
-                fetures:
+                features:
               </h2>
               <div className={styles.bottomMap}>
                 {features.map((x, index) => (

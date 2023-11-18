@@ -1,5 +1,5 @@
 import PageIntro from "@/components/PageIntro/PageIntro";
-import Img from "../../../public/images/img1.png";
+import Img from "../../../public/images/img6.png";
 import Faq from "@/components/Faq/Faq";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import BlogSection from "@/components/BlogSection/BlogSection";
