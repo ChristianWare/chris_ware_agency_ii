@@ -5,10 +5,8 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Services.module.css";
 import Image from "next/image";
 import { features } from "@/lib/data";
-import CircleImage from "../Image/CircleImage/CircleImage";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
-import Img from "../../../public/images/img3.png";
 
 const Services = () => {
   const pathname = usePathname();
@@ -16,17 +14,13 @@ const Services = () => {
     <div className={styles.content}>
       <LayoutWrapper>
         <ContentPadding>
-          <div className={styles.contentBox}>
-            <div className={styles.bottom}>
-              {pathname === "/" && (
-                <div className={styles.top}>
-                  <CircleImage src={Img} />
-                </div>
-              )}
               <h2 className={styles.heading}>
                 We build direct booking sites that include the following
                 features:
               </h2>
+          <div className={styles.contentBox}>
+            <div className={styles.bottom}>
+              
               <div className={styles.bottomMap}>
                 {features.map((x, index) => (
                   <div key={index} className={styles.container}>

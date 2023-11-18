@@ -13,6 +13,9 @@ import Pie from "../../public/icons/pie.png";
 import Property from "../../public/icons/property.png";
 import Reservation from "../../public/icons/reservation.png";
 import User from "../../public/icons/user.png";
+import Booking from "../../public/icons/booking.png";
+import Profile from "../../public/icons/profile.png";
+import Money from "../../public/icons/money.png";
 
 export const benefits = [
   {
@@ -470,10 +473,20 @@ export const adminData = [
       },
     ],
   },
+  {
+    icon: Money,
+    category: "Payment Access",
+    tasks: [
+      {
+        task: "Access all of the payments that were sent to you by your guest. Issue refunds, print receipts, and manage all charges",
+      },
+    ],
+  },
 ] as const;
 
 export const guestData = [
   {
+    icon: Booking,
     category: "My Bookings",
     tasks: [
       {
@@ -482,6 +495,7 @@ export const guestData = [
     ],
   },
   {
+    icon: Profile,
     category: "My Profile",
     tasks: [
       {

@@ -107,10 +107,10 @@
 .labelInputBox input,
 .labelInputBox textarea {
   border-radius: 5px;
-  border-bottom: 1px solid var(--border3);
-  border-right: 1px solid var(--border3);
-  border-top: none;
-  border-left: none;
+  border: 1px solid var(--border2);
+  /* border-right: 1px solid var(--border3); */
+  /* border-top: none; */
+  /* border-left: none; */
   /* border-right: none; */
   height: 40px;
   width: 100%;

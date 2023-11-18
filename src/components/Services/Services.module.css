@@ -37,6 +37,7 @@
   padding: 0.8rem;
   border-radius: 10px;
   border: 1px solid var(--border2);
+  width: 100%;
 }
 
 .box {
@@ -78,7 +79,7 @@
 .btnContainer {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 3rem;
 }
 
@@ -110,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
   .heading {
     width: 100%;
   }

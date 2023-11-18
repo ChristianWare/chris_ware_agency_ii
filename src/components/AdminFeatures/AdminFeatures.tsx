@@ -35,11 +35,6 @@ const AdminFeatures = () => {
                       </p>
                     ))}
                   </div>
-                  {/* <div className={styles.right}>
-                    <div className={styles.imgContainer}>
-                      <Image src={Img} alt='logo' fill className={styles.img} />
-                    </div>
-                  </div> */}
                 </div>
               </div>
             ))}

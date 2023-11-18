@@ -1,8 +1,14 @@
+.content {
+}
+
 .mapBox {
   border-radius: 10px;
   border: 1px solid var(--border);
-  padding: 5rem;
-  background-color: var(--white);
+  padding: 1rem;
+  background-color: var(--tan);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
 
 .heading {
@@ -32,18 +38,14 @@
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 1rem;
-  margin-bottom: 3rem;
-  background-color: var(--tan);
+  background-color: var(--white);
 }
 
 .card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 5rem 3rem;
+  padding: 3rem;
+  height: 100%;
 }
 
 .cardContainer:nth-child(even) .card {
@@ -52,20 +54,21 @@
 
 .left {
   flex: 1;
-  width: 100%;
-}
-
-.right {
-  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
 .category {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .task {
-  margin-bottom: 0.3rem;
+  color: var(--text);
 }
 
 .imgContainer {
@@ -84,25 +87,31 @@
   padding: 0.8rem;
 }
 
-@media screen and (max-width: 868px) {
-  .mapBox {
-    padding: 3rem;
-  }
+.logoImageContainer {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 2rem;
+}
 
-  .card,
-  .cardContainer:nth-child(even) .card {
-    flex-direction: column;
-  }
+.logo {
+  object-fit: contain;
+  opacity: 0.7;
+}
 
+@media screen and (max-width: 968px) {
   .category,
   .task {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 768px) {
+  .mapBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .card {
-    padding: 2rem;
     gap: 2rem;
   }
 }

@@ -61,11 +61,6 @@
   width: 100%;
 }
 
-.right {
-  flex: 2;
-  width: 100%;
-}
-
 .category {
   margin-bottom: 1rem;
   font-size: 1.8rem;
