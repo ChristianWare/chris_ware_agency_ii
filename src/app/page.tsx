@@ -23,7 +23,7 @@ const HomePage = () => {
       <Faq />
       <BlogSection />
       <ContactForm />
-      {/* <FinalCta /> */}
+      <FinalCta />
     </div>
   );
 };

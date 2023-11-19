@@ -1,6 +1,7 @@
 .container {
-  background-color: var(--tan);
+  background-color: var(--white);
   padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .layoutWrapper {
@@ -18,7 +19,27 @@
 
 .content {
   border-radius: 10px;
-  padding: 1rem;
+  /* border: 1px solid var(--border); */
+  padding: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background: rgb(241, 241, 233);
+  background: -moz-linear-gradient(
+    150deg,
+    rgba(241, 241, 233, 1) 0%,
+    rgba(174, 255, 18, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    150deg,
+    rgba(241, 241, 233, 1) 0%,
+    rgba(174, 255, 18, 1) 100%
+  );
+  background: linear-gradient(
+    150deg,
+    rgba(241, 241, 233, 1) 0%,
+    rgba(174, 255, 18, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f1e9",endColorstr="#aeff12",GradientType=1);
 }
 
 .btnContainer {
@@ -37,6 +58,11 @@
 
   .contentPadding {
     padding: 3rem 2rem;
+  }
+
+  .content {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .btnContainer {

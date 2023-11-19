@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.container}>
-      <FinalCta />
+      {/* <FinalCta /> */}
       <div className={styles.layoutWrapper}>
         <div className={styles.contentPadding}>
           <div className={styles.content}>
