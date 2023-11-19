@@ -63,8 +63,8 @@
 .leftBottom {
   display: flex;
   align-items: center;
-  margin-top: 5rem;
-  border-bottom: 2px solid var(--border2);
+  margin-top: 3rem;
+  /* border-bottom: 2px solid var(--border2); */
   width: fit-content;
 }
 

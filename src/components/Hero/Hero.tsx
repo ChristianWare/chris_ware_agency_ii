@@ -37,7 +37,7 @@ const Hero = () => {
                 <Button text='Details' href='/' btnType='secondary' />
               </div>
               <div className={styles.leftBottom}>
-                <div className={styles.lb1}>hello@chrisware.agency</div>
+                {/* <div className={styles.lb1}>hello@chrisware.agency</div> */}
                 <div className={styles.lb2}>
                   <Instagram width={20} height={20} className={styles.icon} />
                   <LinkedIn width={20} height={20} className={styles.icon} />
