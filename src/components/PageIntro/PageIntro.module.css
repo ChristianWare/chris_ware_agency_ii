@@ -23,6 +23,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--tan);
+  border: 1px solid var(--border3);
+  border-radius: 10px;
+  padding: .6rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 2;
 }
 
 .heading {
@@ -50,13 +59,13 @@
 .copy {
   margin: 3rem 00rem;
   color: var(--text2);
-  width: 70%;
+  width: 75%;
   text-align: center;
 }
 
 .bottom {
-  margin-top: 3rem;
-  z-index: 1;
+  margin-top: -35rem;
+  z-index: -1;
 }
 
 .imgContainer {
@@ -92,9 +101,9 @@
 
 .box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
   padding: 5rem;
   border: 1px solid var(--border3);
   border-radius: 10px;
@@ -123,14 +132,19 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .box {
+  /* .box {
     flex-direction: column-reverse;
-  }
+  } */
 }
 
 @media screen and (max-width: 968px) {
   .copy {
     width: 100%;
+  }
+
+  .top {
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
 .infoContainer {
@@ -145,7 +159,7 @@
 }
 
 @media screen and (max-width: 568px) {
-  .top {
+  .top, .box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

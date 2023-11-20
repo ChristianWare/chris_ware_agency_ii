@@ -93,7 +93,7 @@
   border: 1px solid var(--border3);
   background-color: var(--green);
   border-radius: 8px;
-  padding: 1rem;
+  padding: .6rem;
 }
 
 .box {

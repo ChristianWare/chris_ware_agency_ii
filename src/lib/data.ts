@@ -77,22 +77,26 @@ export const features = [
   },
   {
     service: "Mobile Resposive",
-    desc: "Designed to adapt and display optimally on various devices and screen sizes, providing an optimal user experience by adjusting its layout and content dynamically.",
+    description:
+      "Designed to adapt and display optimally on various devices and screen sizes, providing an optimal user experience by adjusting its layout and content dynamically.",
     icon: Calendar,
   },
   {
     service: "Accessible",
-    desc: "Ensures that people with disabilities can perceive, understand, navigate, and interact with its content, features, and functionalities effectively, providing an inclusive and equal user experience for all.",
+    description:
+      "Ensures that people with disabilities can perceive, understand, navigate, and interact with its content, features, and functionalities effectively, providing an inclusive and equal user experience for all.",
     icon: Calendar,
   },
   {
     service: "Search Engine Optomization",
-    desc: "A search engine optimized website is configured to enhance its visibility and ranking on search engine results pages, employing strategies to improve its relevance, accessibility, and overall performance for better search engine discoverability.",
+    description:
+      "A search engine optimized website is configured to enhance its visibility and ranking on search engine results pages, employing strategies to improve its relevance, accessibility, and overall performance for better search engine discoverability.",
     icon: Calendar,
   },
   {
     service: "Page Speed Optmization",
-    desc: "Webite pages load quickly and efficiently, ensuring fast loading times for its pages and content, which contributes to a better user experience and may positively impact search engine rankings.",
+    description:
+      "Webite pages load quickly and efficiently, ensuring fast loading times for its pages and content, which contributes to a better user experience and may positively impact search engine rankings.",
     icon: Calendar,
   },
 ] as const;

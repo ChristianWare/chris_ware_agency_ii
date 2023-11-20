@@ -18,9 +18,11 @@ const ContactHero = () => {
                 <span className={styles.highlight}>we can help</span>
               </h1>
               <p className={styles.copy}>
-                Opt for your own direct booking website to take control of your
-                vacation rental business, reduce fees, and build a unique brand
-                identity, while enjoying better communication with guests.
+                Whether you&#39;re a prospective client or have questions about
+                our services, reaching out is simple and quick. We&#39;re ready
+                to assist you to ensuring a seamless and personalized experience
+                as you take the next step in transforming your vacation rental
+                business.
               </p>
             </div>
             <div className={styles.right}>

@@ -15,7 +15,7 @@ const FeaturesPage = () => {
         labelText='features of each site'
         heading='Direct Booking Websites'
         highlight='in more detail'
-        copy='I’m Chris Ware, the owner and creative force behind The Chris Ware Agency. My journey in the world of web development began during my college years, where I discovered my passion for crafting digital experiences. Over the past decade and a half, I’ve honed my skills and transformed that passion into a thriving career.'
+        copy="Discover the transformative features of CWA's direct booking websites. For administrators, our streamlined dashboard offers effortless management and valuable insights. Users enjoy a seamless booking experience with secure payments and real-time availability updates, ensuring your vacation rental stands out in the market."
         src={Img}
         labelText2='CONVENIENT & STICKY SERVICES'
         heading2='Diversify revenue with convenient services that keep customers coming back'

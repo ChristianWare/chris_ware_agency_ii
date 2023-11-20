@@ -23,19 +23,25 @@ const PageIntro: FC<PageIntroProps> = ({
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <Label text={labelText} />
-            <h1 className={styles.heading}>
-              {heading} <span className={styles.highlight}>{highlight}</span>{" "}
-            </h1>
-            <p className={styles.copy}>{copy}</p>
-            <Button btnType='secondary' href='/contact' text='Request a demo' />
+            <div className={styles.box}>
+              <Label text={labelText} />
+              <h1 className={styles.heading}>
+                {heading} <span className={styles.highlight}>{highlight}</span>{" "}
+              </h1>
+              <p className={styles.copy}>{copy}</p>
+              <Button
+                btnType='secondary'
+                href='/contact'
+                text='Request a demo'
+              />
+            </div>
           </div>
-          <div className={styles.bottom}>
+          {/* <div className={styles.bottom}>
             <div className={styles.imgContainer}>
               <Image src={src} alt='image' fill className={styles.img} />
             </div>
-          </div>
-          <div className={styles.infoContainer}>
+          </div> */}
+          {/* <div className={styles.infoContainer}>
             <div className={styles.box}>
               <div className={styles.infoLeft}>
                 <Label text={labelText2} />
@@ -44,16 +50,11 @@ const PageIntro: FC<PageIntroProps> = ({
               </div>
               <div className={styles.infoRight}>
                 <div className={styles.logoImageContainer}>
-                  <Image
-                    src={src2}
-                    alt='logo'
-                    fill
-                    className={styles.logo}
-                  />
+                  <Image src={src2} alt='logo' fill className={styles.logo} />
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </ContentPadding>
       </LayoutWrapper>
     </div>

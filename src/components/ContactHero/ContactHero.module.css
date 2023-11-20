@@ -24,7 +24,7 @@
   background-color: var(--tan);
   border: 1px solid var(--border3);
   border-radius: 10px;
-  padding: 1rem;
+  padding: .6rem;
 }
 
 .box {

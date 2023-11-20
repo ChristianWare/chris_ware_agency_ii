@@ -26,7 +26,7 @@
 .imgBox100,
 .imgBox200,
 .imgBox275 {
-  padding: 0.6rem;
+  padding: 0.5rem;
   background-color: var(--green);
   border-radius: 10px;
   border: 1px solid var(--border3);
@@ -62,7 +62,7 @@
 }
 
 .imgBox100 {
-  padding: 0.3rem;
+  padding: 0.2rem;
 }
 
 .img100 {
@@ -74,7 +74,7 @@
 }
 
 .imgBox200 {
-  padding: 0.4rem;
+  padding: 0.3rem;
 }
 
 .img200 {
@@ -87,7 +87,7 @@
 }
 
 .imgBox275 {
-  padding: 0.3rem;
+  padding: 0.2rem;
 }
 
 .img275 {

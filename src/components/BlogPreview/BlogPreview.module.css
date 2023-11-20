@@ -2,7 +2,7 @@
   height: 100%;
   background-color: var(--lightBlue);
   border-radius: 10px;
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   padding: 1rem;
 }
 
@@ -19,7 +19,7 @@
 
 .img {
   border-radius: 15px;
-  padding: .7rem;
+  padding: .5rem;
   object-fit: cover;
 }
 
