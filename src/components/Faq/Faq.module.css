@@ -55,13 +55,18 @@
 }
 
 .qaContainer {
-  padding: 3rem;
+  padding: 3rem 2rem;
   border: 1px solid var(--border);
   background-color: var(--tan);
   border-radius: 8px;
   width: 100%;
   cursor: pointer;
   user-select: none;
+}
+
+.showBorder {
+  border-radius: 10px;
+  box-shadow: var(--shadow);
 }
 
 .answerContainer {
@@ -110,12 +115,12 @@
 }
 
 .answer {
-  opacity: 0.7;
-  margin-top: 1.5rem;
+  color: var(--text2);
+  margin-top: 2rem;
+  /* margin-left: 3.5rem; */
+  font-weight: 500;
   hyphens: auto;
   width: 100%;
-  border: 1px solid var(--border2);
-  padding: 2rem;
   border-radius: 10px;
 }
 
@@ -143,9 +148,7 @@
     padding-right: 0rem;
   }
 
-  .top
-
-  .topText {
+  .top .topText {
     width: 100%;
   }
 }

@@ -126,7 +126,7 @@ export const pricing = [
     id: 26,
     plan: "Starter",
     description:
-      "Ideal for individuals looking to get started, with 1 to 10 properties as you scale your business.",
+      "Ideal for individual property owners looking to get started, with 1 to 10 properties as you scale your business.",
     price: 250,
     includes: [
       {
@@ -478,7 +478,7 @@ export const adminData = [
     category: "Payment Access",
     tasks: [
       {
-        task: "Access all of the payments that were sent to you by your guest. Issue refunds, print receipts, and manage all charges",
+        task: "Access all of the payments that were sent to you by your guest. Issue refunds, print receipts, and manage all charges.",
       },
     ],
   },

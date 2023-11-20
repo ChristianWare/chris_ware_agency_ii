@@ -35,7 +35,11 @@ const Faq = () => {
             {faqs.slice(0, 5).map((x, i) => (
               <div
                 key={x.id}
-                className={styles.qaContainer}
+                className={
+                  selected === i
+                    ? styles.qaContainer + " " + styles.showBorder
+                    : styles.qaContainer
+                }
                 onClick={() => toggle(i)}
               >
                 <div className={styles.headingArrowContainer}>
