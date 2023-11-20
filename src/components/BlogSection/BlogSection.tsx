@@ -6,7 +6,6 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./BlogSection.module.css";
 import Megaphone from "../../../public/icons/megaphone.png";
 
-
 const BlogSection = () => {
   return (
     <LayoutWrapper>
@@ -21,7 +20,7 @@ const BlogSection = () => {
             </h2>
             <p className={styles.copy}>
               Explore our blog for the latest updates, travel tips, and industry
-              insights to enhance your black car service experience.
+              insights to enhance your vacation rental hosting experience.
             </p>
           </div>
           <div className={styles.content}>
