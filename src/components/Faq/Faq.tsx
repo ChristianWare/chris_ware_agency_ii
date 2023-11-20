@@ -23,7 +23,7 @@ const Faq = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <h2 className={styles.heading}>
-              frequently asked{" "}
+            frequently asked{" "}
               <span className={styles.highlight}>questions </span>
             </h2>
             <p className={styles.topText}>

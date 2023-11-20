@@ -8,6 +8,7 @@ import Img2 from "../../../public/images/img2.png";
 import Img3 from "../../../public/images/img3.png";
 import Img4 from "../../../public/images/img6.png";
 import Img5 from "../../../public/images/img5.png";
+import Label from "../Label/Label";
 
 const CompHist = () => {
   return (
@@ -15,6 +16,7 @@ const CompHist = () => {
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.left}>
+            <Label text='About Us' />
             <h2 className={styles.heading}>
               About the <span className={styles.highlight}>CWA</span>
             </h2>
