@@ -28,26 +28,26 @@
 
 .bottomMap {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
-.container {
+/* .container {
   border-radius: 10px;
   padding: 0.5rem;
   border-radius: 10px;
-  border: 1px solid var(--border2);
+  border: 1px solid var(--border);
   width: 100%;
-}
+} */
 
 .box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   gap: 2rem;
-  border: 1px solid var(--border2);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 2rem;
   height: 100%;
@@ -57,11 +57,12 @@
   font-size: 1.8rem;
   color: var(--black);
   font-weight: 700;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .copy {
   color: var(--text);
+  font-size: 1.4rem;
 }
 
 .imgContainer {
@@ -88,6 +89,10 @@
     flex-direction: column;
   }
 
+  .bottomMap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .heading {
     text-align: center;
     margin-left: auto;
@@ -105,11 +110,6 @@
   }
 }
 
-@media screen and (max-width: 968px) {
-  .bottomMap {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 @media screen and (max-width: 668px) {
   .heading {

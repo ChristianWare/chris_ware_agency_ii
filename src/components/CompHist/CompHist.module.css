@@ -11,6 +11,7 @@
 
 .copy {
   color: var(--text);
+  font-size: 1.6rem;
 }
 
 .highlight {

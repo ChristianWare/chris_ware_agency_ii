@@ -33,6 +33,7 @@
   color: var(--text);
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.6rem;
 }
 
 .highlight {
@@ -57,6 +58,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: var(--text);
+  font-size: 1.6rem;
 }
 
 .top {
@@ -123,6 +125,7 @@
   margin: 2rem 0;
   margin-top: 1rem;
   text-align: center;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1268px) {
@@ -137,10 +140,6 @@
 }
 
 @media screen and (max-width: 1068px) {
-  .top {
-    /* margin-bottom: 0rem; */
-  }
-
   .topText {
     width: 100%;
     text-align: center;

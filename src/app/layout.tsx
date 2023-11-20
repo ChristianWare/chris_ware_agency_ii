@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 const chakraPetch = Chakra_Petch({
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal"],
   subsets: ["latin"],
   variable: "--chakraPetch",

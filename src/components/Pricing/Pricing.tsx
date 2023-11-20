@@ -31,19 +31,23 @@ const Pricing = () => {
               <div key={x.id} className={styles.card}>
                 <div className={styles.box}>
                   <h3 className={styles.planName}>{x.plan}</h3>
+                  {/* <strong className={styles.price}>$ {x.price}</strong> */}
+                  {typeof x.price === "number" ? (
+                    <strong className={styles.price}>$ {x.price}</strong>
+                  ) : (
+                    <strong className={styles.price}>{x.price}</strong>
+                  )}
+                  <p className={styles.monthly}>billed monthly</p>
                   <p className={styles.description}>{x.description}</p>
                   <hr className={styles.hr} />
-                  <strong className={styles.price}>
-                    $ {x.price} <span className={styles.span}>/ mo</span>
-                  </strong>
                   <p className={styles.includes}>Includes:</p>
                   <div className={styles.checkFeatureContainer}>
                     {x.includes.map((y, index) => (
                       <ul key={index} className={styles.featuresList}>
                         <li>
                           <Check
-                            width={30}
-                            height={30}
+                            width={20}
+                            height={20}
                             className={styles.icon}
                           />{" "}
                           {y.feature}

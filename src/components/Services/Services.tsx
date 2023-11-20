@@ -14,13 +14,11 @@ const Services = () => {
     <div className={styles.content}>
       <LayoutWrapper>
         <ContentPadding>
-              <h2 className={styles.heading}>
-                We build direct booking sites that include the following
-                features:
-              </h2>
+          <h2 className={styles.heading}>
+            We build direct booking sites that include the following features:
+          </h2>
           <div className={styles.contentBox}>
             <div className={styles.bottom}>
-              
               <div className={styles.bottomMap}>
                 {features.map((x, index) => (
                   <div key={index} className={styles.container}>
@@ -34,10 +32,8 @@ const Services = () => {
                           className={styles.icon}
                         />
                       </div>
-                      <h3 className={styles.h3}>{x.service}</h3>
-                      {pathname !== "/" && (
-                        <p className={styles.copy}>{x.description}</p>
-                      )}
+                    <h3 className={styles.h3}>{x.service}</h3>
+                    <p className={styles.copy}>{x.description}</p>
                     </div>
                   </div>
                 ))}

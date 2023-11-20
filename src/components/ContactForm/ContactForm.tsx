@@ -44,7 +44,6 @@ const ContactForm = () => {
               <div className={styles.imgContainer}>
                 <Image src={Img7} alt='img' fill className={styles.img} />
               </div>
-
               {/* <div className={styles.checkContainerBox}>
                 <div className={styles.checkContainer}>
                   <Check width={30} height={30} className={styles.icon} />

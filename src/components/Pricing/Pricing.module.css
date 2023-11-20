@@ -93,7 +93,7 @@
   border: 1px solid var(--border3);
   background-color: var(--green);
   border-radius: 8px;
-  padding: .6rem;
+  padding: 0.6rem;
 }
 
 .box {
@@ -105,14 +105,24 @@
 }
 
 .planName {
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-decoration: none;
+  font-weight: 300;
+  line-height: 110%;
+}
+
+.monthly {
+  font-size: 1.4rem;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 .description {
   opacity: 0.7;
   margin: 2rem 0;
   margin-top: 1rem;
+  font-size: 1.4rem;
 }
 
 .hr {
@@ -125,6 +135,7 @@
   display: block;
   font-family: var(--chakraPetch);
   color: var(--text2);
+  font-size: 2.8rem;
 }
 
 .span {
@@ -145,8 +156,7 @@
 }
 
 .icon {
-  border: 3px solid var(--border);
-  border-radius: 50%;
+  color: var(--text);
 }
 
 .featuresList li {
@@ -161,6 +171,7 @@
   font-family: var(--outfit);
   font-weight: 500;
   color: var(--navy);
+  font-size: 1.4rem;
 }
 
 .btnContainer {

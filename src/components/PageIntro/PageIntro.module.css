@@ -1,6 +1,5 @@
 .container {
   background-color: var(--tan);
-  padding-top: 3rem;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -18,24 +17,16 @@
   background: url(../../../public//images/noise.gif);
 }
 
-.top {
+.content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row-reverse;
+  align-items: flex-start;
   justify-content: center;
-  background-color: var(--tan);
-  border: 1px solid var(--border3);
-  border-radius: 10px;
-  padding: .6rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  box-shadow: var(--shadow);
-  position: relative;
-  z-index: 2;
+  gap: 5rem;
 }
 
-.heading {
-  text-align: center;
+.left {
+  flex: 2;
 }
 
 .highlight {
@@ -57,128 +48,141 @@
 }
 
 .copy {
-  margin: 3rem 00rem;
-  color: var(--text2);
-  width: 75%;
-  text-align: center;
-}
-
-.bottom {
-  margin-top: -35rem;
-  z-index: -1;
-}
-
-.imgContainer {
-  position: relative;
-  width: 100%;
-  height: 450px;
-  font-size: 0;
-  background-color: var(--green);
-  border: 1px solid var(--border3);
-  border-radius: 10px;
-}
-
-.img {
-  position: relative;
-  object-fit: cover;
-  font-size: 0;
-  padding: 0.8rem;
-  border-radius: 15px;
-}
-
-.infoContainer {
-  position: relative;
   margin-top: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  z-index: 2;
-  background-color: var(--tan);
-  border: 1px solid var(--border3);
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: var(--shadow);
+  font-size: 1.6rem;
+  color: var(--text2);
+  width: 90%;
 }
 
-.box {
+.btnContainer {
+  margin: 3rem 0rem;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.leftBottom {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  /* border-bottom: 2px solid var(--border2); */
+  width: fit-content;
+}
+
+.lb1 {
+  padding: 2rem;
+  padding-left: 0rem;
+  border-right: 2px solid var(--border2);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.lb2 {
+  padding: 2rem;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon {
+  color: var(--black);
+}
+
+.right {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
-  border: 1px solid var(--border3);
-  border-radius: 10px;
 }
 
-.infoLeft,
-.infoRight {
-  flex: 1;
+.b2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-}
-
-.copyii {
-  margin-top: 3rem;
-  color: var(--text2);
-}
-
-.logoImageContainer {
-  position: relative;
-  width: 100%;
-  height: 200px;
-}
-
-.logo {
-  object-fit: contain;
-  opacity: 0.7;
+  margin-bottom: 10rem;
 }
 
 @media screen and (max-width: 1100px) {
-  /* .box {
-    flex-direction: column-reverse;
-  } */
-}
-
-@media screen and (max-width: 968px) {
-  .copy {
-    width: 100%;
-  }
-
-  .top {
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-
-.infoContainer {
-  margin-top: 2rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-}
-
-  .box {
-    padding: 3rem;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .top, .box {
-    display: flex;
+  .content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0rem;
   }
 
-  .heading,
-  .copy {
-    width: 100%;
-    text-align: left;
-  }
-
-  .infoLeft {
+  .left {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .infoLeft h2 {
+  .heading {
     text-align: center;
+  }
+
+  .copy {
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btnContainer,
+  .leftBottom {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .content {
+    justify-content: center;
+  }
+
+  .btnContainer {
+    justify-content: center;
+  }
+
+  .leftBottom {
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .copy {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .left {
+    align-items: flex-start;
+  }
+
+  .heading,
+  .copy {
+    text-align: left;
+  }
+
+  .btnContainer,
+  .leftBottom {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }

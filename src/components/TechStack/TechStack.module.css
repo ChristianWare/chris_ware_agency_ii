@@ -26,6 +26,7 @@
   width: 70%;
   color: var(--text);
   font-weight: 500;
+  font-size: 1.6rem;
 }
 
 .bottom {
@@ -69,6 +70,7 @@
 .description {
   color: var(--text);
   margin-top: 2rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 1268px) {
