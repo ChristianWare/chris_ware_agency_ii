@@ -1,20 +1,5 @@
 .container {
   background-color: var(--tan);
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.container::before {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  content: "";
-  opacity: 0.03;
-  pointer-events: none;
-  background: url(../../../public//images/noise.gif);
 }
 
 .content {

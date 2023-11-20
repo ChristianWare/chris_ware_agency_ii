@@ -3,6 +3,7 @@ import { Inter, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
+import styles from './layout.module.css'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,7 +36,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${inter.variable} ${chakraPetch.variable}`}>
         <Nav />
-        {children}
+        <div className={styles.noise}>{children}</div>
         <Footer />
       </body>
     </html>

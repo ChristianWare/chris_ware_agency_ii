@@ -50,7 +50,7 @@
   gap: 2rem;
   border: 1px solid var(--border);
   border-radius: 10px;
-  background-color: var(--white);
+  /* background-color: var(--tan); */
   padding: 3rem 2rem;
   padding-bottom: 2rem;
   width: 100%;
