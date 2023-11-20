@@ -18,59 +18,65 @@ const Faq = () => {
     setSelected(i);
   };
   return (
-    <LayoutWrapper>
-      <ContentPadding>
-        <div className={styles.content}>
-          <div className={styles.top}>
-            <h2 className={styles.heading}>
-            frequently asked{" "}
-              <span className={styles.highlight}>questions </span>
-            </h2>
-            <p className={styles.topText}>
-              Here are some commonly asked questions and their answers below. If
-              you don&#39;t see your questions here, call us any time.
-            </p>
-          </div>
-          <div className={styles.bottom}>
-            {faqs.slice(0, 5).map((x, i) => (
-              <div
-                key={x.id}
-                className={
-                  selected === i
-                    ? styles.qaContainer + " " + styles.showBorder
-                    : styles.qaContainer
-                }
-                onClick={() => toggle(i)}
-              >
-                <div className={styles.headingArrowContainer}>
-                  <h3 className={styles.question} lang='en'>
-                    <span className={styles.index}>0{i + 1} </span>
-                    {x.question}
-                  </h3>
-                  {selected === i ? (
-                    <Arrow className={styles.iconFlip} width={20} height={20} />
-                  ) : (
-                    <Arrow className={styles.icon} width={20} height={20} />
-                  )}
-                </div>
+    <div className={styles.container}>
+      <LayoutWrapper>
+        <ContentPadding>
+          <div className={styles.content}>
+            <div className={styles.top}>
+              <h2 className={styles.heading}>
+                frequently asked{" "}
+                <span className={styles.highlight}>questions </span>
+              </h2>
+              <p className={styles.topText}>
+                Here are some commonly asked questions and their answers below.
+                If you don&#39;t see your questions here, call us any time.
+              </p>
+            </div>
+            <div className={styles.bottom}>
+              {faqs.slice(0, 5).map((x, i) => (
                 <div
+                  key={x.id}
                   className={
                     selected === i
-                      ? styles.answerContainer + " " + styles.show
-                      : styles.answerContainer
+                      ? styles.qaContainer + " " + styles.showBorder
+                      : styles.qaContainer
                   }
+                  onClick={() => toggle(i)}
                 >
-                  <p className={styles.answer} lang='en'>
-                    {x.answer}
-                  </p>
+                  <div className={styles.headingArrowContainer}>
+                    <h3 className={styles.question} lang='en'>
+                      <span className={styles.index}>0{i + 1} </span>
+                      {x.question}
+                    </h3>
+                    {selected === i ? (
+                      <Arrow
+                        className={styles.iconFlip}
+                        width={20}
+                        height={20}
+                      />
+                    ) : (
+                      <Arrow className={styles.icon} width={20} height={20} />
+                    )}
+                  </div>
+                  <div
+                    className={
+                      selected === i
+                        ? styles.answerContainer + " " + styles.show
+                        : styles.answerContainer
+                    }
+                  >
+                    <p className={styles.answer} lang='en'>
+                      {x.answer}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className={styles.btnContainer}></div>
           </div>
-          <div className={styles.btnContainer}></div>
-        </div>
-      </ContentPadding>
-    </LayoutWrapper>
+        </ContentPadding>
+      </LayoutWrapper>
+    </div>
   );
 };
 export default Faq;

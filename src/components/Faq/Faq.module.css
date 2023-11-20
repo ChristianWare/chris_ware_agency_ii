@@ -1,6 +1,7 @@
 .container {
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
   position: relative;
+  /* background-color: var(--white); */
 }
 
 .content {
@@ -58,7 +59,7 @@
 .qaContainer {
   padding: 3rem 2rem;
   border: 1px solid var(--border);
-  background-color: var(--tan);
+  /* background-color: var(--tan); */
   border-radius: 8px;
   width: 100%;
   cursor: pointer;

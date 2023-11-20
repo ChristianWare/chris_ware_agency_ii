@@ -1,5 +1,6 @@
 .content {
   padding-top: 5rem;
+  /* background-color: var(--white); */
 }
 
 .heading {
@@ -109,7 +110,6 @@
     width: 80%;
   }
 }
-
 
 @media screen and (max-width: 668px) {
   .heading {

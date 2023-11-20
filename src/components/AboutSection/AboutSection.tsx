@@ -9,68 +9,74 @@ import Label from "../Label/Label";
 
 const AboutSection = () => {
   return (
-    <LayoutWrapper>
-      <ContentPadding>
-        <div className={styles.content}>
-          <div className={styles.left}>
-            <Label text='About Us' />
-            <h2 className={styles.heading}>
-              <span className={styles.highlight}>Who</span> are we?
-            </h2>
+    <div className={styles.container}>
+      <LayoutWrapper>
+        <ContentPadding>
+          <div className={styles.content}>
+            <div className={styles.left}>
+              <Label text='About Us' />
+              <h2 className={styles.heading}>
+                <span className={styles.highlight}>Who</span> are we?
+              </h2>
+              <div className={styles.right}>
+                <p className={styles.copy}>
+                  The Chris Ware Agency revolutionizes vacation rental property
+                  management with personalized, direct booking websites designed
+                  to enhance the overall rental experience. Our expertise in the
+                  vacation rental industry ensures tailored solutions to
+                  maximize your property&#39;s potential. By choosing us, you
+                  gain a direct connection with guests, fostering trust and
+                  boosting bookings, unlocking the full potential of your
+                  vacation rental business. Here are some benefits and features:
+                </p>
+                <div className={styles.iconTextContainer}>
+                  <div className={styles.itextLeft}>
+                    <Check width={25} height={25} className={styles.icon} />
+                  </div>
+                  <div className={styles.itexRight}>
+                    <p className={styles.copyii}>
+                      Tailored Solutions for Your Property
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.iconTextContainer}>
+                  <div className={styles.itextLeft}>
+                    <Check width={25} height={25} className={styles.icon} />
+                  </div>
+                  <div className={styles.itexRight}>
+                    <p className={styles.copyii}>
+                      Maximize Revenue with Direct Bookings
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.iconTextContainer}>
+                  <div className={styles.itextLeft}>
+                    <Check width={25} height={25} className={styles.icon} />
+                  </div>
+                  <div className={styles.itexRight}>
+                    <p className={styles.copyii}>
+                      Professional Guidance Every Step of the Way
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.btnContainer}>
+                  <Button
+                    href='/about'
+                    text='More about us'
+                    btnType='primary'
+                  />
+                </div>
+              </div>
+            </div>
             <div className={styles.right}>
-              <p className={styles.copy}>
-                The Chris Ware Agency revolutionizes vacation rental property
-                management with personalized, direct booking websites designed
-                to enhance the overall rental experience. Our expertise in the
-                vacation rental industry ensures tailored solutions to maximize
-                your property&#39;s potential. By choosing us, you gain a direct
-                connection with guests, fostering trust and boosting bookings,
-                unlocking the full potential of your vacation rental business.
-                Here are some benefits and features:
-              </p>
-              <div className={styles.iconTextContainer}>
-                <div className={styles.itextLeft}>
-                  <Check width={25} height={25} className={styles.icon} />
-                </div>
-                <div className={styles.itexRight}>
-                  <p className={styles.copyii}>
-                    Tailored Solutions for Your Property
-                  </p>
-                </div>
-              </div>
-              <div className={styles.iconTextContainer}>
-                <div className={styles.itextLeft}>
-                  <Check width={25} height={25} className={styles.icon} />
-                </div>
-                <div className={styles.itexRight}>
-                  <p className={styles.copyii}>
-                    Maximize Revenue with Direct Bookings
-                  </p>
-                </div>
-              </div>
-              <div className={styles.iconTextContainer}>
-                <div className={styles.itextLeft}>
-                  <Check width={25} height={25} className={styles.icon} />
-                </div>
-                <div className={styles.itexRight}>
-                  <p className={styles.copyii}>
-                    Professional Guidance Every Step of the Way
-                  </p>
-                </div>
-              </div>
-              <div className={styles.btnContainer}>
-                <Button href='/about' text='More about us' btnType='primary' />
+              <div className={styles.imgContainer}>
+                <Image src={Img1} alt='img' fill className={styles.img} />
               </div>
             </div>
           </div>
-          <div className={styles.right}>
-            <div className={styles.imgContainer}>
-              <Image src={Img1} alt='img' fill className={styles.img} />
-            </div>
-          </div>
-        </div>
-      </ContentPadding>
-    </LayoutWrapper>
+        </ContentPadding>
+      </LayoutWrapper>
+    </div>
   );
 };
 export default AboutSection;
