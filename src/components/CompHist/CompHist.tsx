@@ -16,32 +16,32 @@ const CompHist = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h2 className={styles.heading}>
-              The birth of an{" "}
-              <span className={styles.highlight}>unparalleled</span> web
-              development service
+              About the <span className={styles.highlight}>CWA</span>
             </h2>
             <br />
             <p className={styles.copy}>
-              Our journey began with a simple mission - to make document
-              legalization accessibl e and effortless for all. A group of legal
-              enthusiasts saw the difficulties people faced with the notary
-              process and decided to do something about it. They envisioned a
-              service that would bring the notary to the client, irrespective of
-              location, ensuring comfort and convenience.
+              Welcome to The Chris Ware Agency, where we revolutionize the way
+              vacation rental owners connect with their guests. Founded on the
+              belief that every property deserves a dedicated spotlight, The CWA
+              was established by Chris Ware, with a passion for empowering
+              property owners to transcend the limitations of platforms like
+              Airbnb. Our journey began with the realization that personalized,
+              direct booking websites can elevate the vacation rental
+              experience, offering a unique connection between owners and
+              guests. Chris Ware brings a wealth of expertise to the helm,
+              ensuring that each website is not just a platform but a
+              personalized reflection of the property&#39;s charm.
             </p>
             <br />
             <p className={styles.copy}>
-              The concept turned into reality and thus, our notary service was
-              born. Initially, we focused on mobile notary services, going from
-              door-to-door, building trust with each document signed. As the
-              digital revolution unfolded, we introduced remote notarization,
-              revolutionizing the way people viewed the notarization process.
-            </p>
-            <br />
-            <p className={styles.copy}>
-              Today, we&#39;re proud to be the trusted choice for countless
-              clients, eliminating the hurdles of traditional notary services
-              with our innovative solutions.
+              Our values are rooted in transparency, innovation, and a
+              commitment to helping property owners take control of their
+              bookings. We employ cutting-edge technologies in every website we
+              build, ensuring seamless functionality, eye-catching designs, and
+              user-friendly experiences. At the CWA, we don&#39;t just create
+              websites; we craft digital experiences that transform the way you
+              engage with your guests and shape the future of your vacation
+              rental business.
             </p>
           </div>
           <div className={styles.right}>

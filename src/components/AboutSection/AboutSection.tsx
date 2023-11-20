@@ -19,17 +19,14 @@ const AboutSection = () => {
             </h2>
             <div className={styles.right}>
               <p className={styles.copy}>
-                Welcome to the Chris Ware Agency, where we transform the way you
-                manage your vacation rental properties. We specialize in
-                crafting personalized, direct booking websites tailored to
-                elevate your vacation home rental experience. We understand the
-                ins and outs of the vacation rental industry, and we&#39;re
-                passionate about helping you maximize your property&#39;s
-                potential. With our expertise, you can establish a direct
-                connection with your guests, foster trust, and ultimately
-                increase bookings. Join us in unlocking the full potential of
-                your vacation rental busines. here are some benefits and
-                features:
+                The Chris Ware Agency revolutionizes vacation rental property
+                management with personalized, direct booking websites designed
+                to enhance the overall rental experience. Our expertise in the
+                vacation rental industry ensures tailored solutions to maximize
+                your property&#39;s potential. By choosing us, you gain a direct
+                connection with guests, fostering trust and boosting bookings,
+                unlocking the full potential of your vacation rental business.
+                Here are some benefits and features:
               </p>
               <div className={styles.iconTextContainer}>
                 <div className={styles.itextLeft}>

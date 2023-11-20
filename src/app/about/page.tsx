@@ -14,9 +14,9 @@ const AboutPage = () => {
     <>
       <PageIntro
         labelText='get to know us'
-        heading='About the'
+        heading='The Story Behind the'
         highlight='Chris Ware Agency'
-        copy='I’m Chris Ware, the owner and creative force behind The Chris Ware Agency. My journey in the world of web development began during my college years, where I discovered my passion for crafting digital experiences. Over the past decade and a half, I’ve honed my skills and transformed that passion into a thriving career.'
+        copy="We're on a mission to redefine the vacation rental experience by empowering property owners to seize control of their bookings. Discover the narrative behind our commitment to personalized, direct booking websites and join us in transforming the way you connect with your guests."
         src={Img}
         labelText2='CONVENIENT & STICKY SERVICES'
         heading2='Diversify revenue with convenient services that keep customers coming back'
