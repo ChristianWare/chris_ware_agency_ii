@@ -44,28 +44,6 @@ const ContactForm = () => {
               <div className={styles.imgContainer}>
                 <Image src={Img7} alt='img' fill className={styles.img} />
               </div>
-              {/* <div className={styles.checkContainerBox}>
-                <div className={styles.checkContainer}>
-                  <Check width={30} height={30} className={styles.icon} />
-                  <p className={styles.featureText}>
-                    See a live demonsration of how the platform works.
-                  </p>
-                </div>
-                <div className={styles.checkContainer}>
-                  <Check width={30} height={30} className={styles.icon} />
-                  <p className={styles.featureText}>
-                    Have an overview of our flexible payment options.
-                  </p>
-                </div>
-                <div className={styles.checkContainer}>
-                  <Check width={30} height={30} className={styles.icon} />
-                  <p className={styles.featureText}>
-                    Get tailored offer based on your needs and number of
-                    employees.
-                  </p>
-                </div>
-                
-              </div> */}
             </div>
             <div className={styles.right}>
               <form
