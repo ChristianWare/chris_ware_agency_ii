@@ -9,7 +9,8 @@ const FinalCta = () => {
         <div className={styles.content}>
           <div className={styles.bottom}>
             <SectionHeading
-              headingText='Ready to experience your own direct booking website?'
+              headingText='Your rental property deserves more than
+                just a listing. It deserves a spotlight.'
               copyText='Reach out today to learn how you can get more bookings with your own personalized direct booking website for your vacation rental property.'
             />
             <div className={styles.btnContainer}>

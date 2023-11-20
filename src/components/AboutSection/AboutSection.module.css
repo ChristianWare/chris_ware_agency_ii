@@ -62,12 +62,9 @@
   width: 90%;
 }
 
-.copy {
-  font-weight: 600;
-}
-
 .copyii {
-  font-weight: 400;
+  width: 100%;
+  font-weight: 600;
 }
 
 .imgContainer {
@@ -89,7 +86,7 @@
 .iconTextContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
 }
 

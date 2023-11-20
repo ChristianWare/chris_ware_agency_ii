@@ -27,10 +27,14 @@ const Hero = () => {
                 <span className={styles.highlight}>online booking</span>{" "}
                 realities.
               </h1>
-              <p className={styles.copy}>
-                Opt for your own direct booking website to take control of your
+                {/* Opt for your own direct booking website to take control of your
                 vacation rental business, reduce fees, and build a unique brand
-                identity, while enjoying better communication with guests.
+                identity, while enjoying better communication with guests. */}
+              <p className={styles.copy}>
+                Tired of relying solely on platforms like Airbnb or VRBO? We
+                empower property owners like you to take control of your
+                bookings with a custom website that showcases your unique
+                offerings.
               </p>
               <div className={styles.btnContainer}>
                 <Button text='Get Consultation' href='/' btnType='primary' />

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Img1 from "../../../public/images/img4.png";
 import Check from "../../../public/icons/check.svg";
 import Button from "../Button/Button";
+import Label from "../Label/Label";
 
 const AboutSection = () => {
   return (
@@ -12,15 +13,23 @@ const AboutSection = () => {
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.left}>
+            <Label text='About Us' />
             <h2 className={styles.heading}>
               <span className={styles.highlight}>Who</span> are we?
             </h2>
             <div className={styles.right}>
               <p className={styles.copy}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                itaque corporis ullam accusantium voluptatum tempora commodi
-                doloribus aut, dolorum maiores repellendus iusto nobis placeat.
-                Dignissimos laborum atque fugiat soluta vel.
+                Welcome to the Chris Ware Agency, where we transform the way you
+                manage your vacation rental properties. We specialize in
+                crafting personalized, direct booking websites tailored to
+                elevate your vacation home rental experience. We understand the
+                ins and outs of the vacation rental industry, and we&#39;re
+                passionate about helping you maximize your property&#39;s
+                potential. With our expertise, you can establish a direct
+                connection with your guests, foster trust, and ultimately
+                increase bookings. Join us in unlocking the full potential of
+                your vacation rental busines. here are some benefits and
+                features:
               </p>
               <div className={styles.iconTextContainer}>
                 <div className={styles.itextLeft}>
@@ -28,8 +37,7 @@ const AboutSection = () => {
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus, aliquam voluptas.
+                    Tailored Solutions for Your Property
                   </p>
                 </div>
               </div>
@@ -39,8 +47,7 @@ const AboutSection = () => {
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Facilis deserunt sed magni libero.
+                    Maximize Revenue with Direct Bookings
                   </p>
                 </div>
               </div>
@@ -50,8 +57,7 @@ const AboutSection = () => {
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Facilis deserunt sed magni libero.
+                    Professional Guidance Every Step of the Way
                   </p>
                 </div>
               </div>
