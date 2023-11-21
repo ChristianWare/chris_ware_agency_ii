@@ -36,7 +36,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${inter.variable} ${chakraPetch.variable}`}>
         <Nav />
-        <div className={styles.noise}>{children}</div>
+        <div className={styles.noise}>
+          {children}
+          </div>
         <Footer />
       </body>
     </html>

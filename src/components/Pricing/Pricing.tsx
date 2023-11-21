@@ -31,7 +31,6 @@ const Pricing = () => {
               <div key={x.id} className={styles.card}>
                 <div className={styles.box}>
                   <h3 className={styles.planName}>{x.plan}</h3>
-                  {/* <strong className={styles.price}>$ {x.price}</strong> */}
                   {typeof x.price === "number" ? (
                     <strong className={styles.price}>$ {x.price}</strong>
                   ) : (

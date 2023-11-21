@@ -19,25 +19,49 @@ const Services = () => {
           </h2>
           <div className={styles.contentBox}>
             <div className={styles.bottom}>
-              <div className={styles.bottomMap}>
-                {features.map((x, index) => (
-                  <div key={index} className={styles.container}>
-                    <div className={styles.box}>
-                      <div className={styles.iconContainer}>
-                        <Image
-                          src={x.icon}
-                          alt='icon'
-                          width={40}
-                          height={40}
-                          className={styles.icon}
-                        />
+              {pathname === "/" && (
+                <div className={styles.bottomMap}>
+                  {features.slice(0, 5).map((x, index) => (
+                    <div key={index} className={styles.container}>
+                      <div className={styles.box}>
+                        <div className={styles.iconContainer}>
+                          <Image
+                            src={x.icon}
+                            alt='icon'
+                            width={40}
+                            height={40}
+                            className={styles.icon}
+                          />
+                        </div>
+                        <h3 className={styles.h3}>{x.service}</h3>
+                        <p className={styles.copy}>{x.description}</p>
                       </div>
-                    <h3 className={styles.h3}>{x.service}</h3>
-                    <p className={styles.copy}>{x.description}</p>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
+              {pathname === "/features" && (
+                <div className={styles.bottomMap}>
+                  {features.map((x, index) => (
+                    <div key={index} className={styles.container}>
+                      <div className={styles.box}>
+                        <div className={styles.iconContainer}>
+                          <Image
+                            src={x.icon}
+                            alt='icon'
+                            width={40}
+                            height={40}
+                            className={styles.icon}
+                          />
+                        </div>
+                        <h3 className={styles.h3}>{x.service}</h3>
+                        <p className={styles.copy}>{x.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               {pathname === "/" && (
                 <div className={styles.btnContainer}>
                   <Button
