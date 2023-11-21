@@ -1,6 +1,5 @@
 import Calendar from "../../public/icons/calendar.png";
 import Reviews from "../../public/icons/reviews.png";
-import Admin from "../../public/icons/admin.png";
 import Next from "../../public/icons/nextjs.png";
 import Mongo from "../../public/icons/mongodb.png";
 import Cloudinary from "../../public/icons/cloudinary.png";
@@ -16,6 +15,13 @@ import User from "../../public/icons/user.png";
 import Booking from "../../public/icons/booking.png";
 import Profile from "../../public/icons/profile.png";
 import Money from "../../public/icons/money.png";
+import Reviews2 from "../../public/icons/reviews2.png";
+import Admin2 from "../../public/icons/admin2.png";
+import Payment from "../../public/icons/payment.png";
+import Responsive from "../../public/icons/responsive.png";
+import Accessibility from "../../public/icons/accessibility.png";
+import SEO from "../../public/icons/seo.png";
+import Page from "../../public/icons/page.png";
 
 export const benefits = [
   {
@@ -61,43 +67,43 @@ export const features = [
     service: "Guest Reviews and Testimonials",
     description:
       "Showcase positive reviews and testimonials from previous guests to build trust and credibility. Visitors will only be able to review once they've booked a stay on your property.",
-    icon: Calendar,
+    icon: Reviews2,
   },
   {
     service: "Admin Panel",
     description:
       "Admin panel will allow you to create, update, and delete listings on your persoanlized booking websites. You can aslo view the number of bookings, and make any updates as needed.",
-    icon: Calendar,
+    icon: Admin2,
   },
   {
     service: "Payment Processing",
     description:
       "With the use of stripe, you will be able to accept all major credit card on your own personal booking website. you can even issue refunds if someone cancels a stay at your property.",
-    icon: Calendar,
+    icon: Payment,
   },
   {
     service: "Mobile Resposive",
     description:
       "Designed to adapt and display optimally on various devices and screen sizes, providing an optimal user experience by adjusting its layout and content dynamically.",
-    icon: Calendar,
+    icon: Responsive,
   },
   {
     service: "Accessible",
     description:
       "Ensures that people with disabilities can perceive, understand, navigate, and interact with its content, features, and functionalities effectively, providing an inclusive and equal user experience for all.",
-    icon: Calendar,
+    icon: Accessibility,
   },
   {
     service: "Search Engine Optomization",
     description:
       "A search engine optimized website is configured to enhance its visibility and ranking on search engine results pages, employing strategies to improve its relevance, accessibility, and overall performance for better search engine discoverability.",
-    icon: Calendar,
+    icon: SEO,
   },
   {
     service: "Page Speed Optmization",
     description:
       "Webite pages load quickly and efficiently, ensuring fast loading times for its pages and content, which contributes to a better user experience and may positively impact search engine rankings.",
-    icon: Calendar,
+    icon: Page,
   },
 ] as const;
 
