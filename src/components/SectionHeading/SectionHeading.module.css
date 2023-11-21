@@ -15,9 +15,10 @@
 .copy {
   text-align: center;
   width: 50%;
-  color: var(--text);
+  color: var(--text2);
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1268px) {
@@ -30,5 +31,11 @@
   .heading,
   .copy {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .heading {
+    font-size: 2.5rem;
   }
 }

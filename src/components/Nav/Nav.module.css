@@ -29,7 +29,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--black);
-  font-family: var(--chakraPetch);
+  /* font-family: var(--chakraPetch); */
 }
 
 .icon {
@@ -58,7 +58,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--black);
-  font-family: var(--chakraPetch);
+  /* font-family: var(--chakraPetch); */
   text-transform: uppercase;
   position: relative;
   user-select: none;

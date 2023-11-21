@@ -39,7 +39,7 @@ export default function RootLayout({
         <div className={styles.noise}>
           {children}
           </div>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

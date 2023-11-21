@@ -289,107 +289,23 @@ export const faqs = [
 export const footer = [
   {
     id: 1,
-    heading: "About",
-    section: [
-      {
-        id: 2,
-        name: "Terms of Use",
-        href: "/terms",
-      },
-      {
-        id: 3,
-        name: "Privacy Poilicy",
-        href: "/privacy",
-      },
-      {
-        id: 4,
-        name: "Accessibility Policy",
-        href: "/accessibility",
-      },
-      {
-        id: 5,
-        name: "California Disclosures",
-        href: "/california",
-      },
-    ],
+    heading: "Home",
   },
   {
     id: 6,
-    heading: "Services",
-    section: [
-      {
-        id: 7,
-        name: "Airport Transfers",
-        href: "/services",
-      },
-      {
-        id: 8,
-        name: "Long Distance",
-        href: "/services",
-      },
-      {
-        id: 9,
-        name: "Party Bus",
-        href: "/services",
-      },
-      {
-        id: 10,
-        name: "Special Events",
-        href: "/services",
-      },
-    ],
+    heading: "About",
   },
   {
     id: 11,
-    heading: "Booking",
-    section: [
-      {
-        id: 12,
-        name: "24/7",
-        href: "/contact",
-      },
-      {
-        id: 13,
-        name: "Phoenix",
-        href: "/contact",
-      },
-      {
-        id: 146,
-        name: "Scottsdale",
-        href: "/contact",
-      },
-      {
-        id: 15,
-        name: "West Valley",
-        href: "/contact",
-      },
-    ],
+    heading: "Features",
   },
   {
     id: 16,
     heading: "Contact",
-    section: [
-      {
-        id: 17,
-        name: "Phone",
-        href: "/contact",
-      },
-      {
-        id: 18,
-        name: "Email",
-        href: "/contact",
-      },
-      {
-        id: 19,
-        name: "Address",
-        href: "/contact",
-      },
-      {
-        id: 20,
-        name: "Phone",
-        href: "/contact",
-      },
-    ],
+  },
+  {
+    id: 17,
+    heading: "Blog",
   },
 ] as const;
 

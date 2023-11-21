@@ -34,6 +34,11 @@
   border: 1px solid var(--border2);
 }
 
+.tertiary {
+  color: var(--text2);
+  border: 1px solid var(--text2);
+}
+
 .navBtn {
   padding: 5px 25px;
   font-weight: 600;

@@ -2,8 +2,9 @@
   height: 100%;
   background-color: var(--lightBlue);
   border-radius: 10px;
+  box-shadow: var(--shadow);
   /* border: 1px solid var(--border); */
-  /* padding: 1rem; */
+  padding: 1rem;
 }
 
 .imgContainer {
@@ -19,7 +20,7 @@
 
 .img {
   border-radius: 15px;
-  padding: .5rem;
+  padding: 0.5rem;
   object-fit: cover;
 }
 
