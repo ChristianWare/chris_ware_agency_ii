@@ -120,6 +120,20 @@
 }
 
 @media screen and (max-width: 568px) {
+  .box {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .copy {
+    text-align: left;
+  }
+
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
