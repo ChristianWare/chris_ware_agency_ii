@@ -3,7 +3,8 @@ import { Inter, Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
-import styles from './layout.module.css'
+import styles from "./layout.module.css";
+import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,6 +28,12 @@ const chakraPetch = Chakra_Petch({
   adjustFontFallback: false,
 });
 
+const schabo = localFont({
+  src: "../../public/fonts/SCHABO.otf",
+  variable: "--schabo",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -34,11 +41,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.variable} ${chakraPetch.variable}`}>
+      <body
+        className={`${inter.variable} ${chakraPetch.variable} ${schabo.variable}`}
+      >
         <Nav />
-        <div className={styles.noise}>
-          {children}
-          </div>
+        <div className={styles.noise}>{children}</div>
         {/* <Footer /> */}
       </body>
     </html>

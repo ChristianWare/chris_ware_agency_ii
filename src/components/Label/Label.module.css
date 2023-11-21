@@ -1,6 +1,10 @@
 .span {
+  font-size: 1.6rem;
   font-weight: 700;
+  font-family: var(--inter);
+  text-transform: uppercase;
   color: var(--text);
   margin-bottom: 1rem;
   display: block;
+  letter-spacing: 0px !important;
 }
