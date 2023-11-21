@@ -1,5 +1,4 @@
 .header {
-  /* font-family: var(--inter); */
   font-family: var(--chakraPetch);
   color: var(--black);
   background-color: var(--tan);
@@ -28,8 +27,7 @@
 .logo {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--black);
-  /* font-family: var(--chakraPetch); */
+  color: var(--text2);
 }
 
 .icon {
@@ -55,10 +53,9 @@
 }
 
 .navItem {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: var(--black);
-  /* font-family: var(--chakraPetch); */
+  color: var(--text2);
   text-transform: uppercase;
   position: relative;
   user-select: none;
