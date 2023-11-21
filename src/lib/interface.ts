@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
-export interface Button {
+export interface ButtonProps {
   href: string;
   text: string;
   btnType: string;

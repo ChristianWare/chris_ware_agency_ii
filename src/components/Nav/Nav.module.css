@@ -1,5 +1,6 @@
 .header {
-  font-family: var(--inter);
+  /* font-family: var(--inter); */
+  font-family: var(--chakraPetch);
   color: var(--black);
   background-color: var(--tan);
   z-index: 1000;
@@ -25,9 +26,10 @@
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--black);
+  font-family: var(--chakraPetch);
 }
 
 .icon {
@@ -56,6 +58,8 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--black);
+  font-family: var(--chakraPetch);
+  text-transform: uppercase;
   position: relative;
   user-select: none;
   transition: all 0.3s ease-in;
@@ -63,7 +67,7 @@
 }
 
 .activeLink {
-  color: red
+  color: red;
 }
 
 .arrow {

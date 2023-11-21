@@ -64,7 +64,9 @@ function Nav() {
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
-          <Link href='/'>CWA</Link>
+          <Link href='/' className={styles.logo}>
+            CWA
+          </Link>
         </div>
         <div className={styles.menuItemsGroup}>
           <ul
@@ -78,7 +80,11 @@ function Nav() {
               <li key={index} className={styles.navItem} onClick={openMenu}>
                 <Link
                   href={navItem.href}
-                  className={pathname === navItem.text ? styles.activeLink : ""}
+                  className={
+                    pathname === navItem.text
+                      ? styles.activeLink + styles.navItem
+                      : styles.navItem
+                  }
                 >
                   {navItem.text}
                 </Link>
