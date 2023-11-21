@@ -1,20 +1,18 @@
 import Link from "next/link";
 import styles from "./BlogPreview.module.css";
 import Image from "next/image";
-import Img1 from "../../../public/images/img1.png";
+import { FC } from "react";
+import { BlogPreviewProps } from "@/lib/interface";
 
-const BlogPreview = () => {
+const BlogPreview: FC<BlogPreviewProps> = ({ mapData, key }) => {
   return (
-    // <div className={styles.container} key={key}>
-    <div className={styles.container}>
+    <div className={styles.container} key={key}>
       <div className={styles.content}>
         <div className={styles.imgContainer}>
-          {/* <Link href={`/blog/${mapData.slug}`}> */}
-          <Link href='/'>
+          <Link href={`/blog/${mapData.slug}`}>
             <Image
               alt='image'
-              //   src={mapData.meta.thumbnaillUrl}
-              src={Img1}
+              src={mapData.meta.thumbnaillUrl}
               fill
               className={styles.img}
             />
@@ -22,17 +20,12 @@ const BlogPreview = () => {
         </div>
         <div className={styles.textContainer}>
           <div className={styles.dateTimeContainer}>
-            {/* <time dateTime='2023-02-02'>{mapData.meta.date}</time> */}
-            <time dateTime='2023-02-02'>11-14-2023</time>
+            <time dateTime='2023-02-02'>{mapData.meta.date}</time>
           </div>
-          <Link href='/' passHref>
-            <h2 className={styles.title}>Title Here</h2>
-          </Link>
-          {/* <Link href={`/blog/${mapData.slug}`} passHref>
+          <Link href={`/blog/${mapData.slug}`} passHref>
             <h2 className={styles.title}>{mapData.meta.title}</h2>
-          </Link> */}
-          {/* <p className={styles.copy}>{mapData.meta.description}</p> */}
-          <p className={styles.copy}>description here</p>
+          </Link>
+          <p className={styles.copy}>{mapData.meta.description}</p>
         </div>
       </div>
     </div>

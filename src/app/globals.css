@@ -1,6 +1,6 @@
 :root {
   --green: #aeff12;
-  --green2: #DAFC53;
+  --green2: #dafc53;
   --gray: #f4f4f6;
   --black: #2a2a2a;
   --white: #ffffff;
@@ -12,7 +12,7 @@
   --text2: #424242;
   --text3: #434343;
   --tan: #f1f1e9;
-  --tan2: #ACAC96;
+  --tan2: #acac96;
   --tan3: #e8f1d4;
   --shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
 }
@@ -57,7 +57,8 @@ h2,
 h3,
 h4,
 h5,
-h6, span {
+h6,
+span {
   font-family: var(--chakraPetch);
   color: var(--black);
   letter-spacing: 0.02rem;

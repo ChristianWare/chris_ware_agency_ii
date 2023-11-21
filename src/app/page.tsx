@@ -11,6 +11,29 @@ import Pricing from "@/components/Pricing/Pricing";
 import Services from "@/components/Services/Services";
 
 const HomePage = () => {
+  const fs = require("fs");
+  const path = require("path");
+  const matter = require("gray-matter");
+
+  // Determine the correct path to the 'blogs' directory
+  const blogsDirectory = path.join(process.cwd(), "blogs");
+
+  // Use readdirSync to list files in the 'blogs' directory
+  const files = fs.readdirSync(blogsDirectory);
+
+  const blogs = files.map((filename: any) => {
+    const fileContent = fs.readFileSync(
+      path.join(blogsDirectory, filename),
+      "utf-8"
+    );
+
+    const { data: frontMatter } = matter(fileContent);
+    return {
+      meta: frontMatter,
+      slug: filename.replace(".mdx", ""),
+    };
+  });
+
   return (
     <div>
       <Hero />
@@ -21,7 +44,7 @@ const HomePage = () => {
       <Pricing />
       {/* <Portfolio /> */}
       <Faq />
-      <BlogSection />
+      <BlogSection blogData={blogs} />
       <ContactForm />
       <FinalCta />
     </div>
