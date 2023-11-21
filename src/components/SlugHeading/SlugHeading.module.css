@@ -1,0 +1,9 @@
+.heading {
+  font-size: 3rem;
+  font-family: var(--roboto);
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 120%;
+  color: var(--darkBlue);
+  opacity: 0.9;
+}

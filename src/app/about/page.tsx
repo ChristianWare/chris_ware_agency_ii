@@ -25,7 +25,7 @@ const AboutPage = () => {
       <TechStack />
       <Faq />
       <ContactForm />
-      <BlogSection />
+      {/* <BlogSection /> */}
     </>
   );
 };

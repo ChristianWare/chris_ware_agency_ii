@@ -20,7 +20,7 @@ export interface ImageGridProps {
 export interface PageIntroProps {
   labelText: string;
   heading: string;
-  highlight: string;
+  highlight?: string;
   copy: string;
 }
 
