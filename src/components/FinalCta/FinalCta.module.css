@@ -42,6 +42,31 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f1e9",endColorstr="#aeff12",GradientType=1);
 }
 
+.bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.left,
+.right {
+  flex: 1;
+  width: 100%;
+}
+
+.heading {
+  font-size: 3rem;
+  width: 70%;
+}
+
+.topText {
+  color: var(--text2);
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  width: 80%;
+}
+
 .btnContainer {
   display: flex;
   align-items: center;
@@ -50,14 +75,33 @@
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 568px) {
-  .layoutWrapper {
-    padding-right: 5px;
-    padding-left: 5px;
+@media screen and (max-width: 1200px) {
+  .heading,
+  .topText {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    padding: 3rem;
+    padding-top: 4rem;
   }
 
-  .contentPadding {
-    padding: 1rem;
+  .bottom {
+    flex-direction: column;
+  }
+
+  .heading,
+  .topText {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .content {
+    padding: 2rem;
+    padding-top: 3rem;
   }
 
   .content {

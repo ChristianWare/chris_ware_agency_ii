@@ -1,4 +1,5 @@
 import Button from "../Button/Button";
+import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../Footer/Footer";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./FinalCta.module.css";
@@ -10,14 +11,19 @@ const FinalCta = () => {
         <div className={styles.layoutWrapper}>
           <div className={styles.content}>
             <div className={styles.bottom}>
-              <SectionHeading
-                headingText='Your rental property deserves more than
-                just a listing. It deserves a spotlight.'
-                copyText='Reach out today to learn how you can get more bookings with your own personalized direct booking website for your vacation rental property.'
-              />
-              <div className={styles.btnContainer}>
-                {/* <Button text='Contact us' btnType='tertiary' href='/' /> */}
-                <Button text='Contact Us' btnType='primary' href='/' />
+              <div className={styles.left}>
+                <h2 className={styles.heading}>
+                  Your rental property deserves more than just a listing. It
+                  deserves a spotlight.
+                </h2>
+                <p className={styles.topText}>
+                  Here are some commonly asked questions and their answers
+                  below. If you don&#39;t see your questions here, call us any
+                  time.
+                </p>
+              </div>
+              <div className={styles.right}>
+                <ContactForm />
               </div>
             </div>
             <Footer />

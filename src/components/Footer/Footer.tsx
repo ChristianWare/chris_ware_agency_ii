@@ -18,10 +18,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.container}>
-      <div className={styles.layoutWrapper}>
-        <div className={styles.contentPadding}>
           <div className={styles.content}>
-            <div className={styles.topTop}>
               <div className={styles.right}>
                 <div className={styles.middleDesktop}>
                   {footer.map((f, index) => (
@@ -31,7 +28,6 @@ const Footer = () => {
                   ))}
                 </div>
               </div>
-            </div>
             <div className={styles.bottomDesktop}>
               <div className={styles.bottomLeft}>
                 <p className={styles.copy}>
@@ -40,8 +36,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </footer>
   );
 };

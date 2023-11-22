@@ -38,18 +38,15 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
               </p>
             </div>
             <div className={styles.content}>
-                {blogData.map((x: BlogData, index: number) => (
-                  <BlogPreview key={index} mapData={x} />
-                ))}
+              {blogData.map((x: BlogData, index: number) => (
+                <BlogPreview key={index} mapData={x} />
+              ))}
             </div>
             <div className={styles.btnContainer}>
-            {pathname !== "/blog" && (
-              <Button href='/blog' text='See all Articles' btnType='tertiary' />
-            )}
-          </div>
-          </div>
-          <div className={styles.btnContainer}>
-            <Button href='/about' text='All blogs' btnType='primary' />
+              {pathname !== "/blog" && (
+                <Button href='/about' text='All blogs' btnType='primary' />
+              )}
+            </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>

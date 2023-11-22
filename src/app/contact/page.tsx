@@ -20,7 +20,6 @@ const ContactPage = () => {
                 business.'
       />
       <Faq />
-      <ContactForm />
       <FinalCta />
     </>
   );

@@ -30,11 +30,9 @@ const ContactForm = () => {
   };
   return (
     <div className={styles.content}>
-      <LayoutWrapper>
-        <ContentPadding>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              <div className={styles.circleContainer}>
+              {/* <div className={styles.circleContainer}>
               </div>
               <h2 className={styles.heading}>
                 Request a <span className={styles.highlight}>Demo</span>
@@ -42,10 +40,10 @@ const ContactForm = () => {
               <p className={styles.copy}>
                 Feel free to contact us any time. We will glady answer any
                 questions you have. We can&#39;t wait to hear from you!
-              </p>
-              <div className={styles.imgContainer}>
+              </p> */}
+              {/* <div className={styles.imgContainer}>
                 <Image src={Img7} alt='img' fill className={styles.img} />
-              </div>
+              </div> */}
             </div>
             <div className={styles.right}>
               <form
@@ -154,8 +152,8 @@ const ContactForm = () => {
               </form>
             </div>
           </div>
-        </ContentPadding>
-      </LayoutWrapper>
+        {/* </ContentPadding> */}
+      {/* </LayoutWrapper> */}
     </div>
   );
 };
