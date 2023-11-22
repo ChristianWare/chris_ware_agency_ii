@@ -33,9 +33,8 @@
 
 .right {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
 }
@@ -57,7 +56,7 @@
 
 .bottomDesktop {
   border-top: 1px solid var(--text);
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -71,14 +70,22 @@
   width: 100%;
 }
 
+.lb2 {
+  padding: 2rem;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon {
+  color: var(--black);
+}
+
 @media screen and (max-width: 1068px) {
   .top {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .topTop {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -97,16 +104,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .input {
-    width: 100%;
-  }
-
-  .middleDesktop {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .sectionContainer {
-    padding-left: 0;
+  .right {
+    flex-direction: column;
   }
 }
 
@@ -118,10 +117,6 @@
 
   .contentPadding {
     padding: 3rem 2rem;
-  }
-
-  .topTop {
-    gap: 0rem;
   }
 
   .heading {
