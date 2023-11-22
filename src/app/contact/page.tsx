@@ -11,8 +11,8 @@ const ContactPage = () => {
     <>
       <PageIntro
         labelText='Contact us'
-        heading='Reach out today and Let us know how'
-        highlight='we can help'
+        heading='Here when you need us.'
+        highlight='Contact us today'
         copy='Whether you&#39;re a prospective client or have questions about
                 our services, reaching out is simple and quick. We&#39;re ready
                 to assist you to ensuring a seamless and personalized experience

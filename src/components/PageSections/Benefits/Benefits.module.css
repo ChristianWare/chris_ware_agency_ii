@@ -35,6 +35,8 @@
   height: 20%;
   background-color: var(--green);
   z-index: -1;
+  border: 1px solid var(--border3);
+  border-top: none;
 }
 
 .copy {

@@ -22,17 +22,12 @@ const CompHist = () => {
             </h2>
             <br />
             <p className={styles.copy}>
-              Welcome to The Chris Ware Agency, where we revolutionize the way
-              vacation rental owners connect with their guests. Founded on the
-              belief that every property deserves a dedicated spotlight, The CWA
-              was established by Chris Ware, with a passion for empowering
-              property owners to transcend the limitations of platforms like
-              Airbnb. Our journey began with the realization that personalized,
-              direct booking websites can elevate the vacation rental
-              experience, offering a unique connection between owners and
-              guests. Chris Ware brings a wealth of expertise to the helm,
-              ensuring that each website is not just a platform but a
-              personalized reflection of the property&#39;s charm.
+              Our journey began with the realization that personalized, direct
+              booking websites can elevate the vacation rental experience,
+              offering a unique connection between owners and guests. Chris Ware
+              brings a wealth of expertise to the helm, ensuring that each
+              website is not just a platform, but a personalized reflection of
+              the property&#39;s charm.
             </p>
             <br />
             <p className={styles.copy}>
@@ -40,7 +35,7 @@ const CompHist = () => {
               commitment to helping property owners take control of their
               bookings. We employ cutting-edge technologies in every website we
               build, ensuring seamless functionality, eye-catching designs, and
-              user-friendly experiences. At the CWA, we don&#39;t just create
+              user-friendly experiences. We don&#39;t just create
               websites; we craft digital experiences that transform the way you
               engage with your guests and shape the future of your vacation
               rental business.
