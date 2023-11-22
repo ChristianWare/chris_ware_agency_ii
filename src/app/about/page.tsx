@@ -10,6 +10,23 @@ import TechStack from "@/components/TechStack/TechStack";
 import House from "../../../public/icons/house.png";
 
 const AboutPage = () => {
+  const fs = require("fs");
+  const path = require("path");
+  const matter = require("gray-matter");
+  const blogsDirectory = path.join(process.cwd(), "blogs");
+  const files = fs.readdirSync(blogsDirectory);
+  const blogs = files.map((filename: any) => {
+    const fileContent = fs.readFileSync(
+      path.join(blogsDirectory, filename),
+      "utf-8"
+    );
+    const { data: frontMatter } = matter(fileContent);
+    return {
+      meta: frontMatter,
+      slug: filename.replace(".mdx", ""),
+    };
+  });
+  
   return (
     <>
       <PageIntro
@@ -17,7 +34,6 @@ const AboutPage = () => {
         heading='The Story Behind the'
         highlight='Chris Ware Agency'
         copy="We're on a mission to redefine the vacation rental experience by empowering property owners to seize control of their bookings. Discover the narrative behind our commitment to personalized, direct booking websites and join us in transforming the way you connect with your guests."
-        
       />
       <CompHist />
       <Owner />
@@ -25,7 +41,7 @@ const AboutPage = () => {
       <TechStack />
       <Faq />
       <ContactForm />
-      {/* <BlogSection /> */}
+      <BlogSection blogData={blogs} />
     </>
   );
 };

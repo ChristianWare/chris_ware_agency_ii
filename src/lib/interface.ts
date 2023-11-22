@@ -9,7 +9,6 @@ export interface ButtonProps {
 }
 
 export interface ImageGridProps {
-  reverse?: string;
   src1: StaticImageData;
   src2: StaticImageData;
   src3: StaticImageData;
@@ -22,6 +21,7 @@ export interface PageIntroProps {
   heading: string;
   highlight?: string;
   copy: string;
+  src?: any;
 }
 
 export interface BlogSectionProps {

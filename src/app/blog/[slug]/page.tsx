@@ -13,6 +13,7 @@ import { BlogData } from "@/lib/interface";
 import BlogPreview from "@/components/BlogPreview/BlogPreview";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import PageIntro from "@/components/PageIntro/PageIntro";
+import Img1 from '../../../../public/images/img6.png'
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -83,6 +84,7 @@ export default function Page({ params }: any) {
         heading={props.frontMatter.title}
         // highlight='Insights'
         copy={props.frontMatter.description}
+        src={Img1}
       />
       <LayoutWrapper>
         <ContentPadding>
@@ -100,7 +102,7 @@ export default function Page({ params }: any) {
             <div className={styles.mdxContent}>
               <MDXRemote source={props.content} components={components} />
             </div>
-            <div className={styles.right}>
+            {/* <div className={styles.right}>
               <div className={styles.headingTitle}>You May Also Like</div>
               {blogs.slice(0, 3).map((x, index) => (
                 <div key={index} className={styles.box}>
@@ -111,7 +113,7 @@ export default function Page({ params }: any) {
                   </Link>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
           <h2 className={styles.relatedArticlesHeading}>Relted Articles</h2>
           <div className={styles.relatedArticles}>

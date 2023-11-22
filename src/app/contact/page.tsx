@@ -21,7 +21,7 @@ const ContactPage = () => {
       />
       <Faq />
       <ContactForm />
-      <BlogSection />
+      <FinalCta />
     </>
   );
 };
