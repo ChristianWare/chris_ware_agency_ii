@@ -6,6 +6,9 @@ import styles from "./ContactForm.module.css";
 import { useState } from "react";
 import Image from "next/image";
 import Img7 from "../../../public/images/img7.png";
+import toast from "react-hot-toast";
+import SubmitButton from "../SubmitButton/SubmitButton";
+import { sendEmail } from "../../../actions/sendEmail";
 
 const ContactForm = () => {
   const [inputs, setInputs] = useState({
@@ -32,7 +35,6 @@ const ContactForm = () => {
           <div className={styles.bottom}>
             <div className={styles.left}>
               <div className={styles.circleContainer}>
-                {/* <CircleImage /> */}
               </div>
               <h2 className={styles.heading}>
                 Request a <span className={styles.highlight}>Demo</span>
@@ -48,23 +50,23 @@ const ContactForm = () => {
             <div className={styles.right}>
               <form
                 className={styles.form}
-                // action={async (formData) => {
-                //   const { data, error } = await sendEmail(formData);
+                action={async (formData) => {
+                  const { data, error } = await sendEmail(formData);
 
-                //   if (error) {
-                //     toast.error(error);
-                //     return;
-                //   }
-                //   toast.success("Email sent successfully!");
-                //   setInputs({
-                //     firstName: "",
-                //     lastName: "",
-                //     senderEmail: "",
-                //     companyName: "",
-                //     currentWebsiteUrl: "",
-                //     message: "",
-                //   });
-                // }}
+                  if (error) {
+                    toast.error(error);
+                    return;
+                  }
+                  toast.success("Email sent successfully!");
+                  setInputs({
+                    firstName: "",
+                    lastName: "",
+                    senderEmail: "",
+                    companyName: "",
+                    currentWebsiteUrl: "",
+                    message: "",
+                  });
+                }}
               >
                 <div className={styles.namesContainer}>
                   <div className={styles.labelInputBox}>
@@ -147,7 +149,7 @@ const ContactForm = () => {
                   </div>
                 </div>
                 <div className={styles.btnBtnContainer}>
-                  {/* <SubmitButton /> */}
+                  <SubmitButton />
                 </div>
               </form>
             </div>
