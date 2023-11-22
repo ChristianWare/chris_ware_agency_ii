@@ -84,7 +84,8 @@ export default function Page({ params }: any) {
         heading={props.frontMatter.title}
         // highlight='Insights'
         copy={props.frontMatter.description}
-        src={Img1}
+        src={props.frontMatter.thumbnaillUrl}
+        showImage
       />
       <LayoutWrapper>
         <ContentPadding>

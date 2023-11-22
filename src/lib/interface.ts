@@ -22,6 +22,7 @@ export interface PageIntroProps {
   highlight?: string;
   copy: string;
   src?: any;
+  showImage?: boolean;
 }
 
 export interface BlogSectionProps {

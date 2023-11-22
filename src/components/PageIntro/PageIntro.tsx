@@ -12,6 +12,7 @@ const PageIntro: FC<PageIntroProps> = ({
   highlight,
   copy,
   src,
+  showImage,
 }) => {
   return (
     <div className={styles.container}>
@@ -19,9 +20,11 @@ const PageIntro: FC<PageIntroProps> = ({
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <div className={styles.imgContainer}>
-                <Image src={src} fill alt='img' className={styles.img} />
-              </div>
+              {showImage && (
+                <div className={styles.imgContainer}>
+                  <Image src={src} fill alt='img' className={styles.img} />
+                </div>
+              )}
             </div>
             <div className={styles.right}>
               <Label text={labelText} />

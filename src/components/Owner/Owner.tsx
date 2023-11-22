@@ -1,5 +1,4 @@
 import CircleImage from "../Image/CircleImage/CircleImage";
-import ImageGrid from "../Image/ImageGrid/ImageGrid";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Owner.module.css";
