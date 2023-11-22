@@ -22,6 +22,10 @@ import Responsive from "../../public/icons/responsive.png";
 import Accessibility from "../../public/icons/accessibility.png";
 import SEO from "../../public/icons/seo.png";
 import Page from "../../public/icons/page.png";
+import Blog from "../../public/icons/blog.png";
+import Sitemap from "../../public/icons/sitemap.png";
+import Social from "../../public/icons/social.png";
+import Index from "../../public/icons/index.png";
 
 export const benefits = [
   {
@@ -72,13 +76,13 @@ export const features = [
   {
     service: "Admin Panel",
     description:
-      "Admin panel will allow you to create, update, and delete listings on your persoanlized booking websites. You can aslo view the number of bookings, and make any updates as needed.",
+      "Admin panel will allow you to create, update, and delete listings on your persoanlized booking websites. View the number of bookings, and make any updates as needed.",
     icon: Admin2,
   },
   {
     service: "Payment Processing",
     description:
-      "With the use of stripe, you will be able to accept all major credit card on your own personal booking website. you can even issue refunds if someone cancels a stay at your property.",
+      "Stripe payment processing enables secure online transactions, integrating a trusted payment gateway for businesses to accept credit card payments.",
     icon: Payment,
   },
   {
@@ -90,20 +94,44 @@ export const features = [
   {
     service: "Accessible",
     description:
-      "Ensures that people with disabilities can perceive, understand, navigate, and interact with its content, features, and functionalities effectively, providing an inclusive and equal user experience for all.",
+      "Ensures that people with disabilities can perceive, understand, navigate, and interact with its content, features, and functionalities effectively.",
     icon: Accessibility,
   },
   {
     service: "Search Engine Optomization",
     description:
-      "A search engine optimized website is configured to enhance its visibility and ranking on search engine results pages, employing strategies to improve its relevance, accessibility, and overall performance for better search engine discoverability.",
+      "A search engine optimized website is configured to enhance its visibility and ranking on search engine results pages.",
     icon: SEO,
   },
   {
     service: "Page Speed Optmization",
     description:
-      "Webite pages load quickly and efficiently, ensuring fast loading times for its pages and content, which contributes to a better user experience and may positively impact search engine rankings.",
+      "Ensure that webite pages load quickly and efficiently and has fast loading times for its pages and content, improving user experience search engine rankings.",
     icon: Page,
+  },
+  {
+    service: "Blog Articles",
+    description:
+      "Blog articles enhance website visibility by providing fresh, relevant, and keyword-rich content that boosts organic search rankings, and engages potential clients.",
+    icon: Blog,
+  },
+  {
+    service: "Site Map",
+    description:
+      "Site maps increase website visibility by helping search engines to understand the site's structure, improving rankings and ensuring that all pages are easily accessible.",
+    icon: Sitemap,
+  },
+  {
+    service: "Social Media Intergration",
+    description:
+      "Enhances website visibility by connecting your website to social platforms, enabling easy sharing of content, ultimately expanding the online reach of your business.",
+    icon: Social,
+  },
+  {
+    service: "Google Indexing",
+    description:
+      "Allows google to crawl and analyze the content of your website, and then indexes it in its database, ensuring that your website is eligible to appear in Google search results.",
+    icon: Index,
   },
 ] as const;
 
