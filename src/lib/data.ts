@@ -165,15 +165,23 @@ export const pricing = [
       },
       {
         id: 26.2,
-        feature: "Admin Dashboard",
+        feature: "Hosting",
       },
       {
         id: 26.3,
-        feature: "Payment Processing",
+        feature: "Direct Booking",
       },
       {
         id: 27.3,
-        feature: "Blog Articles",
+        feature: "Payment Processing",
+      },
+      {
+        id: 27.4,
+        feature: "Admin Dashboard",
+      },
+      {
+        id: 27.5,
+        feature: "12 Blog Articles",
       },
     ],
     btnType: "primary",
@@ -187,45 +195,61 @@ export const pricing = [
     includes: [
       {
         id: 26.1,
-        feature: "Everything in Marketing, plus:",
-      },
-      {
-        id: 26.2,
-        feature: "Online store",
+        feature: "Everything in Starter, plus:",
       },
       {
         id: 26.3,
-        feature: "Admin Dashboard",
+        feature: "Analytics and Reporting",
       },
       {
         id: 27.3,
-        feature: "Payment Setup",
+        feature: "Dynamic Pricing Engine",
+      },
+      {
+        id: 27.4,
+        feature: "Customer Support Enhancements",
+      },
+      {
+        id: 27.5,
+        feature: "Property Search Engine",
+      },
+      {
+        id: 27.6,
+        feature: "24 Blog Articles",
       },
     ],
     btnType: "secondary",
   },
   {
     id: 28,
-    plan: "Custom",
+    plan: "Enterprise",
     description:
       "Tailored solutions for large-scale organizations with 20 or more vacation rental properties properties with unique requirements.",
     price: "Contact Us",
     includes: [
       {
         id: 28.1,
-        feature: "Price dependent on:",
+        feature: "Everything in Advanced, plus:",
       },
       {
         id: 28.2,
-        feature: "Number of add'll pages",
+        feature: "Geographical Expansion",
       },
       {
         id: 28.3,
-        feature: "Scope of Work",
+        feature: "Enterprise-Level Scalability",
       },
       {
         id: 28.3,
-        feature: "Time involved",
+        feature: "Advanced SEO Services",
+      },
+      {
+        id: 28.4,
+        feature: "Training and Workshops",
+      },
+      {
+        id: 28.5,
+        feature: "Unlimited Blog Articles",
       },
     ],
     btnType: "tertiary",

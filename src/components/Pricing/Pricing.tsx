@@ -59,7 +59,7 @@ const Pricing = () => {
             ))}
           </div>
           <div className={styles.btnContainer}>
-            <Button href='/services' text='More details' btnType='primary' />
+            <Button href='/features' text='More details' btnType='primary' />
           </div>
         </ContentPadding>
       </LayoutWrapper>

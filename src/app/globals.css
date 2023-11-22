@@ -99,9 +99,9 @@ input,
 textarea {
   font-weight: 400;
   hyphens: auto;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 150%;
-  color: var(--black);
+  color: var(--text3);
 }
 
 input:focus {

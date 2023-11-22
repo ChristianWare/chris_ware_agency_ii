@@ -1,12 +1,11 @@
 .copyContainer {
   padding: 5rem;
-  background-color: var(--darkBlue);
+  background-color: var(--gray);
   border-radius: 10px;
 }
 
 .copy {
-  color: var(--cream);
-  opacity: 0.6;
+  color: var(--text3);
 }
 
 .personBox {
@@ -28,7 +27,7 @@
 }
 
 .reviewer {
-  font-family: var(--roboto);
+  font-family: var(--inter);
   color: var(--cream);
   font-weight: 700;
 }
@@ -37,6 +36,6 @@
   display: block;
   font-weight: 400;
   opacity: 0.7;
-  font-family: var(--roboto);
+  font-family: var(--inter);
   color: var(--cream);
 }
