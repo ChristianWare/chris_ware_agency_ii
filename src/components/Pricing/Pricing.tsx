@@ -36,7 +36,7 @@ const Pricing = () => {
                   ) : (
                     <strong className={styles.price}>{x.price}</strong>
                   )}
-                  <p className={styles.monthly}>billed monthly</p>
+                  <p className={styles.monthly}>Billed Monthly</p>
                   <p className={styles.description}>{x.description}</p>
                   <hr className={styles.hr} />
                   <p className={styles.includes}>Includes:</p>

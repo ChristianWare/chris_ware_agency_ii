@@ -225,7 +225,7 @@ export const pricing = [
     plan: "Enterprise",
     description:
       "For large-scale organizations with 20 or more rental properties with unique requirements.",
-    price: "Contact Us",
+    price: "Custom Price",
     includes: [
       {
         id: 28.1,
