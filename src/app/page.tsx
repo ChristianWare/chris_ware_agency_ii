@@ -45,7 +45,6 @@ const HomePage = () => {
       {/* <Portfolio /> */}
       <Faq />
       <BlogSection blogData={blogs} />
-      {/* <ContactForm /> */}
       <FinalCta />
     </div>
   );
