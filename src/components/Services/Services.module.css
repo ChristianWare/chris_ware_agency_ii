@@ -1,5 +1,22 @@
 .content {
   padding-top: 5rem;
+   background: -moz-linear-gradient(
+    150deg,
+    rgba(241, 241, 233, 1) 0%,
+    rgba(174, 255, 18, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    150deg,
+    rgba(241, 241, 233, 1) 0%,
+    rgba(174, 255, 18, 1) 100%
+  );
+  background: linear-gradient(
+    150deg,
+    rgba(241, 241, 233, 1) 0%,
+    rgba(174, 255, 18, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f1e9",endColorstr="#aeff12",GradientType=1);
+
 }
 
 .heading {
@@ -39,7 +56,7 @@
   justify-content: center;
   width: 100%;
   gap: 2rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--text3);
   border-radius: 8px;
   padding: 2rem;
   height: 100%;
@@ -52,7 +69,7 @@
 }
 
 .copy {
-  color: var(--text);
+  color: var(--text2);
   font-size: 1.4rem;
 }
 

@@ -1,13 +1,11 @@
 import CompHist from "@/components/CompHist/CompHist";
-import Img from "../../../public/images/img2.png";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import BlogSection from "@/components/BlogSection/BlogSection";
-import ContactForm from "@/components/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
 import Owner from "@/components/Owner/Owner";
 import Values from "@/components/Values/Values";
 import TechStack from "@/components/TechStack/TechStack";
-import House from "../../../public/icons/house.png";
+import FinalCta from "@/components/FinalCta/FinalCta";
 
 const AboutPage = () => {
   const fs = require("fs");
@@ -26,7 +24,7 @@ const AboutPage = () => {
       slug: filename.replace(".mdx", ""),
     };
   });
-  
+
   return (
     <>
       <PageIntro
@@ -40,8 +38,8 @@ const AboutPage = () => {
       <Values />
       <TechStack />
       <Faq />
-      <ContactForm />
       <BlogSection blogData={blogs} />
+      <FinalCta />
     </>
   );
 };

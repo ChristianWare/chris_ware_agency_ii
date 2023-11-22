@@ -1,15 +1,29 @@
 import PageIntro from "@/components/PageIntro/PageIntro";
-import Img from "../../../public/images/img6.png";
 import Faq from "@/components/Faq/Faq";
-import ContactForm from "@/components/ContactForm/ContactForm";
 import BlogSection from "@/components/BlogSection/BlogSection";
-import Browser from "../../../public/icons/browser.png";
 import AdminFeatures from "@/components/AdminFeatures/AdminFeatures";
 import UserFeatures from "@/components/UserFeatures/UserFeatures";
 import Services from "@/components/Services/Services";
 import FinalCta from "@/components/FinalCta/FinalCta";
 
 const FeaturesPage = () => {
+  const fs = require("fs");
+  const path = require("path");
+  const matter = require("gray-matter");
+  const blogsDirectory = path.join(process.cwd(), "blogs");
+  const files = fs.readdirSync(blogsDirectory);
+  const blogs = files.map((filename: any) => {
+    const fileContent = fs.readFileSync(
+      path.join(blogsDirectory, filename),
+      "utf-8"
+    );
+    const { data: frontMatter } = matter(fileContent);
+    return {
+      meta: frontMatter,
+      slug: filename.replace(".mdx", ""),
+    };
+  });
+
   return (
     <>
       <PageIntro
@@ -22,8 +36,7 @@ const FeaturesPage = () => {
       <AdminFeatures />
       <UserFeatures />
       <Faq />
-      <ContactForm />
-      {/* <BlogSection /> */}
+      <BlogSection blogData={blogs} />
       <FinalCta />
     </>
   );
