@@ -25,7 +25,7 @@
 
 .topCopy {
   margin-bottom: 3rem;
-  color: var(--text2)
+  color: var(--text2);
 }
 
 .contentBox {
@@ -35,7 +35,6 @@
   justify-content: center;
   gap: 5rem;
 }
-
 
 .bottomMap {
   display: grid;
@@ -65,7 +64,6 @@
 
 .copy {
   color: var(--text2);
-  font-size: 1.4rem;
 }
 
 .imgContainer {
@@ -118,10 +116,6 @@
     width: 100%;
   }
 
-  .copy {
-    text-align: center;
-  }
-
   .bottomMap {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -150,5 +144,17 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h3 {
+    font-size: 113.7%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .h3 {
+    font-size: 125%;
   }
 }
