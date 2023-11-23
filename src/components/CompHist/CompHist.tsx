@@ -1,7 +1,6 @@
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./CompHist.module.css";
-import Image from "next/image";
 import ImageGrid from "../Image/ImageGrid/ImageGrid";
 import Img1 from "../../../public/images/img1.png";
 import Img2 from "../../../public/images/img2.png";
@@ -18,7 +17,7 @@ const CompHist = () => {
           <div className={styles.left}>
             <Label text='About Us' />
             <h2 className={styles.heading}>
-              About the <span className={styles.highlight}>CWA</span>
+              About the CWA
             </h2>
             <br />
             <p className={styles.copy}>

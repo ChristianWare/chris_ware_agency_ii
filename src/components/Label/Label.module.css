@@ -6,6 +6,7 @@
   display: block;
   font-family: var(--inter);
   text-transform: uppercase;
+  z-index: 999;
 }
 
 .white {

@@ -2,17 +2,8 @@ import styles from "./Hero.module.css";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import Button from "../Button/Button";
-import Instagram from "../../../public/icons/instagram.svg";
-import LinkedIn from "../../../public/icons/linkedin.svg";
-import Twitter from "../../../public/icons/twitter.svg";
-import Facebook from "../../../public/icons/facebook.svg";
-import ImageGrid from "../Image/ImageGrid/ImageGrid";
 import Label from "../Label/Label";
-import Img1 from "../../../public/images/img1.png";
-import Img2 from "../../../public/images/img2.png";
-import Img3 from "../../../public/images/img3.png";
 import Img from "../../../public/images/img6.png";
-import Img5 from "../../../public/images/img5.png";
 import Image from "next/image";
 import Nav from "../Nav/Nav";
 

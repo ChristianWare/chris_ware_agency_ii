@@ -19,10 +19,8 @@ export interface ImageGridProps {
 export interface PageIntroProps {
   labelText: string;
   heading: string;
-  highlight?: string;
   copy: string;
-  src?: any;
-  showImage?: boolean;
+  src: any;
 }
 
 export interface BlogSectionProps {
