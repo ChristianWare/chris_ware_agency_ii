@@ -3,12 +3,13 @@ import styles from "./Label.module.css";
 
 interface Props {
   text: string;
+  color?: string;
 }
 
-const Label: FC<Props> = ({ text }) => {
+const Label: FC<Props> = ({ text, color = "" }) => {
   return (
     <div>
-      <span className={styles.span}>{text}</span>
+      <span className={`${styles.span} ${styles[color]}`}>{text}</span>
     </div>
   );
 };

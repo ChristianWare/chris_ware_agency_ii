@@ -7,6 +7,7 @@ import Image from "next/image";
 import { features } from "@/lib/data";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
+import Label from "../Label/Label";
 
 const Services = () => {
   const pathname = usePathname();
@@ -14,9 +15,9 @@ const Services = () => {
     <div className={styles.content}>
       <LayoutWrapper>
         <ContentPadding>
-          <h2 className={styles.heading}>
-            We build direct booking sites that include the following features:
-          </h2>
+          <Label text='What we do' />
+          <h2 className={styles.heading}>We build direct booking websites</h2>
+          <p className={styles.topCopy}>We specialize in building direct booking websites that have the following fetures:</p>
           <div className={styles.contentBox}>
             <div className={styles.bottom}>
               {pathname === "/" && (
@@ -67,7 +68,7 @@ const Services = () => {
                   <Button
                     href='/features'
                     text='See all features'
-                    btnType='primary'
+                    btnType='tertiary'
                   />
                 </div>
               )}

@@ -15,9 +15,7 @@ const AboutSection = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <Label text='About Us' />
-              <h2 className={styles.heading}>
-                <span className={styles.highlight}>Who</span> are we?
-              </h2>
+              <h2 className={styles.heading}>Who are we?</h2>
               <div className={styles.right}>
                 <p className={styles.copy}>
                   The Chris Ware Agency revolutionizes vacation rental property
@@ -63,7 +61,7 @@ const AboutSection = () => {
                   <Button
                     href='/about'
                     text='More about us'
-                    btnType='primary'
+                    btnType='secondary'
                   />
                 </div>
               </div>

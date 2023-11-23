@@ -1,6 +1,6 @@
 .content {
   padding-top: 5rem;
-   background: -moz-linear-gradient(
+  background: -moz-linear-gradient(
     150deg,
     rgba(241, 241, 233, 1) 0%,
     rgba(174, 255, 18, 1) 100%
@@ -16,15 +16,16 @@
     rgba(174, 255, 18, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f1e9",endColorstr="#aeff12",GradientType=1);
-
 }
 
 .heading {
+  margin-bottom: 1rem;
+  width: 50vw;
+}
+
+.topCopy {
   margin-bottom: 3rem;
-  width: 60%;
-  /* text-align: center; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
+  color: var(--text2)
 }
 
 .contentBox {
@@ -35,13 +36,6 @@
   gap: 5rem;
 }
 
-.top {
-  flex: 1;
-}
-
-.bottom {
-  flex: 2;
-}
 
 .bottomMap {
   display: grid;
@@ -63,8 +57,9 @@
 }
 
 .h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--black);
+  font-family: var(--acidGrotesk);
   font-weight: 700;
 }
 

@@ -1,6 +1,13 @@
 .span {
   font-weight: 700;
+  font-size: 1.4rem;
   color: var(--text);
   margin-bottom: 1rem;
   display: block;
+  font-family: var(--inter);
+  text-transform: uppercase;
+}
+
+.white {
+  color: var(--tan);
 }

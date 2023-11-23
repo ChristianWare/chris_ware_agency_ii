@@ -34,6 +34,12 @@ const schabo = localFont({
   display: "swap",
 });
 
+const acidGrotesk = localFont({
+  src: "../../public/fonts/AcidGrotesk.otf",
+  variable: "--acidGrotesk",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -42,10 +48,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.variable} ${chakraPetch.variable} ${schabo.variable}`}
+        className={`${inter.variable} ${chakraPetch.variable} ${schabo.variable} ${acidGrotesk.variable}`}
       >
-        <Nav />
-        <div className={styles.noise}>{children}</div>
+        {/* <Nav /> */}
+        <div>{children}</div>
         {/* <Footer /> */}
       </body>
     </html>

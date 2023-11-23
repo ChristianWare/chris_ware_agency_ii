@@ -92,9 +92,9 @@ function Nav() {
               </li>
             ))}
           </ul>
-          <div className={styles.naBarRight}>
+          <div className={styles.navBarRight}>
             <div className={styles.btnContainer}>
-              <Button href='/' text='Call us' btnType='navBtnii' />
+              {/* <Button href='/' text='Call us' btnType='navBtnii' /> */}
               <Button href='/' text='Get in touch' btnType='navBtn' />
             </div>
             <span
