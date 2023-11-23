@@ -19,13 +19,19 @@ const HowItWorks = () => {
             <div className={styles.right}>
               {process.map((x, index) => (
                 <div key={x.id} className={styles.card}>
-                  <div className={styles.indexContainer}>
-                    <span className={styles.number}>0{`${index + 1}`}</span>
+                  <div className={styles.box}>
+                    <div className={styles.boxLeft}>
+                      <div className={styles.indexContainer}>
+                        <span className={styles.number}>0{`${index + 1}`}</span>
+                      </div>
+                    </div>
+                    <div className={styles.boxRight}>
+                      <h3 className={styles.processName}>{x.processName}</h3>
+                      <p className={styles.processDescription}>
+                        {x.processDescription}
+                      </p>
+                    </div>
                   </div>
-                  <h3 className={styles.processName}>{x.processName}</h3>
-                  <p className={styles.processDescription}>
-                    {x.processDescription}
-                  </p>
                 </div>
               ))}
             </div>

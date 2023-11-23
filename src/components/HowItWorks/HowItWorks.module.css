@@ -6,7 +6,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 3rem;
   height: 100%;
 }
 
@@ -37,6 +36,13 @@
   filter: blur(10rem);
 }
 
+.heading {
+  border-bottom: 1px solid var(--border2);
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  width: fit-content;
+}
+
 .topText {
   font-family: var(--azeretMono);
   color: var(--text);
@@ -56,13 +62,19 @@
 .right {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .card {
-  border: 1px solid var(--border3);
-  border-radius: 10px;
+  border-left: 1px solid var(--border3);
   padding: 4rem;
+  z-index: 999;
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3rem;
 }
 
 .indexContainer {
@@ -74,10 +86,22 @@
   margin-bottom: 1rem;
 }
 
+.boxLeft {
+  margin-left: -8.5rem;
+}
+
+.boxRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
 .number {
   padding: 1rem;
   font-size: 4.9rem;
-  font-family: var(--chakraPetch);
+  font-family: var(--acidGroteskBold);
   font-weight: 500;
   color: var(--tan2);
   background-color: var(--tan);
@@ -85,21 +109,23 @@
   border-radius: 10px;
   border: 1px solid var(--border3);
   line-height: 100%;
+  z-index: 3;
 }
 
 .processName {
   color: var(--black);
   font-size: 2.1rem;
+  font-family: var(--acidGroteskBold);
 }
 
 .processDescription {
   opacity: 0.7;
-  margin-top: 3rem;
+  /* margin-top: 1rem; */
   font-family: var(--outfit);
   font-size: 1.4rem;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 968px) {
   .content {
     flex-direction: column;
   }
@@ -137,5 +163,23 @@
   .topText {
     width: 100%;
     text-align: center;
+  }
+
+  .right {
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .card {
+    border: 1px solid var(--border3);
+    border-radius: 10px;
+  }
+
+  .boxLeft {
+    margin-left: 0rem;
   }
 }
