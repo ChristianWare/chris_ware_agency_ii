@@ -521,3 +521,18 @@ export const webFeatures = [
     desc: "Webite pages load quickly and efficiently, ensuring fast loading times for its pages and content, which contributes to a better user experience and may positively impact search engine rankings.",
   },
 ];
+
+export const preHero = [
+  {
+    feature: "Uninterrupted power, money in your pocket",
+    desc: "Say goodbye to power outages and hello to extra savings on your energy bill",
+  },
+  {
+    feature: "Expert advice with full-service installation",
+    desc: "Say goodbye to power outages and hello to extra savings on your energy bill",
+  },
+  {
+    feature: "Control & support at your fingertips",
+    desc: "Say goodbye to power outages and hello to extra savings on your energy bill",
+  },
+];

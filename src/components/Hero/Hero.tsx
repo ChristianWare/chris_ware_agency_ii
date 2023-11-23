@@ -6,6 +6,7 @@ import Label from "../Label/Label";
 import Img from "../../../public/images/img6.png";
 import Image from "next/image";
 import Nav from "../Nav/Nav";
+import PreHero from "../PreHero/PreHero";
 
 const Hero = () => {
   return (
