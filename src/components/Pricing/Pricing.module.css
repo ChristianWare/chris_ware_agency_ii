@@ -93,13 +93,12 @@
 .card {
   background-color: var(--tan);
   border: 1px solid var(--border3);
-  background-color: var(--green);
   border-radius: 8px;
   padding: 0.6rem;
 }
 
 .box {
-  border: 1px solid var(--border2);
+  border: 1px solid var(--border3);
   background-color: var(--tan);
   border-radius: 8px;
   padding: 2rem;
@@ -111,6 +110,7 @@
   text-decoration: none;
   font-weight: 300;
   line-height: 110%;
+  font-family: var(--acidGrotesk);
 }
 
 .monthly {
@@ -133,9 +133,9 @@
 }
 
 .price {
-  font-size: 4rem;
+  font-size: 3.5rem !important;
   display: block;
-  font-family: var(--chakraPetch);
+  font-family: var(--acidGroteskBold);
   color: var(--text2);
   font-size: 2.8rem;
 }

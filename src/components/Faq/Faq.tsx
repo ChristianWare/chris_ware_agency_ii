@@ -6,6 +6,7 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import { faqs } from "@/lib/data";
 import Arrow from "../../../public/icons/downArrow.svg";
+import Label from "../Label/Label";
 
 const Faq = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -23,10 +24,8 @@ const Faq = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.top}>
-              <h2 className={styles.heading}>
-                frequently asked{" "}
-                <span className={styles.highlight}>questions </span>
-              </h2>
+              <Label text="FAQ's" />
+              <h2 className={styles.heading}>Frequently asked questions</h2>
               <p className={styles.topText}>
                 Here are some commonly asked questions and their answers below.
                 If you don&#39;t see your questions here, call us any time.

@@ -17,9 +17,9 @@ const FinalCta = () => {
                   deserves a spotlight.
                 </h2>
                 <p className={styles.topText}>
-                  Here are some commonly asked questions and their answers
-                  below. If you don&#39;t see your questions here, call us any
-                  time.
+                  Rech out to us today to see how you can begin to take
+                  advantage of the benefits of having your own direct booking
+                  website for your rental property.
                 </p>
               </div>
               <div className={styles.right}>

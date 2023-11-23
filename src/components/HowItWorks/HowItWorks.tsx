@@ -2,6 +2,7 @@ import { process } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./HowItWorks.module.css";
+import Label from "../Label/Label";
 
 const HowItWorks = () => {
   return (
@@ -10,6 +11,7 @@ const HowItWorks = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
+              <Label text='How we do things' />
               <h2 className={styles.heading}>Our process</h2>
               <p className={styles.topText}>
                 Our process is structured so that you get the most added value

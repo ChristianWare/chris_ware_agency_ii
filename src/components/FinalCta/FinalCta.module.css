@@ -58,6 +58,8 @@
 .heading {
   font-size: 3rem;
   width: 70%;
+  font-family: var(--acidGroteskBold);
+  hyphens: none;
 }
 
 .topText {

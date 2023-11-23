@@ -28,9 +28,7 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
                   className={styles.logo}
                 />
               </div>
-              <h2 className={styles.heading}>
-                our <span className={styles.highlight}>insights</span>
-              </h2>
+              <h2 className={styles.heading}>Our insights</h2>
               <p className={styles.copy}>
                 Explore our blog for the latest updates, travel tips, and
                 industry insights to enhance your vacation rental hosting
@@ -44,7 +42,7 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
             </div>
             <div className={styles.btnContainer}>
               {pathname !== "/blog" && (
-                <Button href='/about' text='All blogs' btnType='primary' />
+                <Button href='/about' text='All blogs' btnType='secondary' />
               )}
             </div>
           </div>
