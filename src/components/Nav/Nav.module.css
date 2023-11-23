@@ -25,8 +25,8 @@
 
 .logo {
   font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--white);
+  color: var(--tan);
+  font-family: var(--acidGroteskBold);
   z-index: 998;
 }
 
@@ -55,13 +55,14 @@
 .navItem {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--white);
-  text-transform: uppercase;
+  color: var(--tan);
+  /* text-transform: uppercase; */
   position: relative;
   user-select: none;
   transition: all 0.3s ease-in;
   scroll-behavior: smooth;
   z-index: 998;
+  font-family: var(--acidGroteskBold);
 }
 
 .activeLink {

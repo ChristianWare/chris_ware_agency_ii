@@ -22,12 +22,12 @@
 
 .heading {
   z-index: 3;
-  color: var(--white);
+  color: var(--tan);
 }
 
 .copy {
   margin-top: 3rem;
-  color: var(--white);
+  color: var(--tan);
   width: 90%;
   z-index: 3;
 }

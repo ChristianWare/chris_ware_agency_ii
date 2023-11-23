@@ -25,7 +25,7 @@ const Services = () => {
             <div className={styles.bottom}>
               {pathname === "/" && (
                 <div className={styles.bottomMap}>
-                  {features.slice(0, 5).map((x, index) => (
+                  {features.slice(0, 3).map((x, index) => (
                     <div key={index} className={styles.container}>
                       <div className={styles.box}>
                         <div className={styles.iconContainer}>
