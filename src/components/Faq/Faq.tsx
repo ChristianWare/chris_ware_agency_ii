@@ -25,7 +25,7 @@ const Faq = () => {
           <div className={styles.content}>
             <div className={styles.top}>
               <Label text="FAQ's" />
-              <h2 className={styles.heading}>Frequently asked questions</h2>
+              <h2 className={styles.heading}>Frequently Asked Questions</h2>
               <p className={styles.topText}>
                 Here are some commonly asked questions and their answers below.
                 If you don&#39;t see your questions here, call us any time.

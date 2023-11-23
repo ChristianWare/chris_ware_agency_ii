@@ -11,10 +11,7 @@ const AdminFeatures = () => {
     <LayoutWrapper>
       <ContentPadding>
         <div className={styles.content}>
-          <h2 className={styles.heading}>
-            <span className={styles.highlight}>Administrative</span> access
-            includes:
-          </h2>
+          <h2 className={styles.heading}>Admin Access Includes:</h2>
           <div className={styles.mapBox}>
             {adminData.map((x, index) => (
               <div key={index} className={styles.cardContainer}>

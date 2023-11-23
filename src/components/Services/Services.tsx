@@ -16,8 +16,11 @@ const Services = () => {
       <LayoutWrapper>
         <ContentPadding>
           <Label text='What we do' />
-          <h2 className={styles.heading}>We build direct booking websites</h2>
-          <p className={styles.topCopy}>We specialize in building direct booking websites that have the following fetures:</p>
+          <h2 className={styles.heading}>We Build Direct Booking Websites</h2>
+          <p className={styles.topCopy}>
+            We specialize in building direct booking websites that have the
+            following fetures:
+          </p>
           <div className={styles.contentBox}>
             <div className={styles.bottom}>
               {pathname === "/" && (

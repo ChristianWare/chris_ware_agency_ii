@@ -1,7 +1,3 @@
-.container {
-  /* background-color: var(--white); */
-}
-
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

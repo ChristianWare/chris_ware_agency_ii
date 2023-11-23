@@ -28,7 +28,7 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
                   className={styles.logo}
                 />
               </div>
-              <h2 className={styles.heading}>Our insights</h2>
+              <h2 className={styles.heading}>Our Insights</h2>
               <p className={styles.copy}>
                 Explore our blog for the latest updates, travel tips, and
                 industry insights to enhance your vacation rental hosting

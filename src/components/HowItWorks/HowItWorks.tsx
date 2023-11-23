@@ -12,7 +12,7 @@ const HowItWorks = () => {
           <div className={styles.content}>
             <div className={styles.left}>
               <Label text='How we do things' />
-              <h2 className={styles.heading}>Our process</h2>
+              <h2 className={styles.heading}>Our Process</h2>
               <p className={styles.topText}>
                 Our process is structured so that you get the most added value
                 for the least amount of time.

@@ -26,7 +26,7 @@ const Hero = () => {
             <div className={styles.left}>
               <Label text='Chris Ware Agency' color='white' />
               <h1 className={styles.heading}>
-                Maximize revenue with direct booking solutions
+                Maximize Revenue with Direct Booking Solutions
               </h1>
               <p className={styles.copy}>
                 Tired of relying solely on platforms like Airbnb or VRBO? We

@@ -11,7 +11,7 @@ const UserFeatures = () => {
       <ContentPadding>
         <div className={styles.content}>
           <h2 className={styles.heading}>
-            <span className={styles.highlight}>Guest</span> access includes:
+            Guest Access Includes:
           </h2>
           <div className={styles.mapBox}>
             {guestData.map((x, index) => (

@@ -5,6 +5,7 @@ import AdminFeatures from "@/components/AdminFeatures/AdminFeatures";
 import UserFeatures from "@/components/UserFeatures/UserFeatures";
 import Services from "@/components/Services/Services";
 import FinalCta from "@/components/FinalCta/FinalCta";
+import Img from '../../../public/images/img7.png'
 
 const FeaturesPage = () => {
   const fs = require("fs");
@@ -28,9 +29,9 @@ const FeaturesPage = () => {
     <>
       <PageIntro
         labelText='features of each site'
-        heading='Direct Booking Websites'
-        highlight='in more detail'
+        heading='Our Direct Booking Website Details'
         copy="Discover the transformative features of CWA's direct booking websites. For administrators, our streamlined dashboard offers effortless management and valuable insights. Users enjoy a seamless booking experience with secure payments and real-time availability updates, ensuring your vacation rental stands out in the market."
+        src={Img}
       />
       <Services />
       <AdminFeatures />
