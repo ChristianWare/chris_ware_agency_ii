@@ -10,11 +10,7 @@ const HowItWorks = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <h2 className={styles.heading}>
-                Our process for creating Your personalized booking website{" "}
-                <br /> in <span className={styles.highlight}>4 easy steps</span>{" "}
-                :
-              </h2>
+              <h2 className={styles.heading}>Our process</h2>
               <p className={styles.topText}>
                 Our process is structured so that you get the most added value
                 for the least amount of time.

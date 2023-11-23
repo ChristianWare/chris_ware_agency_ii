@@ -36,8 +36,7 @@ const Benefits = () => {
             </div>
             <div className={styles.right}>
               <h2 className={styles.heading}>
-                What are the <span className={styles.highlight}> benefits</span>{" "}
-                of a direct booking website?
+                Benefits of a direct booking website
               </h2>
               <p className={styles.copy}>
                 Having a direct booking website for your vacation rental
