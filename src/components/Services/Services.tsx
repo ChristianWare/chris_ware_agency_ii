@@ -65,7 +65,6 @@ const Services = () => {
                   ))}
                 </div>
               )}
-
               {pathname === "/" && (
                 <div className={styles.btnContainer}>
                   <Button

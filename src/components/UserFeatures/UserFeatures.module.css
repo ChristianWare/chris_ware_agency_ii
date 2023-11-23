@@ -64,6 +64,7 @@
   margin-bottom: 1rem;
   font-size: 1.8rem;
   font-weight: 700;
+  font-family: var(--acidGroteskBold);
 }
 
 .task {
