@@ -30,10 +30,10 @@
 .copy {
   text-align: center;
   width: 50%;
-  color: var(--text);
+  color: var(--text3);
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .highlight {
@@ -60,7 +60,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: var(--text);
-  font-size: 1.6rem;
 }
 
 .top {
@@ -112,8 +111,9 @@
 }
 
 .value {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
+  font-family: var(--acidGroteskBold);
 }
 
 .icon {
@@ -127,7 +127,6 @@
   margin: 2rem 0;
   margin-top: 1rem;
   text-align: center;
-  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1268px) {

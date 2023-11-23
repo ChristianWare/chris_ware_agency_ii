@@ -14,7 +14,7 @@ const Owner = () => {
           </div>
           <div className={styles.right}>
             <h2 className={styles.heading}>
-              About <span className={styles.highlight}>Chris Ware</span>
+              About Chris Ware
             </h2>
             <div className={styles.container}>
               <h3 className={styles.title}>Founder, CEO</h3>

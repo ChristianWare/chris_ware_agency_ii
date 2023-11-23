@@ -10,8 +10,7 @@ const Values = () => {
       <ContentPadding>
         <div className={styles.top}>
           <h2 className={styles.heading}>
-            The <span className={styles.highlight}>values</span> that guide our
-            every decision{" "}
+            Values Guiding our Decisions
           </h2>
           <p className={styles.copy}>
             These are the prices we charge on a monthly basis. We understand

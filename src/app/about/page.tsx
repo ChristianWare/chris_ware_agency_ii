@@ -6,7 +6,7 @@ import Owner from "@/components/Owner/Owner";
 import Values from "@/components/Values/Values";
 import TechStack from "@/components/TechStack/TechStack";
 import FinalCta from "@/components/FinalCta/FinalCta";
-import Img from "../../../public/images/img5.png";
+import Img from "../../../public/images/img3.png";
 
 const AboutPage = () => {
   const fs = require("fs");

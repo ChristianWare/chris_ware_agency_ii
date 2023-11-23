@@ -34,11 +34,11 @@
   font-size: 2rem;
   color: var(--text);
   margin-bottom: 2rem;
+  font-family: var(--acidGroteskBold);
 }
 
 .copy {
   color: var(--text);
-  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 768px) {

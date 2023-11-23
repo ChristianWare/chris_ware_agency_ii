@@ -25,7 +25,7 @@ const PageIntro: FC<PageIntroProps> = ({ labelText, heading, copy, src }) => {
           <div className={styles.content}>
             <div className={styles.left}></div>
             <div className={styles.right}>
-              <Label text={labelText} />
+              {/* <Label text={labelText} color='white' /> */}
               <h1 className={styles.heading}>{heading}</h1>
               <p className={styles.copy}>{copy}</p>
             </div>

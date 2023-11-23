@@ -10,10 +10,7 @@ const TechStack = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <h2 className={styles.heading}>
-              Our <span className={styles.highlight}>Ecosystem</span> of
-              technologies
-            </h2>
+            <h2 className={styles.heading}>Our Ecosystem of Technologies</h2>
             <p className={styles.copy}>
               We do not use old, slow and outdated tech to build our website,
               such as Wordpress or Godaddy. We build every website with pure
