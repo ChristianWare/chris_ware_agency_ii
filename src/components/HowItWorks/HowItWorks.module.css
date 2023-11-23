@@ -77,17 +77,8 @@
   gap: 3rem;
 }
 
-.indexContainer {
-  border-radius: 10px;
-  background-color: var(--green);
-  border: 1px solid var(--border3);
-  width: fit-content;
-  padding: 0.4rem;
-  margin-bottom: 1rem;
-}
-
 .boxLeft {
-  margin-left: -8.5rem;
+  margin-left: -6.5rem;
 }
 
 .boxRight {
@@ -100,16 +91,19 @@
 
 .number {
   padding: 1rem;
-  font-size: 4.9rem;
+  font-size: 2.1rem;
   font-family: var(--acidGroteskBold);
-  font-weight: 500;
-  color: var(--tan2);
-  background-color: var(--tan);
+  color: var(--black);
   display: block;
-  border-radius: 10px;
-  border: 1px solid var(--border3);
   line-height: 100%;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .processName {
@@ -120,7 +114,6 @@
 
 .processDescription {
   opacity: 0.7;
-  /* margin-top: 1rem; */
   font-family: var(--outfit);
   font-size: 1.4rem;
 }

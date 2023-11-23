@@ -23,9 +23,7 @@ const HowItWorks = () => {
                 <div key={x.id} className={styles.card}>
                   <div className={styles.box}>
                     <div className={styles.boxLeft}>
-                      <div className={styles.indexContainer}>
-                        <span className={styles.number}>0{`${index + 1}`}</span>
-                      </div>
+                        <span className={styles.number}>{`${index + 1}`}</span>
                     </div>
                     <div className={styles.boxRight}>
                       <h3 className={styles.processName}>{x.processName}</h3>
