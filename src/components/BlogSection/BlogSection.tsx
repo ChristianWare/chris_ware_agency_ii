@@ -20,14 +20,6 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
         <ContentPadding>
           <div className={styles.mainContent}>
             <div className={styles.top}>
-              <div className={styles.logoImageContainer}>
-                <Image
-                  src={Megaphone}
-                  alt='logo'
-                  fill
-                  className={styles.logo}
-                />
-              </div>
               <h2 className={styles.heading}>Our Insights</h2>
               <p className={styles.copy}>
                 Explore our blog for the latest updates, travel tips, and
@@ -42,7 +34,7 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
             </div>
             <div className={styles.btnContainer}>
               {pathname !== "/blog" && (
-                <Button href='/about' text='All blogs' btnType='secondary' />
+                <Button href='/about' text='All blogs' btnType='tertiary' />
               )}
             </div>
           </div>

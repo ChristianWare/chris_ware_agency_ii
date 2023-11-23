@@ -61,7 +61,7 @@ const AboutSection = () => {
                   <Button
                     href='/about'
                     text='More about us'
-                    btnType='secondary'
+                    btnType='tertiary'
                   />
                 </div>
               </div>

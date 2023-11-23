@@ -13,9 +13,6 @@ const Pricing = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <div className={styles.logoImageContainer}>
-              <Image src={Money} alt='logo' fill className={styles.logo} />
-            </div>
             <h2 className={styles.heading}>Pricing</h2>
             <p className={styles.copy}>
               These are the prices we charge on a monthly basis. We understand
@@ -56,7 +53,7 @@ const Pricing = () => {
             ))}
           </div>
           <div className={styles.btnContainer}>
-            <Button href='/features' text='More details' btnType='secondary' />
+            <Button href='/features' text='More details' btnType='tertiary' />
           </div>
         </ContentPadding>
       </LayoutWrapper>
