@@ -46,6 +46,17 @@
   border: 1px solid var(--black);
 }
 
+.tertiaryii {
+  color: var(--black);
+  background-color: transparent;
+  border: 1px solid var(--black);
+}
+
+.tertiaryii:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
 .navBtn {
   padding: 5px 25px;
   font-weight: 600;

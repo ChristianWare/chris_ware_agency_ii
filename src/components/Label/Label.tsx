@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from "./Label.module.css";
 
 interface Props {
-  text: string;
+  text: string | number;
   color?: string;
 }
 

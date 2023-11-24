@@ -44,7 +44,7 @@ const HomePage = () => {
       <Benefits />
       <HowItWorks />
       <Pricing />
-      {/* <Portfolio /> */}
+      <Portfolio />
       <Faq />
       <BlogSection blogData={blogs} />
       <FinalCta />
