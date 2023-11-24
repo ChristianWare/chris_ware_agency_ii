@@ -62,13 +62,11 @@
   height: 500px;
   border-radius: 10px;
   border-radius: 10px;
-  /* border: 1px solid var(--border3); */
 }
 
 .img {
   object-fit: cover;
   border-radius: 17px;
-  /* padding: 0.6rem; */
 }
 
 .iconTextContainer {

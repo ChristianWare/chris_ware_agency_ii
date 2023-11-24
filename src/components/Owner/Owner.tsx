@@ -3,6 +3,8 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Owner.module.css";
 import Chris from "../../../public/images/chris.jpeg";
+import Label from "../Label/Label";
+import Image from "next/image";
 
 const Owner = () => {
   return (
@@ -10,14 +12,14 @@ const Owner = () => {
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.left}>
-            <CircleImage src={Chris} />
+            <div className={styles.imgContainer}>
+              <Image src={Chris} alt='img' fill className={styles.img} />
+            </div>
           </div>
           <div className={styles.right}>
-            <h2 className={styles.heading}>
-              About Chris Ware
-            </h2>
+            <Label text='Founder, CEO' />
+            <h2 className={styles.heading}>Chris Ware</h2>
             <div className={styles.container}>
-              <h3 className={styles.title}>Founder, CEO</h3>
               <p className={styles.copy}>
                 Our journey began with a simple mission - to make document
                 legalization accessibl e and effortless for all. A group of
@@ -27,6 +29,25 @@ const Owner = () => {
                 irrespective of location, ensuring comfort and convenience.
               </p>
               <br />
+              <p className={styles.copy}>
+                Our journey began with a simple mission - to make document
+                legalization accessibl e and effortless for all. A group of
+                legal enthusiasts saw the difficulties people faced with the
+                notary process and decided to do something about it.
+              </p>
+              <br />
+              <p className={styles.copy}>
+                Our journey began with a simple mission - to make document
+                legalization accessibl e and effortless for all. A group of
+                legal enthusiasts saw the difficulties people faced with the
+                notary process and decided to do something about it.
+              </p>
+              <br />
+              <p className={styles.copy}>
+                Our journey began with a simple mission - to make document
+                legalization accessibl e and effortless for all. A group of
+                legal enthusiasts.
+              </p>
               <p className={styles.copy}>
                 Our journey began with a simple mission - to make document
                 legalization accessibl e and effortless for all. A group of
