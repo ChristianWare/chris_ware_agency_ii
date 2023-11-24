@@ -44,7 +44,7 @@ const Faq = () => {
                 >
                   <div className={styles.headingArrowContainer}>
                     <h3 className={styles.question} lang='en'>
-                      <span className={styles.index}>0{i + 1} </span>
+                      <span className={styles.index}>0{i + 1}. </span>
                       {x.question}
                     </h3>
                     {selected === i ? (

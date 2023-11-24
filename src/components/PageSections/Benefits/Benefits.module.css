@@ -63,7 +63,7 @@
 }
 
 .index {
-  color: var(--tan2);
+  color: var(--text);
   margin-right: 1rem;
   font-family: var(--acidGroteskBold);
 }

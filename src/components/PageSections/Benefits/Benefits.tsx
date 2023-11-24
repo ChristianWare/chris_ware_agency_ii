@@ -56,7 +56,7 @@ const Benefits = () => {
                 >
                   <div className={styles.bcLeft}>
                     <h3 className={styles.benefitHeading}>
-                      <span className={styles.index}>0{i + 1}</span>{" "}
+                      <span className={styles.index}>0{i + 1}.</span>{" "}
                       {benefit.heading}
                     </h3>
                     <div

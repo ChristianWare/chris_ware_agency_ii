@@ -26,9 +26,8 @@
 .imgBox100,
 .imgBox200,
 .imgBox275 {
-  /* padding: 0.5rem; */
   border-radius: 10px;
-  /* border: 1px solid var(--border3); */
+  border: 1px solid var(--border3);
 }
 
 .img400 {
@@ -60,9 +59,7 @@
   gap: 1rem;
 }
 
-.imgBox100 {
-  /* padding: 0.5rem; */
-}
+
 
 .img100 {
   width: 100px;
@@ -71,19 +68,11 @@
   border-radius: 10px;
 }
 
-.imgBox200 {
-  /* padding: 0.5rem; */
-}
-
 .img200 {
   width: 200px;
   height: 200px;
   object-fit: contain;
   border-radius: 10px;
-}
-
-.imgBox275 {
-  /* padding: 0.5rem; */
 }
 
 .img275 {
