@@ -2,30 +2,37 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./AdminFeatures.module.css";
 import Image from "next/image";
-import Img from "../../../public/images/img1.png";
 import { adminData } from "@/lib/data";
-import Money from "../../../public/icons/money.png";
 
 const AdminFeatures = () => {
   return (
     <LayoutWrapper>
       <ContentPadding>
         <div className={styles.content}>
-          <h2 className={styles.heading}>Admin Access Includes:</h2>
-          <div className={styles.mapBox}>
+          <div className={styles.left}>
+            <h2 className={styles.heading}>Admin Access</h2>
+            <p className={styles.topText}>
+              Our process is structured so that you get the most added value for
+              the least amount of time.
+            </p>
+          </div>
+          <div className={styles.right}>
             {adminData.map((x, index) => (
-              <div key={index} className={styles.cardContainer}>
-                <div className={styles.card}>
-                  <div className={styles.left}>
-                    <div className={styles.logoImageContainer}>
+              <div key={index} className={styles.card}>
+                <div className={styles.box}>
+                  <div className={styles.boxLeft}>
+                    <div className={styles.number}>
                       <Image
                         src={x.icon}
-                        alt='logo'
-                        fill
-                        className={styles.logo}
+                        alt='icon'
+                        width={50}
+                        height={50}
+                        className={styles.icon}
                       />
                     </div>
-                    <h3 className={styles.category}>{x.category}</h3>
+                  </div>
+                  <div className={styles.boxRight}>
+                    <h3 className={styles.processName}>{x.category}</h3>
                     {x.tasks.map((y, i) => (
                       <p key={i} className={styles.task}>
                         {y.task}
@@ -42,3 +49,4 @@ const AdminFeatures = () => {
   );
 };
 export default AdminFeatures;
+
