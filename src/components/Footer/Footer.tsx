@@ -27,7 +27,7 @@ const Footer = () => {
           <div className={styles.middleDesktop}>
             {footer.map((f, index) => (
               <div key={index} className={styles.headingContainer}>
-                <p className={styles.heading}>{f.heading}</p>
+                <Link href={f.href} className={styles.heading}>{f.heading}</Link>
               </div>
             ))}
           </div>
