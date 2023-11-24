@@ -1,6 +1,6 @@
 .content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 5rem;
 }
@@ -40,6 +40,9 @@
 
 .left {
   position: relative;
+  background-color: var(--tan);
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .left::after {
