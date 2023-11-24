@@ -2,7 +2,7 @@ import { values } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Values.module.css";
-import Check from "../../../public/icons/grayCheck.svg";
+import Check from "../../../public/icons/check.svg";
 
 const Values = () => {
   return (
