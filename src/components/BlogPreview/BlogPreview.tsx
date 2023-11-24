@@ -20,7 +20,7 @@ const BlogPreview: FC<BlogPreviewProps> = ({ mapData, key }) => {
         </div>
         <div className={styles.textContainer}>
           <div className={styles.dateTimeContainer}>
-            <time dateTime='2023-02-02'>{mapData.meta.date}</time>
+            <time dateTime='2023-02-02' className={styles.date}>{mapData.meta.date}</time>
           </div>
           <Link href={`/blog/${mapData.slug}`} passHref>
             <h2 className={styles.title}>{mapData.meta.title}</h2>
