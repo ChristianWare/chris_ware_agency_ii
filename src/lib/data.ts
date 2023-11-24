@@ -207,10 +207,6 @@ export const pricing = [
         feature: "Payment Processing",
       },
       {
-        id: 27.4,
-        feature: "Admin Dashboard",
-      },
-      {
         id: 27.5,
         feature: "12 Blog Articles",
       },
@@ -241,10 +237,6 @@ export const pricing = [
         feature: "Customer Support Enhancements",
       },
       {
-        id: 27.5,
-        feature: "Property Search Engine",
-      },
-      {
         id: 27.6,
         feature: "24 Blog Articles",
       },
@@ -273,10 +265,6 @@ export const pricing = [
       {
         id: 28.3,
         feature: "Advanced SEO Services",
-      },
-      {
-        id: 28.4,
-        feature: "Training and Workshops",
       },
       {
         id: 28.5,

@@ -15,8 +15,8 @@ const ContactForm = () => {
     firstName: "",
     lastName: "",
     senderEmail: "",
-    companyName: "",
-    currentWebsiteUrl: "",
+    // companyName: "",
+    // currentWebsiteUrl: "",
     message: "",
   });
 
@@ -60,8 +60,8 @@ const ContactForm = () => {
                     firstName: "",
                     lastName: "",
                     senderEmail: "",
-                    companyName: "",
-                    currentWebsiteUrl: "",
+                    // companyName: "",
+                    // currentWebsiteUrl: "",
                     message: "",
                   });
                 }}
@@ -110,7 +110,7 @@ const ContactForm = () => {
                       maxLength={500}
                     />
                   </div>
-                  <div className={styles.labelInputBox}>
+                  {/* <div className={styles.labelInputBox}>
                     <label htmlFor='companyName'>Company Name</label>
                     <input
                       id='companyName'
@@ -119,8 +119,8 @@ const ContactForm = () => {
                       value={inputs.companyName}
                       onChange={handleChange}
                     />
-                  </div>
-                  <div className={styles.labelInputBox}>
+                  </div> */}
+                  {/* <div className={styles.labelInputBox}>
                     <label htmlFor='currentWebsiteUrl'>
                       Current Website URL
                     </label>
@@ -131,7 +131,7 @@ const ContactForm = () => {
                       value={inputs.currentWebsiteUrl}
                       onChange={handleChange}
                     />
-                  </div>
+                  </div> */}
                   <div className={styles.labelInputBox}>
                     <label htmlFor='message'>
                       Message <span className={styles.required}>*</span>
