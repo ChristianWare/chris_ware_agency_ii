@@ -6,7 +6,6 @@
 .top {
   display: flex;
   flex-direction: column;
-
 }
 
 .heading {
@@ -32,7 +31,7 @@
 .bottomMap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 .box {
@@ -89,7 +88,7 @@
     text-align: center;
     width: 50%;
   }
-  
+
   .contentBox {
     flex-direction: column;
   }
