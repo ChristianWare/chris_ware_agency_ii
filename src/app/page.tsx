@@ -38,6 +38,7 @@ const HomePage = () => {
   return (
     <div>
       <Hero />
+      <PreHero />
       <AboutSection />
       <Services />
       <Benefits />

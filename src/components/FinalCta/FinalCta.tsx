@@ -1,7 +1,5 @@
-import Button from "../Button/Button";
 import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../Footer/Footer";
-import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./FinalCta.module.css";
 
 const FinalCta = () => {

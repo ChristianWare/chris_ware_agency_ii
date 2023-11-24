@@ -131,9 +131,9 @@ input:focus {
     font-size: 55%;
   }
 
-  p {
+  /* p {
     font-size: 113.7%;
-  }
+  } */
 }
 
 @media screen and (max-width: 568px) {

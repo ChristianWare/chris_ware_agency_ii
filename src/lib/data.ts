@@ -26,6 +26,9 @@ import Blog from "../../public/icons/blog.png";
 import Sitemap from "../../public/icons/sitemap.png";
 import Social from "../../public/icons/social.png";
 import Index from "../../public/icons/index.png";
+import Diverse from "../../public/icons/diverse.png";
+import Fee from "../../public/icons/fee.png";
+import Data from "../../public/icons/data.png";
 
 export const benefits = [
   {
@@ -197,7 +200,7 @@ export const pricing = [
       },
       {
         id: 26.3,
-        feature: "Direct Booking",
+        feature: "SEO",
       },
       {
         id: 27.3,
@@ -524,15 +527,18 @@ export const webFeatures = [
 
 export const preHero = [
   {
-    feature: "Uninterrupted power, money in your pocket",
-    desc: "Say goodbye to power outages and hello to extra savings on your energy bill",
+    icon: Fee,
+    feature: "Lower Fee's",
+    desc: "When you have your own website, you have full control over your property listings, pricing, and booking policies. You can set your own rules and policies without being subject to the platforms' terms and conditions.",
   },
   {
-    feature: "Expert advice with full-service installation",
-    desc: "Say goodbye to power outages and hello to extra savings on your energy bill",
+    icon: Diverse,
+    feature: "Diversification",
+    desc: "Relying solely on Airbnb and VRBO can be risky, as their policies and algorithms can change at any time. Having your own website provides a level of diversification and independence.",
   },
   {
-    feature: "Control & support at your fingertips",
-    desc: "Say goodbye to power outages and hello to extra savings on your energy bill",
+    icon: Data,
+    feature: "Data Ownership",
+    desc: "When you use Airbnb and VRBO, they own and control the guest data. With your own website, you own and control this valuable information, allowing you to build a list of past guests for marketing purposes.",
   },
 ];

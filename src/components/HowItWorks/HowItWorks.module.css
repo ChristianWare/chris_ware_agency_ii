@@ -40,14 +40,14 @@
   border-bottom: 1px solid var(--border3);
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  /* width: fit-content; */
 }
 
 .topText {
-  color: var(--text);
+  color: var(--text2);
   font-weight: 500;
   width: 80%;
   margin-top: 3rem;
+  font-size: 1.6rem;
 }
 
 .rtContainer {

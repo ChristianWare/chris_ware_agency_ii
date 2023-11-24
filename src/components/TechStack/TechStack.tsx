@@ -21,18 +21,16 @@ const TechStack = () => {
           </div>
           <div className={styles.bottom}>
             {techStack.map((x, index) => (
-              <div key={index} className={styles.card}>
-                <div className={styles.box}>
-                  <Image
-                    src={x.icon}
-                    alt='tech icon'
-                    width={70}
-                    height={70}
-                    className={styles.icon}
-                  />
-                  <h3 className={styles.name}>{x.name}</h3>
-                  <p className={styles.description}>{x.desc}</p>
-                </div>
+              <div key={index} className={styles.box}>
+                <Image
+                  src={x.icon}
+                  alt='tech icon'
+                  width={70}
+                  height={70}
+                  className={styles.icon}
+                />
+                <h3 className={styles.name}>{x.name}</h3>
+                <p className={styles.description}>{x.desc}</p>
               </div>
             ))}
           </div>

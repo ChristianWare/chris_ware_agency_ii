@@ -66,6 +66,7 @@
   color: var(--text2);
   margin-top: 3rem;
   font-size: 1.6rem;
+  font-weight: 500;
   width: 80%;
 }
 
