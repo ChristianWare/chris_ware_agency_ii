@@ -101,7 +101,7 @@ input,
 textarea {
   font-weight: 400;
   hyphens: auto;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 150%;
   color: var(--text3);
 }
@@ -143,7 +143,7 @@ input:focus {
 
   p,
   label {
-    font-size: 125%;
+    font-size: 110%;
   }
 }
 
