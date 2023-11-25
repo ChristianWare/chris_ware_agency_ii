@@ -54,7 +54,7 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--chakraPetch);
+  font-family: var(--acidGrotesk);
   color: var(--black);
 }
 
@@ -62,11 +62,10 @@ h1 {
   font-size: 7rem;
   line-height: 120%;
   font-weight: 700;
-  font-family: var(--acidGrotesk);
+  font-family: var(--acidGroteskBold);
 }
 
 h2 {
-  font-family: var(--acidGrotesk);
   font-size: 4.6rem;
   line-height: 120%;
   hyphens: auto;

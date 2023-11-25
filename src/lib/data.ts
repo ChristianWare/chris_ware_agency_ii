@@ -29,6 +29,9 @@ import Index from "../../public/icons/index.png";
 import Diverse from "../../public/icons/diverse.png";
 import Fee from "../../public/icons/fee.png";
 import Data from "../../public/icons/data.png";
+import Client from "../../public/icons/client.png";
+import Integrity from "../../public/icons/integrity.png";
+import Innovation from "../../public/icons/innovation.png";
 
 export const benefits = [
   {
@@ -139,6 +142,13 @@ export const features = [
 ] as const;
 
 export const caseStudies = [
+  {
+    company: "ABC Company",
+    companyDesc: "ABC Company is a company that does business",
+    projectDetails:
+      "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
+    href: "/",
+  },
   {
     company: "ABC Company",
     companyDesc: "ABC Company is a company that does business",
@@ -358,16 +368,19 @@ export const footer = [
 
 export const values = [
   {
+    icon: Client,
     value: "Client Focus",
-    desc: "Our clients are at the heart of everything we do. We strive to exceed their expectations with each service.",
+    desc: "We are unwaveringly committed to our clients. Their needs, satisfaction, and success drive every decision and innovation. By prioritizing a deep understanding of their challenges, we cultivate lasting partnerships and deliver solutions that exceed expectations. Client-centric excellence is the heartbeat of our business, fostering trust, loyalty, and mutual growth.",
   },
   {
+    icon: Diverse,
     value: "Integrity",
-    desc: "Honesty and transparency guide our actions, helping us build lasting relationships with our clients.",
+    desc: "Integrity is the bedrock of our business. We uphold the highest ethical standards in every action and decision. Transparency, honesty, and accountability guide our interactions internally and with all stakeholders. Our commitment to uncompromising integrity ensures trust, fosters a positive work culture, and establishes enduring credibility in all that we do.",
   },
   {
+    icon: Innovation,
     value: "Innovation",
-    desc: "We embrace change and innovation, constantly exploring better ways to serve our clients.",
+    desc: "We thrive on innovation. It fuels our quest for continuous improvement and shapes our forward-thinking approach. We embrace creativity, curiosity, and adaptability to push boundaries and pioneer new solutions. Our commitment to an innovative spirit drives us to anticipate and meet evolving needs, ensuring we remain at the forefront of positive change in our industry.",
   },
 ] as const;
 

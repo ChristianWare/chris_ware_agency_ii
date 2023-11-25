@@ -2,37 +2,45 @@ import { values } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Values.module.css";
-import Check from "../../../public/icons/check.svg";
+import Label from "../Label/Label";
+import Image from "next/image";
 
 const Values = () => {
   return (
-    <LayoutWrapper>
-      <ContentPadding>
-        <div className={styles.top}>
-          <h2 className={styles.heading}>
-            Values Guiding our Decisions
-          </h2>
-          <p className={styles.copy}>
-            These are the prices we charge on a monthly basis. We understand
-            that websites can be expensive. So we only charge a small fee. Canel
-            anytime, no questions asked. See details below:
-          </p>
-        </div>
-        <div className={styles.bottom}>
-          {values.map((x, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.box}>
-                <div className={styles.iconContainer}>
-                  <Check width={40} height={40} className={styles.icon} />
-                </div>
+    <div className={styles.container}>
+      <LayoutWrapper>
+        <ContentPadding>
+          <div className={styles.contentTop}>
+            <div className={styles.left}>
+              <Label text='core principles and beliefs' />
+              <h2 className={styles.heading}>Our Values</h2>
+            </div>
+            <div className={styles.right}>
+              <p className={styles.topCopy}>
+                Our values act as a set of guiding principles and fundamental
+                beliefs that influence the behaviors we demonstrate, which shape
+                the decisions we collectively make as a team.
+              </p>
+            </div>
+          </div>
+          <div className={styles.contentBottom}>
+            {values.map((x, index) => (
+              <div key={index} className={styles.box}>
+                <Image
+                  src={x.icon}
+                  alt='icon'
+                  width={40}
+                  height={40}
+                  className={styles.icon}
+                />
                 <h3 className={styles.value}>{x.value}</h3>
                 <p className={styles.description}>{x.desc}</p>
               </div>
-            </div>
-          ))}
-        </div>
-      </ContentPadding>
-    </LayoutWrapper>
+            ))}
+          </div>
+        </ContentPadding>
+      </LayoutWrapper>
+    </div>
   );
 };
 export default Values;

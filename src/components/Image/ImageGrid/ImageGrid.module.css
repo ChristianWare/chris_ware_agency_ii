@@ -27,7 +27,7 @@
 .imgBox200,
 .imgBox275 {
   border-radius: 10px;
-  border: 1px solid var(--border3);
+  border: 1px solid var(--border);
 }
 
 .img400 {

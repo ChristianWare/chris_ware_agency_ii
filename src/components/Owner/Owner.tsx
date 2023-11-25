@@ -12,13 +12,11 @@ const Owner = () => {
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.left}>
-            <div className={styles.imgContainer}>
-              <Image src={Chris} alt='img' fill className={styles.img} />
-            </div>
+            <CircleImage src={Chris} />
           </div>
           <div className={styles.right}>
-            <Label text='Founder, CEO' />
-            <h2 className={styles.heading}>Chris Ware</h2>
+            <Label text='Chris Ware' />
+            <h2 className={styles.heading}>Our Founder</h2>
             <div className={styles.container}>
               <p className={styles.copy}>
                 Our journey began with a simple mission - to make document
@@ -34,24 +32,6 @@ const Owner = () => {
                 legalization accessibl e and effortless for all. A group of
                 legal enthusiasts saw the difficulties people faced with the
                 notary process and decided to do something about it.
-              </p>
-              <br />
-              <p className={styles.copy}>
-                Our journey began with a simple mission - to make document
-                legalization accessibl e and effortless for all. A group of
-                legal enthusiasts saw the difficulties people faced with the
-                notary process and decided to do something about it.
-              </p>
-              <br />
-              <p className={styles.copy}>
-                Our journey began with a simple mission - to make document
-                legalization accessibl e and effortless for all. A group of
-                legal enthusiasts.
-              </p>
-              <p className={styles.copy}>
-                Our journey began with a simple mission - to make document
-                legalization accessibl e and effortless for all. A group of
-                legal enthusiasts.
               </p>
             </div>
           </div>

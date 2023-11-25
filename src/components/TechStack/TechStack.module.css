@@ -36,20 +36,14 @@
   margin-top: 3rem;
 }
 
-.card {
-  border: 1px solid var(--border3);
-  border-radius: 8px;
-  padding: 1rem;
-}
-
 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  /* border: 1px solid var(--border3); */
+  border: 1px solid var(--border);
   background-color: var(--white);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 2rem;
   height: 100%;
 }
