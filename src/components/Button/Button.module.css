@@ -40,7 +40,7 @@
 }
 
 .tertiary {
-  color: var(--white);
+  color: var(--green);
   background-color: var(--black);
   border: 1px solid var(--black);
 }

@@ -44,6 +44,10 @@
   margin-bottom: 3rem;
 }
 
+.description {
+  color: var(--text);
+}
+
 @media screen and (max-width: 968px) {
   .contentTop {
     flex-direction: column;
