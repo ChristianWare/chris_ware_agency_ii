@@ -13,6 +13,7 @@
 
 .right {
   background-color: var(--tan);
+  border: 1px solid var(--border);
   padding: 2rem;
   border-radius: 10px;
   width: 100%;
