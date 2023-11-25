@@ -86,7 +86,7 @@
 
 @media screen and (max-width: 1068px) {
   .copy {
-    width: 100%;
+    width: 90%;
   }
 
   .bottom {
@@ -95,6 +95,10 @@
 }
 
 @media screen and (max-width: 668px) {
+  .copy {
+    width: 100%;
+  }
+  
   .bottom {
     grid-template-columns: repeat(2, 1fr);
   }

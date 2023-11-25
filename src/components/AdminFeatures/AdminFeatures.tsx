@@ -18,27 +18,25 @@ const AdminFeatures = () => {
           </div>
           <div className={styles.right}>
             {adminData.map((x, index) => (
-              <div key={index} className={styles.card}>
-                <div className={styles.box}>
-                  <div className={styles.boxLeft}>
-                    <div className={styles.number}>
-                      <Image
-                        src={x.icon}
-                        alt='icon'
-                        width={50}
-                        height={50}
-                        className={styles.icon}
-                      />
-                    </div>
+              <div key={index} className={styles.box}>
+                <div className={styles.boxLeft}>
+                  <div className={styles.number}>
+                    <Image
+                      src={x.icon}
+                      alt='icon'
+                      width={50}
+                      height={50}
+                      className={styles.icon}
+                    />
                   </div>
-                  <div className={styles.boxRight}>
-                    <h3 className={styles.processName}>{x.category}</h3>
-                    {x.tasks.map((y, i) => (
-                      <p key={i} className={styles.task}>
-                        {y.task}
-                      </p>
-                    ))}
-                  </div>
+                </div>
+                <div className={styles.boxRight}>
+                  <h3 className={styles.processName}>{x.category}</h3>
+                  {x.tasks.map((y, i) => (
+                    <p key={i} className={styles.task}>
+                      {y.task}
+                    </p>
+                  ))}
                 </div>
               </div>
             ))}
@@ -49,4 +47,3 @@ const AdminFeatures = () => {
   );
 };
 export default AdminFeatures;
-
