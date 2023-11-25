@@ -11,6 +11,8 @@
 .heading {
   margin-bottom: 1rem;
   width: 50vw;
+  border-bottom: 1px solid var(--border3);
+  padding-bottom: 1rem;
 }
 
 .topCopy {

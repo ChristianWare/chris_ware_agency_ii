@@ -17,6 +17,11 @@
   margin-bottom: 5rem;
 }
 
+.heading {
+  border-bottom: 1px solid var(--border3);
+  padding-bottom: 1rem;
+}
+
 .topText {
   color: var(--text2);
   margin-top: 3rem;

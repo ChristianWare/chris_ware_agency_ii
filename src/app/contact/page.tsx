@@ -3,8 +3,31 @@ import Faq from "@/components/Faq/Faq";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import Img from "../../../public/images/img4.png";
 import ContactInfo from "@/components/ContactInfo/ContactInfo";
+import BlogSection from "@/components/BlogSection/BlogSection";
 
 const ContactPage = () => {
+  const fs = require("fs");
+  const path = require("path");
+  const matter = require("gray-matter");
+
+  // Determine the correct path to the 'blogs' directory
+  const blogsDirectory = path.join(process.cwd(), "blogs");
+
+  // Use readdirSync to list files in the 'blogs' directory
+  const files = fs.readdirSync(blogsDirectory);
+
+  const blogs = files.map((filename: any) => {
+    const fileContent = fs.readFileSync(
+      path.join(blogsDirectory, filename),
+      "utf-8"
+    );
+
+    const { data: frontMatter } = matter(fileContent);
+    return {
+      meta: frontMatter,
+      slug: filename.replace(".mdx", ""),
+    };
+  });
   return (
     <>
       <PageIntro
@@ -19,6 +42,7 @@ const ContactPage = () => {
       />
       <ContactInfo />
       <Faq />
+      <BlogSection blogData={blogs} />
       <FinalCta />
     </>
   );

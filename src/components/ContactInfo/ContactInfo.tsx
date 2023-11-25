@@ -16,7 +16,7 @@ const ContactInfo = () => {
       <ContentPadding>
         <div className={styles.content}>
           <div className={styles.left}>
-            <Label text='About Us' />
+            <Label text='Reach out' />
             <h2 className={styles.heading}>Our Contact Info</h2>
             <div className={styles.right}>
               <p className={styles.copy}>
@@ -50,7 +50,6 @@ const ContactInfo = () => {
                   <p className={styles.copyii}>@chrisware_agency</p>
                 </div>
               </div>
-              
             </div>
           </div>
           <div className={styles.right}>
