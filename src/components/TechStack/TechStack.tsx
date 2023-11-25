@@ -25,12 +25,12 @@ const TechStack = () => {
                 <Image
                   src={x.icon}
                   alt='tech icon'
-                  width={70}
-                  height={70}
+                  width={40}
+                  height={40}
                   className={styles.icon}
                 />
                 <h3 className={styles.name}>{x.name}</h3>
-                <p className={styles.description}>{x.desc}</p>
+                {/* <p className={styles.description}>{x.desc}</p> */}
               </div>
             ))}
           </div>

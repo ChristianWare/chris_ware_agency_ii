@@ -31,7 +31,7 @@
 
 .bottom {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
 }
@@ -47,7 +47,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: 1px solid var(--border3);
+  /* border: 1px solid var(--border3); */
+  background-color: var(--white);
   border-radius: 8px;
   padding: 2rem;
   height: 100%;
@@ -59,14 +60,13 @@
 
 .name {
   display: block;
-  font-size: 2rem;
-  color: var(--black);
+  font-size: 1.8rem;
+  color: var(--text2);
   font-family: var(--acidGroteskBold);
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 2rem;
 }
-
 
 .description {
   color: var(--text);
@@ -74,7 +74,8 @@
 }
 
 @media screen and (max-width: 1268px) {
-  .heading, .copy {
+  .heading,
+  .copy {
     text-align: center;
   }
 
@@ -83,25 +84,24 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+  .bottom {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .copy {
+    width: 100%;
+  }
+
   .bottom {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media screen and (max-width: 1068px) {
-  
-  .copy {
-    width: 100%;
-  }
-  
-  .bottom {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media screen and (max-width: 668px) {
   .bottom {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }

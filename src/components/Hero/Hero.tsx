@@ -37,7 +37,6 @@ const Hero = () => {
               </p>
               <div className={styles.btnContainer}>
                 <Button text='Get Consultation' href='/' btnType='primary' />
-                {/* <Button text='Details' href='/' btnType='secondary' /> */}
               </div>
             </div>
             <div className={styles.right}></div>
