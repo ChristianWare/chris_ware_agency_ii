@@ -68,49 +68,43 @@ function Nav() {
             CWA
           </Link>
         </div>
-        <div className={styles.menuItemsGroup}>
-          <ul
-            className={
-              isOpen === false
-                ? styles.navMenu
-                : styles.navMenu + " " + styles.active
-            }
-          >
-            {navItems.map((navItem, index) => (
-              <li key={index} className={styles.navItem} onClick={openMenu}>
-                <Link
-                  href={navItem.href}
-                  className={
-                    pathname === navItem.text
-                      ? styles.activeLink + styles.navItem
-                      : styles.navItem
-                  }
-                >
-                  {navItem.text}
-                </Link>
-                {/* <span className={styles.arrow}>↗</span> */}
-              </li>
-            ))}
-          </ul>
-          <div className={styles.navBarRight}>
-            <div className={styles.btnContainer}>
-              {/* <Button href='/' text='Call us' btnType='navBtnii' /> */}
-              <Button href='/' text='Get in touch' btnType='navBtn' />
-            </div>
-            <span
-              className={
-                isOpen === false
-                  ? styles.hamburger
-                  : styles.hamburger + " " + styles.active
-              }
-              onClick={openMenu}
-            >
-              <span className={styles.whiteBar}></span>
-              <span className={styles.whiteBar}></span>
-              <span className={styles.whiteBar}></span>
-            </span>
+        <ul
+          className={
+            isOpen === false
+              ? styles.navMenu
+              : styles.navMenu + " " + styles.active
+          }
+        >
+          {navItems.map((navItem, index) => (
+            <li key={index} className={styles.navItem} onClick={openMenu}>
+              <Link
+                href={navItem.href}
+                className={
+                  pathname === navItem.text
+                    ? styles.activeLink + styles.navItem
+                    : styles.navItem
+                }
+              >
+                {navItem.text}
+              </Link>
+            </li>
+          ))}
+        <div className={styles.btnContainer}>
+            <Button href='/' text='Get in touch' btnType='navBtn' />
           </div>
-        </div>
+        </ul>
+        <span
+          className={
+            isOpen === false
+              ? styles.hamburger
+              : styles.hamburger + " " + styles.active
+          }
+          onClick={openMenu}
+        >
+          <span className={styles.whiteBar}></span>
+          <span className={styles.whiteBar}></span>
+          <span className={styles.whiteBar}></span>
+        </span>
       </nav>
     </header>
   );

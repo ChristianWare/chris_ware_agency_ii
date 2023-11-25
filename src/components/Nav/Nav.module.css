@@ -2,7 +2,7 @@
   font-family: var(--chakraPetch);
   color: var(--black);
   background-color: var(--tan);
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 
 .navbar {
@@ -68,10 +68,6 @@
   color: red;
 }
 
-.arrow {
-  display: none;
-}
-
 .activeLink {
   position: relative;
 }
@@ -83,12 +79,14 @@
 .hamburger {
   display: none;
   padding: 1rem;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   border-radius: 10px;
-  z-index: 9999;
+  z-index: 999;
+  position: relative;
 }
 
 .whiteBar {
+  position: relative;
   z-index: 9999;
   display: block;
   width: 45px;
@@ -166,42 +164,14 @@
   }
 
   .bottom {
-    border-top: 1px solid var(--primary);
+    border-top: 1px solid var(--green);
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    position: relative;
   }
 
-  .bottom::after {
-    content: "";
-    bottom: 500%;
-    left: 0;
-    position: absolute;
-    filter: blur(20rem);
-    transform: translateZ(0);
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    background-color: var(--green);
-    z-index: -1;
-  }
-
-  .bottom::before {
-    content: "";
-    top: 10%;
-    right: 10%;
-    position: absolute;
-    filter: blur(20rem);
-    transform: translateZ(0);
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    background-color: var(--white);
-    z-index: -1;
-  }
 
   .copy {
     color: var(--text);
@@ -213,22 +183,22 @@
   .hamburger {
     display: block;
     cursor: pointer;
-    z-index: 999;
+    z-index: 9999;
   }
 
-  .hamburger.active .whiteBar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
-  }
+.hamburger.active .whiteBar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
 
-  .hamburger.active .whiteBar:nth-child(2) {
-    opacity: 0;
-  }
+.hamburger.active .whiteBar:nth-child(2) {
+  opacity: 0;
+}
 
-  .hamburger.active .whiteBar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
-  }
+.hamburger.active .whiteBar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
 }
 
 @media screen and (max-width: 768px) {
