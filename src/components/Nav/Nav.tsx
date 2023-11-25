@@ -88,7 +88,7 @@ function Nav() {
                 >
                   {navItem.text}
                 </Link>
-                <span className={styles.arrow}>↗</span>
+                {/* <span className={styles.arrow}>↗</span> */}
               </li>
             ))}
           </ul>

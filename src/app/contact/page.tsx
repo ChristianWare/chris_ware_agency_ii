@@ -1,8 +1,8 @@
-import BlogSection from "@/components/BlogSection/BlogSection";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import Faq from "@/components/Faq/Faq";
 import PageIntro from "@/components/PageIntro/PageIntro";
-import Img from '../../../public/images/img4.png'
+import Img from "../../../public/images/img4.png";
+import ContactInfo from "@/components/ContactInfo/ContactInfo";
 
 const ContactPage = () => {
   return (
@@ -17,6 +17,7 @@ const ContactPage = () => {
                 business.'
         src={Img}
       />
+      <ContactInfo />
       <Faq />
       <FinalCta />
     </>

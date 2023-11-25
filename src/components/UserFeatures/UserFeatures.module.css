@@ -1,6 +1,10 @@
+.content {
+  padding-top: 10rem;
+}
+
 .mapBox {
   border-radius: 10px;
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   padding: 1rem;
   background-color: var(--tan);
   display: grid;
@@ -13,26 +17,6 @@
   margin-bottom: 3rem;
 }
 
-.highlight {
-  position: relative;
-  z-index: 1;
-  white-space: nowrap;
-  line-height: 115%;
-}
-
-.highlight::after {
-  position: absolute;
-  content: "";
-  bottom: 7px;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background-color: var(--green);
-  z-index: -1;
-  border: 1px solid var(--border3);
-  border-top: none;
-}
-
 .cardContainer {
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -41,14 +25,10 @@
 }
 
 .card {
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   border-radius: 10px;
   padding: 3rem;
   height: 100%;
-}
-
-.cardContainer:nth-child(even) .card {
-  flex-direction: row-reverse;
 }
 
 .left {
@@ -97,7 +77,6 @@
 
 .logo {
   object-fit: contain;
-  opacity: 0.7;
 }
 
 @media screen and (max-width: 968px) {

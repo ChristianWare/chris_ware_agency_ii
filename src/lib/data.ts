@@ -146,13 +146,6 @@ export const caseStudies = [
       "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
     href: "/",
   },
-  {
-    company: "ABC Company",
-    companyDesc: "ABC Company is a company that does business",
-    projectDetails:
-      "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
-    href: "/",
-  },
 ] as const;
 
 export const process = [

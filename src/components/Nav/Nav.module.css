@@ -56,7 +56,6 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--tan);
-  /* text-transform: uppercase; */
   position: relative;
   user-select: none;
   transition: all 0.3s ease-in;
@@ -90,12 +89,13 @@
 }
 
 .whiteBar {
+  z-index: 9999;
   display: block;
   width: 45px;
   height: 3px;
   margin: 5px auto;
   border-radius: 15px;
-  background-color: var(--white);
+  background-color: var(--green);
   transition: all 0.3s ease-in-out;
 }
 
@@ -142,7 +142,7 @@
     height: 100%;
     transition: 0.3s all ease-in;
     z-index: 998;
-    background-color: var(--green);
+    background-color: var(--tan);
     padding: 1rem;
     padding-left: 2rem;
   }
@@ -152,17 +152,8 @@
   }
 
   .navItem {
-    font-size: 4.5rem;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--black);
-    width: 98%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .arrow {
-    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--black);
   }
 
   .officialLogoMobile {
@@ -194,7 +185,7 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    background-color: var(--accent1);
+    background-color: var(--green);
     z-index: -1;
   }
 
@@ -208,7 +199,7 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    background-color: var(--accent2);
+    background-color: var(--white);
     z-index: -1;
   }
 

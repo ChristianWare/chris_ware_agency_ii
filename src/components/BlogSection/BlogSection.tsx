@@ -7,7 +7,6 @@ import Button from "../Button/Button";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./BlogSection.module.css";
-import Megaphone from "../../../public/icons/megaphone.png";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
 
@@ -20,12 +19,21 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
         <ContentPadding>
           <div className={styles.mainContent}>
             <div className={styles.top}>
-              <h2 className={styles.heading}>Our Insights</h2>
-              <p className={styles.copy}>
-                Explore our blog for the latest updates, travel tips, and
-                industry insights to enhance your vacation rental hosting
-                experience.
-              </p>
+              {pathname !== "/blog" && (
+                <>
+                  <h2 className={styles.heading}>Our Insights</h2>
+                  <p className={styles.copy}>
+                    Explore our blog for the latest updates, travel tips, and
+                    industry insights to enhance your vacation rental hosting
+                    experience.
+                  </p>
+                </>
+              )}
+              {pathname === "/blog" && (
+                <>
+                  <h2 className={styles.heading}>Latest Articles</h2>
+                </>
+              )}
             </div>
             <div className={styles.content}>
               {blogData.map((x: BlogData, index: number) => (
