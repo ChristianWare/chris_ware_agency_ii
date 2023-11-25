@@ -2,26 +2,6 @@
   background-color: var(--tan);
 }
 
-.highlight {
-  position: relative;
-  z-index: 1;
-  white-space: nowrap;
-  line-height: 130%;
-}
-
-.highlight::after {
-  position: absolute;
-  content: "";
-  bottom: 7px;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background-color: var(--green);
-  z-index: -1;
-  border: 1px solid var(--border3);
-  border-top: none;
-}
-
 .copy {
   margin-top: 3rem;
   width: 70%;
@@ -60,6 +40,10 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 2rem;
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .description {
@@ -98,7 +82,7 @@
   .copy {
     width: 100%;
   }
-  
+
   .bottom {
     grid-template-columns: repeat(2, 1fr);
   }

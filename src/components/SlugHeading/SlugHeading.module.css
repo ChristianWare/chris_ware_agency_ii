@@ -18,17 +18,3 @@
   white-space: nowrap;
   line-height: 115%;
 }
-
-.heading::after {
-  position: absolute;
-  content: "";
-  bottom: 7px;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background-color: var(--green);
-  border: 1px solid var(--border3);
-  border-top: none;
-  border-radius: 3px;
-  z-index: -1;
-}
