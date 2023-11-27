@@ -23,13 +23,16 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  color: var(--white);
-  background-color: var(--black);
-  border: 1px solid var(--black);
+  color: var(--black);
+  background-color: var(--green);
+  border: 2px solid var(--green);
 }
 
-.primary {
+.btn:hover {
+  background-color: transparent;
+  color: var(--green);
 }
+
 @media screen and (max-width: 768px) {
   .btn {
     font-size: 2rem;

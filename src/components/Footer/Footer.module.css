@@ -47,7 +47,7 @@
 }
 
 .heading {
-  color: var(--text2);
+  color: var(--tan);
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -55,7 +55,7 @@
 }
 
 .bottomDesktop {
-  border-top: 1px solid var(--text);
+  border-top: 1px solid var(--tan);
   /* margin-top: 1rem; */
   display: flex;
   align-items: flex-start;
@@ -64,7 +64,7 @@
 }
 
 .copy {
-  color: var(--black);
+  color: var(--tan);
   text-align: center;
   font: 1.2rem;
   width: 100%;
@@ -79,7 +79,7 @@
 }
 
 .icon {
-  color: var(--black);
+  color: var(--tan);
 }
 
 @media screen and (max-width: 1068px) {
