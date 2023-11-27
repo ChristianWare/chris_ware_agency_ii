@@ -18,10 +18,6 @@ const Services = () => {
           <div className={styles.top}>
             <Label text='What we do' />
             <h2 className={styles.heading}>We Build Direct Booking Websites</h2>
-            {/* <p className={styles.topCopy}>
-              We specialize in building direct booking websites that have the
-              following fetures:
-            </p> */}
           </div>
           <div className={styles.contentBox}>
             <div className={styles.bottom}>
@@ -34,8 +30,8 @@ const Services = () => {
                           <Image
                             src={x.icon}
                             alt='icon'
-                            width={40}
-                            height={40}
+                            width={30}
+                            height={30}
                             className={styles.icon}
                           />
                         </div>
@@ -55,8 +51,8 @@ const Services = () => {
                           <Image
                             src={x.icon}
                             alt='icon'
-                            width={40}
-                            height={40}
+                            width={30}
+                            height={30}
                             className={styles.icon}
                           />
                         </div>
