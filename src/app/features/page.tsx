@@ -6,6 +6,7 @@ import UserFeatures from "@/components/UserFeatures/UserFeatures";
 import Services from "@/components/Services/Services";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import Img from "../../../public/images/img7.png";
+import Pricing from "@/components/Pricing/Pricing";
 
 const FeaturesPage = () => {
   const fs = require("fs");
@@ -35,6 +36,7 @@ const FeaturesPage = () => {
       <Services />
       <AdminFeatures />
       <UserFeatures />
+      <Pricing />
       <Faq />
       <BlogSection blogData={blogs} />
       <FinalCta />

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
@@ -5,9 +7,11 @@ import styles from "./Pricing.module.css";
 import { pricing } from "@/lib/data";
 import Check from "../../../public/icons/check.svg";
 import Button from "../Button/Button";
-import Money from "../../../public/icons/money.png";
+import { usePathname } from "next/navigation";
 
 const Pricing = () => {
+  const pathname = usePathname();
+
   return (
     <div className={styles.container}>
       <LayoutWrapper>
@@ -52,9 +56,11 @@ const Pricing = () => {
               </div>
             ))}
           </div>
-          <div className={styles.btnContainer}>
-            <Button href='/features' text='More details' btnType='tertiary' />
-          </div>
+          {pathname === "/" && (
+            <div className={styles.btnContainer}>
+              <Button href='/features' text='More details' btnType='tertiary' />
+            </div>
+          )}
         </ContentPadding>
       </LayoutWrapper>
     </div>
