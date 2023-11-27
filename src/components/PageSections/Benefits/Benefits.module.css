@@ -32,16 +32,16 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  background-color: var(--tan);
+  background-color: var(--black2);
   border-radius: 10px;
   padding: 3rem 2rem;
   padding-bottom: 2rem;
   width: 100%;
   cursor: pointer;
 }
+
 .benefitContainer:hover,
 .show {
-  color: var(--black);
   transition: 0.2s all ease-in;
 }
 
@@ -50,6 +50,7 @@
   box-shadow: var(--shadow);
   background-color: var(--white);
   border: 1px solid var(--border);
+  color: red;
 }
 
 .icon {
@@ -59,14 +60,32 @@
 .benefitHeading {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--tan);
   font-family: var(--acidGroteskBold);
+  user-select: none;
+}
+
+.benefitContainer.selected .benefitHeading {
+  color: var(--black);
+}
+
+.selected {
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  background-color: var(--white);
+  border: 1px solid var(--border);
 }
 
 .index {
-  color: var(--text);
+  color: var(--tan);
+  opacity: 0.7;
   margin-right: 1rem;
   font-family: var(--acidGroteskBold);
+}
+
+.benefitContainer.selected .index {
+  color: var(--black);
+  opacity: 1;
 }
 
 .answerContainer {

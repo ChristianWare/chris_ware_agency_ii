@@ -15,6 +15,16 @@
   margin-bottom: 3rem;
 }
 
+.h2Container {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.heading2 {
+  font-size: 3rem;
+}
+
 .topCopy {
   margin-bottom: 3rem;
   color: var(--text2);

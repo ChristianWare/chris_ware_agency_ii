@@ -49,7 +49,11 @@ const Benefits = () => {
                   key={i}
                   className={
                     selected === i
-                      ? styles.benefitContainer + " " + styles.showBorder
+                      ? styles.benefitContainer +
+                        " " +
+                        styles.showBorder +
+                        " " +
+                        styles.selected
                       : styles.benefitContainer
                   }
                   onClick={() => toggle(i)}

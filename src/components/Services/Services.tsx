@@ -50,10 +50,10 @@ const Services = () => {
               )}
               {pathname === "/features" && (
                 <div className={styles.bottomMap}>
-                  <div className=''>
-                    <Label text='What we do' />
-                    <h2 className={styles.headingk}>
-                      We Build Direct Booking Websites
+                  <div className={styles.h2Container}>
+                    <Label text='Details' />
+                    <h2 className={styles.heading2}>
+                      What&#39;s Included in Every Direct Booking Website
                     </h2>
                   </div>
                   {features.map((x, index) => (

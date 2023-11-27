@@ -47,7 +47,7 @@
 .topText {
   color: var(--tan);
   font-weight: 500;
-  width: 80%;
+  /* width: 80%; */
   margin-top: 3rem;
   font-size: 1.6rem;
 }
