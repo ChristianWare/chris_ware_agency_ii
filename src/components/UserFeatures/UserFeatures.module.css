@@ -5,10 +5,10 @@
 .mapBox {
   border-radius: 10px;
   padding: 1rem;
-  background-color: var(--tan);
+  /* background-color: var(--tan); */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .heading {
@@ -17,10 +17,10 @@
 }
 
 .cardContainer {
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   border-radius: 10px;
   padding: 1rem;
-  background-color: var(--white);
+  background-color: var(--tan);
 }
 
 .card {
@@ -43,10 +43,12 @@
   margin-bottom: 3rem;
   font-size: 2.1rem;
   font-family: var(--acidGroteskBold);
+  /* color: var(--tan); */
 }
 
 .task {
-  color: var(--text);
+  /* color: var(--tan); */
+  opacity: 0.8;
   font-weight: 500;
 }
 

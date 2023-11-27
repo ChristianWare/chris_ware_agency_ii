@@ -19,10 +19,12 @@
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 2rem;
+  background-color: var(--black);
 }
 
 .heading2 {
   font-size: 3rem;
+  color: var(--tan);
 }
 
 .topCopy {
@@ -143,8 +145,12 @@
     grid-gap: 2rem;
   }
 
-  .imgContainer {
-    height: 300px;
+  .h2Container {
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -168,6 +174,8 @@
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
+
+  
 }
 
 @media screen and (max-width: 768px) {

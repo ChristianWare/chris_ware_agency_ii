@@ -3,7 +3,6 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./UserFeatures.module.css";
 import { guestData } from "@/lib/data";
-import Img from "../../../public/images/img1.png";
 
 const UserFeatures = () => {
   return (
@@ -20,8 +19,8 @@ const UserFeatures = () => {
                       <Image
                         src={x.icon}
                         alt='logo'
-                        width={40}
-                        height={40}
+                        width={50}
+                        height={50}
                         className={styles.logo}
                       />
                     </div>
