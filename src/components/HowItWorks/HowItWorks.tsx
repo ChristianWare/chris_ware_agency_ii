@@ -14,7 +14,7 @@ const HowItWorks = () => {
               <Label color='white' text='How we do things' />
               <h2 className={styles.heading}>Our Process</h2>
               <p className={styles.topText}>
-                By incorporating these steps, you not only streamline the
+                With these steps, you not only streamline the
                 contract process but also provide a dedicated and efficient
                 platform for communication, fostering a transparent and
                 collaborative relationship with the vacation rental owner.
