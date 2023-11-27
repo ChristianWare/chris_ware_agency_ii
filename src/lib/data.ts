@@ -1,5 +1,4 @@
 import Calendar from "../../public/icons/calendar.png";
-import Reviews from "../../public/icons/reviews.png";
 import Next from "../../public/icons/nextjs.png";
 import Mongo from "../../public/icons/mongodb.png";
 import Cloudinary from "../../public/icons/cloudinary.png";
@@ -8,15 +7,11 @@ import Node from "../../public/icons/nodejs.png";
 import Stripe from "../../public/icons/stripe.png";
 import Vercel from "../../public/icons/vercel.png";
 import Google from "../../public/icons/google.png";
-import Pie from "../../public/icons/pie.png";
-import Property from "../../public/icons/property.png";
-import Reservation from "../../public/icons/reservation.png";
-import User from "../../public/icons/user.png";
 import Booking from "../../public/icons/booking.png";
 import Profile from "../../public/icons/profile.png";
-import Money from "../../public/icons/money.png";
 import Reviews2 from "../../public/icons/reviews2.png";
 import Admin2 from "../../public/icons/admin2.png";
+import Admin3 from "../../public/icons/admin3.png";
 import Payment from "../../public/icons/payment.png";
 import Responsive from "../../public/icons/responsive.png";
 import Accessibility from "../../public/icons/accessibility.png";
@@ -30,7 +25,6 @@ import Diverse from "../../public/icons/diverse.png";
 import Fee from "../../public/icons/fee.png";
 import Data from "../../public/icons/data.png";
 import Client from "../../public/icons/client.png";
-import Integrity from "../../public/icons/integrity.png";
 import Innovation from "../../public/icons/innovation.png";
 
 export const benefits = [
