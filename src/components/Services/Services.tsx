@@ -16,8 +16,14 @@ const Services = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.top}>
-            <Label text='What we do' />
-            <h2 className={styles.heading}>We Build Direct Booking Websites</h2>
+            {pathname === "/" && (
+              <>
+                <Label text='What we do' />
+                <h2 className={styles.heading}>
+                  We Build Direct Booking Websites
+                </h2>
+              </>
+            )}
           </div>
           <div className={styles.contentBox}>
             <div className={styles.bottom}>
@@ -44,6 +50,12 @@ const Services = () => {
               )}
               {pathname === "/features" && (
                 <div className={styles.bottomMap}>
+                  <div className=''>
+                    <Label text='What we do' />
+                    <h2 className={styles.headingk}>
+                      We Build Direct Booking Websites
+                    </h2>
+                  </div>
                   {features.map((x, index) => (
                     <div key={index} className={styles.container}>
                       <div className={styles.box}>
