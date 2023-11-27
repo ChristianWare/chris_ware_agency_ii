@@ -25,7 +25,7 @@ const AboutSection = () => {
                   maximize your property&#39;s potential. By choosing us, you
                   gain a direct connection with guests, fostering trust and
                   boosting bookings, unlocking the full potential of your
-                  vacation rental business. Here are some benefits and features:
+                  vacation rental business.
                 </p>
                 <div className={styles.iconTextContainer}>
                   <div className={styles.itextLeft}>

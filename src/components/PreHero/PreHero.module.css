@@ -21,7 +21,7 @@
   font-size: 2.6rem;
   font-family: var(--acidGroteskBold);
   line-height: 120%;
-  color: var(--text2)
+  color: var(--text2);
 }
 
 .contentBottom {
@@ -31,7 +31,6 @@
 }
 
 .box {
-  /* border: 1px solid var(--border); */
   background-color: var(--tan);
   border-radius: 10px;
   padding: 2rem;

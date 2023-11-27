@@ -59,15 +59,16 @@
   /* margin-top: 1rem; */
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
 }
 
 .copy {
   color: var(--tan);
-  text-align: center;
+  /* text-align: right; */
   font: 1.2rem;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .lb2 {
@@ -106,6 +107,11 @@
 @media screen and (max-width: 768px) {
   .right {
     flex-direction: column;
+  }
+
+  .bottomDesktop {
+    justify-content: center;
+    align-items: center;
   }
 }
 

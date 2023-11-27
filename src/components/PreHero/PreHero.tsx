@@ -15,7 +15,7 @@ const PreHero = () => {
               While common listing platforms like as Airbnb and VRBO can yield
               substantial visibility and reservations, it is crucial for
               dedicated rental property managers to establish their own website
-              in order to attract more direct bookings.
+              in order to attract more direct bookings. Here&#39;s why...
             </h2>
           </div>
         </div>

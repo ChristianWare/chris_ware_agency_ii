@@ -76,7 +76,7 @@ export const features = [
   {
     service: "Admin Panel",
     description:
-      "Admin panel will allow you to create, update, and delete listings on your persoanlized booking websites. View the number of bookings, and make any updates as needed.",
+      "Admin panel will allow you to create, update, and delete listings on your personalized booking websites. View the number of bookings, and make any updates as needed.",
     icon: Admin2,
   },
   {
@@ -157,13 +157,13 @@ export const process = [
     id: 59,
     processName: "Free analysis & offer",
     processDescription:
-      "In a non-binding initial consultation, we analyze the current situation and discuss your expectations and goals. About a day after our initial consultation, you will receive a non-binding offer with a scope of services that is tailored precisely to your needs and goals.",
+      "In a non-binding initial consultation, we analyze the current situation and discuss your expectations and goals. About a day after our initial consultation, you will receive an offer with a scope of services that is tailored precisely to your needs and goals.",
   },
   {
     id: 60,
     processName: "Strategy & concept",
     processDescription:
-      "We analyze your target audience and develop a strategy to ideally position your website. Based on the concept, I create a prototype that gives you an impression of the later structure.",
+      "We analyze your target audience and develop a strategy to ideally position your website. Based on the concept, we create a prototype that gives you an impression of the later structure.",
   },
   {
     id: 61,
