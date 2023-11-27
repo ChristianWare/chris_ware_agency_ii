@@ -32,7 +32,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  /* border: 1px solid var(--border); */
   background-color: var(--tan);
   border-radius: 10px;
   padding: 3rem 2rem;
@@ -50,6 +49,7 @@
   border-radius: 10px;
   box-shadow: var(--shadow);
   background-color: var(--white);
+  border: 1px solid var(--border);
 }
 
 .icon {
