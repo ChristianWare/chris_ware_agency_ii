@@ -18,10 +18,10 @@ const Services = () => {
           <div className={styles.top}>
             <Label text='What we do' />
             <h2 className={styles.heading}>We Build Direct Booking Websites</h2>
-            <p className={styles.topCopy}>
+            {/* <p className={styles.topCopy}>
               We specialize in building direct booking websites that have the
               following fetures:
-            </p>
+            </p> */}
           </div>
           <div className={styles.contentBox}>
             <div className={styles.bottom}>

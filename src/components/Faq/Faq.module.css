@@ -42,7 +42,7 @@
 
 .qaContainer {
   padding: 3rem 2rem;
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   background-color: var(--tan);
   border-radius: 8px;
   width: 100%;
