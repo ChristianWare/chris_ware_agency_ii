@@ -429,7 +429,7 @@ export const techStack = [
 
 export const adminData = [
   {
-    icon: Pie,
+    icon: Admin2,
     category: "Admin Dashboard",
     tasks: [
       {
@@ -438,7 +438,7 @@ export const adminData = [
     ],
   },
   {
-    icon: Property,
+    icon: Diverse,
     category: "Property Listings",
     tasks: [
       {
@@ -447,7 +447,7 @@ export const adminData = [
     ],
   },
   {
-    icon: Reservation,
+    icon: Calendar,
     category: "Guest Reservations",
     tasks: [
       {
@@ -456,7 +456,7 @@ export const adminData = [
     ],
   },
   {
-    icon: User,
+    icon: Social,
     category: "User Info",
     tasks: [
       {
@@ -465,7 +465,7 @@ export const adminData = [
     ],
   },
   {
-    icon: Reviews,
+    icon: Reviews2,
     category: "Guest Reviews",
     tasks: [
       {
@@ -474,7 +474,7 @@ export const adminData = [
     ],
   },
   {
-    icon: Money,
+    icon: Fee,
     category: "Payment Access",
     tasks: [
       {

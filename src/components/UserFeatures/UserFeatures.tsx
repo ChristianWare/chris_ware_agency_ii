@@ -10,9 +10,7 @@ const UserFeatures = () => {
     <LayoutWrapper>
       <ContentPadding>
         <div className={styles.content}>
-          <h2 className={styles.heading}>
-            Guest Access Includes:
-          </h2>
+          <h2 className={styles.heading}>Guest Access Includes:</h2>
           <div className={styles.mapBox}>
             {guestData.map((x, index) => (
               <div key={index} className={styles.cardContainer}>
@@ -22,7 +20,8 @@ const UserFeatures = () => {
                       <Image
                         src={x.icon}
                         alt='logo'
-                        fill
+                        width={40}
+                        height={40}
                         className={styles.logo}
                       />
                     </div>

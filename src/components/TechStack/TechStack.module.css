@@ -1,11 +1,15 @@
 .container {
-  background-color: var(--tan);
+  background-color: var(--black);
+}
+
+.heading {
+  color: var(--tan);
 }
 
 .copy {
   margin-top: 3rem;
   width: 70%;
-  color: var(--text);
+  color: var(--tan);
   font-weight: 500;
 }
 

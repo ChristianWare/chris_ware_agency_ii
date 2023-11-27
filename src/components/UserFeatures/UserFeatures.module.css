@@ -4,7 +4,6 @@
 
 .mapBox {
   border-radius: 10px;
-  /* border: 1px solid var(--border); */
   padding: 1rem;
   background-color: var(--tan);
   display: grid;
@@ -25,7 +24,6 @@
 }
 
 .card {
-  /* border: 1px solid var(--border); */
   border-radius: 10px;
   padding: 3rem;
   height: 100%;
@@ -41,42 +39,15 @@
 }
 
 .category {
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 2.1rem;
   font-family: var(--acidGroteskBold);
 }
 
 .task {
   color: var(--text);
-  font-size: 1.4rem;
-}
-
-.imgContainer {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  background-color: var(--green);
-  border-radius: 10px;
-  border: 1px solid var(--border3);
-}
-
-.img {
-  object-fit: cover;
-  border-radius: 17px;
-  padding: 0.8rem;
-}
-
-.logoImageContainer {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 2rem;
-}
-
-.logo {
-  object-fit: contain;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 968px) {

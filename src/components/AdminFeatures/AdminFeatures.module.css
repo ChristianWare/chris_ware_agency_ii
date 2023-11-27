@@ -1,3 +1,7 @@
+.container {
+  background-color: var(--black);
+}
+
 .content {
   display: flex;
   align-items: flex-start;
@@ -24,8 +28,8 @@
   content: "";
   top: 250px;
   left: 0;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: var(--green);
   border-radius: 10px;
   border-top-right-radius: 200px;
@@ -34,13 +38,14 @@
 }
 
 .heading {
+  color: var(--tan);
   border-bottom: 1px solid var(--border3);
   padding-bottom: 1rem;
   margin-bottom: 3rem;
 }
 
 .topText {
-  color: var(--text2);
+  color: var(--tan);
   font-weight: 500;
   width: 80%;
   margin-top: 3rem;
@@ -58,9 +63,8 @@
 .right {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--border);
   border-radius: 10px;
-  background-color: var(--tan);
+  gap: 2rem;
 }
 
 .box {
@@ -69,10 +73,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 3rem;
-}
-
-.boxLeft {
-  margin-left: -6.5rem;
+  background-color: var(--black2);
+  border-radius: 10px;
 }
 
 .boxRight {
@@ -80,29 +82,32 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .processName {
-  color: var(--black);
+  color: var(--tan);
   font-size: 2.1rem;
   font-family: var(--acidGroteskBold);
 }
 
-.processDescription {
-  color: var(--text);
-  font-size: 1.4rem;
+.task {
+  color: var(--tan);
+  opacity: 0.7;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 968px) {
   .content {
     flex-direction: column;
+    gap: 3rem;
   }
 
   .topText,
   .heading {
     width: 100%;
     text-align: center;
+    margin-top: 1rem;
   }
 
   .left {
@@ -132,27 +137,18 @@
   .topText {
     width: 100%;
     text-align: center;
+    margin-bottom: 0rem;
   }
 
   .right {
     gap: 2rem;
-    margin-top: 5rem;
-    background-color: var(--white);
-    border: none;
   }
 
   .box {
     flex-direction: column;
-    background-color: var(--tan);
+    
     border-radius: 10px;
-    border: 1px solid var(--border);
+    
     border-radius: 10px;
-  }
-
-  .card {
-  }
-
-  .boxLeft {
-    margin-left: 0rem;
   }
 }

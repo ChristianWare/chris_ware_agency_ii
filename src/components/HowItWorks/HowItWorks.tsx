@@ -11,7 +11,7 @@ const HowItWorks = () => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}>
-              <Label text='How we do things' />
+              <Label color="white" text='How we do things' />
               <h2 className={styles.heading}>Our Process</h2>
               <p className={styles.topText}>
                 Our process is structured so that you get the most added value
@@ -27,7 +27,7 @@ const HowItWorks = () => {
                     </div>
                     <div className={styles.boxRight}>
                       <h3 className={styles.processName}>{x.processName}</h3>
-                      <p className={styles.processDescription}>
+                      <p className={styles.copy}>
                         {x.processDescription}
                       </p>
                     </div>

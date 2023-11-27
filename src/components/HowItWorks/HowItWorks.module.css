@@ -1,11 +1,12 @@
 .container {
-  background-color: var(--tan);
+  background-color: var(--black);
 }
 
 .content {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  gap: 20rem;
   height: 100%;
 }
 
@@ -27,8 +28,8 @@
   content: "";
   top: 250px;
   left: 0;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: var(--green);
   border-radius: 10px;
   border-top-right-radius: 200px;
@@ -40,10 +41,11 @@
   border-bottom: 1px solid var(--border3);
   padding-bottom: 1rem;
   margin-bottom: 3rem;
+  color: var(--tan);
 }
 
 .topText {
-  color: var(--text2);
+  color: var(--tan);
   font-weight: 500;
   width: 80%;
   margin-top: 3rem;
@@ -61,13 +63,14 @@
 .right {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  gap: 2rem;
 }
 
 .card {
-  border-left: 1px solid var(--border3);
-  padding: 4rem;
+  padding: 3rem;
   z-index: 999;
+  background-color: var(--black2);
+  border-radius: 10px;
 }
 
 .box {
@@ -75,10 +78,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 3rem;
-}
-
-.boxLeft {
-  margin-left: -6.5rem;
+  /* padding: 2rem; */
 }
 
 .boxRight {
@@ -91,7 +91,7 @@
 
 .number {
   padding: 1rem;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-family: var(--acidGroteskBold);
   color: var(--black);
   display: block;
@@ -101,33 +101,35 @@
   align-items: center;
   justify-content: center;
   background-color: var(--green);
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  border: 1px solid var(--border3);
+  /* border: 1px solid var(--border3); */
 }
 
 .processName {
-  color: var(--black);
+  color: var(--tan);
   font-size: 2.1rem;
   font-family: var(--acidGroteskBold);
 }
 
-.processDescription {
+.copy {
+  color: var(--tan);
   opacity: 0.7;
-  font-family: var(--outfit);
-  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 968px) {
   .content {
     flex-direction: column;
+    gap: 3rem;
   }
 
   .topText,
   .heading {
     width: 100%;
     text-align: center;
+    margin-top: 0rem;
   }
 
   .left {
@@ -159,9 +161,10 @@
     text-align: center;
   }
 
+
+
   .right {
     gap: 2rem;
-    margin-top: 5rem;
   }
 
   .box {
@@ -169,7 +172,6 @@
   }
 
   .card {
-    border: 1px solid var(--border3);
     border-radius: 10px;
   }
 
