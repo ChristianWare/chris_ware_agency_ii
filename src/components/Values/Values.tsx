@@ -29,8 +29,8 @@ const Values = () => {
                 <Image
                   src={x.icon}
                   alt='icon'
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   className={styles.icon}
                 />
                 <h3 className={styles.value}>{x.value}</h3>

@@ -13,7 +13,6 @@
 
 .right {
   background-color: var(--tan);
-  border: 1px solid var(--border);
   padding: 2rem;
   border-radius: 10px;
   width: 100%;
@@ -24,30 +23,13 @@
 }
 
 .copy {
+  font-weight: 500;
   color: var(--text);
-}
-
-.imgContainer {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  border-radius: 10px;
-}
-
-.img {
-  object-fit: cover;
-  border-radius: 10px;
-  border: 1px solid var(--border);
 }
 
 @media screen and (max-width: 968px) {
   .content {
     flex-direction: column;
-  }
-
-  .imgContainer {
-    height: 610px;
   }
 
   .left {
@@ -67,23 +49,5 @@
   .heading,
   .title {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .imgContainer {
-    height: 500px;
-  }
-}
-
-@media screen and (max-width: 668px) {
-  .imgContainer {
-    height: 400px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .imgContainer {
-    height: 350px;
   }
 }

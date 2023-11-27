@@ -30,7 +30,6 @@ const TechStack = () => {
                   className={styles.icon}
                 />
                 <h3 className={styles.name}>{x.name}</h3>
-                {/* <p className={styles.description}>{x.desc}</p> */}
               </div>
             ))}
           </div>
