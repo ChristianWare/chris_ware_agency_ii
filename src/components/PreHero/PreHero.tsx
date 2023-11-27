@@ -12,10 +12,10 @@ const PreHero = () => {
           <div className={styles.left}></div>
           <div className={styles.right}>
             <h2 className={styles.topCopy}>
-              While common listing platforms like as Airbnb and VRBO can yield
-              substantial visibility and reservations, it is crucial for
-              dedicated rental property managers to establish their own website
-              in order to attract more direct bookings. Here&#39;s why...
+              While common listing platforms like Airbnb and VRBO can give your
+              property visibility, dedicated rental property managers must
+              establish websites to attract more direct bookings. Here&#39;s
+              why...
             </h2>
           </div>
         </div>

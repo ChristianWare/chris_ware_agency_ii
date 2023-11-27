@@ -155,27 +155,27 @@ export const caseStudies = [
 export const process = [
   {
     id: 59,
-    processName: "Free analysis & offer",
+    processName: "Initial Consultation",
     processDescription:
-      "In a non-binding initial consultation, we analyze the current situation and discuss your expectations and goals. About a day after our initial consultation, you will receive an offer with a scope of services that is tailored precisely to your needs and goals.",
+      "Here, we arrange a virtual meeting over Zoom with you as the vacation rental owner to discuss your needs and goals. We ask detailed questions about your property, target audience, and any unique features or requirements. We gather information that will help tailor your services to your specific needs. At the end of the call, a contract is sent to you outlining all the services that will be rendered.",
   },
   {
     id: 60,
-    processName: "Strategy & concept",
+    processName: "Onboarding",
     processDescription:
-      "We analyze your target audience and develop a strategy to ideally position your website. Based on the concept, we create a prototype that gives you an impression of the later structure.",
+      "Once the Contract is signed and returned, you will be given access to the client dashboard. From here, we have you complete a detailed questionnaire to help us better understand you as a business. Your answers assist with the copywriting process.",
   },
   {
     id: 61,
     processName: "Design & Development",
     processDescription:
-      "You will receive a design draft that we will coordinate together until everything is in place. I will develop your website using WordPress or Webflow based on this template. The site will look perfect on all devices and details and small animations give it that certain something.",
+      "You will be sent five different designs. After you tell us which ones you prefer, we will build the website based on those designs. You will be given a temporary link to see the progress over time. The site will look perfect on all devices, and details and small animations give it that certain something.",
   },
   {
     id: 62,
-    processName: "Go live",
+    processName: "Deployment and Going Live",
     processDescription:
-      "In a personal workshop, I'll show you how to manage your content and add new ones. You don't need any technical know-how for this. Ready? Then we'll put your website live together and have a party.",
+      "We'll seek your approval before moving forward once the website is completed and meets your expectations. Upon receiving your permission, we'll deploy your custom booking application to the World Wide Web. Your new booking platform will be instantly accessible to potential guests and clients globally. A  brief training session on using the back-end dashboard will be provided, ensuring you're comfortable navigating and accessing information.",
   },
 ] as const;
 

@@ -107,7 +107,7 @@
 }
 
 .required {
-  color: red !important;
+  color: var(--green) !important;
 }
 
 .btnBtnContainer {

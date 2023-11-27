@@ -1,11 +1,7 @@
 "use client";
 
-import ContentPadding from "../Layout/ContentPadding/ContentPadding";
-import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./ContactForm.module.css";
 import { useState } from "react";
-import Image from "next/image";
-import Img7 from "../../../public/images/img7.png";
 import toast from "react-hot-toast";
 import SubmitButton from "../SubmitButton/SubmitButton";
 import { sendEmail } from "../../../actions/sendEmail";
