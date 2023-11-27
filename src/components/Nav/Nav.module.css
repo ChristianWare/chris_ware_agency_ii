@@ -30,6 +30,11 @@
   z-index: 998;
 }
 
+.logoii {
+  font-family: var(--acidGroteskBold);
+  font-size: 3.5rem;
+}
+
 .icon {
   position: relative;
   top: 5px;
@@ -172,7 +177,6 @@
     width: 100%;
   }
 
-
   .copy {
     color: var(--text);
     hyphens: auto;
@@ -186,19 +190,21 @@
     z-index: 9999;
   }
 
-.hamburger.active .whiteBar:nth-child(1) {
-  -webkit-transform: translateY(8px) rotate(45deg);
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .whiteBar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .whiteBar:nth-child(3) {
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-  transform: translateY(-8px) rotate(-45deg);
-}
+  .hamburger.active .whiteBar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+    background-color: var(--black);
+  }
+  
+  .hamburger.active .whiteBar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .whiteBar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: var(--black);
+  }
 }
 
 @media screen and (max-width: 768px) {

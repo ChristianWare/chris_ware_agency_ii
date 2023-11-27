@@ -51,9 +51,9 @@ const Services = () => {
               {pathname === "/features" && (
                 <div className={styles.bottomMap}>
                   <div className={styles.h2Container}>
-                    <Label color="white" text='Details' />
+                    <Label color='white' text='Details' />
                     <h2 className={styles.heading2}>
-                      What&#39;s Included ...
+                      What&#39;s Included&hellip;
                     </h2>
                   </div>
                   {features.map((x, index) => (

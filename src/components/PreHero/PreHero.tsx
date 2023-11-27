@@ -15,7 +15,7 @@ const PreHero = () => {
               While common listing platforms like Airbnb and VRBO can give your
               property visibility, dedicated rental property managers must
               establish websites to attract more direct bookings. Here&#39;s
-              why...
+              why&hellip;
             </h2>
           </div>
         </div>

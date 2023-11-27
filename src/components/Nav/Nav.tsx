@@ -75,6 +75,11 @@ function Nav() {
               : styles.navMenu + " " + styles.active
           }
         >
+          {isOpen === true && (
+            <Link href='/' className={styles.logoii}>
+              Chris Ware Agency
+            </Link>
+          )}
           {navItems.map((navItem, index) => (
             <li key={index} className={styles.navItem} onClick={openMenu}>
               <Link
@@ -89,7 +94,7 @@ function Nav() {
               </Link>
             </li>
           ))}
-        <div className={styles.btnContainer}>
+          <div className={styles.btnContainer}>
             <Button href='/' text='Get in touch' btnType='navBtn' />
           </div>
         </ul>
