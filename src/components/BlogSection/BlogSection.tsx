@@ -21,7 +21,7 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
             <div className={styles.top}>
               {pathname !== "/blog" && (
                 <>
-                  <h2 className={styles.heading}>Our Insights</h2>
+                  <h2 className={styles.heading}>Blog</h2>
                   <p className={styles.copy}>
                     Explore our blog for the latest updates, travel tips, and
                     industry insights to enhance your vacation rental hosting

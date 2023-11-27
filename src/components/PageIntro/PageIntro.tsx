@@ -7,7 +7,7 @@ import { PageIntroProps } from "@/lib/interface";
 import { FC } from "react";
 import Nav from "../Nav/Nav";
 
-const PageIntro: FC<PageIntroProps> = ({ labelText, heading, copy, src }) => {
+const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
   return (
     <div className={styles.container}>
       <div className={styles.imgOverlay}></div>

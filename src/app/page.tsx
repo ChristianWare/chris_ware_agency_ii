@@ -39,9 +39,9 @@ const HomePage = () => {
     <div>
       <Hero />
       <PreHero />
+      <Benefits />
       <AboutSection />
       <Services />
-      <Benefits />
       <HowItWorks />
       <Pricing />
       {/* <Portfolio /> */}

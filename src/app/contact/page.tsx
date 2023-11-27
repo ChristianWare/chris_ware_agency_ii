@@ -31,8 +31,7 @@ const ContactPage = () => {
   return (
     <>
       <PageIntro
-        labelText='Contact us'
-        heading='Get your Direct Booking Website Today'
+        heading='Contact'
         copy='Whether you&#39;re a prospective client or have questions about
                 our services, reaching out is simple and quick. We&#39;re ready
                 to assist you to ensuring a seamless and personalized experience

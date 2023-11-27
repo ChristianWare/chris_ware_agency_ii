@@ -17,7 +17,6 @@ export interface ImageGridProps {
 }
 
 export interface PageIntroProps {
-  labelText: string;
   heading: string;
   copy: string;
   src: any;
