@@ -11,7 +11,6 @@ import Booking from "../../public/icons/booking.png";
 import Profile from "../../public/icons/profile.png";
 import Reviews2 from "../../public/icons/reviews2.png";
 import Admin2 from "../../public/icons/admin2.png";
-import Admin3 from "../../public/icons/admin3.png";
 import Payment from "../../public/icons/payment.png";
 import Responsive from "../../public/icons/responsive.png";
 import Accessibility from "../../public/icons/accessibility.png";
@@ -275,9 +274,41 @@ export const pricing = [
 export const faqs = [
   {
     id: 36,
-    question: "What types of websites do you specialize in creating?",
+    question: "Why should I use a direct booking website instead of Airbnb?",
     answer:
-      "We specialize in developing custom websites for small businesses across various industries, including e-commerce, service-based, portfolio, and informational websites.",
+      "Direct booking websites offer more control over your property, lower fees, and personalized branding. You have direct communication with guests and can build a loyal customer base.",
+  },
+  {
+    id: 36.1,
+    question: "How does the booking process work on a direct booking website?",
+    answer:
+      "Guests can browse your property, view details, and make reservations directly through your website. You have the flexibility to set your own booking policies and payment processes.",
+  },
+  {
+    id: 36.2,
+    question: "What features can I customize on my direct booking website?",
+    answer:
+      "You can customize the website design, branding elements, property details, pricing, and policies. We offer flexibility to tailor the platform to your unique needs.",
+  },
+  {
+    id: 36.3,
+    question: "Is it easy for guests to find my direct booking website?",
+    answer:
+      "We implement SEO strategies to improve the visibility of your website on search engines. Additionally, we can assist with marketing strategies to drive traffic to your platform.",
+  },
+  {
+    id: 36.4,
+    question:
+      "How do I manage bookings and communicate with guests on the platform?",
+    answer:
+      "We provide a user-friendly dashboard where you can manage bookings, communicate with guests, and access important information. Training is offered to ensure you can navigate the platform with ease.",
+  },
+  {
+    id: 36.5,
+    question:
+      "Can I integrate the direct booking website with my existing property management system (PMS)?",
+    answer:
+      "Depending on your PMS, integration may be possible. We'll assess compatibility and work towards seamless integration to streamline your management processes.",
   },
   {
     id: 37,
@@ -285,43 +316,11 @@ export const faqs = [
     answer:
       "The timeline can vary based on the complexity of the project. On average, a small business website takes around 2 to 4 weeks from initial concept to launch.",
   },
-
-  {
-    id: 39,
-    question: "Can you design a website that matches my brand's identity?",
-    answer:
-      " Absolutely! We'll work closely with you to ensure your website's design aligns with your brand's colors, logo, and overall identity to create a cohesive online presence.",
-  },
-  {
-    id: 40,
-    question: "Will my website be mobile-friendly and responsive?",
-    answer:
-      "Yes, all websites we develop are mobile-friendly and responsive. We prioritize delivering an optimal user experience on various devices and screen sizes.",
-  },
-
   {
     id: 42,
     question: "Do you offer website maintenance and support?",
     answer:
       "Yes, we offer ongoing maintenance and support packages to ensure your website remains up-to-date, secure, and functioning optimally after launch.",
-  },
-  {
-    id: 43,
-    question: "Will my website be search engine friendly?",
-    answer:
-      "Absolutely, we follow best practices for on-page SEO during development, helping your website rank well on search engines and driving organic traffic.",
-  },
-  {
-    id: 44,
-    question: "Can you integrate e-commerce functionality into my website?",
-    answer:
-      "Yes, we can incorporate e-commerce features, allowing you to sell products or services directly from your website, complete with Stripe, a secure payment gateway.",
-  },
-  {
-    id: 45,
-    question: "What's the process for getting started on my project?",
-    answer:
-      "To get started, simply reach out to us via our contact form or phone. We'll schedule a consultation to discuss your goals, needs, and provide you with a tailored plan and estimate for your project.",
   },
   {
     id: 46,

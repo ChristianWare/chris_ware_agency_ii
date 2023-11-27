@@ -32,7 +32,7 @@ const Faq = () => {
               </p>
             </div>
             <div className={styles.bottom}>
-              {faqs.slice(0, 5).map((x, i) => (
+              {faqs.map((x, i) => (
                 <div
                   key={x.id}
                   className={
@@ -43,10 +43,12 @@ const Faq = () => {
                   onClick={() => toggle(i)}
                 >
                   <div className={styles.headingArrowContainer}>
-                    <h3 className={styles.question} lang='en'>
+                    <div className={styles.h3Container}>
                       <span className={styles.index}>0{i + 1}. </span>
-                      {x.question}
-                    </h3>
+                      <h3 className={styles.question} lang='en'>
+                        {x.question}
+                      </h3>
+                    </div>
                     {selected === i ? (
                       <Arrow
                         className={styles.iconFlip}
