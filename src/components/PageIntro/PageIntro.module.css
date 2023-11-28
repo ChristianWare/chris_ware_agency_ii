@@ -145,3 +145,9 @@
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .heading {
+    font-size: 5rem;
+  }
+}
