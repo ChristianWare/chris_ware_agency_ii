@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Pricing.module.css";
@@ -8,6 +7,8 @@ import { pricing } from "@/lib/data";
 import Check from "../../../public/icons/check.svg";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
+import { fadeIn } from "../../../animation/variants";
+import { motion } from "framer-motion";
 
 const Pricing = () => {
   const pathname = usePathname();
@@ -26,7 +27,14 @@ const Pricing = () => {
           </div>
           <div className={styles.bottom}>
             {pricing.map((x) => (
-              <div key={x.id} className={styles.card}>
+              <motion.div
+                variants={fadeIn("up", 0.01)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                key={x.id}
+                className={styles.card}
+              >
                 <div className={styles.box}>
                   <h3 className={styles.planName}>{x.plan}</h3>
                   {typeof x.price === "number" ? (
@@ -53,7 +61,7 @@ const Pricing = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           {pathname === "/" && (

@@ -8,6 +8,8 @@ import { features } from "@/lib/data";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 import Label from "../Label/Label";
+import { fadeIn } from "../../../animation/variants";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const pathname = usePathname();
@@ -31,7 +33,13 @@ const Services = () => {
                 <div className={styles.bottomMap}>
                   {features.slice(0, 3).map((x, index) => (
                     <div key={index} className={styles.container}>
-                      <div className={styles.box}>
+                      <motion.div
+                        variants={fadeIn("up", 0.01)}
+                        initial='hidden'
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.3 }}
+                        className={styles.box}
+                      >
                         <div className={styles.iconContainer}>
                           <Image
                             src={x.icon}
@@ -43,7 +51,7 @@ const Services = () => {
                         </div>
                         <h3 className={styles.h3}>{x.service}</h3>
                         <p className={styles.copy}>{x.description}</p>
-                      </div>
+                      </motion.div>
                     </div>
                   ))}
                 </div>
@@ -58,7 +66,13 @@ const Services = () => {
                   </div>
                   {features.map((x, index) => (
                     <div key={index} className={styles.container}>
-                      <div className={styles.box}>
+                      <motion.div
+                        variants={fadeIn("up", 0.01)}
+                        initial='hidden'
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.3 }}
+                        className={styles.box}
+                      >
                         <div className={styles.iconContainer}>
                           <Image
                             src={x.icon}
@@ -70,7 +84,7 @@ const Services = () => {
                         </div>
                         <h3 className={styles.h3}>{x.service}</h3>
                         <p className={styles.copy}>{x.description}</p>
-                      </div>
+                      </motion.div>
                     </div>
                   ))}
                 </div>

@@ -9,6 +9,8 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./BlogSection.module.css";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
+import { fadeIn } from "../../../animation/variants";
+import { motion } from "framer-motion";
 
 const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
   const pathname = usePathname();
@@ -35,11 +37,17 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
                 </>
               )}
             </div>
-            <div className={styles.content}>
+            <motion.div
+              variants={fadeIn("up", 0.01)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.content}
+            >
               {blogData.map((x: BlogData, index: number) => (
                 <BlogPreview key={index} mapData={x} />
               ))}
-            </div>
+            </motion.div>
             <div className={styles.btnContainer}>
               {pathname !== "/blog" && (
                 <Button href='/about' text='All blogs' btnType='tertiary' />

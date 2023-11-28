@@ -7,6 +7,8 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import { faqs } from "@/lib/data";
 import Arrow from "../../../public/icons/downArrow.svg";
 import Label from "../Label/Label";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Faq = () => {
   const [selected, setSelected] = useState<null | number>(null);
@@ -31,7 +33,13 @@ const Faq = () => {
                 If you don&#39;t see your questions here, call us any time.
               </p>
             </div>
-            <div className={styles.bottom}>
+            <motion.div
+              variants={fadeIn("up", 0.01)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.bottom}
+            >
               {faqs.map((x, i) => (
                 <div
                   key={x.id}
@@ -72,7 +80,7 @@ const Faq = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </motion.div>
             <div className={styles.btnContainer}></div>
           </div>
         </ContentPadding>

@@ -1,3 +1,5 @@
+"use client";
+
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./AboutSection.module.css";
@@ -6,6 +8,8 @@ import Img1 from "../../../public/images/img4.png";
 import Check from "../../../public/icons/check.svg";
 import Button from "../Button/Button";
 import Label from "../Label/Label";
+import { fadeIn } from "../../../animation/variants";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
@@ -67,9 +71,15 @@ const AboutSection = () => {
               </div>
             </div>
             <div className={styles.right}>
-              <div className={styles.imgContainer}>
+              <motion.div
+                variants={fadeIn("left", 0.01)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.imgContainer}
+              >
                 <Image src={Img1} alt='img' fill className={styles.img} />
-              </div>
+              </motion.div>
             </div>
           </div>
         </ContentPadding>

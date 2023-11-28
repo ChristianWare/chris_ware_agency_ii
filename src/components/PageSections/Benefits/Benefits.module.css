@@ -27,6 +27,12 @@
   font-size: 1.6rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
 .benefitContainer {
   display: flex;
   align-items: center;
@@ -91,16 +97,16 @@
 .answerContainer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.3s ease-out; /* Use a different easing function for open */
 }
 
 .answerContainer.show {
   max-height: 350px;
-  transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.3s ease-in; /* Use a different easing function for close */
 }
 
 .benefitDesc {
-  color: var(--black);
+  color: var(--black2);
   margin-top: 2rem;
 }
 

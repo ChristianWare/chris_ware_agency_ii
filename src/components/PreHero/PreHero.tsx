@@ -1,8 +1,12 @@
+"use client";
+
 import { preHero } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./PreHero.module.css";
 import Image from "next/image";
+import { fadeIn } from "../../../animation/variants";
+import { motion } from "framer-motion";
 
 const PreHero = () => {
   return (
@@ -21,7 +25,14 @@ const PreHero = () => {
         </div>
         <div className={styles.contentBottom}>
           {preHero.map((x, index) => (
-            <div key={index} className={styles.box}>
+            <motion.div
+              variants={fadeIn("up", 0.01)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              key={index}
+              className={styles.box}
+            >
               <Image
                 src={x.icon}
                 alt='icon'
@@ -31,7 +42,7 @@ const PreHero = () => {
               />
               <h3 className={styles.value}>{x.feature}</h3>
               <p className={styles.description}>{x.desc}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </ContentPadding>

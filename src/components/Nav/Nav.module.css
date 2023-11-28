@@ -130,8 +130,8 @@
 
   .navMenu {
     position: fixed;
-    left: -100%;
-    top: 0;
+    top: -100%;
+    left: 0;
     flex-direction: column;
     gap: 3rem;
     justify-content: center;
@@ -143,10 +143,12 @@
     background-color: var(--tan);
     padding: 1rem;
     padding-left: 2rem;
+    transform-origin: top;
   }
 
   .navMenu.active {
-    left: 0%;
+    top: 0%;
+    transform-origin: top;
   }
 
   .navItem {

@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Hero.module.css";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
@@ -6,7 +8,8 @@ import Label from "../Label/Label";
 import Img from "../../../public/images/img6.png";
 import Image from "next/image";
 import Nav from "../Nav/Nav";
-import PreHero from "../PreHero/PreHero";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Hero = () => {
   return (
@@ -24,7 +27,13 @@ const Hero = () => {
       <LayoutWrapper>
         <ContentPadding>
           <div className={styles.content}>
-            <div className={styles.left}>
+            <motion.div
+              variants={fadeIn("up", 0.01)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.left}
+            >
               <Label text='Chris Ware Agency' color='white' />
               <h1 className={styles.heading}>
                 Maximize Revenue with Direct Booking Solutions
@@ -39,7 +48,7 @@ const Hero = () => {
                 <Button text='Get Consultation' href='/' btnType='primary' />
                 <Button text='About Us' href='/' btnType='primaryii' />
               </div>
-            </div>
+            </motion.div>
             <div className={styles.right}></div>
           </div>
         </ContentPadding>

@@ -1,6 +1,10 @@
+"use client";
+
 import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../Footer/Footer";
 import styles from "./FinalCta.module.css";
+import { fadeIn } from "../../../animation/variants";
+import { motion } from "framer-motion";
 
 const FinalCta = () => {
   return (
@@ -21,7 +25,14 @@ const FinalCta = () => {
                 </p>
               </div>
               <div className={styles.right}>
-                <ContactForm />
+                <motion.div
+                  variants={fadeIn("left", 0.01)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                >
+                  <ContactForm />
+                </motion.div>
               </div>
             </div>
             <Footer />

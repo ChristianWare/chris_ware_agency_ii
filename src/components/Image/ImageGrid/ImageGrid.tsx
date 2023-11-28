@@ -1,14 +1,24 @@
+'use client'
+
 import styles from "./ImageGrid.module.css";
 import Image from "next/image";
 import { ImageGridProps } from "@/lib/interface";
 import { FC } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../../animation/variants";
 
 const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.topLeft}>
-          <div className={styles.imgBox400}>
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.imgBox400}
+          >
             <Image
               src={src1}
               alt='image'
@@ -16,11 +26,17 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
               priority={true}
               className={styles.img400}
             />
-          </div>
+          </motion.div>
         </div>
         <div className={styles.topRight}>
           <div className={styles.imgContainer}>
-            <div className={styles.imgBox100}>
+            <motion.div
+              variants={fadeIn("left", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.imgBox100}
+            >
               <Image
                 src={src4}
                 alt='image'
@@ -28,9 +44,15 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
                 priority={true}
                 className={styles.img100}
               />
-            </div>
+            </motion.div>
           </div>
-          <div className={styles.imgBox200}>
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.imgBox200}
+          >
             <Image
               src={src2}
               alt='image'
@@ -38,11 +60,17 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
               priority={true}
               className={styles.img200}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className={styles.bottom}>
-        <div className={styles.imgBox100}>
+        <motion.div
+          variants={fadeIn("right", 0.5)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className={styles.imgBox100}
+        >
           <Image
             src={src5}
             alt='image'
@@ -50,8 +78,14 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
             priority={true}
             className={styles.img100}
           />
-        </div>
-        <div className={styles.imgBox275}>
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.6)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className={styles.imgBox275}
+        >
           <Image
             src={src3}
             alt='image'
@@ -59,7 +93,7 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
             priority={true}
             className={styles.img275}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

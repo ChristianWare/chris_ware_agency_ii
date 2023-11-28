@@ -1,8 +1,12 @@
+'use client'
+
 import { process } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./HowItWorks.module.css";
 import Label from "../Label/Label";
+import { fadeIn } from "../../../animation/variants";
+import { motion } from "framer-motion";
 
 const HowItWorks = () => {
   return (
@@ -14,13 +18,19 @@ const HowItWorks = () => {
               <Label color='white' text='How we do things' />
               <h2 className={styles.heading}>Our Process</h2>
               <p className={styles.topText}>
-                With these steps, you not only streamline the
-                contract process but also provide a dedicated and efficient
-                platform for communication, fostering a transparent and
-                collaborative relationship with the vacation rental owner.
+                With these steps, you not only streamline the contract process
+                but also provide a dedicated and efficient platform for
+                communication, fostering a transparent and collaborative
+                relationship with the vacation rental owner.
               </p>
             </div>
-            <div className={styles.right}>
+            <motion.div
+              variants={fadeIn("up", 0.01)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.right}
+            >
               {process.map((x, index) => (
                 <div key={x.id} className={styles.card}>
                   <div className={styles.box}>
@@ -34,7 +44,7 @@ const HowItWorks = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </ContentPadding>
       </LayoutWrapper>
