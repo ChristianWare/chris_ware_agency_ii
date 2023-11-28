@@ -37,6 +37,7 @@ const Hero = () => {
               </p>
               <div className={styles.btnContainer}>
                 <Button text='Get Consultation' href='/' btnType='primary' />
+                <Button text='About Us' href='/' btnType='primaryii' />
               </div>
             </div>
             <div className={styles.right}></div>

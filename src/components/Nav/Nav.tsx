@@ -72,7 +72,7 @@ function Nav() {
           className={
             isOpen === false
               ? styles.navMenu
-              : styles.navMenu + " " + styles.active
+              : `${styles.navMenu} ${styles.active}`
           }
         >
           {isOpen === true && (
@@ -81,12 +81,16 @@ function Nav() {
             </Link>
           )}
           {navItems.map((navItem, index) => (
-            <li key={index} className={styles.navItem} onClick={openMenu}>
+            <li
+              key={index}
+              className={styles.navItem}
+              onClick={() => setIsOpen(false)}
+            >
               <Link
                 href={navItem.href}
                 className={
-                  pathname === navItem.text
-                    ? styles.activeLink + styles.navItem
+                  pathname === navItem.href
+                    ? `${styles.activeLink}  ${styles.navItem}`
                     : styles.navItem
                 }
               >
@@ -102,7 +106,7 @@ function Nav() {
           className={
             isOpen === false
               ? styles.hamburger
-              : styles.hamburger + " " + styles.active
+              : `${styles.hamburger} ${styles.active}`
           }
           onClick={openMenu}
         >

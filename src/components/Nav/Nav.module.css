@@ -59,7 +59,7 @@
 
 .navItem {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--tan);
   position: relative;
   user-select: none;
@@ -70,11 +70,7 @@
 }
 
 .activeLink {
-  color: red;
-}
-
-.activeLink {
-  position: relative;
+  color: var(--green);
 }
 
 .bottom {
@@ -84,7 +80,6 @@
 .hamburger {
   display: none;
   padding: 1rem;
-  /* box-shadow: var(--shadow); */
   border-radius: 10px;
   z-index: 999;
   position: relative;

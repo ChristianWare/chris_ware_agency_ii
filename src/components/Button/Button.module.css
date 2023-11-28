@@ -25,12 +25,19 @@
 .primary {
   color: var(--black);
   background-color: var(--green);
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
+}
+
+.primaryii {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
 }
 
 .primary:hover {
-  color: var(--green);
+  color: var(--tan);
   background-color: transparent;
+  border: 1px solid var(--tan);
 }
 
 .secondary {
