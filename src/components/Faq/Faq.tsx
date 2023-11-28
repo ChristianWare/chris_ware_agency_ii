@@ -33,55 +33,57 @@ const Faq = () => {
                 If you don&#39;t see your questions here, call us any time.
               </p>
             </div>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-              className={styles.bottom}
-            >
-              {faqs.map((x, i) => (
-                <div
-                  key={x.id}
-                  className={
-                    selected === i
-                      ? styles.qaContainer + " " + styles.showBorder
-                      : styles.qaContainer
-                  }
-                  onClick={() => toggle(i)}
-                >
-                  <div className={styles.headingArrowContainer}>
-                    <div className={styles.h3Container}>
-                      <span className={styles.index}>0{i + 1}. </span>
-                      <h3 className={styles.question} lang='en'>
-                        {x.question}
-                      </h3>
-                    </div>
-                    {selected === i ? (
-                      <Arrow
-                        className={styles.iconFlip}
-                        width={20}
-                        height={20}
-                      />
-                    ) : (
-                      <Arrow className={styles.icon} width={20} height={20} />
-                    )}
-                  </div>
+            <div className={styles.border}>
+              <motion.div
+                variants={fadeIn("up", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.bottom}
+              >
+                {faqs.map((x, i) => (
                   <div
+                    key={x.id}
                     className={
                       selected === i
-                        ? styles.answerContainer + " " + styles.show
-                        : styles.answerContainer
+                        ? styles.qaContainer + " " + styles.showBorder
+                        : styles.qaContainer
                     }
+                    onClick={() => toggle(i)}
                   >
-                    <p className={styles.answer} lang='en'>
-                      {x.answer}
-                    </p>
+                    <div className={styles.headingArrowContainer}>
+                      <div className={styles.h3Container}>
+                        <span className={styles.index}>0{i + 1}. </span>
+                        <h3 className={styles.question} lang='en'>
+                          {x.question}
+                        </h3>
+                      </div>
+                      {selected === i ? (
+                        <Arrow
+                          className={styles.iconFlip}
+                          width={20}
+                          height={20}
+                        />
+                      ) : (
+                        <Arrow className={styles.icon} width={20} height={20} />
+                      )}
+                    </div>
+                    <div
+                      className={
+                        selected === i
+                          ? styles.answerContainer + " " + styles.show
+                          : styles.answerContainer
+                      }
+                    >
+                      <p className={styles.answer} lang='en'>
+                        {x.answer}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </motion.div>
-            <div className={styles.btnContainer}></div>
+                ))}
+              </motion.div>
+            </div>
+            {/* <div className={styles.btnContainer}></div> */}
           </div>
         </ContentPadding>
       </LayoutWrapper>

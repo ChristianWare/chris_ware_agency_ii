@@ -1,7 +1,6 @@
 .container {
   height: 100%;
   border-radius: 10px;
-  border: 1px solid var(--border);
   padding: 1rem;
   background-color: var(--tan);
   padding: 2rem;

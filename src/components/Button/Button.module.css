@@ -49,7 +49,7 @@
 .tertiary {
   color: var(--black);
   background-color: var(--green);
-  border: 2px solid var(--border3);
+  border: 2px solid var(--border2);
 }
 
 .tertiaryii {

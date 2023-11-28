@@ -37,17 +37,19 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
                 </>
               )}
             </div>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-              className={styles.content}
-            >
-              {blogData.map((x: BlogData, index: number) => (
-                <BlogPreview key={index} mapData={x} />
-              ))}
-            </motion.div>
+            <div className={styles.border}>
+              <motion.div
+                variants={fadeIn("up", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.content}
+              >
+                {blogData.map((x: BlogData, index: number) => (
+                  <BlogPreview key={index} mapData={x} />
+                ))}
+              </motion.div>
+            </div>
             <div className={styles.btnContainer}>
               {pathname !== "/blog" && (
                 <Button href='/about' text='All blogs' btnType='tertiary' />
