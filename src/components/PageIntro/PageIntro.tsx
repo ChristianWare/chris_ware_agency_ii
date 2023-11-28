@@ -1,11 +1,14 @@
+"use client";
+
 import Image from "next/image";
-import Label from "../Label/Label";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./PageIntro.module.css";
 import { PageIntroProps } from "@/lib/interface";
 import { FC } from "react";
 import Nav from "../Nav/Nav";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
   return (
@@ -24,10 +27,16 @@ const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
         <ContentPadding>
           <div className={styles.content}>
             <div className={styles.left}></div>
-            <div className={styles.right}>
+            <motion.div
+              variants={fadeIn("up", 0.03)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.right}
+            >
               <h1 className={styles.heading}>{heading}</h1>
               <p className={styles.copy}>{copy}</p>
-            </div>
+            </motion.div>
           </div>
         </ContentPadding>
       </LayoutWrapper>

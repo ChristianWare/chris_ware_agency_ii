@@ -1,6 +1,10 @@
+'use client'
+
 import Image, { StaticImageData } from "next/image";
 import styles from "./CircleImage.module.css";
 import { FC } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../../animation/variants";
 
 interface Props {
   src: StaticImageData;
@@ -8,16 +12,17 @@ interface Props {
 
 const CircleImage: FC<Props> = ({ src }) => {
   return (
-    <div className={styles.b2}>
+    <motion.div
+      variants={fadeIn("up", 0.01)}
+      initial='hidden'
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.3 }}
+      className={styles.b2}
+    >
       <div className={styles.imgContainer}>
-        <Image
-          src={src}
-          alt='image'
-          fill
-          className={styles.img}
-        />
+        <Image src={src} alt='image' fill className={styles.img} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default CircleImage;

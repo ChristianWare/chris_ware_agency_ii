@@ -1,8 +1,12 @@
+"use client";
+
 import { techStack } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./TechStack.module.css";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const TechStack = () => {
   return (
@@ -21,7 +25,14 @@ const TechStack = () => {
           </div>
           <div className={styles.bottom}>
             {techStack.map((x, index) => (
-              <div key={index} className={styles.box}>
+              <motion.div
+                variants={fadeIn("up", 0.01)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                key={index}
+                className={styles.box}
+              >
                 <Image
                   src={x.icon}
                   alt='tech icon'
@@ -30,7 +41,7 @@ const TechStack = () => {
                   className={styles.icon}
                 />
                 <h3 className={styles.name}>{x.name}</h3>
-              </div>
+              </motion.div>
             ))}
           </div>
         </ContentPadding>

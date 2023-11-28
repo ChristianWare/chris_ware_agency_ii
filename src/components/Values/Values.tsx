@@ -1,9 +1,13 @@
+"use client";
+
 import { values } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./Values.module.css";
 import Label from "../Label/Label";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const Values = () => {
   return (
@@ -25,7 +29,14 @@ const Values = () => {
           </div>
           <div className={styles.contentBottom}>
             {values.map((x, index) => (
-              <div key={index} className={styles.box}>
+              <motion.div
+                variants={fadeIn("up", 0.01)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                key={index}
+                className={styles.box}
+              >
                 <Image
                   src={x.icon}
                   alt='icon'
@@ -35,7 +46,7 @@ const Values = () => {
                 />
                 <h3 className={styles.value}>{x.value}</h3>
                 <p className={styles.description}>{x.desc}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </ContentPadding>
