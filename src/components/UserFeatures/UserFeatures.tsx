@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./UserFeatures.module.css";
 import { guestData } from "@/lib/data";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const UserFeatures = () => {
   return (
@@ -13,7 +17,13 @@ const UserFeatures = () => {
           <div className={styles.mapBox}>
             {guestData.map((x, index) => (
               <div key={index} className={styles.cardContainer}>
-                <div className={styles.card}>
+                <motion.div
+                  variants={fadeIn("up", 0.02)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.card}
+                >
                   <div className={styles.left}>
                     <div className={styles.logoImageContainer}>
                       <Image
@@ -31,7 +41,7 @@ const UserFeatures = () => {
                       </p>
                     ))}
                   </div>
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>

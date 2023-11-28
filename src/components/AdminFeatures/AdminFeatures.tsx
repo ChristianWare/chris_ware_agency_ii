@@ -1,8 +1,12 @@
+'use client'
+
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./AdminFeatures.module.css";
 import Image from "next/image";
 import { adminData } from "@/lib/data";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const AdminFeatures = () => {
   return (
@@ -17,7 +21,13 @@ const AdminFeatures = () => {
                 for the least amount of time.
               </p>
             </div>
-            <div className={styles.right}>
+            <motion.div
+              variants={fadeIn("up", 0.01)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.right}
+            >
               {adminData.map((x, index) => (
                 <div key={index} className={styles.box}>
                   <div className={styles.boxLeft}>
@@ -41,7 +51,7 @@ const AdminFeatures = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </ContentPadding>
       </LayoutWrapper>
