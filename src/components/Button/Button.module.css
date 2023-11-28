@@ -25,19 +25,19 @@
 .primary {
   color: var(--black);
   background-color: var(--green);
-  border: 1px solid var(--green);
+  border: 2px solid var(--green);
 }
 
 .primaryii {
   color: var(--green);
   background-color: transparent;
-  border: 1px solid var(--green);
+  border: 2px solid var(--green);
 }
 
 .primary:hover {
-  color: var(--tan);
+  color: var(--green);
   background-color: transparent;
-  border: 1px solid var(--tan);
+  border: 2px solid var(--green);
 }
 
 .secondary {
@@ -47,9 +47,9 @@
 }
 
 .tertiary {
-  color: var(--white);
-  background-color: var(--black);
-  border: 1px solid var(--black);
+  color: var(--black);
+  background-color: var(--green);
+  border: 2px solid var(--border3);
 }
 
 .tertiaryii {
