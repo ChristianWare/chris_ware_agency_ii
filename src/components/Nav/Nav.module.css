@@ -192,11 +192,11 @@
     transform: translateY(8px) rotate(45deg);
     background-color: var(--black);
   }
-  
+
   .hamburger.active .whiteBar:nth-child(2) {
     opacity: 0;
   }
-  
+
   .hamburger.active .whiteBar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);

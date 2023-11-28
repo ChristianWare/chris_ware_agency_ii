@@ -38,7 +38,7 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
               )}
             </div>
             <motion.div
-              variants={fadeIn("up", 0.01)}
+              variants={fadeIn("up", 0.3)}
               initial='hidden'
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}

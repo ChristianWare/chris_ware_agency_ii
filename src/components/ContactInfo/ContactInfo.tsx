@@ -1,14 +1,16 @@
+"use client";
+
 import Label from "../Label/Label";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./ContactInfo.module.css";
 import Image from "next/image";
 import Img1 from "../../../public/images/img4.png";
-import Check from "../../../public/icons/check.svg";
-import Button from "../Button/Button";
 import Insta from "../../../public/icons/insta.svg";
 import Email from "../../../public/icons/email.svg";
 import Phone from "../../../public/icons/phone.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/variants";
 
 const ContactInfo = () => {
   return (
@@ -26,36 +28,60 @@ const ContactInfo = () => {
                 as you take the next step in transforming your vacation rental
                 business.
               </p>
-              <div className={styles.iconTextContainer}>
+              <motion.div
+                variants={fadeIn("right", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.iconTextContainer}
+              >
                 <div className={styles.itextLeft}>
                   <Phone width={25} height={25} className={styles.icon} />
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>480-888-8888</p>
                 </div>
-              </div>
-              <div className={styles.iconTextContainer}>
+              </motion.div>
+              <motion.div
+                variants={fadeIn("right", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.iconTextContainer}
+              >
                 <div className={styles.itextLeft}>
                   <Email width={25} height={25} className={styles.icon} />
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>info@chrisware.agency</p>
                 </div>
-              </div>
-              <div className={styles.iconTextContainer}>
+              </motion.div>
+              <motion.div
+                variants={fadeIn("right", 0.3)}
+                initial='hidden'
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className={styles.iconTextContainer}
+              >
                 <div className={styles.itextLeft}>
                   <Insta width={25} height={25} className={styles.icon} />
                 </div>
                 <div className={styles.itexRight}>
                   <p className={styles.copyii}>@chrisware_agency</p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className={styles.right}>
-            <div className={styles.imgContainer}>
+            <motion.div
+              variants={fadeIn("left", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.imgContainer}
+            >
               <Image src={Img1} alt='img' fill className={styles.img} />
-            </div>
+            </motion.div>
           </div>
         </div>
       </ContentPadding>

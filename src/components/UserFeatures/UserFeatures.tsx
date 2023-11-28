@@ -18,7 +18,7 @@ const UserFeatures = () => {
             {guestData.map((x, index) => (
               <div key={index} className={styles.cardContainer}>
                 <motion.div
-                  variants={fadeIn("up", 0.02)}
+                  variants={fadeIn("up", 0.03)}
                   initial='hidden'
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.3 }}

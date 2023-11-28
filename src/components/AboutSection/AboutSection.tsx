@@ -72,7 +72,7 @@ const AboutSection = () => {
             </div>
             <div className={styles.right}>
               <motion.div
-                variants={fadeIn("left", 0.01)}
+                variants={fadeIn("left", 0.3)}
                 initial='hidden'
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}

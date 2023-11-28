@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { process } from "@/lib/data";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
@@ -25,7 +25,7 @@ const HowItWorks = () => {
               </p>
             </div>
             <motion.div
-              variants={fadeIn("up", 0.01)}
+              variants={fadeIn("up", 0.3)}
               initial='hidden'
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
