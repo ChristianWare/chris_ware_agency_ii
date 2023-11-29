@@ -70,7 +70,7 @@ export default function Page({ params }: any) {
   const props = getPost(params);
 
   return (
-    <main>
+    <main className={styles.bgColor}>
       <PageIntro
         heading={props.frontMatter.title}
         copy={props.frontMatter.description}

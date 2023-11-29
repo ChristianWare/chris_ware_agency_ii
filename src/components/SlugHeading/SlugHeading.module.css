@@ -1,7 +1,7 @@
 .heading {
   font-size: 3rem;
   font-family: var(--acidGroteskBold);
-  text-transform: uppercase;
+  text-transform: capitalize;
   line-height: 140%;
   color: var(--black);
 }

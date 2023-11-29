@@ -52,7 +52,7 @@ const BlogSection: FC<BlogSectionProps> = ({ blogData }) => {
             </div>
             <div className={styles.btnContainer}>
               {pathname !== "/blog" && (
-                <Button href='/about' text='All blogs' btnType='tertiary' />
+                <Button href='/blog' text='All blogs' btnType='tertiary' />
               )}
             </div>
           </div>
