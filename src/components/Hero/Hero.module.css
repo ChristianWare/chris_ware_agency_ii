@@ -41,10 +41,10 @@
 
 .copy {
   z-index: 3;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--tan);
-  width: 80%;
+  width: 90%;
   margin-bottom: 3rem;
 }
 

@@ -40,12 +40,11 @@ const Hero = () => {
               </h1>
               <p className={styles.copy}>
                 Tired of relying solely on platforms like Airbnb or VRBO? We
-                empower property owners like you to take control of your
-                bookings with a custom website that showcases your unique
-                offerings.
+                empower property owners to take control of their bookings with a
+                custom website to showcase thier unique offerings.
               </p>
               <div className={styles.btnContainer}>
-                <Button text='Get Consultation' href='/' btnType='primary' />
+                <Button text='Work with us Today' href='/' btnType='primary' />
                 <Button text='About Us' href='/' btnType='primaryii' />
               </div>
             </motion.div>
