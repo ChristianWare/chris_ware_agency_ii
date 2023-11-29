@@ -30,7 +30,8 @@
   color: var(--tan);
   width: 90%;
   z-index: 3;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .btnContainer {
