@@ -61,7 +61,6 @@
   margin-top: 1rem;
 }
 
-
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -70,11 +69,14 @@
 }
 
 .box {
-  /* border: 1px solid var(--border); */
   background-color: var(--white);
   border-radius: 8px;
   padding: 2rem;
   height: 100%;
+}
+
+.box:nth-child(2) {
+  border: 2px solid var(--green);
 }
 
 .planName {
@@ -157,10 +159,11 @@
 }
 
 .btnContainer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 32.5%;
   margin-top: 3rem;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 1068px) {
@@ -172,7 +175,7 @@
   .copy {
     width: 60%;
   }
-  
+
   .top {
     margin-bottom: 0rem;
   }
@@ -185,8 +188,13 @@
   .planName,
   .price,
   .description,
-  .includes, .monthly {
+  .includes,
+  .monthly {
     text-align: center;
+  }
+
+  .btnContainer {
+    width: 49.5%;
   }
 }
 
@@ -206,8 +214,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-
 
 @media screen and (max-width: 568px) {
   .top {

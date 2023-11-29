@@ -20,6 +20,7 @@ export interface PageIntroProps {
   heading: string;
   copy: string;
   src: any;
+  labelCopy?: string;
 }
 
 export interface BlogSectionProps {

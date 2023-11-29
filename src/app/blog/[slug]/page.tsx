@@ -72,6 +72,7 @@ export default function Page({ params }: any) {
   return (
     <main className={styles.bgColor}>
       <PageIntro
+        labelCopy={props.frontMatter.date}
         heading={props.frontMatter.title}
         copy={props.frontMatter.description}
         src={props.frontMatter.thumbnaillUrl}

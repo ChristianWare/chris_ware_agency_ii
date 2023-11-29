@@ -82,9 +82,9 @@
 }
 
 .btnContainer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 50%;
   margin-top: 3rem;
 }
 

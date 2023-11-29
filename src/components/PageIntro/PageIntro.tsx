@@ -9,8 +9,9 @@ import { FC } from "react";
 import Nav from "../Nav/Nav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import Label from "../Label/Label";
 
-const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
+const PageIntro: FC<PageIntroProps> = ({ heading, copy, src, labelCopy }) => {
   return (
     <div className={styles.container}>
       <div className={styles.imgOverlay}></div>
@@ -34,6 +35,7 @@ const PageIntro: FC<PageIntroProps> = ({ heading, copy, src }) => {
               viewport={{ once: false, amount: 0.3 }}
               className={styles.right}
             >
+              <Label text={labelCopy as string} color='green' />
               <h1 className={styles.heading}>{heading}</h1>
               <p className={styles.copy}>{copy}</p>
             </motion.div>
