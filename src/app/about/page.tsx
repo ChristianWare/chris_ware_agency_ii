@@ -7,6 +7,7 @@ import TechStack from "@/components/TechStack/TechStack";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import Img from "../../../public/images/img3.png";
 import Vision from "@/components/Vision/Vision";
+import Mission from "@/components/Mission/Mission";
 
 const AboutPage = () => {
   const fs = require("fs");
@@ -34,8 +35,9 @@ const AboutPage = () => {
         src={Img}
       />
       <Values />
+      <Mission />
       <Vision />
-      <Owner />
+      {/* <Owner /> */}
       <TechStack />
       <Faq />
       <BlogSection blogData={blogs} />

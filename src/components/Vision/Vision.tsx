@@ -19,16 +19,13 @@ const Vision = () => {
             <h2 className={styles.heading}>Our Vision</h2>
             <br />
             <p className={styles.copy}>
-              At CWA our goal is to empower vacation rental owners worldwide
-              with personalized and efficient direct booking websites, fostering
-              independence and control over their property rentals. We envision
-              a future where every homeowner thrives by connecting directly with
-              travelers, transcending the limitations of traditional platforms
-              like Airbnb. Our commitment is to provide innovative solutions
-              that redefine the vacation rental experience, ensuring homeowners
-              maximize revenue, build lasting relationships with guests, and
-              flourish in a more sustainable and owner-centric hospitality
-              landscape.
+              We envision a future where every homeowner thrives by connecting
+              directly with travelers, transcending the limitations of
+              traditional platforms like Airbnb. Our commitment is to provide
+              innovative solutions that redefine the vacation rental experience,
+              ensuring homeowners maximize revenue, build lasting relationships
+              with guests, and flourish in a more sustainable and owner-centric
+              hospitality landscape.
             </p>
           </div>
           <div className={styles.right}>

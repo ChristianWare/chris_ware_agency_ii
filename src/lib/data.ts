@@ -363,17 +363,17 @@ export const values = [
   {
     icon: Client,
     value: "Client Focus",
-    desc: "We are unwaveringly committed to our clients. Their needs, satisfaction, and success drive every decision and innovation. By prioritizing a deep understanding of their challenges, we cultivate lasting partnerships and deliver solutions that exceed expectations. Client-centric excellence is the heartbeat of our business, fostering trust, loyalty, and mutual growth.",
+    desc: "Client success is our unwavering commitment. We prioritize deep understanding, cultivating lasting partnerships, and delivering solutions that exceed expectations, fostering trust and mutual growth.",
   },
   {
     icon: Diverse,
     value: "Integrity",
-    desc: "Integrity is the bedrock of our business. We uphold the highest ethical standards in every action and decision. Transparency, honesty, and accountability guide our interactions internally and with all stakeholders. Our commitment to uncompromising integrity ensures trust, fosters a positive work culture, and establishes enduring credibility in all that we do.",
+    desc: "Integrity is our business's bedrock, guiding us with unwavering ethical standards. Transparency, honesty, and accountability shape our interactions, ensuring trust, fostering a positive work culture, and establishing enduring credibility.",
   },
   {
     icon: Innovation,
     value: "Innovation",
-    desc: "We thrive on innovation. It fuels our quest for continuous improvement and shapes our forward-thinking approach. We embrace creativity, curiosity, and adaptability to push boundaries and pioneer new solutions. Our commitment to an innovative spirit drives us to anticipate and meet evolving needs, ensuring we remain at the forefront of positive change in our industry.",
+    desc: "Innovation is our driving force, propelling continuous improvement and a forward-thinking approach. Embracing creativity, curiosity, and adaptability, we pioneer new solutions, anticipating and meeting evolving needs to stay at the forefront of positive change in our industry.",
   },
 ] as const;
 
@@ -532,5 +532,24 @@ export const preHero = [
     icon: Data,
     feature: "Data Ownership",
     desc: "When you use Airbnb and VRBO, they own and control the guest data. With your own website, you own and control this valuable information, allowing you to build a list of past guests for marketing purposes.",
+  },
+];
+
+export const mission = [
+  {
+    feature: "Trust & Transparency",
+    desc: "We prioritize trust and transparency, building a reliable and secure environment for vacation rental owners.",
+  },
+  {
+    feature: "User-Friendly",
+    desc: "We strive to offer a personalized and user-friendly experience, tailoring our services to meet the unique needs of each host.",
+  },
+  {
+    feature: "Growth",
+    desc: "Our mission is to contribute to the growth of vacation rental businesses, enabling hosts to thrive in a competitive marketplace",
+  },
+  {
+    feature: "Personalization",
+    desc: "Continuously enhance user experience by offering personalized solutions that cater to the specific requirements of each vacation rental owner.",
   },
 ];

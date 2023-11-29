@@ -9,7 +9,8 @@
   --border: #d4d4d4;
   --border2: #c3c3c3;
   --border3: #aeaeae;
-  --text: #737373;
+  --border4: #686868;
+  --text: #989696;
   --text2: #323131;
   --text3: #434343;
   --tan: #f1f1e9;
@@ -57,6 +58,7 @@ h6,
 span {
   font-family: var(--acidGrotesk);
   color: var(--black);
+  hyphens: auto;
 }
 
 h1 {
@@ -69,7 +71,6 @@ h1 {
 h2 {
   font-size: 4.6rem;
   line-height: 120%;
-  hyphens: auto;
 }
 
 h3 {
