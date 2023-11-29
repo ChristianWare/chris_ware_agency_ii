@@ -99,7 +99,7 @@ function Nav() {
             </li>
           ))}
           <div className={styles.btnContainer}>
-            <Button href='/' text='Get in touch' btnType='navBtn' />
+            <Button href='/' text='480-888-8888' btnType='navBtn' />
           </div>
         </ul>
         <span

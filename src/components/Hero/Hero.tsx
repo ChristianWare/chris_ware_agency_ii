@@ -44,8 +44,7 @@ const Hero = () => {
                 custom website to showcase thier unique offerings.
               </p>
               <div className={styles.btnContainer}>
-                <Button text='Learn More' href='/about' btnType='primary' />
-                <Button text='Contact Us' href='/contact' btnType='primaryii' />
+                <Button text='Contact us' href='/contact' btnType='primary' />
               </div>
             </motion.div>
             <div className={styles.right}></div>
