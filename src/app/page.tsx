@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import AboutSection from "@/components/AboutSection/AboutSection";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import ContactForm from "@/components/ContactForm/ContactForm";
@@ -10,6 +11,13 @@ import Portfolio from "@/components/Portfolio/Portfolio";
 import PreHero from "@/components/PreHero/PreHero";
 import Pricing from "@/components/Pricing/Pricing";
 import Services from "@/components/Services/Services";
+
+export const metadata: Metadata = {
+  title:
+    "The Chris Ware Agency: Empower Your Vacation Rental Business with Exclusive Direct Booking Websites",
+  description:
+    "Unlock the full potential of your vacation rental with The Chris Ware Agency – Your trusted partner for bespoke direct booking websites. Elevate your business beyond Airbnb!",
+};
 
 const HomePage = () => {
   const fs = require("fs");
