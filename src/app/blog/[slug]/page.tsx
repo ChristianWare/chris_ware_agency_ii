@@ -8,12 +8,10 @@ import SlugHeading from "@/components/SlugHeading/SlugHeading";
 import SlugConclusion from "@/components/SlugConclusion/SlugConclusion";
 import LayoutWrapper from "@/components/Layout/LayoutWrapper";
 import ContentPadding from "@/components/Layout/ContentPadding/ContentPadding";
-import Link from "next/link";
 import { BlogData } from "@/lib/interface";
 import BlogPreview from "@/components/BlogPreview/BlogPreview";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import PageIntro from "@/components/PageIntro/PageIntro";
-import Img1 from '../../../../public/images/img6.png'
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -74,7 +72,6 @@ export default function Page({ params }: any) {
   return (
     <main>
       <PageIntro
-        labelText={props.frontMatter.date}
         heading={props.frontMatter.title}
         copy={props.frontMatter.description}
         src={props.frontMatter.thumbnaillUrl}

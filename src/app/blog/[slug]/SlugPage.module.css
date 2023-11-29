@@ -13,7 +13,7 @@
   top: 20px;
   max-height: calc(100vh - 70px);
   overflow: auto;
-  background-color: var(--lightBlue);
+  background-color: var(--black2);
   border: 2px solid var(--border);
   border-radius: 10px;
   padding: 3rem;
@@ -26,12 +26,13 @@
 
 .tocHeadingTitle {
   font-size: 2.4rem;
-  font-family: var(--roboto);
-  border-bottom: 2px solid var(--red);
+  color: var(--tan);
+  border-bottom: 2px solid var(--green);
   margin-bottom: 1rem;
 }
 
 .heading {
+  color: var(--tan);
   font-weight: 700;
 }
 
