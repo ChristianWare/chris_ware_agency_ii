@@ -92,7 +92,6 @@ export default function Page({ params }: any) {
             <div className={styles.mdxContent}>
               <MDXRemote source={props.content} components={components} />
             </div>
-            
           </div>
           <h2 className={styles.relatedArticlesHeading}>Relted Articles</h2>
           <div className={styles.relatedArticles}>
