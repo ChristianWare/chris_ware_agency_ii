@@ -39,7 +39,7 @@
   color: var(--black2);
   font-family: var(--humaneBold);
   font-size: 13rem;
-  line-height: 100%;
+  line-height: 0.8;
   letter-spacing: 1px;
   text-transform: uppercase;
 }

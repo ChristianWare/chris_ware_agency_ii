@@ -38,6 +38,7 @@
 .heading {
   color: var(--tan);
   font-weight: 700;
+  line-height: 0.8;
 }
 
 .mdxContent {
