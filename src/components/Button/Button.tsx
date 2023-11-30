@@ -12,11 +12,7 @@ const Button: FC<ButtonProps> = ({ href = "", text, btnType, target = "" }) => {
         className={`${styles.btn} ${styles[btnType]}`}
         target={target}
       >
-        <div className={styles.btnInner}>
-          <span className={styles.btnSlide}></span>
-          <span className={styles.btnContent}>{text}</span>
-        </div>
-        {/* {text} */}
+        {text}
       </Link>
     </button>
   );
