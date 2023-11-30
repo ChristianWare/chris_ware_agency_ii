@@ -75,11 +75,11 @@ function Nav() {
               : `${styles.navMenu} ${styles.active}`
           }
         >
-          {isOpen === true && (
+          {/* {isOpen === true && (
             <Link href='/' className={styles.logoii}>
               Chris Ware Agency
             </Link>
-          )}
+          )} */}
           {navItems.map((navItem, index) => (
             <li
               key={index}
