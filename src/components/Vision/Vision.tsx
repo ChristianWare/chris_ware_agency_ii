@@ -17,7 +17,6 @@ const Vision = () => {
           <div className={styles.left}>
             <Label text='Long-term aspirations' />
             <h2 className={styles.heading}>Our Vision</h2>
-            <br />
             <p className={styles.copy}>
               We envision a future where every homeowner thrives by connecting
               directly with travelers, transcending the limitations of

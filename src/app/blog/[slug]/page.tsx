@@ -94,7 +94,7 @@ export default function Page({ params }: any) {
               <MDXRemote source={props.content} components={components} />
             </div>
           </div>
-          <h2 className={styles.relatedArticlesHeading}>Relted Articles</h2>
+          <h2 className={styles.relatedArticlesHeading}>Related Articles</h2>
           <div className={styles.relatedArticles}>
             {blogs.slice(0, 3).map((x: BlogData, index: number) => (
               <BlogPreview key={index} mapData={x} />

@@ -42,6 +42,11 @@
   border-bottom: 1px solid var(--border3);
   padding-bottom: 1rem;
   margin-bottom: 3rem;
+  font-family: var(--humaneBold);
+  font-size: 13rem;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .topText {
@@ -147,9 +152,9 @@
 
   .box {
     flex-direction: column;
-    
+
     border-radius: 10px;
-    
+
     border-radius: 10px;
   }
 }

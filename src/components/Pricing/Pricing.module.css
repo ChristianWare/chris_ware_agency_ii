@@ -8,7 +8,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
 .logoImageContainer {
@@ -27,6 +26,14 @@
   width: 50%;
 }
 
+.heading {
+  font-family: var(--humaneBold);
+  font-size: 13rem;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .copy {
   text-align: center;
   width: 50%;
@@ -41,14 +48,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: var(--text);
-}
-
-.top {
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .topText {
@@ -177,7 +176,7 @@
   }
 
   .top {
-    margin-bottom: 0rem;
+    /* margin-bottom: 0rem; */
   }
 
   .topText {

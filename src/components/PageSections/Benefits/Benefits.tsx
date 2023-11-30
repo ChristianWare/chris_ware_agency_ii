@@ -38,7 +38,7 @@ const Benefits = () => {
             </div>
             <div className={styles.right}>
               <h2 className={styles.heading}>
-                Benefits of a Direct Booking Website
+                Benefits
               </h2>
               <p className={styles.copy}>
                 Having a direct booking website for your vacation rental

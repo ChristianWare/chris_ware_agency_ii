@@ -35,6 +35,15 @@
   margin-right: auto;
 }
 
+.heading {
+  color: var(--black2);
+  font-family: var(--humaneBold);
+  font-size: 13rem;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .copy {
   width: 60%;
   text-align: center;

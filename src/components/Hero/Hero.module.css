@@ -88,6 +88,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 968px) {
   .content {
     flex-direction: column;
@@ -142,7 +148,7 @@
 
 @media screen and (max-width: 568px) {
   .heading {
-    font-size: 5rem;
+    font-size: 10rem;
   }
 
   .btnContainer {

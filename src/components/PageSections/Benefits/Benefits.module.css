@@ -19,6 +19,14 @@
   width: 100%;
 }
 
+.heading {
+  font-family: var(--humaneBold);
+  font-size: 13rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--black2);
+}
+
 .copy {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -131,5 +139,21 @@
 
   .heading {
     text-align: center;
+  }
+
+  .copy {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .copy {
+    width: 100%;
   }
 }

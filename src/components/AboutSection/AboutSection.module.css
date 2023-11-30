@@ -36,7 +36,14 @@
 
 .heading {
   border-bottom: 1px solid var(--border3);
-  padding-bottom: 1rem;
+}
+
+.heading {
+  font-family: var(--humaneBold);
+  font-size: 13rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--black2);
 }
 
 .copy,
@@ -46,7 +53,6 @@
   color: var(--text2);
   font-weight: 500;
 }
-
 
 .copyii {
   width: 100%;

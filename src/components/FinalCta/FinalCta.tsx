@@ -14,10 +14,11 @@ const FinalCta = () => {
           <div className={styles.content}>
             <div className={styles.bottom}>
               <div className={styles.left}>
-                <h2 className={styles.heading}>
+                <h2 className={styles.heading}>Contact Us</h2>
+                <h3 className={styles.headingii}>
                   Your rental property deserves more than just a listing. It
                   deserves a spotlight.
-                </h2>
+                </h3>
                 <p className={styles.topText}>
                   Reach out to us today to see how you can begin to take
                   advantage of the benefits of having your own direct booking

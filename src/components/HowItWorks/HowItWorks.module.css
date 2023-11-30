@@ -39,9 +39,13 @@
 
 .heading {
   border-bottom: 1px solid var(--border3);
-  padding-bottom: 1rem;
   margin-bottom: 3rem;
   color: var(--tan);
+  font-family: var(--humaneBold);
+  font-size: 13rem;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .topText {
@@ -161,8 +165,6 @@
     width: 100%;
     text-align: center;
   }
-
-
 
   .right {
     gap: 2rem;

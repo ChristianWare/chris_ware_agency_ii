@@ -43,6 +43,12 @@ const acidGroteskBold = localFont({
   display: "swap",
 });
 
+const humaneBold = localFont({
+  src: "../../public/fonts/HumaneBold.otf",
+  variable: "--humaneBold",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -51,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.variable} ${chakraPetch.variable} ${schabo.variable} ${acidGrotesk.variable} ${acidGroteskBold.variable}`}
+        className={`${inter.variable} ${chakraPetch.variable} ${schabo.variable} ${acidGrotesk.variable} ${acidGroteskBold.variable} ${humaneBold.variable}`}
       >
         {/* <Nav /> */}
         <div>{children}</div>
