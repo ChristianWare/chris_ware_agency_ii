@@ -20,7 +20,7 @@ const Services = () => {
           <div className={styles.top}>
             {pathname === "/" && (
               <>
-                <Label text='What we do' />
+                <Label text='Our Focus' />
                 <h2 className={styles.heading}>
                   We Build Direct Booking Websites
                 </h2>

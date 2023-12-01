@@ -24,9 +24,10 @@
 }
 
 .logo {
-  font-size: 1.6rem;
-  color: var(--tan);
-  font-family: var(--acidGroteskBold);
+  font-size: 6rem;
+  color: var(--green);
+  font-family: var(--humaneBold);
+  letter-spacing: 1px;
   z-index: 998;
 }
 
@@ -209,7 +210,7 @@
 
 @media screen and (max-width: 768px) {
   .logo {
-    font-size: 2rem;
+    font-size: 7rem;
   }
 }
 
