@@ -5,7 +5,7 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import Button from "../Button/Button";
 import Label from "../Label/Label";
-import Img from "../../../public/images/img6.png";
+import Img from "../../../public/images/img11.png";
 import Image from "next/image";
 import Nav from "../Nav/Nav";
 import { motion } from "framer-motion";
