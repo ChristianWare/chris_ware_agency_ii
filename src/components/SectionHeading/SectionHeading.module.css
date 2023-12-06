@@ -9,6 +9,10 @@
 .heading {
   text-align: center;
   width: 50%;
+  font-family: var(--humaneBold);
+  font-size: 13rem;
+  letter-spacing: .5px;
+  text-transform: uppercase;
 }
 
 .copy {

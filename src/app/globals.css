@@ -113,6 +113,10 @@ input:focus {
   outline: none;
 }
 
+.blog {
+  font-size: 1.6rem;
+}
+
 /* ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: var(--secondary);

@@ -38,7 +38,6 @@
   height: 350px;
   position: relative;
   border-radius: 10px;
-  border: 1px solid var(--border);
 }
 
 .img {
@@ -48,8 +47,17 @@
 
 .right {
   flex: 1;
-  border: 1px solid var(--border);
-  background-color: var(--tan);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.c1 {
+background-color: var(--tan);
   padding: 2rem;
   border-radius: 10px;
   width: 100%;
@@ -79,7 +87,8 @@
 }
 
 .btnContainer {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  display: grid;
 }
 
 @media screen and (max-width: 1068px) {
@@ -92,6 +101,16 @@
 @media screen and (max-width: 968px) {
   .bottom,
   .bottom:nth-child(odd) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btnContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .btnContainer {
     grid-template-columns: repeat(1, 1fr);
   }
 }
