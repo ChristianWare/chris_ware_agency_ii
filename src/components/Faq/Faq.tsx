@@ -5,7 +5,7 @@ import styles from "./Faq.module.css";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import { faqs } from "@/lib/data";
-import Arrow from "../../../public/icons/downArrow.svg";
+import Arrow from '../../../public/icons/downArrow.svg'
 import Label from "../Label/Label";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";

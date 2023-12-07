@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import styles from "./RotatingText.module.css";
 import { FC } from "react";
-import DownArrow from "../../../public/icons/downarrow.svg";
 
 interface RotatingTextProps {
   text: string;
@@ -13,8 +12,6 @@ interface RotatingTextProps {
 
 const RotatingText: FC<RotatingTextProps> = ({
   text,
-  showArrow,
-  showEmoji,
 }) => {
   const [rotationAngle, setRotationAngle] = useState(0);
 
@@ -60,10 +57,7 @@ const RotatingText: FC<RotatingTextProps> = ({
           </textPath>
         </text>
       </svg>
-      {showArrow && (
-        <DownArrow className={styles.arrow} width={40} height={40} />
-      )}
-      {showEmoji && <div className={styles.happy}>🥳</div>}
+      
     </div>
   );
 };
