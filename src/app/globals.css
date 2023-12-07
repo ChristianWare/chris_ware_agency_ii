@@ -65,7 +65,7 @@ h1 {
   font-size: 15.2rem;
   line-height: .8;
   font-weight: 700;
-  font-family: var(--humaneBold);
+  font-family: var(--humaneLight);
   text-transform: uppercase;
   letter-spacing: 2px;
 }

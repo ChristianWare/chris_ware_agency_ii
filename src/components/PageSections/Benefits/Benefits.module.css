@@ -20,9 +20,10 @@
 }
 
 .heading {
-  font-family: var(--humaneBold);
+  font-family: var(--humaneLight);
   font-size: 13rem;
   line-height: 100%;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--black2);
 }
@@ -161,7 +162,7 @@
 @media screen and (max-width: 568px) {
   .heading {
     font-size: 15rem;
-    font-family: var(--humaneLight);
+    /* font-family: var(--humaneLight); */
   }
 
   .copy {
