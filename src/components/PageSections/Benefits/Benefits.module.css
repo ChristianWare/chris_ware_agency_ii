@@ -152,7 +152,19 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+  .copy {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .heading {
+    font-size: 15rem;
+    letter-spacing: 2px;
+    font-family: var(--humaneLight);
+  }
+
   .copy {
     width: 100%;
   }
