@@ -36,7 +36,7 @@
 
   .svg {
     fill: var(--white);
-    font-family: var(--humaneExtraLight);
+    font-family: var(--humaneLight);
   }
 }
 
