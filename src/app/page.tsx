@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import AboutSection from "@/components/AboutSection/AboutSection";
 import BlogSection from "@/components/BlogSection/BlogSection";
-import ContactForm from "@/components/ContactForm/ContactForm";
 import Faq from "@/components/Faq/Faq";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import Hero from "@/components/Hero/Hero";
@@ -45,17 +44,17 @@ const HomePage = () => {
 
   return (
     <div>
-      <Hero />
-      <PreHero />
-      <Benefits />
-      <AboutSection />
-      <Services />
-      <HowItWorks />
-      <Pricing />
-      <Portfolio />
-      <Faq />
-      <BlogSection blogData={blogs} />
-      <FinalCta />
+        <Hero />
+        <PreHero />
+        <Benefits />
+        <AboutSection />
+        <Services />
+        <HowItWorks />
+        <Pricing />
+        <Portfolio />
+        <Faq />
+        <BlogSection blogData={blogs} />
+        <FinalCta />
     </div>
   );
 };
