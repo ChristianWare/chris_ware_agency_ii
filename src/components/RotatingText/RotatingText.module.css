@@ -10,22 +10,11 @@
   padding: 1rem;
 }
 
-.arrow,
-.happy {
-  z-index: 2;
-  position: absolute;
-  font-size: 3rem;
-}
-
 .svg {
   font-family: var(--humaneBold);
   text-transform: uppercase;
   fill: var(--text);
   user-select: none;
-}
-
-.svg2 {
-  fill: var(--green);
 }
 
 @media screen and (max-width: 568px) {
