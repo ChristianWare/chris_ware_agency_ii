@@ -55,7 +55,7 @@ h6,
 span {
   font-family: var(--inter);
   color: var(--black);
-  hyphens: auto;
+  /* hyphens: auto; */
 }
 
 h1 {
