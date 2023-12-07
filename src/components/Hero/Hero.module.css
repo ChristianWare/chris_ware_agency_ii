@@ -149,7 +149,7 @@
 
 @media screen and (max-width: 568px) {
   .heading {
-    font-family: var(--humaneLight);
+    font-size: 20rem;
   }
 
   .btnContainer {

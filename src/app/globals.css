@@ -63,7 +63,7 @@ h1 {
   font-size: 15.2rem;
   line-height: 0.8;
   font-weight: 700;
-  font-family: var(--humaneLight);
+  font-family: var(--humaneBold);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -157,8 +157,9 @@ input:focus {
 }
 
 /* Only use in production */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
+  h1,
   h2 {
-    letter-spacing: -0.5rem;
+    letter-spacing: -0.1rem;
   }
-}
+} */
