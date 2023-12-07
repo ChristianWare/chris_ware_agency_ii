@@ -83,7 +83,7 @@
   position: relative;
   z-index: 9999;
   display: block;
-  width: 45px;
+  width: 55px;
   height: 3px;
   margin: 5px auto;
   border-radius: 15px;
@@ -127,7 +127,7 @@
     top: -100%;
     left: 0;
     flex-direction: column;
-    gap: 0rem;
+    gap: 2rem;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
@@ -203,7 +203,7 @@
 
 @media screen and (max-width: 768px) {
   .logo {
-    font-size: 7rem;
+    font-size: 4rem;
   }
 }
 
