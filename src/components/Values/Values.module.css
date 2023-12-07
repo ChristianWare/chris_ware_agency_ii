@@ -53,7 +53,7 @@
 
 .description {
   font-weight: 500;
-  color: var(--text);
+  color: var(--text2);
 }
 
 @media screen and (max-width: 1068px) {

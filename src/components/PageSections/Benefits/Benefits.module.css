@@ -115,6 +115,7 @@
 .benefitDesc {
   color: var(--black2);
   margin-top: 2rem;
+  font-size: 1.6rem;
 }
 
 .icon {
