@@ -11,7 +11,8 @@
 }
 
 .svg {
-  font-family: var(--humaneBold);
+  font-family: var(--inter);
+  font-weight: 600;
   text-transform: uppercase;
   fill: var(--text);
   user-select: none;
@@ -25,7 +26,6 @@
 
   .svg {
     fill: var(--white);
-    font-family: var(--humaneLight);
   }
 }
 

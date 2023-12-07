@@ -61,7 +61,7 @@ const Services = () => {
                   <div className={styles.h2Container}>
                     <Label color='white' text='Details' />
                     <h2 className={styles.heading2}>
-                      What&#39;s Included&hellip;
+                      What&#39;s Included &hellip;
                     </h2>
                   </div>
                   {features.map((x, index) => (

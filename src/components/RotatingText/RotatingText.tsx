@@ -10,9 +10,7 @@ interface RotatingTextProps {
   showEmoji?: boolean;
 }
 
-const RotatingText: FC<RotatingTextProps> = ({
-  text,
-}) => {
+const RotatingText: FC<RotatingTextProps> = ({ text }) => {
   const [rotationAngle, setRotationAngle] = useState(0);
 
   useEffect(() => {
@@ -51,13 +49,12 @@ const RotatingText: FC<RotatingTextProps> = ({
         a 37,37 0 1,1 -74,0'
           />
         </defs>
-        <text font-size='17'>
+        <text font-size='10'>
           <textPath className={styles.svg} xlinkHref='#circle'>
             {text}
           </textPath>
         </text>
       </svg>
-      
     </div>
   );
 };

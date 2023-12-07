@@ -56,6 +56,18 @@ const humaneLight = localFont({
   display: "swap",
 });
 
+const humaneMedium = localFont({
+  src: "../../public/fonts/HumaneMedium.otf",
+  variable: "--humaneMedium",
+  display: "swap",
+});
+
+const messinaBold = localFont({
+  src: "../../public/fonts/MessinaBold.ttf",
+  variable: "--messinaBold",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -64,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.variable} ${chakraPetch.variable} ${schabo.variable} ${acidGrotesk.variable} ${acidGroteskBold.variable} ${humaneBold.variable} ${humaneExtraLight.variable} ${humaneLight.variable}`}
+        className={`${inter.variable} ${chakraPetch.variable} ${schabo.variable} ${acidGrotesk.variable} ${acidGroteskBold.variable} ${humaneBold.variable} ${humaneExtraLight.variable} ${humaneLight.variable} ${humaneMedium.variable} ${messinaBold.variable}`}
       >
         <div>{children}</div>
       </body>

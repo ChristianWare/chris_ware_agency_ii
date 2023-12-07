@@ -19,7 +19,8 @@
 
 .topCopy {
   font-size: 2.6rem;
-  font-family: var(--acidGroteskBold);
+  font-weight: 600;
+  font-family: var(--inter);
   line-height: 120%;
   color: var(--text2);
 }

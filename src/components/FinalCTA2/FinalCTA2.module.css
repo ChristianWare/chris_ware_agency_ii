@@ -38,12 +38,11 @@
 }
 
 .heading {
-  color: var(--tan);
-  font-family: var(--humaneBold);
-  font-size: 13rem;
-  line-height: 0.8;
-  letter-spacing: 1px;
+  font-size: 7rem;
+  line-height: 100%;
+  letter-spacing: -4px;
   text-transform: uppercase;
+  color: var(--tan);
   margin-bottom: 3rem;
 }
 

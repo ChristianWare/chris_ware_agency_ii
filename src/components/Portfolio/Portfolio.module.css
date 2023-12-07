@@ -67,14 +67,12 @@ background-color: var(--tan);
 .company {
   font-weight: 700;
   margin-bottom: 1rem;
-  font-family: var(--acidGroteskBold);
 }
 
 .companyDesc {
   font-size: 2rem;
   color: var(--text);
   margin-bottom: 2rem;
-  font-family: var(--acidGroteskBold);
 }
 
 .subSubTitle {

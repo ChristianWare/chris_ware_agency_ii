@@ -35,16 +35,13 @@
 }
 
 .heading {
-  border-bottom: 1px solid var(--border3);
-}
-
-.heading {
-  font-family: var(--humaneBold);
-  font-size: 13rem;
+  font-size: 7rem;
   line-height: 100%;
-  line-height: 0.8;
+  letter-spacing: -4px;
   text-transform: uppercase;
   color: var(--black2);
+  border-bottom: 1px solid var(--border3);
+  padding-bottom: 1rem;
 }
 
 .copy,
@@ -60,8 +57,9 @@
   margin: 1.5rem 0;
   /* font-weight: 600; */
   font-size: 1.8rem;
-  font-family: var(--acidGroteskBold);
-  color: var(--black);
+  font-family: var(--inter);
+  font-weight: 600;
+  color: var(--text2);
 }
 
 .imgContainer {

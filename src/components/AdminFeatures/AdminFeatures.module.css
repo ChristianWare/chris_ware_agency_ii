@@ -42,10 +42,9 @@
   border-bottom: 1px solid var(--border3);
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  font-family: var(--humaneBold);
-  font-size: 13rem;
-  line-height: 0.8;
-  letter-spacing: 1px;
+  font-size: 7rem;
+  line-height: 100%;
+  letter-spacing: -4px;
   text-transform: uppercase;
 }
 
@@ -83,6 +82,22 @@
   border-radius: 10px;
 }
 
+.number {
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--black);
+  display: block;
+  line-height: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
 .boxRight {
   display: flex;
   flex-direction: column;
@@ -94,7 +109,6 @@
 .processName {
   color: var(--tan);
   font-size: 2.1rem;
-  font-family: var(--acidGroteskBold);
 }
 
 .task {

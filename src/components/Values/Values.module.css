@@ -13,20 +13,20 @@
 }
 
 .heading {
-  color: var(--black2);
-  font-family: var(--humaneBold);
-  font-size: 13rem;
+  font-size: 7rem;
   line-height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: -4px;
   text-transform: uppercase;
+  color: var(--black2);
+  margin-bottom: 2rem;
 }
 
 .topCopy {
   font-size: 2.6rem;
-  font-family: var(--acidGroteskBold);
   line-height: 120%;
+  font-weight: 500;
   width: 60%;
-  color: var(--text2)
+  color: var(--text2);
 }
 
 .contentBottom {

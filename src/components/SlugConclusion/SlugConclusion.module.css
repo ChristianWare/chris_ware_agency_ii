@@ -28,7 +28,6 @@
 
 .reviewer {
   font-family: var(--inter);
-  color: var(--cream);
   font-weight: 700;
 }
 
@@ -37,5 +36,4 @@
   font-weight: 400;
   opacity: 0.7;
   font-family: var(--inter);
-  color: var(--cream);
 }

@@ -14,9 +14,9 @@
 }
 
 .heading {
-  font-family: var(--humaneBold);
-  font-size: 13rem;
-  line-height: 0.8;
+  font-size: 7rem;
+  line-height: 100%;
+  letter-spacing: -4px;
   text-transform: uppercase;
   color: var(--black2);
 }
@@ -71,7 +71,7 @@
 .h3 {
   font-size: 2rem;
   color: var(--black);
-  font-family: var(--acidGroteskBold);
+  font-family: var(--inter);
   font-weight: 700;
 }
 

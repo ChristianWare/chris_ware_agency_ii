@@ -17,16 +17,13 @@
 }
 
 .heading {
-  color: var(--black2);
-  font-family: var(--humaneBold);
-  font-size: 13rem;
+  font-size: 7rem;
   line-height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: -4px;
   text-transform: uppercase;
 }
 
 .cardContainer {
-  /* border: 1px solid var(--border); */
   border-radius: 10px;
   padding: 1rem;
   background-color: var(--tan);
@@ -51,7 +48,6 @@
   margin-top: 1rem;
   margin-bottom: 3rem;
   font-size: 2.1rem;
-  font-family: var(--acidGroteskBold);
   /* color: var(--tan); */
 }
 

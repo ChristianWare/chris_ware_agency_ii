@@ -8,11 +8,11 @@
 
 .heading {
   text-align: center;
-  width: 50%;
-  font-family: var(--humaneBold);
-  font-size: 13rem;
-  letter-spacing: .5px;
+  font-size: 7rem;
+  line-height: 100%;
+  letter-spacing: -4px;
   text-transform: uppercase;
+  color: var(--black2);
 }
 
 .copy {

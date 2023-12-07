@@ -32,13 +32,7 @@ const AdminFeatures = () => {
                 <div key={index} className={styles.box}>
                   <div className={styles.boxLeft}>
                     <div className={styles.number}>
-                      <Image
-                        src={x.icon}
-                        alt='icon'
-                        width={40}
-                        height={40}
-                        className={styles.icon}
-                      />
+                      <span className={styles.number}>{`${index + 1}`}</span>
                     </div>
                   </div>
                   <div className={styles.boxRight}>

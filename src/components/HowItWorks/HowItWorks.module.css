@@ -40,18 +40,16 @@
 .heading {
   border-bottom: 1px solid var(--border3);
   margin-bottom: 3rem;
-  color: var(--tan);
-  font-family: var(--humaneBold);
-  font-size: 13rem;
-  line-height: 0.8;
-  letter-spacing: 1px;
+  font-size: 7rem;
+  line-height: 100%;
+  letter-spacing: -4px;
   text-transform: uppercase;
+  color: var(--tan);
 }
 
 .topText {
   color: var(--tan);
   font-weight: 500;
-  /* width: 80%; */
   margin-top: 3rem;
   font-size: 1.6rem;
 }
@@ -97,7 +95,6 @@
 .number {
   padding: 1rem;
   font-size: 2rem;
-  font-family: var(--acidGroteskBold);
   color: var(--black);
   display: block;
   line-height: 100%;
@@ -109,13 +106,11 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  /* border: 1px solid var(--border3); */
 }
 
 .processName {
   color: var(--tan);
   font-size: 2.1rem;
-  font-family: var(--acidGroteskBold);
 }
 
 .copy {

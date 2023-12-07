@@ -39,7 +39,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: var(--neutral);
 }
 
 a {
@@ -54,18 +53,18 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--acidGrotesk);
+  font-family: var(--inter);
   color: var(--black);
   hyphens: auto;
 }
 
 h1 {
-  font-size: 15.2rem;
-  line-height: 0.8;
+  font-size: 8rem;
+  line-height: 0.9;
   font-weight: 700;
-  font-family: var(--humaneBold);
+  font-family: var(--inter);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: -4px;
 }
 
 h2 {
@@ -152,9 +151,8 @@ input:focus {
   }
 }
 
-.toastFont {
-  font-family: var(--roboto);
-}
+/* .toastFont {
+} */
 
 /* Only use in production */
 /* @media screen and (max-width: 480px) {
