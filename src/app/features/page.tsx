@@ -7,6 +7,7 @@ import Services from "@/components/Services/Services";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import Img from "../../../public/images/img7.png";
 import Pricing from "@/components/Pricing/Pricing";
+import FinalCTA2 from "@/components/FinalCTA2/FinalCTA2";
 
 const FeaturesPage = () => {
   const fs = require("fs");
@@ -39,6 +40,7 @@ const FeaturesPage = () => {
       <Pricing />
       <Faq />
       <BlogSection blogData={blogs} />
+      <FinalCTA2 />
       <FinalCta />
     </>
   );

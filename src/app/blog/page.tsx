@@ -4,6 +4,7 @@ import PageIntro from "@/components/PageIntro/PageIntro";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import Img from "../../../public/images/img8.png";
+import FinalCTA2 from "@/components/FinalCTA2/FinalCTA2";
 
 const BlogPage = () => {
   const fs = require("fs");
@@ -31,6 +32,7 @@ const BlogPage = () => {
         src={Img}
       />
       <BlogSection blogData={blogs} />
+      <FinalCTA2 />
       <FinalCta />
     </>
   );

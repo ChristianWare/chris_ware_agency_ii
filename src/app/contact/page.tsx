@@ -4,6 +4,7 @@ import PageIntro from "@/components/PageIntro/PageIntro";
 import Img from "../../../public/images/img4.png";
 import ContactInfo from "@/components/ContactInfo/ContactInfo";
 import BlogSection from "@/components/BlogSection/BlogSection";
+import FinalCTA2 from "@/components/FinalCTA2/FinalCTA2";
 
 const ContactPage = () => {
   const fs = require("fs");
@@ -42,6 +43,7 @@ const ContactPage = () => {
       <ContactInfo />
       <Faq />
       <BlogSection blogData={blogs} />
+      <FinalCTA2 />
       <FinalCta />
     </>
   );

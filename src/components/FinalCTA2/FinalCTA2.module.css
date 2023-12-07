@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .imgOverlay {
@@ -9,14 +9,17 @@
   height: 100%;
   width: 100%;
   background: linear-gradient(rgba(10, 7, 27, 0.7), rgba(10, 7, 27, 0.7));
+  border-radius: 15px;
 }
 
 .img {
   object-fit: cover;
+  border-radius: 15px;
 }
 
 .content {
   display: flex;
+  padding: 3rem;
 }
 
 .left {
@@ -35,8 +38,12 @@
 }
 
 .heading {
-  z-index: 3;
   color: var(--tan);
+  font-family: var(--humaneBold);
+  font-size: 13rem;
+  line-height: 0.8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   margin-bottom: 3rem;
 }
 
@@ -100,7 +107,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 0rem;
   }
 
   .left {

@@ -17,7 +17,7 @@ const Portfolio = () => {
     <LayoutWrapper>
       <ContentPadding>
         <div className={styles.top}>
-          <SectionHeading headingText='Case Studies' />
+          <SectionHeading headingText='Projects' />
         </div>
         {caseStudies.map((x, index) => (
           <motion.div

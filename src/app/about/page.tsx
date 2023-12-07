@@ -8,6 +8,8 @@ import FinalCta from "@/components/FinalCta/FinalCta";
 import Img from "../../../public/images/img3.png";
 import Vision from "@/components/Vision/Vision";
 import Mission from "@/components/Mission/Mission";
+import RotatingText from "@/components/RotatingText/RotatingText";
+import FinalCTA2 from "@/components/FinalCTA2/FinalCTA2";
 
 const AboutPage = () => {
   const fs = require("fs");
@@ -37,10 +39,10 @@ const AboutPage = () => {
       <Values />
       <Mission />
       <Vision />
-      {/* <Owner /> */}
       <TechStack />
       <Faq />
       <BlogSection blogData={blogs} />
+      <FinalCTA2 />
       <FinalCta />
     </>
   );

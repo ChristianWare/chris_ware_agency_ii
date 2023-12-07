@@ -10,6 +10,7 @@ import Portfolio from "@/components/Portfolio/Portfolio";
 import PreHero from "@/components/PreHero/PreHero";
 import Pricing from "@/components/Pricing/Pricing";
 import Services from "@/components/Services/Services";
+import FinalCTA2 from "@/components/FinalCTA2/FinalCTA2";
 
 export const metadata: Metadata = {
   title:
@@ -44,17 +45,18 @@ const HomePage = () => {
 
   return (
     <div>
-        <Hero />
-        <PreHero />
-        <Benefits />
-        <AboutSection />
-        <Services />
-        <HowItWorks />
-        <Pricing />
-        <Portfolio />
-        <Faq />
-        <BlogSection blogData={blogs} />
-        <FinalCta />
+      <Hero />
+      <PreHero />
+      <Benefits />
+      <AboutSection />
+      <Services />
+      <HowItWorks />
+      <Pricing />
+      <Portfolio />
+      <Faq />
+      <BlogSection blogData={blogs} />
+      <FinalCTA2 />
+      <FinalCta />
     </div>
   );
 };

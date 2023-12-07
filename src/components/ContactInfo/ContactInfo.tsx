@@ -39,7 +39,7 @@ const ContactInfo = () => {
                   <Phone width={25} height={25} className={styles.icon} />
                 </div>
                 <div className={styles.itexRight}>
-                  <p className={styles.copyii}>480-888-8888</p>
+                  <p className={styles.copyii}>480-623-6780</p>
                 </div>
               </motion.div>
               <motion.div
@@ -53,7 +53,7 @@ const ContactInfo = () => {
                   <Email width={25} height={25} className={styles.icon} />
                 </div>
                 <div className={styles.itexRight}>
-                  <p className={styles.copyii}>info@chrisware.agency</p>
+                  <p className={styles.copyii}>chris1@chrisware.agency</p>
                 </div>
               </motion.div>
               <motion.div

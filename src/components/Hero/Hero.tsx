@@ -10,6 +10,7 @@ import Image from "next/image";
 import Nav from "../Nav/Nav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
+import RotatingText from "../RotatingText/RotatingText";
 
 const Hero = () => {
   return (
@@ -47,7 +48,9 @@ const Hero = () => {
                 <Button text='Contact us' href='/contact' btnType='primary' />
               </div>
             </motion.div>
-            <div className={styles.right}></div>
+            <div className={styles.right}>
+              <RotatingText text='Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency' />
+            </div>
           </div>
         </ContentPadding>
       </LayoutWrapper>
