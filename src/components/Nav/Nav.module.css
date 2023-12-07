@@ -147,7 +147,7 @@
   .navItem {
     font-size: 7rem;
     color: var(--black);
-    font-family: var(--inter);
+    font-family: var(--chakraPetch);
     line-height: 0.8;
     text-transform: uppercase;
   }
