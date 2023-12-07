@@ -5,7 +5,6 @@
 .mapBox {
   border-radius: 10px;
   padding: 1rem;
-  /* background-color: var(--tan); */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
@@ -19,8 +18,9 @@
 .heading {
   font-size: 7rem;
   line-height: 100%;
-  letter-spacing: -4px;
   text-transform: uppercase;
+  font-family: var(--chakraPetch);
+  letter-spacing: -2px;
 }
 
 .cardContainer {
@@ -48,11 +48,9 @@
   margin-top: 1rem;
   margin-bottom: 3rem;
   font-size: 2.1rem;
-  /* color: var(--tan); */
 }
 
 .task {
-  /* color: var(--tan); */
   opacity: 0.8;
   font-weight: 500;
 }

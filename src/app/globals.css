@@ -59,12 +59,12 @@ span {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 0.9;
   font-weight: 700;
-  font-family: var(--inter);
+  font-family: var(--chakraPetch);
   text-transform: uppercase;
-  letter-spacing: -4px;
+  letter-spacing: -2px;
 }
 
 h2 {

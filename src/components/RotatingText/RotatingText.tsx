@@ -33,8 +33,6 @@ const RotatingText: FC<RotatingTextProps> = ({ text }) => {
       <svg
         className={styles.svg}
         viewBox='0 0 100 100'
-        // width='350'
-        // height='350'
         style={{
           transform: `rotate(${rotationAngle}deg)`,
         }}
@@ -49,7 +47,7 @@ const RotatingText: FC<RotatingTextProps> = ({ text }) => {
         a 37,37 0 1,1 -74,0'
           />
         </defs>
-        <text font-size='10'>
+        <text font-size='10.7'>
           <textPath className={styles.svg} xlinkHref='#circle'>
             {text}
           </textPath>

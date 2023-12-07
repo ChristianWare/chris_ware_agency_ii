@@ -42,6 +42,8 @@
   color: var(--black2);
   border-bottom: 1px solid var(--border3);
   padding-bottom: 1rem;
+  font-family: var(--chakraPetch);
+  letter-spacing: -2px;
 }
 
 .copy,
@@ -55,7 +57,6 @@
 .copyii {
   width: 100%;
   margin: 1.5rem 0;
-  /* font-weight: 600; */
   font-size: 1.8rem;
   font-family: var(--inter);
   font-weight: 600;

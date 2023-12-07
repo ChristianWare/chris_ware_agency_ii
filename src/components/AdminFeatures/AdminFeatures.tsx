@@ -3,7 +3,6 @@
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import styles from "./AdminFeatures.module.css";
-import Image from "next/image";
 import { adminData } from "@/lib/data";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";

@@ -23,9 +23,11 @@
   margin-bottom: 3rem;
   font-size: 7rem;
   line-height: 100%;
-  letter-spacing: -4px;
   text-transform: uppercase;
   color: var(--black2);
+  font-family: var(--chakraPetch);
+  letter-spacing: -2px;
+
 }
 
 .topText {

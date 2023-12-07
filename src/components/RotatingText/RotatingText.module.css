@@ -3,15 +3,13 @@
   height: 350px;
   border-radius: 50%;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   user-select: none;
   padding: 1rem;
 }
 
 .svg {
-  font-family: var(--inter);
+  font-family: var(--chakraPetch);
   font-weight: 600;
   text-transform: uppercase;
   fill: var(--text);

@@ -20,6 +20,9 @@
   letter-spacing: -4px;
   text-transform: uppercase;
   color: var(--tan);
+  font-family: var(--chakraPetch);
+  letter-spacing: -2px;
+
 }
 
 .top {

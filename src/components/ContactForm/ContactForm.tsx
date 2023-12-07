@@ -11,8 +11,6 @@ const ContactForm = () => {
     firstName: "",
     lastName: "",
     senderEmail: "",
-    // companyName: "",
-    // currentWebsiteUrl: "",
     message: "",
   });
 
@@ -28,18 +26,7 @@ const ContactForm = () => {
     <div className={styles.content}>
           <div className={styles.bottom}>
             <div className={styles.left}>
-              {/* <div className={styles.circleContainer}>
-              </div>
-              <h2 className={styles.heading}>
-                Request a <span className={styles.highlight}>Demo</span>
-              </h2>
-              <p className={styles.copy}>
-                Feel free to contact us any time. We will glady answer any
-                questions you have. We can&#39;t wait to hear from you!
-              </p> */}
-              {/* <div className={styles.imgContainer}>
-                <Image src={Img7} alt='img' fill className={styles.img} />
-              </div> */}
+              
             </div>
             <div className={styles.right}>
               <form
@@ -56,8 +43,6 @@ const ContactForm = () => {
                     firstName: "",
                     lastName: "",
                     senderEmail: "",
-                    // companyName: "",
-                    // currentWebsiteUrl: "",
                     message: "",
                   });
                 }}
@@ -106,28 +91,7 @@ const ContactForm = () => {
                       maxLength={500}
                     />
                   </div>
-                  {/* <div className={styles.labelInputBox}>
-                    <label htmlFor='companyName'>Company Name</label>
-                    <input
-                      id='companyName'
-                      type='text'
-                      name='companyName'
-                      value={inputs.companyName}
-                      onChange={handleChange}
-                    />
-                  </div> */}
-                  {/* <div className={styles.labelInputBox}>
-                    <label htmlFor='currentWebsiteUrl'>
-                      Current Website URL
-                    </label>
-                    <input
-                      id='currentWebsiteUrl'
-                      type='text'
-                      name='currentWebsiteUrl'
-                      value={inputs.currentWebsiteUrl}
-                      onChange={handleChange}
-                    />
-                  </div> */}
+                 
                   <div className={styles.labelInputBox}>
                     <label htmlFor='message'>
                       Message <span className={styles.required}>*</span>
@@ -148,8 +112,6 @@ const ContactForm = () => {
               </form>
             </div>
           </div>
-        {/* </ContentPadding> */}
-      {/* </LayoutWrapper> */}
     </div>
   );
 };
