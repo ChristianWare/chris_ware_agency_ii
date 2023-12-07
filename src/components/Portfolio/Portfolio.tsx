@@ -30,7 +30,7 @@ const Portfolio = () => {
           >
             <div className={styles.left}>
               <div className={styles.imgContainer}>
-                <Image src={Img1} alt='hello' fill className={styles.img} />
+                <Image src={x.src} alt='hello' fill className={styles.img} />
               </div>
             </div>
             <div className={styles.right}>

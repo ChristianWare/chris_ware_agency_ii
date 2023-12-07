@@ -25,6 +25,7 @@ import Fee from "../../public/icons/fee.png";
 import Data from "../../public/icons/data.png";
 import Client from "../../public/icons/client.png";
 import Innovation from "../../public/icons/innovation.png";
+import Elite from '../../public/images/elite.png'
 
 export const benefits = [
   {
@@ -139,8 +140,9 @@ export const caseStudies = [
     company: "ABC Company",
     companyDesc: "ABC Company is a company that does business",
     projectDetails:
-      "            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic in laudantium, unde vitae molestiae nostrum id neque ipsa doloremque! Porro tempore quaerat earum? Doloremque atque assumenda molestias cum qui suscipit.",
+      "Elite Retreat Rentals is  a curated selection of meticulously designed houses, each offering a unique blend of modern amenities and scenic beauty. ",
     href: "/",
+    src: Elite,
   },
 ] as const;
 
