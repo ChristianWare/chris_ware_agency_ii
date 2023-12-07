@@ -15,7 +15,7 @@
   --text3: #434343;
   --tan: #f1f1e9;
   --tan2: #d3d3b5;
-  --tan3: #F7F1CF;
+  --tan3: #f7f1cf;
   --shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -47,8 +47,6 @@ a {
   text-decoration: none;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -63,7 +61,7 @@ span {
 
 h1 {
   font-size: 15.2rem;
-  line-height: .8;
+  line-height: 0.8;
   font-weight: 700;
   font-family: var(--humaneLight);
   text-transform: uppercase;
@@ -160,7 +158,6 @@ input:focus {
 
 /* Only use in production */
 @media screen and (max-width: 480px) {
-  h1,
   h2 {
     letter-spacing: -0.5rem;
   }
