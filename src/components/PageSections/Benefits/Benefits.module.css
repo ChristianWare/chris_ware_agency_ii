@@ -161,7 +161,7 @@
 @media screen and (max-width: 568px) {
   .heading {
     font-size: 15rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-family: var(--humaneLight);
   }
 
