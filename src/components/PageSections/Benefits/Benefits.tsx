@@ -37,22 +37,14 @@ const Benefits = () => {
               />
             </div>
             <div className={styles.right}>
-              <h2 className={styles.heading}>
-                Benefits
-              </h2>
+              <h2 className={styles.heading}>Benefits</h2>
               <p className={styles.copy}>
                 Having a direct booking website for your vacation rental
                 property instead of relying solely on Airbnb and VRBO can offer
                 several benefits. Here are some of the advantages of having your
                 own booking website:
               </p>
-              <motion.div
-                variants={fadeIn("up", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                className={styles.grid}
-              >
+              <div className={styles.grid}>
                 {benefits.map((benefit, i) => (
                   <div
                     key={i}
@@ -97,7 +89,7 @@ const Benefits = () => {
                     </div>
                   </div>
                 ))}
-              </motion.div>
+              </div>
             </div>
           </div>
         </ContentPadding>

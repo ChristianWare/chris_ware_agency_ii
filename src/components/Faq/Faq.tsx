@@ -5,7 +5,7 @@ import styles from "./Faq.module.css";
 import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import { faqs } from "@/lib/data";
-import Arrow from '../../../public/icons/downArrow.svg'
+import Arrow from "../../../public/icons/downArrow.svg";
 import Label from "../Label/Label";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
@@ -34,13 +34,7 @@ const Faq = () => {
               </p>
             </div>
             <div className={styles.border}>
-              <motion.div
-                variants={fadeIn("up", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
-                className={styles.bottom}
-              >
+              <div className={styles.bottom}>
                 {faqs.map((x, i) => (
                   <div
                     key={x.id}
@@ -81,7 +75,7 @@ const Faq = () => {
                     </div>
                   </div>
                 ))}
-              </motion.div>
+              </div>
             </div>
             {/* <div className={styles.btnContainer}></div> */}
           </div>
