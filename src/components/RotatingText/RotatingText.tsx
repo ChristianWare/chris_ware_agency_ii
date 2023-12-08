@@ -47,7 +47,7 @@ const RotatingText: FC<RotatingTextProps> = ({ text }) => {
         a 37,37 0 1,1 -74,0'
           />
         </defs>
-        <text font-size='10.5'>
+        <text font-size='15.7'>
           <textPath className={styles.svg} xlinkHref='#circle'>
             {text}
           </textPath>

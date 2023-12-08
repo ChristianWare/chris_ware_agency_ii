@@ -17,6 +17,7 @@
 
 .content {
   display: flex;
+  gap: 2rem;
 }
 
 .left {
@@ -32,7 +33,7 @@
 .right {
   flex: 1;
   z-index: 3;
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 
 .heading {

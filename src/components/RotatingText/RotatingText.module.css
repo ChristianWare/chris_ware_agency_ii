@@ -1,6 +1,6 @@
 .container {
-  width: 350px;
-  height: 350px;
+  width: 375px;
+  height: 375px;
   border-radius: 50%;
   position: relative;
   display: block;
@@ -12,7 +12,7 @@
   font-family: var(--staatliches);
   font-weight: 600;
   text-transform: uppercase;
-  fill: var(--tan);
+  fill: var(--tan2);
   user-select: none;
 }
 
@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 380px) {
   .container {
-    width: 230px;
-    height: 230px;
+    width: 245px;
+    height: 245px;
   }
 }
