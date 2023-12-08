@@ -47,21 +47,23 @@
   font-size: 15.2rem;
   letter-spacing: 2px;
   line-height: 0.8;
+  display: inline-block;
 }
 
 .h3 {
   color: var(--white);
   margin-bottom: 3rem;
-  font-family: var(--humaneMedium);
-  font-size: 15.2rem;
-  letter-spacing: 5px;
-  line-height: 0.8;
+  font-family: var(--bebasNeue);
+  font-size: 12rem;
+  /* letter-spacing: 5px; */
+  line-height: .8;
+  display: inline-block;
 }
 
 .h4 {
   color: var(--white);
   margin-bottom: 3rem;
-  font-family: var(--humaneLight);
+  font-family: var(--anton);
   font-size: 15.2rem;
   letter-spacing: 2px;
   line-height: 0.8;

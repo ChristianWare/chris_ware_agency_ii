@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Chakra_Petch } from "next/font/google";
+import { Inter, Chakra_Petch, Bebas_Neue, Anton } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -8,6 +8,24 @@ const inter = Inter({
   style: ["normal"],
   subsets: ["latin"],
   variable: "--inter",
+  display: "swap",
+  adjustFontFallback: false,
+});
+
+const bebasNeue = Bebas_Neue({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--bebasNeue",
+  display: "swap",
+  adjustFontFallback: false,
+});
+
+const anton = Anton({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--anton",
   display: "swap",
   adjustFontFallback: false,
 });
@@ -76,7 +94,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.variable} ${chakraPetch.variable} ${schabo.variable} ${acidGrotesk.variable} ${acidGroteskBold.variable} ${humaneBold.variable} ${humaneExtraLight.variable} ${humaneLight.variable} ${humaneMedium.variable} ${messinaBold.variable}`}
+        className={`${inter.variable} ${chakraPetch.variable} ${schabo.variable} ${acidGrotesk.variable} ${acidGroteskBold.variable} ${humaneBold.variable} ${humaneExtraLight.variable} ${humaneLight.variable} ${humaneMedium.variable} ${messinaBold.variable} ${bebasNeue.variable} ${anton.variable}`}
       >
         <div>{children}</div>
       </body>
