@@ -19,9 +19,9 @@
 
 .topCopy {
   font-size: 3.6rem;
-  font-weight: 600;
-  font-family: var(--staatliches);
   line-height: 120%;
+  font-weight: 500;
+  font-family: var(--staatliches);
   color: var(--text2);
 }
 
