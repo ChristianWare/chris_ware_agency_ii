@@ -53,16 +53,16 @@ h4,
 h5,
 h6,
 span {
-  font-family: var(--inter);
+  font-family: var(--staatliches);
   color: var(--black);
   /* hyphens: auto; */
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 10rem;
   line-height: 0.9;
   font-weight: 700;
-  font-family: var(--chakraPetch);
+  font-family: var(--staatliches);
   text-transform: uppercase;
   letter-spacing: -2px;
 }

@@ -19,7 +19,7 @@
 .logo {
   font-size: 3rem;
   color: var(--green);
-  font-family: var(--chakraPetch);
+  font-family: var(--staatliches);
   font-weight: 700;
   z-index: 998;
 }
@@ -51,7 +51,7 @@
 }
 
 .navItem {
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   font-weight: 700;
   color: var(--tan);
   position: relative;
@@ -59,7 +59,7 @@
   transition: all 0.3s ease-in;
   scroll-behavior: smooth;
   z-index: 998;
-  font-family: var(--inter);
+  font-family: var(--staatliches);
 }
 
 .activeLink {
