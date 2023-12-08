@@ -238,7 +238,7 @@ export const pricing = [
     id: 28,
     plan: "Enterprise",
     description:
-      "For large-scale organizations with 20 or more rental properties with unique requirements.",
+      "For large-scale organizations with at least 20 or more vacation rental properties with unique requirements.",
     price: "Custom Price",
     includes: [
       {

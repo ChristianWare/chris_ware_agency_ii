@@ -17,7 +17,8 @@
 }
 
 .heading {
-  font-size: 7rem;
+  font-size: 8.5rem;
+  font-family: var(--staatliches);
   line-height: 100%;
   text-transform: uppercase;
   color: var(--black2);
@@ -31,9 +32,9 @@
 }
 
 .heading2 {
-  font-size: 3rem;
+  font-size: 5rem;
   color: var(--tan);
-  font-family: var(--chakraPetch);
+  font-family: var(--staatliches);
   text-transform: uppercase;
 }
 

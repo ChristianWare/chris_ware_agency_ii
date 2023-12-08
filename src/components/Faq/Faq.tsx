@@ -7,8 +7,6 @@ import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import { faqs } from "@/lib/data";
 import Arrow from "../../../public/icons/downArrow.svg";
 import Label from "../Label/Label";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../animation/variants";
 
 const Faq = () => {
   const [selected, setSelected] = useState<null | number>(null);

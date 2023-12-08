@@ -12,8 +12,6 @@ import Img2 from "../../../../public/images/img2.png";
 import Img3 from "../../../../public/images/img3.png";
 import Img4 from "../../../../public/images/img6.png";
 import Img5 from "../../../../public/images/img5.png";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../../animation/variants";
 
 const Benefits = () => {
   const [selected, setSelected] = useState(null);

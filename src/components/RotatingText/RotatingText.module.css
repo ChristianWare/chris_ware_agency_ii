@@ -9,10 +9,10 @@
 }
 
 .svg {
-  font-family: var(--chakraPetch);
+  font-family: var(--staatliches);
   font-weight: 600;
   text-transform: uppercase;
-  fill: var(--text);
+  fill: var(--tan);
   user-select: none;
 }
 
@@ -20,10 +20,6 @@
   .container {
     width: 300px;
     height: 300px;
-  }
-
-  .svg {
-    fill: var(--white);
   }
 }
 

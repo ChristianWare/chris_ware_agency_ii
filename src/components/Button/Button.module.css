@@ -34,12 +34,6 @@
   border: 2px solid var(--green);
 }
 
-.primary:hover {
-  color: var(--green);
-  background-color: transparent;
-  border: 2px solid var(--green);
-}
-
 .secondary {
   color: var(--black);
   background-color: var(--green);
@@ -56,11 +50,6 @@
   color: var(--black);
   background-color: transparent;
   border: 1px solid var(--black);
-}
-
-.tertiaryii:hover {
-  color: var(--white);
-  background-color: var(--black);
 }
 
 .navBtn {
