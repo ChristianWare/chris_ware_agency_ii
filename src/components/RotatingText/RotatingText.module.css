@@ -9,8 +9,9 @@
 }
 
 .svg {
-  font-family: var(--staatliches);
+  font-family: var(--inter);
   font-weight: 600;
+  letter-spacing: -1px;
   text-transform: uppercase;
   fill: var(--tan2);
   user-select: none;

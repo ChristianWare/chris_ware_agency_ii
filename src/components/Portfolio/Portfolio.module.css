@@ -81,7 +81,8 @@ background-color: var(--tan);
 }
 
 .projectDetails {
-  color: var(--text);
+  color: var(--text4);
+  font-weight: 500;
 }
 
 .btnContainer {
