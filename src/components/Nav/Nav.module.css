@@ -108,6 +108,10 @@
   right: 5px;
 }
 
+.navFooter {
+  display: none;
+}
+
 @media screen and (max-width: 1168px) {
   .menuItemsGroup,
   .navMenu {
@@ -138,6 +142,14 @@
     transform-origin: top;
   }
 
+  .navFooter {
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    padding-left: 2rem;
+    left: 0;
+  }
+
   .navMenu.active {
     top: 0%;
     transform-origin: top;
@@ -145,15 +157,27 @@
 
   .navItem {
     font-size: 7rem;
-    color: var(--black);
+    color: var(--black2);
     font-family: var(--staatliches);
     line-height: 0.8;
     text-transform: uppercase;
   }
 
-  .officialLogoMobile {
-    display: block;
-    margin-top: 1rem;
+  .bottomDesktop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .lb2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .icon {
+    color: var(--black2);
   }
 
   .btnContainer {
@@ -170,10 +194,13 @@
   }
 
   .copy {
-    color: var(--text);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    color: var(--text2);
     hyphens: auto;
-    text-align: justify;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    border-top: 2px solid var(--text);
+    width: 100%;
   }
 
   .hamburger {

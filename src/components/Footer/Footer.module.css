@@ -56,7 +56,6 @@
 
 .bottomDesktop {
   border-top: 1px solid var(--tan);
-  /* margin-top: 1rem; */
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -65,7 +64,6 @@
 
 .copy {
   color: var(--tan);
-  /* text-align: right; */
   font: 1.2rem;
   width: 100%;
   margin-top: 2rem;

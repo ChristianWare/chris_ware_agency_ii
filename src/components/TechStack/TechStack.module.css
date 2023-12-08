@@ -90,8 +90,12 @@
   }
 }
 
-/* @media screen and (max-width: 568px) {
-  .bottom {
-    grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 568px) {
+  .heading {
+    font-size: 6rem;
   }
-} */
+
+  .copy {
+    text-align: left;
+  }
+}

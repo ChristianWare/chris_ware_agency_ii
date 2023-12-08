@@ -93,3 +93,9 @@
     left: 0;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .heading {
+    font-size: 6rem;
+  }
+}

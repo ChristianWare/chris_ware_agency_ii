@@ -113,6 +113,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .topHeading {
+    font-size: 6rem;
+  }
+  
   .bottom {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -157,9 +157,9 @@
 }
 
 @media screen and (max-width: 568px) {
-  /* .heading {
-    font-size: 10rem;
-  } */
+  .heading {
+    font-size: 7rem;
+  }
 
   .btnContainer {
     display: grid;

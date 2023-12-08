@@ -28,7 +28,6 @@
 }
 
 .heading {
-  font-size: 7rem;
   line-height: 100%;
   text-transform: uppercase;
   color: var(--black2);
@@ -96,5 +95,11 @@
 
   .btnContainer {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .heading {
+    font-size: 6rem;
   }
 }
