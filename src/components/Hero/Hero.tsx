@@ -39,6 +39,10 @@ const Hero = () => {
               <h1 className={styles.heading}>
                 Maximize Revenue with Direct Booking Solutions.
               </h1>
+              <h1 className={styles.h2}>humane Bold</h1>
+              <h1 className={styles.h3}>humane Medium</h1>
+              <h1 className={styles.h4}>humane Light</h1>
+              <h1 className={styles.h5}>humane Extra Light</h1>
               <p className={styles.copy}>
                 Tired of relying solely on platforms like Airbnb or VRBO? We
                 empower property owners to take control of their bookings with a
