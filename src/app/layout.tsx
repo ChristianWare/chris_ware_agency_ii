@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Chakra_Petch } from "next/font/google";
+import { Inter, Chakra_Petch, Staatliches } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -20,6 +20,14 @@ const chakraPetch = Chakra_Petch({
   adjustFontFallback: false,
 });
 
+const staatliches = Staatliches({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--staatliches",
+  adjustFontFallback: false,
+});
+
 const schabo = localFont({
   src: "../../public/fonts/SCHABO.otf",
   variable: "--schabo",
@@ -33,7 +41,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.variable} ${chakraPetch.variable}`}>
+      <body
+        className={`${inter.variable} ${chakraPetch.variable} ${staatliches.variable}`}
+      >
         <div>{children}</div>
       </body>
     </html>

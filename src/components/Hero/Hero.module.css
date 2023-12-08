@@ -40,6 +40,13 @@
   margin-bottom: 3rem;
 }
 
+.heading2 {
+  z-index: 3;
+  color: var(--tan);
+  font-family: var(--staatliches);
+  font-size: 10rem;
+}
+
 .copy {
   z-index: 3;
   font-size: 2rem;
