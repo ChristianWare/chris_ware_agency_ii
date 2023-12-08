@@ -60,11 +60,11 @@ span {
 
 h1 {
   font-size: 7rem;
-  line-height: 120%;
+  line-height: 0.9;
   font-weight: 700;
   font-family: var(--chakraPetch);
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
 }
 
 h2 {
