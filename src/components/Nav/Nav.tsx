@@ -5,15 +5,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Button from "../Button/Button";
-import Instagram from "../../../public/icons/instagram.svg";
-import LinkedIn from "../../../public/icons/linkedin.svg";
-import Twitter from "../../../public/icons/twitter.svg";
-import Facebook from "../../../public/icons/facebook.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+
   const openMenu = () => {
     setIsOpen(!isOpen);
+    setIsOverlayVisible(!isOverlayVisible);
   };
 
   useEffect(() => {
@@ -104,24 +103,18 @@ function Nav() {
               btnType='navBtn'
             />
           </div>
-          {isOpen && (
-            <div className={styles.navFooter}>
-              <div className={styles.lb2}>
-                <Instagram width={25} height={25} className={styles.icon} />
-                <LinkedIn width={25} height={25} className={styles.icon} />
-                <Twitter width={25} height={25} className={styles.icon} />
-                <Facebook width={25} height={25} className={styles.icon} />
-              </div>
-              <div className={styles.bottomDesktop}>
-                <div className={styles.bottomLeft}>
-                  <p className={styles.copy}>
-                    &copy; 2023 Chris Ware Agency - All Rights Reserved
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
         </ul>
+        {isOpen && (
+          <div
+            className={`${styles.overlay} ${
+              isOverlayVisible ? styles.visible : ""
+            }`}
+            onClick={() => {
+              setIsOpen(false);
+              setIsOverlayVisible(false);
+            }}
+          ></div>
+        )}
         <span
           className={
             isOpen === false
