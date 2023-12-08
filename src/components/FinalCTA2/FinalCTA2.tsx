@@ -27,7 +27,7 @@ const FinalCTA2 = () => {
           />
           <div className={styles.content}>
             <motion.div
-              variants={fadeIn("down", 0.3)}
+              variants={fadeIn("up", 0.3)}
               initial='hidden'
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
@@ -45,7 +45,11 @@ const FinalCTA2 = () => {
                 with our tailored solutions.
               </p>
               <div className={styles.btnContainer}>
-                <Button text='480-623-6780' href='/contact' btnType='primary' />
+                <Button
+                  text='480-623-6780'
+                  href='tel:+4806236780'
+                  btnType='primary'
+                />
               </div>
             </motion.div>
             <div className={styles.right}>

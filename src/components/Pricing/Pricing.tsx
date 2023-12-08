@@ -27,11 +27,11 @@ const Pricing = () => {
           </div>
           <div className={styles.bottom}>
             {pricing.map((x) => (
-              <motion.div
-                variants={fadeIn("up", 0.3)}
-                initial='hidden'
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
+              <div
+                // variants={fadeIn("up", 0.3)}
+                // initial='hidden'
+                // whileInView={"show"}
+                // viewport={{ once: false, amount: 0.3 }}
                 key={x.id}
                 className={styles.card}
               >
@@ -61,7 +61,7 @@ const Pricing = () => {
                     ))}
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
           {pathname === "/" && (

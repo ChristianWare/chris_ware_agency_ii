@@ -37,16 +37,11 @@
 .heading {
   border-bottom: 1px solid var(--border3);
   padding-bottom: 1rem;
-}
-
-.heading {
   margin-bottom: 3rem;
-  font-size: 7rem;
   line-height: 100%;
   text-transform: uppercase;
-  width: 90%;
-  font-family: var(--chakraPetch);
-  letter-spacing: -2px;
+  font-size: 8.5rem;
+  font-family: var(--staatliches);
 }
 
 .copy,
@@ -54,6 +49,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: var(--text2);
+  font-weight: 500;
 }
 
 .copyii {

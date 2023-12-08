@@ -126,7 +126,6 @@
     top: -100%;
     left: 0;
     flex-direction: column;
-    gap: 2rem;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
@@ -147,7 +146,7 @@
   .navItem {
     font-size: 7rem;
     color: var(--black);
-    font-family: var(--chakraPetch);
+    font-family: var(--staatliches);
     line-height: 0.8;
     text-transform: uppercase;
   }

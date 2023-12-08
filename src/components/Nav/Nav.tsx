@@ -75,11 +75,6 @@ function Nav() {
               : `${styles.navMenu} ${styles.active}`
           }
         >
-          {/* {isOpen === true && (
-            <Link href='/' className={styles.logoii}>
-              Chris Ware Agency
-            </Link>
-          )} */}
           {navItems.map((navItem, index) => (
             <li
               key={index}
@@ -99,7 +94,11 @@ function Nav() {
             </li>
           ))}
           <div className={styles.btnContainer}>
-            <Button href='/' text='480-623-6780' btnType='navBtn' />
+            <Button
+              href='tel:+4806236780'
+              text='480-623-6780'
+              btnType='navBtn'
+            />
           </div>
         </ul>
         <span

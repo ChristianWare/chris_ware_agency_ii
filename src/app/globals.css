@@ -55,11 +55,11 @@ h6,
 span {
   font-family: var(--staatliches);
   color: var(--black);
-  /* hyphens: auto; */
+  hyphens: auto;
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 9.5rem;
   line-height: 0.9;
   font-weight: 700;
   font-family: var(--staatliches);

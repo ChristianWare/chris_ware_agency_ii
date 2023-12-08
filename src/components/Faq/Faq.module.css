@@ -68,6 +68,7 @@
   border-radius: 10px;
   box-shadow: var(--shadow);
   background-color: var(--white);
+  border: 1px solid var(--border);
 }
 
 .answerContainer {
@@ -143,6 +144,13 @@
   }
 
   .top {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-self: normal;
+    top: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
