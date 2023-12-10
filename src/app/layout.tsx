@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Chakra_Petch, Staatliches } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import ScrollIndicator from "@/components/ScrollIndicator/ScrollIndicator";
 
 const inter = Inter({
   weight: ["400", "500", "600", "700"],
@@ -44,7 +45,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${chakraPetch.variable} ${staatliches.variable}`}
       >
-        <div>{children}</div>
+        <div>
+          <ScrollIndicator />
+          {children}
+        </div>
       </body>
     </html>
   );
