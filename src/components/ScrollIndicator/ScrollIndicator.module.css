@@ -12,7 +12,6 @@
 .progressMainStyle {
   height: 4px;
   background-color: var(--green);
-  border: 1px solid var(--text);
   transition: none;
 }
 
