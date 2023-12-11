@@ -42,7 +42,12 @@ const Portfolio = () => {
                 </div>
                 <div className={styles.c2}>
                   <div className={styles.btnContainer}>
-                    <Button btnType='tertiary' href={x.href} text='Live site' />
+                    <Button
+                      btnType='tertiary'
+                      href={x.href}
+                      text='Live site'
+                      target='_blank'
+                    />
                   </div>
                 </div>
               </div>

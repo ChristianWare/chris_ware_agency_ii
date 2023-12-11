@@ -141,7 +141,7 @@ export const caseStudies = [
     companyDesc: "ABC Company is a company that does business",
     projectDetails:
       "This website showcases Elite Retreat Rentals is a curated selection of meticulously designed houses, each offering a unique blend of modern amenities and scenic beauty.",
-    href: "/",
+    href: "https://case-study-one.vercel.app/",
     src: Elite,
   },
 ] as const;
