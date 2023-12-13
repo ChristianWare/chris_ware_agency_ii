@@ -23,7 +23,6 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
               src={src1}
               alt='image'
               quality={100}
-              priority={true}
               className={styles.img400}
             />
           </motion.div>
@@ -41,7 +40,6 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
                 src={src4}
                 alt='image'
                 quality={100}
-                priority={true}
                 className={styles.img100}
               />
             </motion.div>
@@ -57,7 +55,6 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
               src={src2}
               alt='image'
               quality={100}
-              priority={true}
               className={styles.img200}
             />
           </motion.div>
@@ -75,7 +72,6 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
             src={src5}
             alt='image'
             quality={100}
-            priority={true}
             className={styles.img100}
           />
         </motion.div>
@@ -90,7 +86,6 @@ const ImageGrid: FC<ImageGridProps> = ({ src1, src2, src3, src4, src5 }) => {
             src={src3}
             alt='image'
             quality={100}
-            priority={true}
             className={styles.img275}
           />
         </motion.div>

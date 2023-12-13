@@ -23,7 +23,6 @@ const FinalCTA2 = () => {
             fill
             className={styles.img}
             sizes='(max-width: 768px) 50vw, (max-width: 1200px) 100vw'
-            priority
           />
           <div className={styles.content}>
             <motion.div
