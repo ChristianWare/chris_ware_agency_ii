@@ -16,14 +16,7 @@ const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgOverlay}></div>
-      <Image
-        src={Img}
-        alt='img'
-        fill
-        className={styles.img}
-        sizes='(max-width: 768px) 50vw, (max-width: 1200px) 100vw'
-        priority
-      />
+      <Image src={Img} alt='img' fill className={styles.img} />
       <Nav />
       <LayoutWrapper>
         <ContentPadding>
