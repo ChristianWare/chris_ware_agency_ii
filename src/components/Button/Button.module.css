@@ -59,7 +59,7 @@
   color: var(--black);
   background-color: var(--green);
   border: 1px solid var(--green);
-  font-size: 1.4rem;
+  font-size: 2.1rem;
 }
 
 .navBtnii {
@@ -69,4 +69,3 @@
   font-size: 1.4rem;
   border: 1px solid var(--border2);
 }
-
