@@ -45,8 +45,8 @@ const FinalCTA2 = () => {
               </p>
               <div className={styles.btnContainer}>
                 <Button
-                  text='480-623-6780'
-                  href='tel:+4806236780'
+                  text='623-623-6780'
+                  href='tel:+6236236780'
                   btnType='primary'
                 />
               </div>

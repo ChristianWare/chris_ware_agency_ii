@@ -15,7 +15,7 @@ const FinalCta = () => {
           <div className={styles.content}>
             <div className={styles.bottom}>
               <div className={styles.left}>
-                <Label text='480-623-6780' color='green' />
+                <Label text='623-623-6780' color='green' />
                 <h2 className={styles.heading}>Contact Us</h2>
                 <h3 className={styles.headingii}>
                   Your rental property deserves more than just a listing. It

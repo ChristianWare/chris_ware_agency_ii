@@ -3,7 +3,6 @@
   width: 100%;
 }
 
-
 .content {
   margin-left: 10rem;
   margin-right: 10rem;
@@ -11,7 +10,7 @@
   background-color: var(--tan);
   border: 1px solid var(--border3);
   border-radius: 10px;
-  padding: .6rem;
+  padding: 0.6rem;
 }
 
 .box {
@@ -190,7 +189,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 623px) {
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

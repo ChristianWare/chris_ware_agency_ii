@@ -39,7 +39,7 @@ const ContactInfo = () => {
                   <Phone width={25} height={25} className={styles.icon} />
                 </div>
                 <div className={styles.itexRight}>
-                  <p className={styles.copyii}>480-623-6780</p>
+                  <p className={styles.copyii}>623-623-6780</p>
                 </div>
               </motion.div>
               <motion.div
