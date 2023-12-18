@@ -1,9 +1,7 @@
-import { BlogSectionProps, BlogData } from "@/lib/interface";
-import { FC } from "react";
 import PageIntro from "@/components/PageIntro/PageIntro";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import FinalCta from "@/components/FinalCta/FinalCta";
-import Img from "../../../public/images/img8.png";
+import Img from "../../../public/images/img17.jpg";
 import FinalCTA2 from "@/components/FinalCTA2/FinalCTA2";
 
 const BlogPage = () => {

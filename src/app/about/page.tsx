@@ -5,7 +5,7 @@ import Owner from "@/components/Owner/Owner";
 import Values from "@/components/Values/Values";
 import TechStack from "@/components/TechStack/TechStack";
 import FinalCta from "@/components/FinalCta/FinalCta";
-import Img from "../../../public/images/img3.png";
+import Img from "../../../public/images/img14.jpg";
 import Vision from "@/components/Vision/Vision";
 import Mission from "@/components/Mission/Mission";
 import RotatingText from "@/components/RotatingText/RotatingText";
