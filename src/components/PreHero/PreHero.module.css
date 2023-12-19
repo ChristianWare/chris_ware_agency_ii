@@ -47,6 +47,8 @@
   font-family: var(--inter);
   text-transform: uppercase;
   letter-spacing: -2px;
+  font-weight: 700;
+  color: var(--black2);
 }
 
 .description {
