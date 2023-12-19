@@ -44,7 +44,9 @@
 .value {
   font-size: 2.6rem;
   margin-bottom: 2rem;
-  font-family: var(--staatliches);
+  font-family: var(--inter);
+  text-transform: uppercase;
+  letter-spacing: -2px;
 }
 
 .description {
