@@ -67,6 +67,7 @@
   background-color: var(--black);
   padding: 5px 25px;
   border-radius: 50px;
+  border: 1px solid var(--green);
 }
 
 .bottom {
