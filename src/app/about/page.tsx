@@ -1,14 +1,12 @@
 import PageIntro from "@/components/PageIntro/PageIntro";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import Faq from "@/components/Faq/Faq";
-import Owner from "@/components/Owner/Owner";
 import Values from "@/components/Values/Values";
 import TechStack from "@/components/TechStack/TechStack";
 import FinalCta from "@/components/FinalCta/FinalCta";
-import Img from "../../../public/images/img14.jpg";
+import Img from "../../../public/images/img20.jpg";
 import Vision from "@/components/Vision/Vision";
 import Mission from "@/components/Mission/Mission";
-import RotatingText from "@/components/RotatingText/RotatingText";
 import FinalCTA2 from "@/components/FinalCTA2/FinalCTA2";
 
 const AboutPage = () => {

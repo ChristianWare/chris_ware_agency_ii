@@ -42,10 +42,6 @@ function Nav() {
 
   const navItems = [
     {
-      text: "Home",
-      href: "/",
-    },
-    {
       text: "About",
       href: "/about",
     },
@@ -78,6 +74,18 @@ function Nav() {
               : `${styles.navMenu} ${styles.active}`
           }
         >
+          <li>
+            <Link
+              href='/'
+              className={
+                pathname === "/"
+                  ? `${styles.activeLink}  ${styles.navItem}`
+                  : styles.navItem
+              }
+            >
+              Home
+            </Link>
+          </li>
           {navItems.map((navItem, index) => (
             <li
               key={index}
@@ -87,7 +95,7 @@ function Nav() {
               <Link
                 href={navItem.href}
                 className={
-                  pathname === navItem.href
+                  pathname.includes(navItem.href)
                     ? `${styles.activeLink}  ${styles.navItem}`
                     : styles.navItem
                 }

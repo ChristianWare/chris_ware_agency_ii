@@ -5,12 +5,11 @@ import LayoutWrapper from "../Layout/LayoutWrapper";
 import ContentPadding from "../Layout/ContentPadding/ContentPadding";
 import Button from "../Button/Button";
 import Label from "../Label/Label";
-import Img from "../../../public/images/img12.jpg";
+import Img from "../../../public/images/img19.jpg";
 import Image from "next/image";
 import Nav from "../Nav/Nav";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../animation/variants";
-import RotatingText from "../RotatingText/RotatingText";
 
 const Hero = () => {
   return (

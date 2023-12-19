@@ -5,7 +5,7 @@ import AdminFeatures from "@/components/AdminFeatures/AdminFeatures";
 import UserFeatures from "@/components/UserFeatures/UserFeatures";
 import Services from "@/components/Services/Services";
 import FinalCta from "@/components/FinalCta/FinalCta";
-import Img from "../../../public/images/img15.jpg";
+import Img from "../../../public/images/img21.jpg";
 import Pricing from "@/components/Pricing/Pricing";
 import FinalCTA2 from "@/components/FinalCTA2/FinalCTA2";
 

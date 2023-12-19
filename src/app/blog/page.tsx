@@ -1,7 +1,7 @@
 import PageIntro from "@/components/PageIntro/PageIntro";
 import BlogSection from "@/components/BlogSection/BlogSection";
 import FinalCta from "@/components/FinalCta/FinalCta";
-import Img from "../../../public/images/img17.jpg";
+import Img from "../../../public/images/img23.jpg";
 import FinalCTA2 from "@/components/FinalCTA2/FinalCTA2";
 
 const BlogPage = () => {
