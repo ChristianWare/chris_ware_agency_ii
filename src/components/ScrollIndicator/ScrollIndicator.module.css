@@ -17,10 +17,10 @@
 
 @media screen and (max-width: 623px) {
   .progressWrapper {
-    height: 7.5px;
+    height: 4px;
   }
 
   .progressMainStyle {
-    height: 7.5px;
+    height: 4px;
   }
 }

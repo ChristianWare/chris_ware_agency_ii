@@ -27,21 +27,10 @@ const Pricing = () => {
           </div>
           <div className={styles.bottom}>
             {pricing.map((x) => (
-              <div
-                // variants={fadeIn("up", 0.3)}
-                // initial='hidden'
-                // whileInView={"show"}
-                // viewport={{ once: false, amount: 0.3 }}
-                key={x.id}
-                className={styles.card}
-              >
+              <div key={x.id} className={styles.card}>
                 <div className={styles.box}>
                   <h3 className={styles.planName}>{x.plan}</h3>
-                  {typeof x.price === "number" ? (
-                    <strong className={styles.price}>$ {x.price}</strong>
-                  ) : (
-                    <strong className={styles.price}>{x.price}</strong>
-                  )}
+                  <strong className={styles.price}>$ {x.price}</strong>
                   <p className={styles.monthly}>Billed Monthly</p>
                   <p className={styles.description}>{x.description}</p>
                   <hr className={styles.hr} />

@@ -178,8 +178,8 @@ export const pricing = [
     id: 26,
     plan: "Starter",
     description:
-      "Ideal for individual property owners looking to get started, with 1 to 10 properties as you scale your business.",
-    price: 250,
+      "Ideal for individual owners with one property who are looking to get started.",
+    price: 199,
     includes: [
       {
         id: 26.1,
@@ -208,8 +208,8 @@ export const pricing = [
     id: 27,
     plan: "Advanced",
     description:
-      "Perfect for growing businesses with 10 to 20 properties  that need additional features and advanced support.",
-    price: 350,
+      "Perfect for growing businesses with 2 to 9 properties that need additional features.",
+    price: 249,
     includes: [
       {
         id: 26.1,
@@ -238,8 +238,8 @@ export const pricing = [
     id: 28,
     plan: "Enterprise",
     description:
-      "For large-scale organizations with at least 20 or more vacation rental properties with unique requirements.",
-    price: "Custom Price",
+      "For large-scale organizations with at least 10 or more rental properties.",
+    price: "349",
     includes: [
       {
         id: 28.1,
