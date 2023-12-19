@@ -49,7 +49,7 @@ const Hero = () => {
               </div>
             </motion.div>
             <div className={styles.right}>
-              <RotatingText text='Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency' />
+              {/* <RotatingText text='Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency • Chris Ware Agency' /> */}
             </div>
           </div>
         </ContentPadding>
